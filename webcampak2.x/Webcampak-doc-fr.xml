@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<book>
+  <bookinfo>
+    <title>Guide d'utilisation Webcampak et Webcampak Cloud</title>
+
+    <author>
+      <firstname>F.</firstname>
+
+      <surname>Gerthoffert</surname>
+
+      <affiliation>
+        <orgname>contact@webcampak.com</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate>Septembre 2012</pubdate>
+
+    <releaseinfo>Version en Anglais / Document in English :
+    http://www.webcampak.com/en/doc/</releaseinfo>
+  </bookinfo>
+
+  <xi:include href="docbook/overview/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/firststeps/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/pictures/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/videos/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/stats/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/logs/chapter-en.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />    
+  <xi:include href="docbook/cloudconfiguration/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/sourcesconfiguration/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/permissions/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/system/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/examples/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/installation/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</book>

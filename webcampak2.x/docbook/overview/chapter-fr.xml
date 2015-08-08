@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="overview">
+  <title>Présentation générale</title>
+
+  <section>
+    <title>A qui s'adresse ce document</title>
+
+    <para>Bienvenue dans le guide utilisateur Webcampak.</para>
+
+    <para>Ce document s'adresse avant tout aux utilisateurs des produits
+    Webcampak et Webcampak Cloud, il contient une description complète de
+    l'ensemble des fonctionnalités du système.</para>
+
+    <para>Cette documentation est commune à l'ensemble de nos produits,
+    n'hésitez pas à passer les sections ne correspondant pas à la version du
+    produit que vous souhaitez utiliser.</para>
+  </section>
+
+  <section>
+    <title>Nos produits Webcampak et Webcampak Cloud</title>
+
+    <para>Webcampak est un dispositif automatisé de capture, de stockage et de
+    traitement de clichés.</para>
+
+    <para>Initialement conçut pour piloter des appareils photo de type reflex
+    (DSLR Camera en anglais) notre produit a évolué vers deux types de
+    solutions:</para>
+
+    <para><itemizedlist>
+        <listitem>
+          <para>Webcampak: dispositif de capture automatisé tous temps visant
+          à être installé en extérieur et compatible avec un large panel de
+          sources (appareils reflex, caméras IP, Webcampak, ...)</para>
+        </listitem>
+      </itemizedlist><itemizedlist>
+        <listitem>
+          <para>Webcampak Cloud: solution hébergée d'acquisition et de
+          traitement de clichés en provenance de sources connectées (Caméras
+          IP, Webcampak, ...)</para>
+        </listitem>
+      </itemizedlist></para>
+
+    <section>
+      <title>Webcampak</title>
+
+      <para>N'hésitez pas à consulter notre site Internet pour plus de détails
+      sur notre offre Webcampak.</para>
+
+      <section>
+        <title>Périphériques compatibles</title>
+
+        <para>Webcampak est compatible avec les périphériques de capture
+        suivants:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Appareils photo compacts et reflex</para>
+          </listitem>
+
+          <listitem>
+            <para>Webcam USB</para>
+          </listitem>
+
+          <listitem>
+            <para>Images Internet</para>
+          </listitem>
+
+          <listitem>
+            <para>Caméra IP / Webcampak</para>
+          </listitem>
+
+          <listitem>
+            <para>Flux streaming</para>
+          </listitem>
+
+          <listitem>
+            <para>Timelapse offline (intégration à postériori de
+            clichés)</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>La compatibilité avec les appareils photo reflex haut de gamme
+        permet d'atteindre une résolution très importante et une très bonne
+        qualité d'image. Notez néanmoins que seuls certains modèles sont
+        compatibles.</para>
+
+        <para>Les appareils photo compacts produits après 2009 ne sont plus
+        compatible mais il reste possible de se procurer des anciens modèles
+        d'occasion et à bas coût.</para>
+      </section>
+
+      <section>
+        <title>Communication</title>
+
+        <para>Webcampak a été conçut dès le début pour être communiquant, il
+        peut être raccordé à un réseau privé ou internet.</para>
+
+        <para>Webcampak est compatible avec de nombreux types de
+        liaison:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>GPRS/3G/4G</para>
+          </listitem>
+
+          <listitem>
+            <para>Wi-Fi (2,4 ou 5 Ghz)</para>
+          </listitem>
+
+          <listitem>
+            <para>Ethernet (filaire)</para>
+          </listitem>
+
+          <listitem>
+            <para>Satellite</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Soyez prudent vis à vis des quotas et des bande passante en
+        upload si vous souhaitez faire transiter vos clichés par Internet.
+        Néanmoins, Webcampak est en mesure de répondre aux contraintes
+        inhérentes à certains types de liaisons, plusieurs méthodes (qui
+        peuvent êtres combinées) sont à votre disposition:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>N'envoyer qu'une partie des clichés capturés (un cliché
+            toutes les 15 minutes alors que la capture est fixée à un cliché
+            toutes les 2mn)</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para>Réduire la résolution (et donc la taille) des clichés
+            envoyés</para>
+          </listitem>
+
+          <listitem>
+            <para>Découper l'image pour n'envoyer que le strict
+            nécessaire</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>En ajustant ces différents paramètres il est possible de limiter
+        la quantité de données transitant via une liaison Internet.</para>
+      </section>
+
+      <section>
+        <title>Qualité d'image</title>
+
+        <para>Webcampak est habituellement installé avec des appareils reflex
+        Canon EOS, il est compatible avec l'ensemble de la gamme de boîtiers
+        et objectifs CANON reflex.</para>
+
+        <para>La qualité d'image du Webcampak, de jour comme de nuit sera donc
+        très proche, si ce n'est identique, du résultat pouvant être obtenu
+        par un photographe professionnel pour un cliché ponctuel.</para>
+
+        <para>Notez néanmoins que l'utilisation de certains boîtiers et
+        objectifs peut nécessiter des ajustements (notamment les
+        télé-objectifs qui nécessiteront probablement un boîtier spécifique du
+        fait de leurs dimensions).</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Webcampak Cloud</title>
+
+      <para>N'hésitez pas à consulter notre site Internet pour plus de détails
+      sur notre offre Webcampak Cloud.</para>
+
+      <section>
+        <title>Périphériques compatibles</title>
+
+        <para>Webcampak est compatible avec les périphériques de capture
+        suivants:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Images Internet</para>
+          </listitem>
+
+          <listitem>
+            <para>Caméra IP / Webcampak</para>
+          </listitem>
+
+          <listitem>
+            <para>Flux streaming</para>
+          </listitem>
+
+          <listitem>
+            <para>Timelapse offline (intégration à postériori de
+            clichés)</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+    </section>
+
+    <section>
+      <title>Comment se procurer nos produits ?</title>
+
+      <para>Webcampak est disponible à la vente ou à la location et est
+      associé à une large gamme de services, Il est fourni pré-configuré et
+      prêt à l'emploi.</para>
+
+      <para>Webcampak peut être livré et installé dans tous les pays, nous
+      étudierons avec vous les contraintes liées à l'implantation dans le pays
+      de votre choix.</para>
+
+      <para>Nous avons une approche "service", nous étudierons précisément vos
+      besoins pour identifier la meilleure manière d'y répondre et en
+      discuterons avec vous. Webcampak n'est pas un produit figé, de très
+      nombreux scénarios et cas d'utilisations sont possibles.</para>
+
+      <para>N'hésitez donc pas à nous contacter pour toute précision
+      complémentaire:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Téléphone: +33 (0)2 51 10 74 15</para>
+        </listitem>
+
+        <listitem>
+          <para>E-mail: contact-at-webcampak.com (remplacez -at- par @)</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Nous sommes en mesure de vous répondre en Français, Anglais et
+      Allemand.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Fonctionnalités</title>
+
+    <para>Webcampak est en constante évolution, il est donc probable que la
+    liste de Fonctionnalités ci-dessous ne soit pas exhaustive.</para>
+
+    <section>
+      <title>Liste des fonctionnalités</title>
+
+      <section>
+        <title>Capture de clichés</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Sources de captures</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Capture à partir d'appareils photos PTP (Compact ou
+                Reflex)</para>
+              </listitem>
+
+              <listitem>
+                <para>Capture à partir de Webcams USB</para>
+              </listitem>
+
+              <listitem>
+                <para>Capture à partir de Caméras IP (via FTP, HTTP,
+                RTSP)</para>
+              </listitem>
+
+              <listitem>
+                <para>Capture à partir de fichiers Web (via HTTP, FTP)</para>
+              </listitem>
+
+              <listitem>
+                <para>Capture à partir d'un autre Webcampak</para>
+              </listitem>
+            </itemizedlist>
+
+            <itemizedlist>
+              <listitem>
+                <para>Acquisition de clichés provenant d'un timelapse
+                offline</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Noms de fichiers horodatés</para>
+          </listitem>
+
+          <listitem>
+            <para>Support de plusieurs sources de capture par Webcampak</para>
+          </listitem>
+
+          <listitem>
+            <para>Déclenchement automatisé</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Toutes les X secondes (ou minutes)</para>
+              </listitem>
+
+              <listitem>
+                <para>Précision de la plage horaire (par exemple de 8h00 à
+                20h00)</para>
+              </listitem>
+
+              <listitem>
+                <para>Précision des jours (par exemple du Lundi au
+                Jeudi)</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Modification des clichés</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Recadrer: taille de zone et position</para>
+          </listitem>
+
+          <listitem>
+            <para>Ajout d'une légende: choix de la police, taille, couleur,
+            ombre, position</para>
+          </listitem>
+
+          <listitem>
+            <para>Ajout d'un watermark: précision de la position et de la
+            transparence</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Ajout d'un logo ou masque sur l'image</para>
+              </listitem>
+
+              <listitem>
+                <para>Ombrage de certaines zones</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Ajout sonde de température/luminosité: taille,
+            position</para>
+          </listitem>
+
+          <listitem>
+            <para>Redimensionnement</para>
+          </listitem>
+
+          <listitem>
+            <para>Création de miniatures</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Création de vidéos Timelapse</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Automatisée (tous les jours)</para>
+          </listitem>
+
+          <listitem>
+            <para>Personnalisées (sur intervalle au choix)</para>
+          </listitem>
+
+          <listitem>
+            <para>Pré-traitement des clichés et modifications batch</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Application d'effets vidéo (Tiltshift, Charcoal,
+                Colorin, ...)</para>
+              </listitem>
+
+              <listitem>
+                <para>Ajout d'une légende</para>
+              </listitem>
+
+              <listitem>
+                <para>Ajout d'un watermark</para>
+              </listitem>
+
+              <listitem>
+                <para>Redimensionnement</para>
+              </listitem>
+
+              <listitem>
+                <para>Zoom</para>
+              </listitem>
+
+              <listitem>
+                <para>Recadrage / Crop</para>
+              </listitem>
+
+              <listitem>
+                <para>Effet zoom, effet traveling/déplacement</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Filtrage automatisé des clichés similaires</para>
+          </listitem>
+
+          <listitem>
+            <para>Ajout d'une piste audio (fichier mp3 ou playlist)</para>
+          </listitem>
+
+          <listitem>
+            <para>Plusieurs formats vidéo H.264 (1080p, 720p, 480p,
+            personnalisé), FPS au choix</para>
+          </listitem>
+
+          <listitem>
+            <para>Création d'un fichier MP4 pour affichage Web</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Envoi des clichés et vidéos</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Envoi des archives sur serveur FTP distant (2 serveurs
+            différents possible par image)</para>
+          </listitem>
+
+          <listitem>
+            <para>Envoi des miniatures/hotlink sur serveur FTP distant</para>
+          </listitem>
+
+          <listitem>
+            <para>Envoi des vidéos sur serveur FTP distant</para>
+          </listitem>
+
+          <listitem>
+            <para>Envoi des vidéos "hotlink" sur serveur FTP distant</para>
+          </listitem>
+
+          <listitem>
+            <para>Upload des vidéos sur Youtube après création</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Accès à distance</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Interface WEB authentifiée (HTTP)</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Interface d'administration</para>
+              </listitem>
+
+              <listitem>
+                <para>Interface visiteur</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Accès FTP aux données (serveur FTP interne)</para>
+          </listitem>
+
+          <listitem>
+            <para>Compatible VPN (OpenVPN)</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Gestion du système</title>
+
+        <itemizedlist>
+          <listitem>
+            <para>Espace disque:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Suppression automatique des clichés après X jours</para>
+              </listitem>
+
+              <listitem>
+                <para>Suppression automatique des clichés si taille totale
+                supérieure à X MB</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Emails:</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Envoi automatique d'un e-mail en cas d'erreurs répétées
+                de capture</para>
+              </listitem>
+
+              <listitem>
+                <para>Envoi d'un e-mail lors du retour en ligne des
+                clichés</para>
+              </listitem>
+
+              <listitem>
+                <para>Envoi d'un e-mail en fin de création d'une vidéo
+                personnalisée</para>
+              </listitem>
+            </itemizedlist>
+
+            <itemizedlist>
+              <listitem>
+                <para>Envoi d'un e-mail, chaque jour, contenant un résumé des
+                captures (succès, echecs, envois FTP, ...) de la veille</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+
+          <listitem>
+            <para>Platine électronique Phidget</para>
+
+            <itemizedlist>
+              <listitem>
+                <para>Redémarrage automatique de l'appareil photo en cas
+                d'erreurs répétées</para>
+              </listitem>
+
+              <listitem>
+                <para>Stockage des mesures</para>
+              </listitem>
+
+              <listitem>
+                <para>Génération de graphiques journaliers</para>
+              </listitem>
+
+              <listitem>
+                <para>Affichage du processus de capture sur écran LCD</para>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </itemizedlist>
+      </section>
+    </section>
+
+    <section>
+      <title>Développement de nouvelles fonctionnalités</title>
+
+      <para>Nous sommes constamment à l'écoute de nos utilisateurs et
+      prospects, Webcampak est en évolution permanente et le nombre de
+      fonctionnalités augmente chaque mois.</para>
+
+      <para>Si Webcampak ne répond pas à tous vos besoins, n'hésitez pas à
+      nous en faire part, nous étudierons votre demande et essayerons d'y
+      répondre au mieux. Que ce soit par le développement de fonctionnalités
+      complémentaires ou l'adjonction d'outils ou de logiciels tiers.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Les sources</title>
+
+    <para>Le coeur du système Webcampak est articulé autour de "sources", ce
+    sont ces sources qui donnent au Webcampak sa souplesse et son
+    adaptabilité.</para>
+
+    <para>Une source est un élément de configuration incluant un processus de
+    capture et de traitement de clichés. Une source n'est pas nécessairement
+    attachée à un appareil photographique, la capture peut provenir d'un autre
+    Webcampak où d'une autre source d'un même Webcampak.</para>
+
+    <para>Ce mécanisme permet de cascader les sources et par conséquent les
+    traitements appliqués à un cliché.</para>
+
+    <para>Prenons un exemple concret de suivi de chantier photographique. Le
+    maître d'ouvrage souhaite réaliser une vidéo "timelapse" en fin de
+    chantier et souhaite, durant la phase de construction, mettre à
+    disposition du public des photos "temps réel" sur son site
+    internet.</para>
+
+    <para>Ces deux besoins nécessite des images différentes:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>La création d'une vidéo timelapse nécessite des photos vierges
+        de toute indications ou éléments en surimpression. Ces éléments, si
+        nécessaires, seront ajoutés en post-production.</para>
+      </listitem>
+    </itemizedlist>
+
+    <itemizedlist>
+      <listitem>
+        <para>Pour la publication d'images sur son site Internet, le maître
+        d'ouvrage souhaite indiquer sur chaque image la date et l'heure de la
+        prise de vue ainsi que le logo de son entreprise.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Il est donc nécessaire de réaliser deux traitements différents, et
+    ces manipulations seront réalisées en cascadant des sources.</para>
+
+    <para>Une première source se chargera de capturer le cliché sans
+    modification et de le stocker en vue de la création de la vidéo timelapse.
+    Cette source réalisera un envoi du cliché vers une seconde source, qui se
+    chargera d'insérer la date de capture, un logo en transparence et de
+    publier le résultat sur Internet.</para>
+
+    <para>Les possibilités de manipulation appliquées à une seule image sont
+    potentiellement illimitées.</para>
+  </section>
+
+  <section>
+    <title>Les fichiers</title>
+
+    <para>Votre Webcampak va probablement être amené à stocker un nombre très
+    important de clichés, le système est conçut pour cet usage et différents
+    mécanismes sont à votre disposition pour gérer ces éléments.</para>
+
+    <section>
+      <title>Redondance</title>
+
+      <para>N'oublier jamais que vous n'êtes pas à l'abri d'une panne du
+      matériel ou d'une erreur de manipulation. Selon la criticité de votre
+      projet nous vous conseillerons de mettre en place un stockage des
+      clichés sur un serveur distant.</para>
+
+      <para>Le Webcampak dispose pour cela d'un mécanisme permettant d'envoyer
+      une copie des clichés vers un serveur FTP.</para>
+
+      <para>Pour vous protéger des erreurs humaines (dans une certaine mesure)
+      vous pouvez stocker une copie des clichés dans une autre source d'un
+      même Webcampak. L'espace disque nécessaire sera par contre plus
+      important (stockage des clichés en double sur un même Webcampak).</para>
+
+      <para>D'autres mécanismes sont aussi à votre disposition mais nous ne
+      les détailleront pas dans ce document.</para>
+    </section>
+
+    <section>
+      <title>Purge automatisée</title>
+
+      <para>Le Webcampak dispose d'un mécanisme permettant de purger
+      automatiquement les clichés présents sur son disque interne, sur la base
+      du nombre de jours écoulés ou de l'espace disque total occupé par les
+      clichés.</para>
+
+      <para>Lorsque que le Webcampak n'a pas vocation à stocker les fichiers
+      sur son disque interne, ce dernier est converti en tampon et permet de
+      ne pas perdre de clichés en cas de panne réseau. Selon la taille des
+      clichés et la fréquence de capture, ce tampon peut être de plusieurs
+      jours ou de plusieurs mois.</para>
+    </section>
+
+    <section>
+      <title>Structure des fichiers</title>
+
+      <para>L'objectif premier du Webcampak est de stocker des images. Pour
+      plus de fiabilité les images sont automatiquement enregistrées dans un
+      dossier différent chaque jour.</para>
+
+      <section>
+        <title>Répertoire FTP global (wpresources)</title>
+
+        <para>Un compte FTP global est à votre disposition et vous permet
+        d'accéder, via un identifiant spécifique (wpresources) à un ensemble
+        de ressources communes à toutes les sources:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>/audio/ : contient les fichiers mp3 et/ou m3u permettant de
+            ajouter une piste audio à votre vidéo.</para>
+          </listitem>
+
+          <listitem>
+            <para>/cache/ : contient un lot de fichiers temporaires qui
+            peuvent êtres purgés en cas de soucis.</para>
+          </listitem>
+
+          <listitem>
+            <para>/logs/ : contient les logs du Webcampak pour toutes les
+            sources.</para>
+          </listitem>
+
+          <listitem>
+            <para>/watermark/ : contient les fichiers watermark pouvant êtres
+            intégrés sur les images ou vidéos.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Répertoire FTP par source (sourceX)</title>
+
+        <para>Chaque source dispose de son propre compte FTP permettant
+        d'accéder à son contenu. Les répertoires suivants sont disponibles au
+        sein de ce compte:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>/live/ : répertoire contenant les fichiers images et/ou
+            vidéo hotlink.</para>
+          </listitem>
+
+          <listitem>
+            <para>/pictures/ : répertoire contenant les clichés.</para>
+          </listitem>
+
+          <listitem>
+            <para>/pictures/20120423/ : répertoire contenant les clichés du 23
+            Avril 2012.</para>
+          </listitem>
+
+          <listitem>
+            <para>/pictures/process-video/ : répertoire temporaire créé lors
+            de la génération d'une vidéo. Ce répertoire est purgé à chaque
+            nouvelle création de vidéo.</para>
+          </listitem>
+
+          <listitem>
+            <para>/pictures/process-videocustom/: répertoire temporaire créé
+            lors de la génération d'une vidéo. Ce répertoire est purgé à
+            chaque nouvelle création de vidéo perso..</para>
+          </listitem>
+
+          <listitem>
+            <para>/pictures/process-videopost/ : répertoire temporaire créé
+            lors de la génération d'un batch d'images. Ce répertoire est purgé
+            à chaque nouvelle création.</para>
+          </listitem>
+
+          <listitem>
+            <para>/tmp/ : répertoire accueillant les images en provenance de
+            caméras IP ou autre source/webcampak.</para>
+          </listitem>
+
+          <listitem>
+            <para>/videos/ : répertoire contenant les vidéos générées par le
+            système.</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para>/resources/ : répertoire contenant des resources propres à
+            la source.</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para>/resources/audio: répertoire contenant des fichiers audio,
+            ces fichiers seront uniquement visibles par la source.</para>
+          </listitem>
+
+          <listitem>
+            <para>/resources/watermark: répertoire contenant des fichiers
+            watermark, ces fichiers seront uniquement visibles par la
+            source.</para>
+          </listitem>
+
+          <listitem>
+            <para>/resources/stats: répertoire contenant des statistques
+            propres à la source (captures, espace disque, ...) un fichier
+            différent est enregistré chaque jour.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+    </section>
+  </section>
+</chapter>

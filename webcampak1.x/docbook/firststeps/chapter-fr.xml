@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"> 
+  <chapter id="firststeps">
+    <title>Premiers pas</title>
+ 
+    <para>Webcampak dispose de deux interfaces:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>l'interface visiteur: facilite la visualisation des clichés et
+        des vidéos</para>
+      </listitem>
+
+      <listitem>
+        <para>l'interface administrateur: permet de gérer la configuration du
+        Webcampak et de ses sources.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Un système de gestion de permissions vous permet de contrôler
+    simplement l'accès à ces interfaces.</para>
+
+    <para>Pour votre première connexion au Webcampak, ouvrez votre navigateur
+    Internet et connectez vous à l'adresse suivante : http://Adresse_IP/ en
+    remplaçant "Adresse_IP" par l'adresse du Webcampak.</para>
+
+    <para>Utilisateur/Mot de Passe: root/webcampak</para>
+
+    <important>
+      <para>Pensez à modifier le mot de passe du compte dès votre première
+      connexion.</para>
+    </important>
+
+    <para>Ces deux interfaces sont totalement indépendantes.</para>
+  </chapter>
+

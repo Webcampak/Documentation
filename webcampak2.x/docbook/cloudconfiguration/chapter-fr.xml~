@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="firststeps">
+  <title>Naviguer au sein des vidéos</title>
+
+  <para>Cette fenêtre vous permet de naviguer au sein des vidéos stockées par
+  le Webcampak.</para>
+
+  <section>
+    <title>Vue générale</title>
+
+    <screenshot>
+      <screeninfo>Vue Générale de la visualisation de vidéos</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.videos.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Lors du premier chargement vous serez automatiquement redirigé vers
+    la dernière vidéo enregistrée pour la source ayant le poids le plus
+    faible.</para>
+  </section>
+
+  <section>
+    <title>Sélection de la source</title>
+
+    <para>En haut à gauche de la fenêtre vous pouvez sélectionner la source
+    que vous souhaitez afficher, seules les sources pour lesquelles vous
+    disposez de droits d'accès seront affichées ici. </para>
+
+    <para>Si une source est manquante demandez à votre administrateur de
+    vérifier les permissions de votre compte utilisateur.</para>
+  </section>
+
+  <section>
+    <title>Prévisualisation vidéo dans le navigateur</title>
+
+    <para>Cliquez sur la vidéo que vous souhaitez visionner dans la liste
+    située sur la gauche de la fenêtre. </para>
+
+    <para>Ensuite sur la droite de la fenêtre une image de prévisualisation
+    est affichée, cliquez dessus pour déclencher la lecture de la vidéo
+    directement depuis votre navigateur.</para>
+
+    <screenshot>
+      <screeninfo>Sélection de la date et de l'heure</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.videos.play.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+
+  <section>
+    <title>Téléchargement d'une vidéo</title>
+
+    <para>Pour télécharger une vidéo directement depuis votre navigateur,
+    faites un clic droit sur la flèche verte correspondant à la vidéo que vous
+    souhaitez télécharger et sélectionnez "Enregistrer la cible du lien sous
+    ...".</para>
+
+    <para>Notez que seule le téléchargement de la vidéo H.264 vous sera
+    proposé. Si vous souhaitez télécharger la vidéo au format MP4, utilisez un
+    logiciel FTP et connectez vous au compte dédié à la source.</para>
+
+    <para/>
+  </section>
+</chapter>

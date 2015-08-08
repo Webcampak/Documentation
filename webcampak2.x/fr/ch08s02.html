@@ -1,0 +1,85 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>2. Onglet Photos</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Guide d'utilisation Webcampak et Webcampak Cloud"><link rel="up" href="ch08.html" title="Chapter 8. Configuration des sources Webcampak"><link rel="prev" href="ch08.html" title="Chapter 8. Configuration des sources Webcampak"><link rel="next" href="ch08s03.html" title="3. Onglet Vidéos"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2. Onglet Photos</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08.html">Prev</a> </td><th width="60%" align="center">Chapter 8. Configuration des sources Webcampak</th><td width="20%" align="right"> <a accesskey="n" href="ch08s03.html">Next</a></td></tr></table><hr></div><div class="section" title="2. Onglet Photos"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1168943204510"></a>2. Onglet Photos</h2></div></div></div><p>Nous avons abordé dans la section précédente les différentes
+    méthodes permettant l'acquisition d'une image.</p><p>Ce cliché est maintenant prêt à être traité, et ce traitement est
+    défini dans la section "Photos".</p><p>L'ordre des différents blocs à son importance et correspond à
+    l'ordre dans lequel les modifications seront apportées à l'image.</p><p>Toutes les dimensions et emplacements mentionnés dans cette section
+    le sont en pixels. A l'exception de la légende, le point d'origine est
+    toujours le coin supérieur gauche de l'image.</p><div class="section" title="2.1. Découpe image (recadrer)"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204533"></a>2.1. Découpe image (recadrer)</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.crop.fr.png"></div></div><p>Une fois l'image capturée il est possible de n'en conserver qu'une
+      partie en la recadrant.</p><p>Cette option étend fortement les possibilités du Webcampak et peut
+      s'avérer très utile pour de nombreux usages:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Recadrage "simple": Ne conserver qu'une seule partie de
+          l'image</p></li><li class="listitem"><p>Recadrage "wide": Changer le format de l'image</p></li><li class="listitem"><p>Zoom: Avec des possibilités de zoom multi-zones en utilisant
+          plusieurs "Sources" Webcampak.</p></li></ul></div><p>Le recadrage fait appel à deux paramètres principaux:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Taille de la zone à découper: En pixels, relatifs à l'image
+          source pleine taille</p></li><li class="listitem"><p>Position de la zone à découper: En pixels depuis le coin
+          supérieur gauche.</p></li></ul></div><p>Nous vous conseillons de vous aider d'un logiciel de dessin (The
+      Gimp, Photostop, Pain.Net, ...) pour tester les différents paramètres et
+      identifier les zones à découper, cette fonction est habituellement
+      appelée "Crop".</p><p>Recadrer de manière automatisée vos clichés vous permet de
+      concentrer l'intérêt du spectateur sur une zone bien précise et d'en
+      faciliter l'exploitation.</p><p>Couplée à des appareils à très haute résolution cette fonction
+      vous permettra de réaliser un "zoom" sur une image pour en afficher ses
+      moindres détails.</p></div><div class="section" title="2.2. Insérer un Watermark"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204624"></a>2.2. Insérer un Watermark</h3></div></div></div><p>Un Watermark est une image incrusté en transparence au sein de la
+      photo capturée. Cette image doit être au format "png" et disposer d'un
+      canal "Alpha" (parties transparentes dans l'image).</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.watermark.fr.png"></div></div><p>Pour ajouter un watermark, connectez-vous en FTP au Webcampak via
+      le compte FTP de la source (voir onglet "Avancé") et ajoutez ce fichier
+      dans le répertoire "/resources/watermark/".</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Fichier Watermark: Sélectionnez le nom de fichier
+          correspondant au watermark que vous souhaitez intégrer.</p></li><li class="listitem"><p>Transparence: Indiquez le niveau de transparance souhaité pour
+          le watermark.</p></li><li class="listitem"><p>Emplacement X: Indiquez la position initiale du watermak, sur
+          l'axe horizontal et en pixels, à partir du coin supérieur gauche de
+          l'image.</p></li><li class="listitem"><p>Emplacement Y: Indiquez la position initiale du watermak, sur
+          l'axe vertical et en pixels, à partir du coin supérieur gauche de
+          l'image.</p></li></ul></div><p>Pour éviter de "polluer" vos photos originales en vue d'un
+      timelapse, le watermark peut être ajouté à la volée lors de la
+      génération de la vidéo. Ajouter le watermark dès la prise de photo est
+      par contre plus efficace en termes de performance car le traitement est
+      réparti tout au long de la capture et non en une seule fois lors de la
+      création des vidéos.</p></div><div class="section" title="2.3. Insérer un texte"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204698"></a>2.3. Insérer un texte</h3></div></div></div><p>Cochez la case pour intégrer une légende à votre image. Les
+      paramètres de la légende sont définis ci-dessous:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Légende: Texte de la légende. La date y sera directement
+          accolé, pensez donc à intégrer un séparateur (espace, tiret
+          ...).</p></li><li class="listitem"><p>Format date: Choisissez le format de date que vous souhaitez
+          ajouter à la légende.</p></li></ul></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.text.fr.png"></div></div><p>Configurez ensuite les paramètres de police et d'emplacement du
+      texte:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Taille du texte: Renseignez la taille de police en pixels
+          avant redimensionnement (image archivée).</p></li><li class="listitem"><p>Emplacement texte: Choisissez à quel emplacement vous
+          souhaitez insérer la légende.</p></li><li class="listitem"><p>Police de caractères: Sélectionnez la police de la
+          légende.</p></li><li class="listitem"><p>Couleur de l'ombre: Pour faciliter la lecture de la légende
+          nous vous proposons d'insérer une légère ombre à la légende.
+          Habituellement la légende est blanche ou noire.</p></li><li class="listitem"><p>Position de l'ombre: La position de l'ombre est primordiale
+          pour un bon affichage. Nous vous conseillons de décaler l'ombre sur
+          l'axe horizontal d'une distance de 1 à 3 pixels selon la taille de
+          l'image initiale.</p></li><li class="listitem"><p>Couleur du texte: Renseignez la couleur de police (en
+          anglais)</p></li><li class="listitem"><p>Position du texte: Indiquez l'emplacement de votre légende par
+          rapport à la "position du texte".</p></li></ul></div><p>La position de la légende se fait en pixels à partir du bord sur
+      les deux axes: Horizontal (X) et Vertical (Y).</p><p>Par exemple si vous souhaitez vous décaler de 20 pixels du bord
+      sur l'axe horizontal et de 40 pixels sur l'axe vertical, avec une légère
+      ombre, nous utiliserons les valeurs suivantes:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Position du texte: 24,40</p></li><li class="listitem"><p>Position de l'ombre: 26,40</p></li></ul></div></div><div class="section" title="2.4. Images statiques (hotlink)"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204829"></a>2.4. Images statiques (hotlink)</h3></div></div></div><p>Les images statiques sont des images avec un nom constant, mais
+      dont le contenu est mis à jour régulièrement. Ce type d'image est
+      utilisé sur internet pour diffuser des liens.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.hotlink.fr.png"></div></div><p>Par exemple si vous uploadez votre image statique sur votre site
+      http://www.notrerestaurant.com/ dans le répertoire webcam/ vous pourrez
+      utiliser sur votre site le lien http://
+      www.notrerestaurant.com/webcam/webcam-1024x768.jpg. Le nom ne changera
+      donc pas, mais le contenu sera mis à jour : chaque image affichée sera
+      bien la dernière capturée pour la source en question.</p><p>Webcampak propose de redimensionner vos clichés dans 4 formats
+      différents, permettant de vous adapter à différentes contraintes et
+      utilisations (mobiles, bande passante faible, haute qualité, qualité
+      moyenne, etc...).</p><p>Veillez néanmoins à conserver le même ratio dans vos images pour
+      éviter de les déformer.</p></div><div class="section" title="2.5. Archives"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204874"></a>2.5. Archives</h3></div></div></div><p>L'archivage consiste à stocker les images sur le disque interne du
+      Webcampak.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.archives.fr.png"></div></div><p>Notez que l'archivage est indispensable à la création de
+      vidéos.</p><p>Les paramètres suivants sont disponibles:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Archiver les images: option indispensable pour permettre la
+          création de vidéo.</p></li><li class="listitem"><p>Redimensionner la photo avant archivage: Pour économiser de
+          l'espace disque et pour accélérer les envois et création de vidéo il
+          est possible d'archiver les photos dans un format réduit. Cette
+          option est particulièrement intéressante pour les appareils photos
+          reflex de très forte capacité (14,16,20 Mpix) dans le cas où la
+          forte résolution n'a pas de justification technique. Indiquez "off"
+          si vous ne souhaitez pas redimensionner les images.</p></li><li class="listitem"><p>Taille minimale des photos: Indiquez la taille minimale que
+          doit faire chaque photo. En dessous de cette taille la photo ne sera
+          pas conservée et une erreur sera générée. La taille est en bytes (ou
+          octets).</p></li><li class="listitem"><p>Supprimer les photos après: Indiquez (en jours) le nombre de
+          jours pendants lesquels vous souhaitez conserver des archives. Passé
+          ce délai, les images seront supprimées automatiquement. Indiquez "0"
+          pour conserver les images indéfiniment.</p></li><li class="listitem"><p>Taille maximale de l'ensemble des photos: Si l'ensemble des
+          photos de la source dépasse cette taille (en Mo), alors les photos
+          les plus anciennes seront supprimées (par tranche de 1 journée).
+          Indiquez "0" pour conserver les images indéfiniment.</p></li></ul></div></div><div class="section" title="2.6. Envoyer les images via FTP"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943204956"></a>2.6. Envoyer les images via FTP</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.ftp.fr.png"></div></div><p>Une fois le traitement terminé les photos peuvent êtres envoyées
+      en FTP vers un site distant (ou un autre source d'un même ou autre
+      Webcampak).</p><p>Les serveurs FTP se configurent dans un onglet dédié spécifique à
+      chaque source.</p><p>En cas d'erreur d'envoi il est possible d'indiquer au système de
+      réaliser un nouvel essai.</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch08.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch08s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 8. Configuration des sources Webcampak </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3. Onglet Vidéos</td></tr></table></div></body></html>

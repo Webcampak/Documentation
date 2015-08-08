@@ -1,0 +1,29 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>2. Calculs des différents temps d'exécution</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Webcampak user guide"><link rel="up" href="ch06.html" title="Chapter 6. Webcampak logs"><link rel="prev" href="ch06.html" title="Chapter 6. Webcampak logs"><link rel="next" href="ch07.html" title="Chapter 7. Webcampak Cloud configuration"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2. Calculs des différents temps d'exécution</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch06.html">Prev</a> </td><th width="60%" align="center">Chapter 6. Webcampak logs</th><td width="20%" align="right"> <a accesskey="n" href="ch07.html">Next</a></td></tr></table><hr></div><div class="section" title="2. Calculs des différents temps d'exécution"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1170084890314"></a>2. Calculs des différents temps d'exécution</h2></div></div></div><p>Logs are also a good way to gather details about execution times of
+    some Webcampak components.</p><p>For example:</p><pre class="screen">11 May 2012 - 11:54:04 - gphoto(1-1267): Capture: Gphoto: Start Capture
+11 May 2012 - 11:54:11 - gphoto(1-1267): New file is in location /capt0000.jpg on the camera
+Saving file as /home/webcampak/webcampak/sources/source1/tmp/20120511115404.jpg
+Deleting file /capt0000.jpg on the camera
+
+11 May 2012 - 11:54:11 - gphoto(1-1267): Deleting 'capt0000.jpg' from folder '/'...
+
+11 May 2012 - 11:54:11 - gphoto(1-1267): Capture: Check File: Successful</pre><p>We can see on this example that picture capture takes 7 seconds
+    (11:54:11 - 11:54:04), including:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>capture time</p></li><li class="listitem"><p>download picture</p></li><li class="listitem"><p>delete picture from camera</p></li></ul></div><p></p><pre class="screen">11 May 2012 - 11:54:17 - gphoto(1-1267): FTP: Upload Archive
+11 May 2012 - 11:54:17 - gphoto(1-1267): FTP: Server: s001.webcampak.com Directory:  /tmp/20120511/ Filename: 20120511115404.jpg Active: no Login: source10 
+11 May 2012 - 11:54:20 - gphoto(1-1267): FTP: Creation of  /tmp/20120511/ directory
+11 May 2012 - 11:54:21 - gphoto(1-1267): FTP: Creation of  /tmp/20120511/1336751657.15/ directory
+11 May 2012 - 11:54:21 - gphoto(1-1267): FTP: Transfering file, Try:(1/3)
+11 May 2012 - 11:54:55 - gphoto(1-1267): FTP: STOR  20120511115404.jpg 
+11 May 2012 - 11:54:56 - gphoto(1-1267): FTP: Remote size: 3566523 / Local size: 3566523
+11 May 2012 - 11:54:56 - gphoto(1-1267): FTP: File successfully sent to remote FTP</pre><p>On the above sample we can extract two additional details: transfer
+    time and upload bandwidth.</p><p>The overall picture transfer took 39s (11:54:56 - 11:54:17).</p><p>As mentioned in the logs, files are uploaded to a temporary
+    directory and then moved to their definitive place. This way, is transfer
+    is corrupted you will not end up with a partial picture in the
+    system.</p><p>Effective bandwidth can be calculated by dividing picture size by
+    transfer time. In this particular situation, we have 3566523 / 39 = 91449
+    bytes per seconds = 91 KB/s</p><p>It would be advised in this situation not to use a capture rate
+    faster than 39s as the bandwidth will not be sufficient to transfer all
+    picture. It is likely to end up with a saturation of the link, and of the
+    system (after some time)</p><p></p><pre class="screen">11 May 2012 - 11:54:56 - gphoto(1-1267): DiskManagement: Delete temporary files
+11 May 2012 - 11:54:56 - gphoto(1-1267): Capture: Overall capture time: 52 seconds
+11 May 2012 - 11:54:56 - gphoto(1-1267): -----------------------------------------------------------------------</pre><p>Finally, overall capture time is 52 seconds which should be
+    considered the minimum capture rate in this particular situation.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch06.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch06.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch07.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 6. Webcampak logs </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Chapter 7. Webcampak Cloud configuration</td></tr></table></div></body></html>

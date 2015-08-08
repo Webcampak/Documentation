@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="overview">
+    <title>Overview</title>
+
+    <section>
+      <title>Audience</title>
+
+      <para>Welcome to this Webcampak user guide.</para>
+
+      <para>This document has been created to detail Webcampak and contains
+      details about all functionalities available.</para>
+    </section>
+
+    <section>
+      <title>What is Webcampak ?</title>
+
+      <para>Webcampak is a device aimed to automatically capture, store and
+      process pictures initially created to be used with DSLR cameras.</para>
+
+      <para>Our product has evolved and is compatible with a wide range of
+      devices:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>DSLR and point-and-shoot cameras</para>
+        </listitem>
+
+        <listitem>
+          <para>USB webcams</para>
+        </listitem>
+
+        <listitem>
+          <para>Web pictures</para>
+        </listitem>
+
+        <listitem>
+          <para>IP cameras / Webcampak</para>
+        </listitem>
+
+        <listitem>
+          <para>Streaming sources</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Being compatible with high-end DSLR cameras, Webcampak can process
+      very high quality pictures when connected to an appropriate camera (not
+      all DSLR are compatible).</para>
+
+      <para>Canon point-and-shoot cameras, sold after 2009, are not compatible
+      anymore but you can still find such camera on the second-hand market for
+      a fraction of their original price.</para>
+
+      <section>
+        <title>Communication</title>
+
+        <para>Webcampak has been conceived right from the beginning to be
+        network-enabled. It is compatible with various types of links:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>GPRS/3G/4G</para>
+          </listitem>
+
+          <listitem>
+            <para>Wi-Fi (2,4 or 5 Ghz)</para>
+          </listitem>
+
+          <listitem>
+            <para>Ethernet</para>
+          </listitem>
+
+          <listitem>
+            <para>Satellite</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Some Internet links (especially wireless) are subject to FUP
+        (Fair Use Policy) limiting the amount of data to be transmitted each
+        month. Webcampak can fit almost any FUP limitations by:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Sending a fraction of captured pictures (for example, send 1
+            out of 5 pictures)</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para>Reducing pictures resolution of pictures sent over
+            network</para>
+          </listitem>
+
+          <listitem>
+            <para>Cropping pictures</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>By adjusting those parameters you can limit the amount of data
+        to be transferred and therefore be compliant with your provider's
+        FUP.</para>
+      </section>
+
+      <section>
+        <title>Picture quality</title>
+
+        <para>Webcampak compatible with all Canon DSLR cameras and associated
+        lenses.</para>
+
+        <para>Picture quality during day or night time will be very close (if
+        not identical) to quality that can be obtained by a professional
+        photographer for a single shot.</para>
+
+        <para>Take in consideration that some cameras and/or lenses might
+        required Webcampak adjustments (might require a larger enclosure due
+        to lens size).</para>
+      </section>
+
+      <section>
+        <title>Webcampak versions</title>
+
+        <para>There is only one Webcampak solution, but our product is
+        available in two different models:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Webcampak: is an automated capture device in an all-weather
+            enclosure. </para>
+          </listitem>
+
+          <listitem>
+            <para>Webcampak-Pro: is a concentration point for pictures, it can
+            process a potentially unlimited number of sources. It has been
+            created to be installed in an IT room or a datacenter.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Both models are equipped with the exact same software, the only
+        difference being physical elements (all-weather enclosure, amount of
+        RAM, CPU, ...).</para>
+      </section>
+
+      <section>
+        <title>Where to procure Webcampak ?</title>
+
+        <para>Webcampak is available for sale or for rent in any country.
+        Webcampak is always provide pre-configured and ready to use. It can
+        also be provided with a wide range of services.</para>
+
+        <para>We have a "service approach", before providing you with a
+        quotation we will study your requirements in detail and find the best
+        way to answer those. Webcampak is not a static product, it can be
+        adapted to a potentially unlimited number of scenarios.</para>
+
+        <para>We would be happy to have a chat with you regarding your
+        project:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>by phone: +33 (0)2 51 10 74 15</para>
+          </listitem>
+
+          <listitem>
+            <para>by email: contact-at-webcampak.com (replace -at- by
+            @)</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>We can answer in French, English and German.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Features</title>
+
+      <para>We are constantly adding new features to Webcampak, the list below
+      might not be exhaustive.</para>
+
+      <section>
+        <title>Features list</title>
+
+        <section>
+          <title>Picture capture</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Capture sources</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>PTP cameras (point-and-shoot and DSLR)</para>
+                </listitem>
+
+                <listitem>
+                  <para>USB webcams</para>
+                </listitem>
+
+                <listitem>
+                  <para>IP cameras (via FTP, HTTP, RTSP)</para>
+                </listitem>
+
+                <listitem>
+                  <para>Web pictures (via HTTP, FTP)</para>
+                </listitem>
+
+                <listitem>
+                  <para>other Webcampak</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Filename with capture date</para>
+            </listitem>
+
+            <listitem>
+              <para>Support multiple capture sources per Webcampak</para>
+            </listitem>
+
+            <listitem>
+              <para>Automated capture</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Every X seconds/minutes</para>
+                </listitem>
+
+                <listitem>
+                  <para>Specific timeframe (for example between 6:00 am and
+                  4:00 pm)</para>
+                </listitem>
+
+                <listitem>
+                  <para>Specific days (for example Monday and Friday, Tuesday
+                  to Saturday, ...)</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Pictures manipulations</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Crop picture: size and location</para>
+            </listitem>
+
+            <listitem>
+              <para>Add legend: choose font, size, color, shadow,
+              location</para>
+            </listitem>
+
+            <listitem>
+              <para>Add watermark: choose location and transparency</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Add a logo or mask on your picture</para>
+                </listitem>
+
+                <listitem>
+                  <para>Obstruct some areas</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Add weather sensor: size and location</para>
+            </listitem>
+
+            <listitem>
+              <para>Resize picture</para>
+            </listitem>
+
+            <listitem>
+              <para>Create thumbnails</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Timelapse videos</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Automated (every day)</para>
+            </listitem>
+
+            <listitem>
+              <para>Custom (user-specified interval)</para>
+            </listitem>
+
+            <listitem>
+              <para>Pre-process picture and batch manipulations</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Video effect (Tiltshift, Charcoal, Colorin,
+                  ...)</para>
+                </listitem>
+
+                <listitem>
+                  <para>Add legend</para>
+                </listitem>
+
+                <listitem>
+                  <para>Add watermark</para>
+                </listitem>
+
+                <listitem>
+                  <para>Resize</para>
+                </listitem>
+
+                <listitem>
+                  <para>Zoom</para>
+                </listitem>
+
+                <listitem>
+                  <para>Crop</para>
+                </listitem>
+
+                <listitem>
+                  <para>Traveling / panning effect</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Filter similar pictures</para>
+            </listitem>
+
+            <listitem>
+              <para>Add an audio track (mp3 file or playlist)</para>
+            </listitem>
+
+            <listitem>
+              <para>Multiple H.264 video formats H.264 (1080p, 720p, 480p,
+              custom), FPS</para>
+            </listitem>
+
+            <listitem>
+              <para>Create MP4 file for in-browser display</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Send pictures and videos</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Send pictures to remote FTP server (2 servers per
+              picture)</para>
+            </listitem>
+
+            <listitem>
+              <para>Send thumbnails/hotlinks to remote FTP server</para>
+            </listitem>
+
+            <listitem>
+              <para>Send videos to remote FTP server</para>
+            </listitem>
+
+            <listitem>
+              <para>Send hotlink videos to remote FTP server</para>
+            </listitem>
+
+            <listitem>
+              <para>Upload videos to Youtube</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Remote access</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Authenticated web interface (HTTP)</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Administration panel</para>
+                </listitem>
+
+                <listitem>
+                  <para>Viewer panel</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Pictures and videos reachable via FTP</para>
+            </listitem>
+
+            <listitem>
+              <para>VPN compatible (OpenVPN)</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>System management</title>
+
+          <itemizedlist>
+            <listitem>
+              <para>Storage space management:</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Delete pictures automatically after a user-specified
+                  number of days</para>
+                </listitem>
+
+                <listitem>
+                  <para>Delete pictures automatically if overall picture size
+                  over XXX MB (user specified)</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Emails:</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Send an email in case of multiple capture
+                  errors</para>
+                </listitem>
+
+                <listitem>
+                  <para>Send an email when capture is back</para>
+                </listitem>
+
+                <listitem>
+                  <para>Send an email once custom video creation is
+                  completed</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+
+            <listitem>
+              <para>Phidget board</para>
+
+              <itemizedlist>
+                <listitem>
+                  <para>Restart camera automatically after multiple capture
+                  failures</para>
+                </listitem>
+
+                <listitem>
+                  <para>Store sensor measurements</para>
+                </listitem>
+
+                <listitem>
+                  <para>Create daily graphs</para>
+                </listitem>
+
+                <listitem>
+                  <para>Display capture progress on LCD screen</para>
+                </listitem>
+              </itemizedlist>
+            </listitem>
+          </itemizedlist>
+        </section>
+      </section>
+
+      <section>
+        <title>New features</title>
+
+        <para>We listen to our customers, users and prospects. </para>
+
+        <para>If for any reason Webcampak do not answer your requirement or if
+        you believe an additional feature might be interesting, just let us
+        know. We will study how to modify Webcampak to fulfill this
+        requirement, either by updating the software or implementing a third
+        party solution.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Sources</title>
+
+      <para>Webcampak core is associated to the concept of "sources", giving
+      it adaptability and scalability.</para>
+
+      <para>A Webcampak source is a configuration process aimed to capture and
+      process pictures. A source is not necessarily attached to a capture
+      device (such as a camera), the capture can come from another Webcampak
+      or another source from the same Webcampak.</para>
+
+      <para>It allows sources to be cascaded and to potentially modify one
+      single picture an unlimited number of times.</para>
+
+      <para>Let's take a real world example:</para>
+
+      <para>At a building site, the building company would like to generate a
+      timelapse video of the whole construction project and at the same time,
+      publish real-time pictures on its website to show building progress to
+      its customers.</para>
+
+      <para>Those two requirements need different pictures:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>For a timelapse video, pictures must be stored in the highest
+          quality with a limited number of manipulations (no legend, no
+          watermark, ...).</para>
+        </listitem>
+      </itemizedlist>
+
+      <itemizedlist>
+        <listitem>
+          <para>For real-time picture web-publishing, the construction company
+          would like pictures to include the company's logo and a capture
+          date.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Therefore Webcampak has to process pictures differently, this can
+      be done by cascading sources.</para>
+
+      <para>A first source will capture the picture from the camera and store
+      it for the timelapse video. This source will also send pictures to a
+      second source. This second source will process the picture, insert a
+      logo, date, resize it and send it to the company's website.</para>
+
+      <para>All of this is done automatically by Webcampak with no human
+      action past the initial configuration.</para>
+    </section>
+
+    <section>
+      <title>Files</title>
+
+      <para>Your Webcampak will probably have to store a (very) large number
+      of pictures. It has been designed for this task and multiple features
+      are available to manage and secure those files.</para>
+
+      <section>
+        <title>Redundancy</title>
+
+        <para>Always keep in mind that hardware failure or human error (i.e.
+        delete pictures by mistake) can happen and it's always better to take
+        precautions before such events happen.</para>
+
+        <para>Webcampak is able to send pictures to remote FTP server, you can
+        also store pictures automatically to another source of the same
+        Webcampak to prevent human errors (just take in consideration that it
+        will require twice the amount of disk space).</para>
+
+        <para>Other mechanisms are available using third party products, we
+        will study those with you based upon your requirements.</para>
+      </section>
+
+      <section>
+        <title>Automated deletion</title>
+
+        <para>Webcampak is equipped with automated deletion mechanisms to
+        ensure its internal hard disk never runs out of space. Those
+        mechanisms can be configured to fit various requirements. </para>
+
+        <para>When Webcampak store its pictures to a remote server, it can use
+        its internal disk space as a buffer to ensure no pictures are lost in
+        case of network issue. Depending of the capture frequency and picture
+        size, this buffer size can cover multiple days, even months.</para>
+      </section>
+
+      <section>
+        <title>File structure</title>
+
+        <para>Webcampak is equipped with multiple directory structures.</para>
+
+        <section>
+          <title>Global FTP account</title>
+
+          <para>A global FTP account, shared with between sources will let you
+          access:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>/audio/ : directory for mp3 and/or m3u files, used to add
+              an audio track to your videos.</para>
+            </listitem>
+
+            <listitem>
+              <para>/cache/ : directory with temporary files, all files in
+              this directory can be deleted in case of issue.</para>
+            </listitem>
+
+            <listitem>
+              <para>/logs/ : directory hosting system's logs for all
+              sources.</para>
+            </listitem>
+
+            <listitem>
+              <para>/watermark/ : directory for watermark files to be added to
+              pictures and/or videos.</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+
+        <section>
+          <title>Per-source FTP account</title>
+
+          <para>Each source has its own FTP account, with the following
+          directory structure:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>/live/ : directory hosting hotlink pictures and
+              videos.</para>
+            </listitem>
+
+            <listitem>
+              <para>/pictures/ : directory hosting pictures.</para>
+            </listitem>
+
+            <listitem>
+              <para>/pictures/20120423/ : pictures of the 23rd April
+              2012.</para>
+            </listitem>
+
+            <listitem>
+              <para>/pictures/process-video/ : temporary directory, deleted
+              automatically when a new video is created.</para>
+            </listitem>
+
+            <listitem>
+              <para>/pictures/process-videocustom/: temporary directory,
+              deleted automatically when a new custom video is created.</para>
+            </listitem>
+
+            <listitem>
+              <para>/pictures/process-videopost/ : temporary directory,
+              deleted automatically when a new post-prod. video process is
+              initiated.</para>
+            </listitem>
+
+            <listitem>
+              <para>/tmp/ : pictures coming from IP cameras or other Webcampak
+              must be uploaded to this directory to be processed by
+              Webcampak.</para>
+            </listitem>
+
+            <listitem>
+              <para>/videos/ : directory hosting videos.</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+      </section>
+    </section>
+  </chapter>
+

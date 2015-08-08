@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="adminpanel">
+  <title>Administration Panel</title>
+
+  <para>The administration panel is the core components of the system, it lets
+  you modify Webcampak behavior.</para>
+
+  <para>Before beginning Webcampak configuration it is always better to
+  clearly define your objective, you might find useful to draw a diagram
+  displaying interactions between sources and modifications to be
+  performed.</para>
+
+  <para>There are two kind of settings within Webcampak:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Global settings, shared between all sources and impacting the
+      whole system, are configured via "System" menu and its
+      sub-sections.</para>
+    </listitem>
+
+    <listitem>
+      <para>Source-specific settings, different for each source, are
+      configured via "SourceXX" menu and its sub-sections. A modification
+      there only impact the selected source.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>This part of the document will detail all settings, menus and sections
+  available, if you feel that additional explanations are necessary or if you
+  have any comments just let us know.</para>
+
+  <section>
+    <title>Dashboard</title>
+
+    <para>The dashboard will be the first page to be displayed when you
+    connect to Webcampak.</para>
+
+    <figure>
+      <title>Admin panel dashboard</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/admin.dashboard.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>It provides you with a global status of each source, time spent
+    since last capture and disk space used by sources.</para>
+
+    <para>"Status" column provide an estimation of the source's status:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>a white cross is displayed if the source is disabled,</para>
+      </listitem>
+
+      <listitem>
+        <para>a red cube is displayed if there is more than 3x the capture
+        frequency between current time and last capture,</para>
+      </listitem>
+
+      <listitem>
+        <para>a green cube is displayed if there is less than 3x the capture
+        frequency between current time and last capture,</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>System settings</title>
+
+    <para>This menu will let you access settings having an impact on the whole
+    Webcampak.</para>
+
+    <figure>
+      <title>System menu</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.menu.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <itemizedlist>
+      <listitem>
+        <para>"System" let you configure global settings,</para>
+      </listitem>
+
+      <listitem>
+        <para>"FTP Servers" let you define FTP servers available for all
+        sources,</para>
+      </listitem>
+
+      <listitem>
+        <para>"Connected devices" display cameras and USB webcams physically
+        connected to Webcampak,</para>
+      </listitem>
+
+      <listitem>
+        <para>"Reboot" let you restart Webcampak,</para>
+      </listitem>
+
+      <listitem>
+        <para>"System logs" display logs related to system wide
+        actions,</para>
+      </listitem>
+
+      <listitem>
+        <para>"Reset" let you reset Webcampak to factory defaults.</para>
+      </listitem>
+    </itemizedlist>
+
+    <section>
+      <title>System</title>
+
+      <figure>
+        <title>Activate remote support</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.remote.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>This part is only available with Webcampak provided pre-configured
+      by Eurotechnia, when started this will activate a VPN tunnel allowing us
+      to connect for maintenance purposes.</para>
+
+      <figure>
+        <title>Global FTP account</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.ftp.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Webcampak is provided with an internal FTP server, each source has
+      its own FTP account and a global account is available to reach content
+      shared between all sources.</para>
+
+      <para>This account gives access to:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Logs of all sources</para>
+        </listitem>
+
+        <listitem>
+          <para>MP3/M3U files to add soundtrack to your videos</para>
+        </listitem>
+
+        <listitem>
+          <para>watermark pictures</para>
+        </listitem>
+
+        <listitem>
+          <para>temporary files, can be deleted in case of issue</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>The account is disabled by default, you have to click on
+      "Create/Edit user" once to activate the FTP server globally.</para>
+
+      <figure>
+        <title>Multi-cameras configuration</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.multi.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Webcampak can be compatible with multiple USB cameras
+      simultaneously, to enable this feature you must activate this module and
+      mention if cameras are identical (same make / model) or different</para>
+
+      <para>Webcampak must be able to determine after a reboot or issue which
+      camera must be attached to which source:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>If cameras are different, the system will use the camera
+          model</para>
+        </listitem>
+
+        <listitem>
+          <para>If cameras are identical, the system will insert a specific
+          tag within each camera, and will look for this tag regularly to
+          ensure it is still attached to the correct source.</para>
+        </listitem>
+      </itemizedlist>
+
+      <figure>
+        <title>Activate Phidget board</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.phidget.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Activate this module if a phidget electronic board is connected to
+      your system.</para>
+
+      <figure>
+        <title>Activate stats</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.stats.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>By activating this module, your Webcampak will send us stats
+      usage. This does only include general details (software version, CPU,
+      operating system mostly).</para>
+
+      <figure>
+        <title>System information</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.proc.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>The three blocs above display system information (Gphoto version,
+      uptime, disk usage, process).</para>
+    </section>
+
+    <section>
+      <title>FTP Servers</title>
+
+      <para>This section let you define all FTP servers that can be used by
+      sources.</para>
+
+      <figure>
+        <title>FTP servers configuration</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.ftpservers.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>You can configure up to 30 different servers, You can notice on
+      this capture that servers 2 and 6 actually send pictures to another
+      source of the same Webcampak (using IP 127.0.0.1).</para>
+    </section>
+
+    <section>
+      <title>Connected Devices</title>
+
+      <para>This section displays details about devices physically connected
+      to your Webcampak.</para>
+
+      <figure>
+        <title>Connected USB cameras</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.connected.gphoto.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>This two first blocs provide more details about connected
+      cameras.</para>
+
+      <para>The first one display connected cameras and their ports, the
+      second one provides more details about cameras' capabilities. For the
+      camera to be compatible with Webcampak, "Capture choices" line must
+      include "Image" (as displayed on the above screenshot).</para>
+
+      <para>As you can see on the above capture, a "Canon EOS 550D" DSLR
+      camera is connected to USB port "usb:001,002".</para>
+
+      <important>
+        <para>USB ports will change each time a camera is restarted or
+        connected/disconnected. Activate the appropriate multi-cameras option
+        in "System" if multi cameras are going to be used
+        simultaneously.</para>
+      </important>
+
+      <figure>
+        <title>USB devices</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.connected.usb.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>The bloc above display devices connected via USB, DSLR cameras and
+      USB webcams will be displayed here. If a specific devices is not
+      detected here it means it will not be possible to use it with
+      Webcampak.</para>
+
+      <para>Below an example with multiple devices connected:</para>
+
+      <screen>Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 007: ID 04a9:30c1 PowerShot A520 (PTP mode)
+Bus 002 Device 006: ID 06f8:300f Guillemot Corp. 
+Bus 002 Device 004: ID 0ac8:301b Z-Star Microelectronics Corp. ZC0301 Webcam
+Bus 002 Device 003: ID 04f2:0402 Chicony Electronics Co., Ltd 
+Bus 002 Device 002: ID 0451:2046 Texas Instruments, Inc. TUSB2046 Hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</screen>
+
+      <para>You can find above:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>A Guillemot webcam: "Bus 002 Device 006: ID 06f8:300f
+          Guillemot Corp. "</para>
+        </listitem>
+
+        <listitem>
+          <para>A Z-Star webcam: "Bus 002 Device 004: ID 0ac8:301b Z-Star
+          Microelectronics Corp. ZC0301 Webcam"</para>
+        </listitem>
+
+        <listitem>
+          <para>A Canon point-and-shoot camera: "Bus 002 Device 007: ID
+          04a9:30c1 PowerShot A520 (PTP mode)"</para>
+        </listitem>
+      </itemizedlist>
+
+      <figure>
+        <title>Connected USB webcams</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.connected.webcam.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>This bloc displays more details about connected USB webcams, below
+      is an example with two USB webcams connected:</para>
+
+      <screen>/dev/video0
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | Camera  | Camera  | Camera 1
+bright     | int    |      51 |       0 | range is -64 =&gt; 64
+contrast   | int    |      32 |      32 | range is 0 =&gt; 64
+color      | int    |      64 |      64 | range is 0 =&gt; 128
+hue        | int    |       0 |       0 | range is -40 =&gt; 40
+White Bala | bool   | on      | on      |
+Gamma      | int    |     100 |     100 | range is 72 =&gt; 500
+Gain       | int    |       0 |       0 | range is 0 =&gt; 100
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Power Line | choice | 50 Hz   | 50 Hz   | Disabled 50 Hz 60 Hz
+Sharpness  | int    |       3 |       3 | range is 0 =&gt; 10
+Backlight  | int    |       0 |       0 | range is 0 =&gt; 1
+
+/dev/video1
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | zc3xx   | zc3xx   | zc3xx
+bright     | int    |     128 |     128 | range is 0 =&gt; 255
+contrast   | int    |     128 |     128 | range is 0 =&gt; 256
+Whitebalan | bool   | off     | off     |
+Gamma      | int    |       4 |       4 | range is 1 =&gt; 6
+Auto Gain  | bool   | on      | on      |
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Sharpness  | int    |       2 |       2 | range is 0 =&gt; 3
+
+/dev/video2
+/dev/video3
+/dev/video4
+/dev/video5
+/dev/video6
+/dev/video7
+/dev/video8
+/dev/video9
+/dev/video10</screen>
+
+      <para>We can easily identify cameras we saw in "USB devices":</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>"Camera 1" : is the Guillemot webcam</para>
+        </listitem>
+
+        <listitem>
+          <para>zc3xx : is the other USB webcam.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>The video device ID (/dev/videoX) will be used to configure the
+      source, keep it in mind !</para>
+
+      <figure>
+        <title>Connected USB webcams (advanced)</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.connected.webcam-adv.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Webcampak is compatible with a large number of USB webcams, but to
+      ensure proper operation it is necessary to detail the native resolution
+      of the webcam.</para>
+
+      <para>This resolution is mentioned in this advanced section.</para>
+
+      <screen> /dev/video0
+### v4l2 device info [/dev/video0] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "uvcvideo"
+card                    : "Dualpix Emotion"
+capabilities            : 0x4000001 [VIDEO_CAPTURE,STREAMING]
+video capture
+    VIDIOC_G_FMT(VIDEO_CAPTURE)
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 1280
+fmt.pix.height          : 1024
+
+/dev/video1
+### v4l2 device info [/dev/video1] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "zc3xx"
+card                    : "PC Camera"
+capabilities            : 0x5000001 [VIDEO_CAPTURE,READWRITE,STREAMING]
+    VIDIOC_G_FMT(VIDEO_CAPTURE)
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 640
+fmt.pix.height          : 480</screen>
+
+      <para>We can find here our two webcams, resolution is displayed as
+      "fmt.pix.width" and "fmt.pix.height".</para>
+
+      <para>As a summary we have the following cameras connected :</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Webcam Dualpix Emotion</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Port: /dev/video0</para>
+            </listitem>
+
+            <listitem>
+              <para>Resolution: 1280x1024</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Webcam zc3xx</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Port: /dev/video1</para>
+            </listitem>
+
+            <listitem>
+              <para>Resolution: 640x480</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Reboot</title>
+
+      <para>This section let you reboot Webcampak.</para>
+
+      <para>All settings will be saved and the system will come back online
+      automatically after reboot.</para>
+
+      <figure>
+        <title>Request system reboot</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.reboot.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+    </section>
+
+    <section>
+      <title>System Logs</title>
+
+      <para>Webcampak keeps track of all major actions, those details can be
+      useful in case of issue.</para>
+
+      <para>Using this section you can have a look into previous
+      actions.</para>
+
+      <screen>Mon Jul 19 19:30:27 CEST 2010  - SAMPLE: bash /home/wpak001/webcampak/bin/pictures-capture.sh 1 sample</screen>
+    </section>
+
+    <section>
+      <title>Reset</title>
+
+      <figure>
+        <title>Reset System</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/admin.system.reset.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>This section gives you the ability to reset the whole system to
+      its default settings, you can:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>reset configuration of all sources.</para>
+        </listitem>
+
+        <listitem>
+          <para>delete all pictures and videos.</para>
+        </listitem>
+      </itemizedlist>
+
+      <warning>
+        <para>Take extra care, those actions are definitive.</para>
+      </warning>
+    </section>
+  </section>
+
+  <section>
+    <title>Sources configuration</title>
+
+    <para>The number of sources supported by Webcampak is defined during the
+    installation process. Each source is independent and can receive and send
+    pictures to/from another Webcampak or another source from the same
+    Webcampak.</para>
+
+    <para>Each source is configured via its dedicated menu in the
+    administration panel.</para>
+
+    <figure>
+      <title>Configuration menu of source 1</title>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.menu.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+
+    <para>As you can see, 10 sections are available for each source:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Capture: configure the mean used to capture a picture.</para>
+      </listitem>
+
+      <listitem>
+        <para>Photos: define manipulation to be applied to the picture, it can
+        be either a picture modification, disk space management, or sending a
+        picture to external FTP servers.</para>
+      </listitem>
+
+      <listitem>
+        <para>Videos: define settings used to generate a daily video, created
+        each day at 1h00 am.</para>
+      </listitem>
+
+      <listitem>
+        <para>Custom Vids.: define settings used to generate a custom video,
+        including a start and end date.</para>
+      </listitem>
+
+      <listitem>
+        <para>Post-Prod. Vids.: define mass modifications of pictures in order
+        to prepare them for post-production using a dedicated software. This
+        section can also be used to copy pictures between sources.</para>
+      </listitem>
+
+      <listitem>
+        <para>Logs: view logs related to the source (capture, video, custom
+        video, post-prod).</para>
+      </listitem>
+
+      <listitem>
+        <para>Advanced: define advanced settings such as email, source FTP
+        account, ...</para>
+      </listitem>
+
+      <listitem>
+        <para>Manage Pictures: overview of disk space used by pictures, let
+        you delete days. Same actions can be performed over FTP.</para>
+      </listitem>
+
+      <listitem>
+        <para>Manage Videos: overview of disk space used by videos, let you
+        delete videos; Same actions can be performed over FTP.</para>
+      </listitem>
+
+      <listitem>
+        <para>Browse Pictures: link to the viewer panel.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>This section of the document will contained as much details as
+    possible about all Webcampak settings used to configure a source.</para>
+
+    <tip>
+      <para>Webcampak is a complex product, we strongly advise you to read the
+      document entirely before beginning configuration.</para>
+    </tip>
+
+    <section>
+      <title>Capture</title>
+
+      <para>This section contains settings related to acquisition of
+      pictures.</para>
+
+      <section>
+        <title>Source configuration</title>
+
+        <figure>
+          <title>Source configuration</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.config.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This is probably the single most important bloc of Webcampak
+        configuration, it will define where pictures will come from and at
+        which rate they should be captured.</para>
+
+        <section>
+          <title>Activate source</title>
+
+          <para>Use this option to enable / disable a source. An inactive
+          source will not be processed by the system (including video
+          creation).</para>
+        </section>
+
+        <section>
+          <title>Type</title>
+
+          <para>Define where pictures should be captured from, 6 types are
+          available:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>USB camera(Gphoto2 mode PTP)</para>
+
+              <para>Choose this option is an USB camera (DSLR or
+              point-and-shoot) is physically connected to Webcampak.</para>
+            </listitem>
+
+            <listitem>
+              <para>USB webcam</para>
+
+              <para>Choose this option is an USB webcam is physically
+              connected to Webcampak.</para>
+            </listitem>
+
+            <listitem>
+              <para>IP Camera (FTP)</para>
+
+              <para>Choose this option is an IP camera, another Webcampak or
+              another source from the same Webcampak has been configured to
+              regularly send pictures to /tmp/ directory of the source.
+              Webcampak will regularly check this directory and process
+              uploaded pictures if any.</para>
+            </listitem>
+
+            <listitem>
+              <para>Internet Picture (HTTP or FTP)</para>
+
+              <para>Choose this option if you want Webcampak to capture a
+              picture over HTTP or FTP. This picture can be located on
+              Internet, on another Webcampak or on another source of this same
+              Webcampak.</para>
+
+              <para>If you plan to use another Webcampak (or another source),
+              you will need to link to a "hotlink" image, just ensure its
+              resolution will be large enough to fit your requirements.</para>
+            </listitem>
+
+            <listitem>
+              <para>Streaming (RTSP)</para>
+
+              <para>Choose this option is you want to extract a picture from a
+              RTSP stream. This option has been rarely tested.</para>
+            </listitem>
+
+            <listitem>
+              <para>Phidget sensor</para>
+
+              <para>This is a particular option, it does not capture picture
+              but values from Phidget sensors.</para>
+            </listitem>
+          </itemizedlist>
+
+          <para>More settings related to those types are available below in
+          this page.</para>
+        </section>
+
+        <section>
+          <title>Capture every</title>
+
+          <para>Define the capture rate you want to use for the source.</para>
+
+          <para>We would recommend not to go lower than 10s, although
+          frequency is highly dependent of the camera, its settings and
+          Webcampak hardware performances. Take capture time in consideration,
+          especially during night shots.</para>
+
+          <para>If a capture is started when another capture is not completed
+          there is a risk to hang the camera.</para>
+
+          <para>Usually a 30s capture rate should be considered as the minimum
+          value for a long lasting setup (months of capture), most situations
+          will accommodate slower capture rate (on picture every 5mn, 15mn,
+          ...).</para>
+
+          <para>If you plan to use a capture rate lower than 1 minute, you
+          will need to selected a multiple of 60 (for example: 10s, 15s, 20s,
+          30s)</para>
+        </section>
+
+        <section>
+          <title>Picture date</title>
+
+          <para>This setting does not apply for IP Camera (FTP), it defines
+          the time to be taken in consideration for pictures, either the time
+          the script starts or the time the picture is actually taken.</para>
+
+          <para>It is particularly interesting when used with "Capture delay"
+          setting, and especially with "Internet Picture", for example when
+          you want to change capture rate between sources.</para>
+
+          <para>For example: Source 1 capture at one picture per minute with
+          the objective to create a timelapse video at the end of the project.
+          You want to send one picture every 5 minutes (source 2) to your
+          website. You need to ensure that processing is finished for source 1
+          before requesting capture from source 2 (as source 2 will capture
+          its picture from source 1). For this purpose you will implement a
+          capture delay, corresponding to source 1 processing time. If you
+          select "script start time" as "Picture date" your picture will have
+          the same date than source 1 (otherwise picture date would have been
+          script start date + capture delay).</para>
+
+          <para>On the other hand, it might sometime be necessary to have very
+          accurate date associated to pictures, if you select "Capture time"
+          the date will be extracted right before the shot is actually
+          taken.</para>
+        </section>
+
+        <section>
+          <title>Minimum interval</title>
+
+          <para>Minimum amount of time between two capture, any capture
+          request below this value will be refused.</para>
+        </section>
+
+        <section>
+          <title>Capture delay (seconds)</title>
+
+          <para>As explained previously, this option delay capture of a
+          picture.</para>
+
+          <para>For example, with a capture rate of one per minute, capture
+          will take place at 18h00, 18h01, 18h02, ... If you implement a 25s
+          capture delay, capture will take place at 18h00"25, 18h01"25,
+          18h02"25, ...</para>
+        </section>
+
+        <section>
+          <title>Activate debug</title>
+
+          <para>If this option is activated more details will be available in
+          logs (should only be used in case of issue).</para>
+        </section>
+
+        <section>
+          <title>Activate e-mail alerts</title>
+
+          <para>If this option is activated, you will receive an e-mail
+          automatically in case of capture error (i.e. camera failure).</para>
+
+          <para>E-mail settings can be configured in "Advanced" section of the
+          source.</para>
+        </section>
+
+        <section>
+          <title>Block automated capture</title>
+
+          <para>This option will stop automated captures of the source, even
+          if activated. This has been created to allow "Manual Capture" via
+          the administration panel.</para>
+
+          <para>"Manual Capture" will take a picture instantly and display it
+          in your browser.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>Capture calendar</title>
+
+        <figure>
+          <title>Capture calendar</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.calendar.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This option will let you select which days and hours capture
+        should take place.</para>
+
+        <para>If this option is not selected, captures will take place 24 /
+        7.</para>
+      </section>
+
+      <section>
+        <title>Configuration of "Compact of DSLR USB camera"</title>
+
+        <figure>
+          <title>Configuration of "Compact or DSLR USB Camera"</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.gphoto.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>If only one camera is connected Webcampak will try to capture
+        from this camera, so settings in this sections are really useful if
+        multiple cameras are currently connected to the system.</para>
+
+        <para>To use multiple cameras simultaneously, start by activating the
+        appropriate option in "System" menu.</para>
+
+        <para>"Camera Port" is only useful to force capture on a specific port
+        and during the "Camera Owner" assignment process if multiple cameras
+        are used simultaneously.</para>
+
+        <para>As mentioned previously, if multiple cameras are connected,
+        Webcampak must be able to differentiate them, there are two ways of
+        doing this:</para>
+
+        <section>
+          <title>Using different cameras (different model)</title>
+
+          <para>If cameras are different, Webcampak will use camera model to
+          differentiate cameras. Copy into "Camera Model" the model as
+          mentioned in "Connected Devices" section of the administration
+          panel.</para>
+
+          <para>For example:</para>
+
+          <screen>Model                          Port            
+----------------------------------------------------------
+Canon EOS 550D                 usb:001,002     </screen>
+
+          <para>Mention "Canon EOS 550D" in "Camera Model".</para>
+
+          <para>Webcampak will then look for the camera before any
+          capture.</para>
+        </section>
+
+        <section>
+          <title>Using identical cameras (same make and model)</title>
+
+          <para>If cameras are identical (or detected identical by the system)
+          Webcampak will insert a specific tag inside each camera.</para>
+
+          <para>First select the USB port (Camera Port) corresponding to the
+          camera (connecting one single camera at this stage makes things
+          easier).</para>
+
+          <para>Then, choose a tag to be inserted within the camera (Camera
+          Owner), this tag should be simple, with no special characters and no
+          spaces (for example CAM01) and save the page.</para>
+
+          <para>Once done, click on "Assign", the tag will then be inserted
+          into the camera (using "owner" setting).</para>
+
+          <para>You need to do the same manipulation on all connected
+          cameras.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>USB webcams</title>
+
+        <para>You can find all details about USB webcams in "Connected
+        Devices" section.</para>
+
+        <figure>
+          <title>USB webcam configuration</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.webcam.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <section>
+          <title>native webcam resolution</title>
+
+          <para>Mention the USB webcam native resolution as detected by the
+          system in "Connected Devices" section.</para>
+        </section>
+
+        <section>
+          <title>Compression</title>
+
+          <para>Mention the compression level (between 50 and 100), 100 is the
+          best possible value.</para>
+        </section>
+
+        <section>
+          <title>Device</title>
+
+          <para>Select the USB webcam device.</para>
+        </section>
+
+        <section>
+          <title>Advanced configuration</title>
+
+          <para>Those settings will let you adjust specific camera settings,
+          if might be required for some cameras.</para>
+
+          <para>Values are using either "%" or numerical values. Negative
+          values are not accepted.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>IP Camera</title>
+
+        <para>This section contains settings related to processing pictures
+        coming from an IP camera or another Webcampak source.</para>
+
+        <para>This section is useful to create cascaded sources in order to
+        apply multiple different manipulations to one single picture by moving
+        it from sources to sources.</para>
+
+        <figure>
+          <title>Configuration of an IP camera or Webcampak source</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.ipcam.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>IP camera or other Webcampak sources must be configured to send
+        pictures, via FTP, to /tmp/ directory of the source.</para>
+
+        <para>Source FTP account can be configured in the "Advanced" section
+        of each source.</para>
+
+        <section>
+          <title>Limit hotlink processing to one picture per rotation</title>
+
+          <para>When activated, Webcampak will only create a hotlink for the
+          last captured picture uploaded to /tmp/ directory.</para>
+
+          <para>This option is interesting when capture rate on the current
+          source is slower than capture rate of the source sending the
+          picture.</para>
+        </section>
+
+        <section>
+          <title>Take actions if no new pictures are available in /tmp/
+          directory</title>
+
+          <para>There might be situations where no pictures are available in
+          /tmp/ directory (for example in case of network issue), in such
+          situation and if this option is selected an email will be sent and
+          an error hotlink will get created.</para>
+
+          <para>When using pictures uploaded by an IP camera or another
+          Webcampak, no pictures is /tmp/ directory does not necessarily means
+          that no pictures has been taken. A network issue could have delayed
+          transmission of pictures, and you could decide not to generate
+          errors in such a situation.</para>
+        </section>
+
+        <section>
+          <title>Source Type</title>
+
+          <para>This option is useful to define how to assign a date to a
+          picture, two options are available:</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Other Webcampak: in this situation, picture filename is
+              used as a date and pictures are located in a different directory
+              on a daily basis.</para>
+            </listitem>
+
+            <listitem>
+              <para>All kind of source: picture date is based upon the time
+              the picture has been uploaded to /tmp/ directory. This situation
+              is less accurate.</para>
+            </listitem>
+          </itemizedlist>
+        </section>
+      </section>
+
+      <section>
+        <title>Internet Picture or Video Streaming</title>
+
+        <para>Webcampak can capture pictures coming from Internet or from a
+        video stream. This section also makes possible to capture from another
+        Webcampak or another source from the same Webcampak.</para>
+
+        <figure>
+          <title>URL configuration for the capture</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.webpic.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Simply mention the URL of the picture of RTSP stream.</para>
+      </section>
+
+      <section>
+        <title>Phidget sensor</title>
+
+        <para>This is a very specific situation and will not be detailed (as
+        of yet) in this document.</para>
+
+        <figure>
+          <title>Configuration of Phidget sensors</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.capture.phidget.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+    </section>
+
+    <section>
+      <title>Photos</title>
+
+      <para>Previous section of this document contains picture acquisition.
+      This picture is not ready to be manipulated and manipulations are
+      details in "Photos" section of the administration panel.</para>
+
+      <para>Manipulations are applied in a defined sequence, as displayed in
+      this document and the administration panel (for example, watermark is
+      applied over a cropped picture, legend is applied over a Watermark,
+      ...)</para>
+
+      <para>All sizes and dimensions in this document are in pixels (px).
+      Source location (with the exception of legend) is always the top left
+      corner of the picture.</para>
+
+      <section>
+        <title>Crop</title>
+
+        <figure>
+          <title>Crop the picture</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.crop.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Once captured, you can crop the picture to keep only interesting
+        elements. This option let Webcampak fir various situations:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>"simple" crop: only keep a specific portion of a
+            picture.</para>
+          </listitem>
+
+          <listitem>
+            <para>"wide" crop: change picture format (from 4/3 to 16/9 for
+            example).</para>
+          </listitem>
+
+          <listitem>
+            <para>Zoom: this option can also be used to zoom inside a picture,
+            by using multiple sources you can zoom in multiple areas of the
+            same picture.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>To crop your picture you need to detail two parameters:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Size of the area: in pixels, included inside the source
+            picture.</para>
+          </listitem>
+
+          <listitem>
+            <para>Location: in pixels, from the top left corner.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>We recommend to use a picture manipulation tool (The Gimp,
+        Photostop, Pain.Net, ...) to try various situations and identify
+        precisely coordinates.</para>
+
+        <para>Cropping pictures on the fly allow your viewers to focus on a
+        defined area and ease video creation, if you use this option on very
+        high resolution pictures you can extract multiple zones from a single
+        picture.</para>
+      </section>
+
+      <section>
+        <title>Watermark</title>
+
+        <figure>
+          <title>Add a watermark</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.watermark.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>A watermark is an image (a logo for example) inserted on top of
+        a captured picture. This image must be "PNG" and have an "Alpha"
+        channel (transparency).</para>
+
+        <para>To add a watermark, log into Webcampak global FTP account
+        (wpresources) and copy the image to /watermark/ directory.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Watermark file: select the file you would like to
+            insert.</para>
+          </listitem>
+
+          <listitem>
+            <para>Transparency: define transparency of the watermark file when
+            inserted on top of the picture.</para>
+          </listitem>
+
+          <listitem>
+            <para>Horizontal coordinate (X): define location of the watermark
+            on X axis starting from left of the picture.</para>
+          </listitem>
+
+          <listitem>
+            <para>Vertical coordinate (X): define location of the watermark on
+            Y axis starting from top of the picture.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>If you plan to generate a timelapse at the end of your project
+        and don't want to "pollute" your pictures with a watermark you can use
+        cascaded sources. Watermark can also be added during video creation
+        process (this is less efficient as all pictures will be processed
+        together, it will slightly increase video creation time).</para>
+      </section>
+
+      <section>
+        <title>Insert test</title>
+
+        <figure>
+          <title>Insert text</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.legend.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This option will insert text inside the picture (and on top of
+        watermark if any), the following settings are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Text: Text to be inserted, a date can be added next to it
+            (if you select a date, think about adding a separation, such as a
+            blank space).</para>
+          </listitem>
+
+          <listitem>
+            <para>Date format: If you want to add a date, select its
+            layout.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Define text settings, such as font and location:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Font size: size in pixels.</para>
+          </listitem>
+
+          <listitem>
+            <para>Text location: select reference location (coordinates will
+            be calculated from this location).</para>
+          </listitem>
+
+          <listitem>
+            <para>Font: select the font.</para>
+          </listitem>
+
+          <listitem>
+            <para>Shadow color: to make the text easier to read you can add a
+            shadow. Shadow is usually black or white.</para>
+          </listitem>
+
+          <listitem>
+            <para>Shadow coordinates: in pixels from text location. It is
+            advised to move by 1 to 3 pixels compared to text
+            coordinates.</para>
+          </listitem>
+
+          <listitem>
+            <para>Text color: color of the text</para>
+          </listitem>
+
+          <listitem>
+            <para>Text coordinates: in pixels from text location.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Coordinates are defined in pixels from reference point (text
+        location), for example, if you want your text to be located 20 pixels
+        from left of the picture and 40 pixels from the bottom of the picture
+        you will choose the following settings:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Font coordinates: 24,40</para>
+          </listitem>
+
+          <listitem>
+            <para>Shadow coordinates: 26,40</para>
+          </listitem>
+
+          <listitem>
+            <para>Text location: Down left (southwest)</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Hotlink pictures</title>
+
+        <para>Static pictures (or hotlink) are pictures with a consistent name
+        with content being updated regularly. This is let a webmaster insert a
+        live picture, generated by Webcampak, on its website.</para>
+
+        <figure>
+          <title>Static pictures configuration</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.hotlink.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>For example, if you want to upload a static image on your
+        website (http://www.myconstructioncompany.com) in /webcam/ directory,
+        you will be able to use, on your website,
+        http://www.myconstructioncompany.com/webcam/webcam-1024x768.jpg to
+        link to the latest captured picture. This file will be updated
+        automatically and regularly by Webcampak.</para>
+
+        <para>Four different sizes are available to match various constraints
+        (mobile, low bandwidth, high quality, ...).</para>
+      </section>
+
+      <section>
+        <title>Archives</title>
+
+        <para>This module define mechanisms to store and purge pictures
+        automatically on Webcampak hard disk.</para>
+
+        <figure>
+          <title>Archives</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.archive.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>The following settings are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Save pictures in the archives: this option is a requirement
+            to be able to generate videos. If not selected no pictures will be
+            saved.</para>
+          </listitem>
+
+          <listitem>
+            <para>Resize pictures before saving into archives: we would only
+            recommend this option if you are using a very high definition
+            camera on a Webcampak with hard disk space limitations. It is
+            usually advised to save pictures in the highest possible
+            definition.</para>
+          </listitem>
+
+          <listitem>
+            <para>New size (for example: 1024x768): this is the target
+            resolution.</para>
+          </listitem>
+
+          <listitem>
+            <para>Pictures minimum size: if a picture size is below this value
+            it will not be processed and the system will consider capture
+            failed. This size must be in bytes.</para>
+          </listitem>
+
+          <listitem>
+            <para>Delete pictures after: mention a number of days during which
+            pictures will be kept in archives. Over this delay, pictures will
+            be deleted automatically. Mention "0" for indefinitely.</para>
+          </listitem>
+
+          <listitem>
+            <para>Maximum archives size: maximum size of all pictures from the
+            source on hard disk. If over this value, oldest pictures will be
+            deleted (full day deleted at once). Mention "0" for
+            indefinitely.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Send pictures via FTP</title>
+
+        <figure>
+          <title>Send pictures via FTP</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.photo.ftp.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Once pictures are processed they can be send, via FTP, to a
+        remote server (or another source from the same Webcampak). FTP servers
+        are configured via a dedicated section mentioned earlier in this
+        documentation.</para>
+
+        <para>At the end of the transfer, Webcampak will check the size of the
+        picture on the remote server, if local size is different than remote
+        size, transfer will be considered failed and the system can try to
+        send the picture again (Number of retry in case of issue).</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Videos</title>
+
+      <para>Each day, at 1:00 am, Webcampak will start creating a daily video
+      of the previous day (if this option is activated).</para>
+
+      <section>
+        <title>Daily video creation</title>
+
+        <figure>
+          <title>Daily video</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.creation.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>For each format you can :</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Create a MP4 video file to be inserted into a web page or
+            opened with mobile devices,</para>
+          </listitem>
+
+          <listitem>
+            <para>Define minimum size of the video, under this value, videos
+            will be deleted.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Webcampak is compatible with H.264 video codecs, with a set of
+        pre-defined HD-compliant settings.</para>
+
+        <para><tip>
+            <para>Take in consideration that HD TV usually display pictures in
+            a resolution different from the one captured by DSLR cameras. At
+            some point it will be necessary to modify pictures to fit those
+            resolutions, we decided to do this by cutting the picture on the
+            top and/or bottom. Take this in consideration if you want to add
+            text in your video.</para>
+          </tip></para>
+
+        <para>We usually recommend to test those settings via "Custom Videos"
+        section, over a short interval (a few minutes/hours). Creation of the
+        video will be fast and it will give you an opportunity to preview the
+        result without waiting until 1:00 am.</para>
+
+        <para>The following codecs/formats are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>H. 264 (1080p): HD, highest quality possible on consumer
+            market.</para>
+          </listitem>
+
+          <listitem>
+            <para>H. 264 (720p): HD, high quality.</para>
+          </listitem>
+
+          <listitem>
+            <para>H. 264 (480p): DVD-like quality.</para>
+          </listitem>
+
+          <listitem>
+            <para>H. 264 (Custom): H.264, custom settings.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Processing speed will really depends of each format, higher is
+        the quality, longer will be the creation and bigger will be the video
+        file.</para>
+
+        <para>If your camera take very high definition pictures, H. 264 custom
+        will let you generate very high quality videos (such as 4K).</para>
+
+        <para>Choosing FPS (frame per seconds) of your video will have a
+        strong impact on the output. If you use high FPS, your video will look
+        smoother but the video will be shorter. On the other hand, if you use
+        a lower FPS, viewers will have more time to look at details.</para>
+
+        <para>The table below give a few video length sample depending of a
+        few settings :</para>
+
+        <table>
+          <title>Video length comparison</title>
+
+          <tgroup cols="5">
+            <thead>
+              <row>
+                <entry align="center">Capture length</entry>
+
+                <entry align="center">Capture frequency</entry>
+
+                <entry align="center">Number of pictures</entry>
+
+                <entry align="center">FPS</entry>
+
+                <entry align="center">Video length</entry>
+              </row>
+            </thead>
+
+            <tbody>
+              <row>
+                <entry>24h</entry>
+
+                <entry>5mn</entry>
+
+                <entry>288</entry>
+
+                <entry>10</entry>
+
+                <entry>28s</entry>
+              </row>
+
+              <row>
+                <entry>24h</entry>
+
+                <entry>5mn</entry>
+
+                <entry>288</entry>
+
+                <entry>24</entry>
+
+                <entry>12s</entry>
+              </row>
+
+              <row>
+                <entry>24h</entry>
+
+                <entry>1mn</entry>
+
+                <entry>1440</entry>
+
+                <entry>10</entry>
+
+                <entry>2mn40</entry>
+              </row>
+
+              <row>
+                <entry>24h</entry>
+
+                <entry>1mn</entry>
+
+                <entry>1440</entry>
+
+                <entry>24</entry>
+
+                <entry>1mn</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+
+      <section>
+        <title>Advances parameters - video compression</title>
+
+        <figure>
+          <title>Advanced settings</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.codecs.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>As you can see, some configuration elements are static to ensure
+        conformity with HD rules but it remains possible to adjust a few
+        settings (crop, FPS).</para>
+
+        <para>"H.264 Custom" let you choose the bitrate, resolution and crop
+        areas. Those settings can be complex to configure and are explained in
+        the following sections of this document.</para>
+
+        <para>As explained previously, during video creation we will convert
+        pictures with a 4/3 like format to a video with a 16/9 like format but
+        we don't want to stretch/alter the picture.</para>
+
+        <section>
+          <title>Example 1: Cropping to 1080p</title>
+
+          <para>Let's take a simple example: we want to generate a 1080p
+          video, this gives us a resolution of 1920x1080. Our 18Mpix camera
+          take pictures with a 3904x2807 resolution (after a first
+          crop)</para>
+
+          <para>Webcampak will resize the picture based upon X axis and will
+          keep picture ratio, as a result we end up with a 1920x1380 picture
+          (1920 x 2807 / 3904 = 1380).</para>
+
+          <para/>
+
+          <figure>
+            <title>Example 1: source picture and 1080p area, cropping
+            1920:1080:0:0</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example1.full.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>If we use a cropping value of 1920:1080:0:0, our video will
+          only focus on the top of the picture as displayed above.</para>
+
+          <para>If we want to focus on buildings, we can crop on Y axis and
+          use the following value: 1920:1080:0:300</para>
+
+          <figure>
+            <title>Example 1: source picture and 1080p area, cropping
+            1920:1080:0:300</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example2.full.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>If we want to center the video, we can crop on Y axis and use
+          the following value: 1920:1080:0:150</para>
+
+          <figure>
+            <title>Example 1: source picture and 1080p area, cropping
+            1920:1080:0:150</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example3.full.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </section>
+
+        <section>
+          <title>Example 2: H.264 Custom, advanced modification</title>
+
+          <para>Example 1 details very simple manipulations and will be
+          similar to 1080p, 720p and 480p formats.</para>
+
+          <para>By using H.264 Custom you can perform much advanced
+          manipulations, and for example, zoom on a specific area of the
+          picture.</para>
+
+          <para>Just consider you want to zoom on the crane on the right of
+          the picture. Your first action will be to identify the area to focus
+          on, this area must have the same ratio than target video resolution
+          (to ensure you do not stretch the picture).</para>
+
+          <para>Let's take an area of 1920x1080 pixels, located at X:1824 et
+          Y:1280 from origin point (top left corner of the picture</para>
+
+          <figure>
+            <title>Example 2: 3904x2807 1920:1080:1824:1280</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example6.full.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Custom video will be created using only the selected
+          part.</para>
+
+          <figure>
+            <title>Example 2: result</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example7.full.jpg"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>This solution brings adaptability to Webcampak but is also
+          complex. Identical results can be obtained using "Post-Prod. Vids."
+          menu by applying modification on source pictures.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>Insert a watermark</title>
+
+        <figure>
+          <title>Insert a watermark</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.watermark.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>You can add a watermark into your video, this watermark will be
+        added to the raw picture before any other modification configured on
+        this page.</para>
+
+        <para>Please refer to "Photos" section of this document for more
+        details.</para>
+      </section>
+
+      <section>
+        <title>Advanced Parameters - Filter similar pictures</title>
+
+        <figure>
+          <title>Filter similar pictures</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.filter.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This feature will remove similar pictures (i.e. if nothing has
+        changed on a building site for example).</para>
+
+        <para>Changes such as luminosity will not be taken in consideration by
+        this option.</para>
+
+        <section>
+          <title>Add a mask</title>
+
+          <para>In most situations, captured pictures include external
+          elements (such as a road with cars passing by), we added the ability
+          to mask those areas in order to filter only a specific area of the
+          picture.</para>
+
+          <para>To add a mask, create a "PNG" picture with an Alpha channel
+          (transparency) having the same size than your captured picture. Add
+          color on top of all areas you don't want to be taken in
+          consideration by the filter.</para>
+
+          <para>Upload the mask to /watermark/ directory of the Webcampak
+          using global FTP account (wpresources).</para>
+
+          <para>You can find an example of a mask creation at the end of this
+          document.</para>
+        </section>
+
+        <section>
+          <title>Modifications threshold</title>
+
+          <para>Mention modification threshold between pictures. This setting
+          is difficult to define, it is best to make a few tests to identify
+          best value.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>Audio track</title>
+
+        <figure>
+          <title>Audio track</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.audio.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Webcampak let you add an audio track to your videos.</para>
+
+        <para>To add an audio track, login into global FTP account
+        (wpresources) and copy MP3 files to /audio/ directory. This directory
+        is shared between all sources.</para>
+
+        <para>MP3 filenames must only contain regular characters without blank
+        space.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Add an audio track: select this option to add an audio
+            track.</para>
+          </listitem>
+
+          <listitem>
+            <para>Audio file: select the file to be inserted.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Webcampak is compliant with playlist upon some conditions.
+        Create a "playlist.m3u" file, this file must contain a list of MP3
+        files (one file per line)</para>
+
+        <para>Example of a "playlist.m3u" file</para>
+
+        <screen>01-Yellow.submarine.mp3
+02-Beat.it.mp3</screen>
+
+        <para>Upload all files (M3U and corresponding MP3) via FTP to /audio/
+        directory.</para>
+
+        <para>During creation of the video, Webcampak will create a
+        playlist.mp3 file, you can use this file for other videos and even
+        rename it for later use.</para>
+      </section>
+
+      <section>
+        <title>Advanced parameters - Pre-processing manipulations</title>
+
+        <figure>
+          <title>Pre-processing manipulations</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.preprocess.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Please refer to previous portions of this document for more
+        details about how to insert text.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Resize: It might be necessary to resize pictures before
+            processing (especially if using 18 or 21 mpix cameras) as the
+            video core is not natively compatible with very high resolution
+            sources.</para>
+          </listitem>
+
+          <listitem>
+            <para>Visual effect (test only): add an effect to your pictures
+            (such as tilt shift), this is only provided for testing
+            purposes.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Insert Phidget measurements</title>
+
+        <figure>
+          <title>Insert Phidget measurements</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.phidget.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This is a very specific situation and will not be detailed (as
+        of yet) in this document.</para>
+      </section>
+
+      <section>
+        <title>Youtube upload</title>
+
+        <figure>
+          <title>Youtube upload</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.youtube.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Once video has been created you can send it to Youtube
+        automatically.</para>
+
+        <para>In order for Youtube upload to be operational an authentication
+        key must be stored on Webcampak using your Youtube identification
+        details. This manipulation must be done manually using SSH.</para>
+
+        <para>If multiple formats are created, only the one with the highest
+        quality will be uploaded to Youtube (Youtube will then create smaller
+        versions).</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Activate Youtube upload: activate (or not) upload to
+            Youtube.</para>
+          </listitem>
+
+          <listitem>
+            <para>Video Category: uploaded videos are assigned to a
+            category.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Send videos via FTP</title>
+
+        <figure>
+          <title>Send videos via FTP</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.ftp.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This section let you send videos to a remote FTP server.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Custom Videos</title>
+
+      <para>A custom video is a video created, on demand, between a
+      user-specified times.</para>
+
+      <para>Webcampak start custom videos creation tasks every 2mn so there
+      might be a slight delay between the time you request creation and the
+      time creation actually starts (not more than 2mn anyway).</para>
+
+      <section>
+        <title>Custom video creation</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Advances parameters - video compression</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Advanced parameters - Pre-processing manipulations</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Youtube upload</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Insert a watermark</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Insert Phidget measurements</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Advanced Parameters - Filter similar pictures</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Create a custom video</title>
+
+        <figure>
+          <title>Create a custom video</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videocustom.create.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This section let you configure settings directly related to
+        video creation (which could take hours if creation span multiple
+        months).</para>
+
+        <para>Be careful with disk usage, Webcampak will copy all pictures to
+        a temporary directory to apply modifications, as a result you will
+        need free disk space corresponding to at least 2x the selected
+        interval.</para>
+
+        <para>Following settings are available:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Filename (no spaces): Choose the name for your video file,
+            if an identical name already exists creation will be
+            aborted.</para>
+          </listitem>
+
+          <listitem>
+            <para>From: Select start date and hour.</para>
+          </listitem>
+
+          <listitem>
+            <para>To: Select end date and hour.</para>
+          </listitem>
+
+          <listitem>
+            <para>Keep pictures between: only use pictures between a specific
+            timeframe (i.e. between 8:00am and 7:00pm) to create video.</para>
+          </listitem>
+
+          <listitem>
+            <para>Minimum time betzeen two pictures: when preparing your
+            video, Webcampak will check time between two captures, if lower
+            than this value, the picture will be discarded.</para>
+          </listitem>
+
+          <listitem>
+            <para>Insert an audio track: to add an audio track to your
+            video</para>
+          </listitem>
+
+          <listitem>
+            <para>Audio file: select audio file to be added.</para>
+          </listitem>
+
+          <listitem>
+            <para>Email alert: select this option to receive an email once
+            video creation is completed.</para>
+          </listitem>
+
+          <listitem>
+            <para>Start video creation: you can choose to start video creation
+            as soon as possible or between 4h00 and 5h00 in the
+            morning.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+    </section>
+
+    <section>
+      <title>Port-Prod. Videos.</title>
+
+      <para>This section let you batch process pictures, we created it for
+      multiple reasons:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Reduce picture size: by applying cropping/resizing pictures in
+          batch it reduce the overall size of pictures to be inserted into a
+          video manipulation software.</para>
+        </listitem>
+
+        <listitem>
+          <para>Advanced picture selection: by copying pictures to a dedicated
+          source you can easily delete sequences by still keeping original
+          pictures.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>This section has a lot of similarities with "Videos" and "Custom
+      Videos" sections but with much more functionalities. Once processing is
+      completed you can use "Custom Videos" to generate a video of the target
+      source.</para>
+
+      <para>By using various manipulations simultaneously you can achieve
+      specific effects.</para>
+
+      <section>
+        <title>Advanced Parameters - Filter similar pictures</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Zone selection within source picture</title>
+
+        <para>This module give you the ability to crop pictures.</para>
+
+        <figure>
+          <title>Picture crop</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.select.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>To avoid any deformation, always keep the same ratio during all
+        your manipulations.</para>
+
+        <para>This module is interesting to zoom on specific parts of the
+        picture. You can for example display a portion at 200% of its original
+        capture.</para>
+
+        <para>For example is you crop a 1280x720 zone and configure your final
+        resolution to be 1920x1080, Webcampak will automatically resize your
+        picture to 1920x1080, resulting in a zoom.</para>
+      </section>
+
+      <section>
+        <title>Insert a tracking shot transition</title>
+
+        <para>This module let you create a transition effect in your
+        images.</para>
+
+        <figure>
+          <title>Insert a tracking shot transition</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.travel.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>You can achieve two effects:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Create a transition effect (move from one side of the
+            picture to another).</para>
+          </listitem>
+
+          <listitem>
+            <para>Create a progressive zoom effect.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>This effect will apply on the whole selected interval. Webcampak
+        will calculate the number of shots to modify and apply the effect
+        progressively to all pictures.</para>
+      </section>
+
+      <section>
+        <title>Target video size</title>
+
+        <para>One pictures have been manipulated, the idea is to resize them
+        to their definitive resolution.</para>
+
+        <figure>
+          <title>Target video size</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.resize.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Add an effect (experimental)</title>
+
+        <figure>
+          <title>Add an effect</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.effect.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This feature is provided for testing purposes only, this will
+        let you apply an effect (such as tiltshift) on all your
+        pictures.</para>
+      </section>
+
+      <section>
+        <title>Insert a thumbnail</title>
+
+        <figure>
+          <title>Insert a thumbnail</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.thumb.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>This module let you insert a thumbnail on top of your picture.
+        Objective is to choose a zone in the source picture (similar to
+        cropping feature) and copy it inside the final picture.</para>
+
+        <para>You can achieve two effects:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Insert a thumbnail displaying a "zoomed" via of a particular
+            area.</para>
+          </listitem>
+
+          <listitem>
+            <para>Insert a thumbnail displaying the global picture in a
+            "zoomed" sequence.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>The option "Insert a border around thumbnail" add a border to
+        create a clear difference between the thumbnail and the rest of the
+        picture.</para>
+      </section>
+
+      <section>
+        <title>Insert a watermark</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Insert test</title>
+
+        <para>Please refer to "Videos" section of this document.</para>
+      </section>
+
+      <section>
+        <title>Prepare post-prod pictures</title>
+
+        <para>This module is really similar to "Custom Videos".</para>
+
+        <figure>
+          <title>Prepare post-prod pictures</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.videospost.create.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>We strongly advise to move pictures to a dedicated source
+        specifically created to host your modified pictures to ensure no
+        modifications will be done to source pictures.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Logs</title>
+
+      <para>This section will display all major events related to source
+      processing on Webcampak.</para>
+
+      <para>Following logs are available:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Picture capture and processing</para>
+        </listitem>
+
+        <listitem>
+          <para>Daily video</para>
+        </listitem>
+
+        <listitem>
+          <para>Custom video</para>
+        </listitem>
+
+        <listitem>
+          <para>Post-Prod video</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>We strongly advise to read logs in case of errors or just to
+      ensure that everything is working as expected..</para>
+
+      <section>
+        <title>Long lasting debug</title>
+
+        <para>By default logs are cleared at the beginning of each rotation
+        (for each picture capture, every 2 minutes for video creation and each
+        day at 1:00 am for daily videos).</para>
+
+        <para>If you enable this option, logs will only be cleared if they
+        reach a size bigger than 500KB.</para>
+      </section>
+
+      <section>
+        <title>Understand logs</title>
+
+        <para>Logs details all major actions performed by Webcampak during its
+        operations.</para>
+
+        <screen>11 May 2012 - 11:54:11 - gphoto(1-1267): Imagemagick: Crop: Zone size: 3904x2807 Position: x: 726 y: 7</screen>
+
+        <para>A line of log is compose by::</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>11 May 2012 - 11:54:11 : Date of the action</para>
+          </listitem>
+
+          <listitem>
+            <para>gphoto: Kind of source (gphoto, webcam, ipcam, webfile,
+            rtsp, phidget)</para>
+          </listitem>
+
+          <listitem>
+            <para>(1-1267): source ID - System process #</para>
+          </listitem>
+
+          <listitem>
+            <para>Imagemagick: Action type or module</para>
+          </listitem>
+
+          <listitem>
+            <para>Crop: Zone size: 3904x2807 Position: x: 726 y: 7 : Details
+            about the action</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Calculate execution times</title>
+
+        <para>Logs are also a good way to gather details about execution times
+        of some Webcampak components.</para>
+
+        <para>For example:</para>
+
+        <screen>11 May 2012 - 11:54:04 - gphoto(1-1267): Capture: Gphoto: Start Capture
+11 May 2012 - 11:54:11 - gphoto(1-1267): New file is in location /capt0000.jpg on the camera
+Saving file as /home/webcampak/webcampak/sources/source1/tmp/20120511115404.jpg
+Deleting file /capt0000.jpg on the camera
+
+11 May 2012 - 11:54:11 - gphoto(1-1267): Deleting 'capt0000.jpg' from folder '/'...
+
+11 May 2012 - 11:54:11 - gphoto(1-1267): Capture: Check File: Successful</screen>
+
+        <para>We can see on this example that picture capture takes 7 seconds
+        (11:54:11 - 11:54:04), including:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>capture time</para>
+          </listitem>
+
+          <listitem>
+            <para>download picture</para>
+          </listitem>
+
+          <listitem>
+            <para>delete picture from camera</para>
+          </listitem>
+        </itemizedlist>
+
+        <para/>
+
+        <screen>11 May 2012 - 11:54:17 - gphoto(1-1267): FTP: Upload Archive
+11 May 2012 - 11:54:17 - gphoto(1-1267): FTP: Server: s001.webcampak.com Directory:  /tmp/20120511/ Filename: 20120511115404.jpg Active: no Login: source10 
+11 May 2012 - 11:54:20 - gphoto(1-1267): FTP: Creation of  /tmp/20120511/ directory
+11 May 2012 - 11:54:21 - gphoto(1-1267): FTP: Creation of  /tmp/20120511/1336751657.15/ directory
+11 May 2012 - 11:54:21 - gphoto(1-1267): FTP: Transfering file, Try:(1/3)
+11 May 2012 - 11:54:55 - gphoto(1-1267): FTP: STOR  20120511115404.jpg 
+11 May 2012 - 11:54:56 - gphoto(1-1267): FTP: Remote size: 3566523 / Local size: 3566523
+11 May 2012 - 11:54:56 - gphoto(1-1267): FTP: File successfully sent to remote FTP</screen>
+
+        <para>On the above sample we can extract two additional details:
+        transfer time and upload bandwidth.</para>
+
+        <para>The overall picture transfer took 39s (11:54:56 -
+        11:54:17).</para>
+
+        <para>As mentioned in the logs, files are uploaded to a temporary
+        directory and then moved to their definitive place. This way, is
+        transfer is corrupted you will not end up with a partial picture in
+        the system.</para>
+
+        <para>Effective bandwidth can be calculated by dividing picture size
+        by transfer time. In this particular situation, we have 3566523 / 39 =
+        91449 bytes per seconds = 91 KB/s</para>
+
+        <para>It would be advised in this situation not to use a capture rate
+        faster than 39s as the bandwidth will not be sufficient to transfer
+        all picture. It is likely to end up with a saturation of the link, and
+        of the system (after some time)</para>
+
+        <para/>
+
+        <screen>11 May 2012 - 11:54:56 - gphoto(1-1267): DiskManagement: Delete temporary files
+11 May 2012 - 11:54:56 - gphoto(1-1267): Capture: Overall capture time: 52 seconds
+11 May 2012 - 11:54:56 - gphoto(1-1267): -----------------------------------------------------------------------</screen>
+
+        <para>Finally, overall capture time is 52 seconds which should be
+        considered the minimum capture rate in this very situation.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Advanced</title>
+
+      <para>You will find in this section, configuration module for advanced
+      sections.</para>
+
+      <section>
+        <title>Local FTP Server</title>
+
+        <para>Webcampak is equipped with its own internal FTP server, it
+        allows you to connect to a source to download a large amount of
+        pictures or to allow pictures to be transmitted between
+        sources.</para>
+
+        <figure>
+          <title>Configuration of local FTP password</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.advanced.ftp.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Each source has its own FTP account. a password is generated
+        automatically during the installation process.</para>
+
+        <para>The FTP server is inactive until someone has clicked on "Create
+        / Edit user".</para>
+      </section>
+
+      <section>
+        <title>Configure Email alerts</title>
+
+        <figure>
+          <title>Configure e-mail alerts</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.advanced.email.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Webcampak can send an email in case of error, or to let you know
+        when a custom video creation is completed.</para>
+
+        <section>
+          <title>Failure before sending email</title>
+
+          <para>This setting define when an email should be sent in case of
+          repeated errors.</para>
+        </section>
+      </section>
+
+      <section>
+        <title>Phidget configuration for the source</title>
+
+        <figure>
+          <title>Phidget configuration</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.advanced.phidget.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Phidget electronic board allows a DSLR camera to be
+        automatically restarted in case of capture error.</para>
+
+        <para>Specify the number of errors before power-cycling the camera and
+        the port on which the relay is connected.</para>
+
+        <para>You can also create a daily graph of sensor measurement and send
+        this graph to a remote server. This section is not detailed (as of
+        yet) in this documentation.</para>
+      </section>
+
+      <section>
+        <title>Configuration file</title>
+
+        <figure>
+          <title>Configuration file</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.advanced.conf.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>You can export/import configuration files onto the
+        system.</para>
+
+        <para>Be careful, import/export is only available for systems using
+        the same Webcampak version.</para>
+      </section>
+
+      <section>
+        <title>Reset source</title>
+
+        <figure>
+          <title>Reset source</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.sources.advanced.reset.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Using this module you can reset a source by deleting its
+        settings and/or content (pictures and videos).</para>
+
+        <important>
+          <para>Be careful, actions cannot be canceled.</para>
+        </important>
+      </section>
+    </section>
+
+    <section>
+      <title>Manage Pictures</title>
+
+      <para>This section lets you manage pictures and gives you an overview of
+      the number of pictures captured each day.</para>
+    </section>
+
+    <section>
+      <title>Manage Videos</title>
+
+      <para>This section lets you manage videos.</para>
+    </section>
+
+    <section>
+      <title>Browse Pictures</title>
+
+      <para>This section is a link to the viewer interface.</para>
+    </section>
+  </section>
+</chapter>

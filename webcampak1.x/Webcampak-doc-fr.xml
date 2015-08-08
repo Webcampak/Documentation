@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<book>
+  <bookinfo>
+    <title>Guide d'utilisation Webcampak</title>
+
+    <author>
+      <firstname>F.</firstname>
+
+      <surname>Gerthoffert</surname>
+
+      <affiliation>
+        <orgname>contact@webcampak.com</orgname>
+      </affiliation>
+    </author>
+
+    <pubdate>Mai 2012</pubdate>
+
+    <releaseinfo>Version en Anglais / Document in English :
+    http://www.webcampak.com/en/doc/</releaseinfo>
+  </bookinfo>
+
+  <xi:include href="docbook/overview/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/installation/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/firststeps/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/viewerpanel/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/adminpanel/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="docbook/examples/chapter-fr.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+</book>

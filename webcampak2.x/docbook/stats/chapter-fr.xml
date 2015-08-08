@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="stats">
+  <title>Statistiques Webcampak</title>
+
+  <para>Webcampak est équippé de sondes collectant à intervalles régulières
+  des statistiques sur le comportement du système. Ces statistiques ont pour
+  objectif de vous permettre de valider le bon fonctionnement du Webcampak et
+  de ses sources.</para>
+
+  <screenshot>
+    <screeninfo>Menu d'accès aux statistiques</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.menu.fr.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <section>
+    <title>Nombre d'images par source et par jour</title>
+
+    <screenshot>
+      <screeninfo>Nombre d'images par source et par jour</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.nbpictures.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cette fenêtre vous permet de valider d'un seul coup d'oeil la
+    stabilité (ou non) de capture de vos sources.</para>
+
+    <para>En positionnant la souris sur un jour particulier vous pouvez
+    consulter le nombre de clichés capturés ce jour.</para>
+  </section>
+
+  <section>
+    <title>Taille des images par source et par jour</title>
+
+    <screenshot>
+      <screeninfo>Taille des images par source et par jour</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.picsize.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cette fenêtre vous permet de consulter l'espace disque occuppé par
+    les images d'une source particulière. En positionnant la souris sur un
+    jour précis vous obtiendrez la valeur exacte.</para>
+  </section>
+
+  <section>
+    <title>Utilisation disque par jour</title>
+
+    <screenshot>
+      <screeninfo>Utilisation disque par jour</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.sourcesize.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cette fenêtre affiche l'évolution de l'usage disque d'une source en
+    fonction du temps. Les informations sont divisées entre les images (en
+    vert) et les vidéos (en bleu), la haut de la courbe correspondant à la
+    somme des deux. </para>
+
+    <para>En cliquant sur la légende vous pouvez n'afficher sur les photos,
+    que les vidéos ou les deux.</para>
+
+    <para>La capture ci-dessus est particulièrement intéressante, elle affiche
+    l'utilisation disque d'une source configurée pour ne conserver que 8 jours
+    de clichés. On constate donc une augmentation de l'espace disque occuppé
+    chaque jour, puis à la fin de la journée, une chute liée à la suppression
+    des clichés capturés 8 jours plus tôt, ce qui explique l'affichage en
+    dents de scie.</para>
+
+    <para>Comme vous pouvez le constater l'espace disque reste donc constant,
+    environ 8go pour 8 jours de stockage.</para>
+
+    <screenshot>
+      <screeninfo>Utilisation disque par jour (sans purge
+      automatique)</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.sourcesize2.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>La capture d'écran ci-dessus montre une évolution "classique" d'une
+    source, qui en une dizaine de jours passe de 48Go à 54 Go d'espace disque
+    total utilisé.</para>
+  </section>
+
+  <section>
+    <title>Statistiques système</title>
+
+    <para>Note: cette fenêtre n'est disponible que pour Webcampak et Webcampak
+    Cloud Max.</para>
+
+    <screenshot>
+      <screeninfo>Statistiques Système</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.system.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cette fenêtre fournie des information globales sur le système sur
+    lequel est installé le Webcampak (bande passante, disque dur, mémoire,
+    CPU).</para>
+  </section>
+</chapter>

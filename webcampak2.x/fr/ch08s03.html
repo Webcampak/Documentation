@@ -1,0 +1,107 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>3. Onglet Vidéos</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Guide d'utilisation Webcampak et Webcampak Cloud"><link rel="up" href="ch08.html" title="Chapter 8. Configuration des sources Webcampak"><link rel="prev" href="ch08s02.html" title="2. Onglet Photos"><link rel="next" href="ch08s04.html" title="4. Onglet Vidéos perso."></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3. Onglet Vidéos</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08s02.html">Prev</a> </td><th width="60%" align="center">Chapter 8. Configuration des sources Webcampak</th><td width="20%" align="right"> <a accesskey="n" href="ch08s04.html">Next</a></td></tr></table><hr></div><div class="section" title="3. Onglet Vidéos"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1168943204994"></a>3. Onglet Vidéos</h2></div></div></div><p>Chaque jour, à 1h00 du matin le Webcampak déclenchera la création
+    d'une vidéo de la journée précédente.</p><p>Cet onglet permet de configurer la création de cette source.</p><div class="section" title="3.1. Créations de vidéos journalières"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205007"></a>3.1. Créations de vidéos journalières</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.config.fr.png"></div></div><p>Pour chaque format vous avez la possibilité de créer une vidéo web
+      (MP4) en vue de l'intégrer dans une page web ou sur terminaux
+      mobiles.</p><p>Les formats les plus courant sont de la famille H.264. Webcampak
+      permet de compresser les vidéos dans des résolutions standardisées, pour
+      un affichage sur des téléviseurs Haute Définition (HD).</p><div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Tip</h3><p>Veuillez noter que les téléviseurs affichent habituellement des
+        images dans un format différent du format de capture des appareils
+        photos (proche du 4/3 habituellement). La conversion implique une
+        découpe dans l'image ou l'apparition de bandes noires: par défaut nous
+        avons décidé de traduire cette effet par la suppression de bandes en
+        haut et en bas de l'image. Gardez cet élément à l'esprit pour le
+        positionnement de la légende qui peut se révéler un peu plus
+        délicate.</p></div><p>N'hésitez pas à réaliser des essais en créant des vidéos
+      personnalisées courtes de manière à identifier le meilleur paramètre
+      pour votre configuration.</p><p>Les formats vidéos suivant sont proposés:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>H. 264 (1080p): Format HD, affichage de qualité
+          maximale.</p></li><li class="listitem"><p>H. 264 (720p): Format HD, affichage de très bonne
+          qualité.</p></li><li class="listitem"><p>H. 264 (480p): Qualité similaire DVD.</p></li><li class="listitem"><p>H. 264 (Personnalisé): Compression H.264, résolution
+          personnalisable.</p></li></ul></div><p>La vitesse de compression est différente pour chaque format : plus
+      la qualité est élevée, plus la génération de vidéo sera longue et la
+      place occupée importante.</p><p>Le choix du nombre de FPS (Images Par Secondes ou Frame Per
+      Seconds) dépend de nombreux éléments dont votre fréquence de capture et
+      du type de rendu souhaité. Plus cette valeur est élevée, plus vous aurez
+      une impression de fluidité, mais plus la vidéo sera courte : à vous de
+      trouver le bon compromis.</p><p>A titre d'information, voici une tableau comparatif entre
+      fréquence de capture, fps, et durée :</p><div class="table"><a name="id1168943205104"></a><p class="title"><b>Table 8.1. Comparaison des durées de vidéo</b></p><div class="table-contents"><table summary="Comparaison des durées de vidéo" border="1"><colgroup><col><col><col><col><col></colgroup><thead><tr><th align="center">Durée de capture</th><th align="center">Fréquence de capture</th><th align="center">Nombre total d'images</th><th align="center">FPS</th><th align="center">Durée de vidéo</th></tr></thead><tbody><tr><td>24h</td><td>5mn</td><td>288</td><td>10</td><td>28s</td></tr><tr><td>24h</td><td>5mn</td><td>288</td><td>24</td><td>12s</td></tr><tr><td>24h</td><td>1mn</td><td>1440</td><td>10</td><td>2mn40</td></tr><tr><td>24h</td><td>1mn</td><td>1440</td><td>24</td><td>1mn</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" title="3.2. Réglages vidéo avancés"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205228"></a>3.2. Réglages vidéo avancés</h3></div></div></div><p>Ce bloc vous permet de configurer les paramètres avancés des
+      différents formats vidéo.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.advconfig.fr.png"></div></div><p>Certains éléments de configuration sont figés, de manière à se
+      conformer aux contraintes des formats standardisés (pour une affichage
+      sur TV HD par exemple).</p><p>Vous pouvez ensuite modifier le "bitrate" (ou taux de
+      compression), pour certaines vidéos. Plus ce taux est important,
+      meilleure sera la qualité. Plus le bitrate est élevé, plus l'espace
+      disque occupé par la vidéo augmente.</p><p>Si nécessaire modifiez la résolution.</p><p>La partie la plus "complexe" à modifier réside dans les options de
+      découpe (ou "crop").</p><p>Tel qu'expliqué précédemment, nous cherchons lors du passage d'un
+      format de type 4/3 à un format 16/9ème à supprimer certains éléments de
+      la photo pour ne pas la déformer.</p><div class="section" title="3.2.1. Exemple 1: Découpe pour format 1080p"><div class="titlepage"><div><div><h4 class="title"><a name="id1168943205277"></a>3.2.1. Exemple 1: Découpe pour format 1080p</h4></div></div></div><p>Prenons un exemple concret : nous visons le format vidéo 1080p
+        qui offre une résolution de 1920x1080. Notre appareil photo numérique
+        18 Mpix réalise des clichés, qui après un premier "crop" ont une
+        résolution de 3904x2807.</p><p>Le système va tout d'abord réaliser un redimensionnement de
+        l'image sur l'axe X (1920) tout en conservant les proportions. Ce qui
+        donne une image de 1920x1380 (1920 x 2807 / 3904 = 1380).</p><div class="figure"><a name="id1168943205293"></a><p class="title"><b>Figure 8.3. Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:0</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example1.full.jpg" alt="Exemple 1: image source et zone 1080p, découpe 1920:1080:0:0"></div></div></div><br class="figure-break"><p>Si par défaut nous utilisons la découpe 1920:1080:0:0, notre
+        vidéo ne contiendra que la partie haute de l'image, mais nous
+        souhaitons nous concentrer sur la partie basse de l'image pour que
+        notre vidéo contienne des bâtiments.</p><p>Nous allons donc indiquer au système de réaliser une découpe,
+        sur l'axe Y, à 300px du point d'origine (haut), la découpe sera donc:
+        1920:1080:0:300</p><div class="figure"><a name="id1168943205323"></a><p class="title"><b>Figure 8.4. Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:300</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example2.full.jpg" alt="Exemple 1: image source et zone 1080p, découpe 1920:1080:0:300"></div></div></div><br class="figure-break"><p>Vous souhaitez peut être réaliser un recentrage, en positionnant
+        la zone 1920x1080 au centre de l'image. Dans ce cas la découpe sera :
+        1920:1080:0:150</p><div class="figure"><a name="id1168943205348"></a><p class="title"><b>Figure 8.5. Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:150</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example3.full.jpg" alt="Exemple 1: image source et zone 1080p, découpe 1920:1080:0:150"></div></div></div><br class="figure-break"></div><div class="section" title="3.2.2. Exemple 2: Format personnalisé, modification avancée"><div class="titlepage"><div><div><h4 class="title"><a name="id1168943205369"></a>3.2.2. Exemple 2: Format personnalisé, modification avancée</h4></div></div></div><p>L'exemple 1 permet des manipulations simples et s'appliquera
+        d'une manière similaire pour les formats 1080p, 720p, 480p.</p><p>Le format personnalisé permet par contre de réaliser des
+        manipulations avancées, notamment de zoomer sur une zone précise de
+        l'écran.</p><p>Imaginons que nous souhaitions réaliser une zoom sur la grue
+        située au centre droit de l'image, la première action va consister à
+        identifier la zone à conserver. Cette zone doit avoir le même ratio
+        que la résolution cible (pour ne pas déformer l'image).</p><p>Prenons par exemple une zone de 1920x1080 pixels, situés à
+        X:1824 et Y:1280 par rapport au point d'origine (en haut à gauche de
+        l'image)</p><div class="figure"><a name="id1168943205394"></a><p class="title"><b>Figure 8.6. Exemple 2: 3904x2807 1920:1080:1824:1280</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example6.full.jpg" alt="Exemple 2: 3904x2807 1920:1080:1824:1280"></div></div></div><br class="figure-break"><p>La vidéo sera créée en utilisant exclusivement la zone au centre
+        de l'image.</p><div class="figure"><a name="id1168943205417"></a><p class="title"><b>Figure 8.7. Exemple 2: résultat</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example7.full.jpg" alt="Exemple 2: résultat"></div></div></div><br class="figure-break"><p>Cette solution donne de la souplesse au Webcampak mais le même
+        résultat peut être obtenu en utilisant le menu "Vidéos Post-Prod." ou
+        en modifiant les photos à la volée via le menu "Photos" pour les
+        enregistrer directement dans le format final.</p></div></div><div class="section" title="3.3. Filtrer les images similaires"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205444"></a>3.3. Filtrer les images similaires</h3></div></div></div><p>Cette fonctionnalité permet de ne pas prendre en considérations
+      certains images si il n'y a pas eu de mouvement.</p><p>Les changements de luminosité (passage du jour à la nuit par
+      exemple) n'aura pas d'impact sur cette option</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.filter.fr.png"></div></div><div class="section" title="3.3.1. Ajouter un masque (watermark)"><div class="titlepage"><div><div><h4 class="title"><a name="id1168943205475"></a>3.3.1. Ajouter un masque (watermark)</h4></div></div></div><p>Dans de nombreux cas, l'image capturée contient la scène visée
+        ainsi que des éléments environnants. Il est dans ce cas possible
+        d'ajouter un masque, ce dernier permettra de ne filtrer qu'en cas de
+        changement sur la scène en question.</p><p>Par exemple pour un chantier a proximité d'une route, le
+        mouvement des voitures ne sera pas pris en considération si la route
+        est masquée.</p><p>Pour ajouter un masque, créez une image "png" avec un canal
+        alpha (transparence) de la même taille que votre image capturée.
+        Intégrez un fond de couleur (la couleur importe peu) et ne laissez en
+        transparence que les zones correspondant à votre chantier.</p><p>Le masque est à placer dans le répertoire /resources/watermark/
+        de la source en question.</p></div><div class="section" title="3.3.2. Seuil maximal"><div class="titlepage"><div><div><h4 class="title"><a name="id1168943205502"></a>3.3.2. Seuil maximal</h4></div></div></div><p>Indiquez le seuil, en pourcentage de modification entre deux
+        images (sans le signe %).</p><p>Cette valeur est difficile à définir, nous vous conseillez de
+        réaliser quelques essais pour identifier le seuil correspondant le
+        mieux à votre environnement.</p></div></div><div class="section" title="3.4. Insérer un Watermark"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205518"></a>3.4. Insérer un Watermark</h3></div></div></div><p>Il est possible d'intégrer un watermark à votre vidéo. Reportez
+      vous à la section "Photos" pour plus de détails sur son
+      utilisation.</p><p>Le watermark sera inséré à l'image brute avant toute autre
+      modification configurée sur cette page.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.watermark.fr.png"></div></div></div><div class="section" title="3.5. Manipulation pré-traitement (avancé)"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205550"></a>3.5. Manipulation pré-traitement (avancé)</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.preprocess.fr.png"></div></div><p>Il est possible, avant de réaliser la vidéo, de modifier à la
+      volée les images archivées et d'y appliquer un certain nombre de
+      modifications:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Ajout d'une légende: pour plus de détails référez vous à la
+          partie de ce document traitant de l'ajout de légendes aux
+          photos.</p></li><li class="listitem"><p>Redimensionnement: Pour les appareils photos reflex il peut
+          être nécessaire de redimensionner les images avant leur traitement
+          car le moteur de création de vidéos de supporte pas les résolutions
+          trop importantes pour les images sources.</p></li><li class="listitem"><p>Ajout d'un effet vidéo (expérimental): Proposée à titre
+          expérimental cette fonction permet d'ajouter un effet aux clichés
+          avant la création de la vidéo.</p></li></ul></div></div><div class="section" title="3.6. Ajouter un fichier audio"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205606"></a>3.6. Ajouter un fichier audio</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.audio.fr.png"></div></div><p>Ce bloc vous permet d'ajouter une piste audio aux vidéos que vous
+      créez. Pour ajouter des fichiers audio sur le Webcampak, connectez-vous
+      en FTP et ajoutez des fichiers MP3 dans le répertoire /resources/audio/
+      de la source.</p><p>Attention, les nom de fichier MP3 ne doivent pas contenir d'espace
+      ni de caractères spéciaux.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Ajouter une piste audio: Cochez cette case pour ajouter une
+          piste audio.</p></li><li class="listitem"><p>Fichier Audio: Sélectionnez le fichier audio que vous
+          souhaitez ajouter.</p></li></ul></div><p>Webcampak est compatible avec les playlist sous certaines
+      contraintes.</p><p>Créez un fichier "playlist.m3u", dans ce fichier listez les
+      fichiers MP3 en ne laissant qu'un fichier par ligne.</p><p>Exemple de fichier "playlist.m3u".</p><pre class="screen">01-Yellow.submarine.mp3
+02-Beat.it.mp3</pre><p>Positionnez ensuite via FTP ce fichier ainsi que les fichiers mp3
+      listés dans le répertoire /resources/audio/</p><p>Durant la création de la vidéo, Webcampak créera un fichier
+      playlist.mp3. Libre à vous d'utiliser ce fichier pour de futures vidéos,
+      ce qui évitera de le créer de nouveau.</p></div><div class="section" title="3.7. Envoyer la vidéo vers Youtube"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205683"></a>3.7. Envoyer la vidéo vers Youtube</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.youtube.fr.png"></div></div><p>Une fois la vidéo créée il est possible de l'envoyer
+      automatiquement sur Youtube.</p><p>Pour uploader vers Youtube, une clef d'authentification doit être
+      stockée sur le Webcampak avec vos identifiants de connexion. La vidéo
+      sera associée à votre compte Youtube.</p><p>D'autre part, seule la vidéo disposant de la plus forte qualité
+      sera envoyée vers Youtube qui se chargera automatiquement de créer des
+      versions plus petites.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Activer l'upload vers Youtube: Pour activer (ou non) l'upload
+          vers Youtube.</p></li><li class="listitem"><p>Catégorie Vidéo: Sélectionnez la catégorie dans laquelle sera
+          placée la vidéo.</p></li></ul></div></div><div class="section" title="3.8. Envoyer les vidéos via FTP"><div class="titlepage"><div><div><h3 class="title"><a name="id1168943205738"></a>3.8. Envoyer les vidéos via FTP</h3></div></div></div><p>Ce bloc vous permet de configurer l'envoi de vidéos vers un
+      serveur FTP.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.ftp.fr.png"></div></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch08.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch08s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2. Onglet Photos </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4. Onglet Vidéos perso.</td></tr></table></div></body></html>

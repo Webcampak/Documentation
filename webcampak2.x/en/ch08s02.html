@@ -1,0 +1,72 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>2. Pictures tab</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Webcampak user guide"><link rel="up" href="ch08.html" title="Chapter 8. Webcampak sources configuration"><link rel="prev" href="ch08.html" title="Chapter 8. Webcampak sources configuration"><link rel="next" href="ch08s03.html" title="3. Videos tab"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2. Pictures tab</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08.html">Prev</a> </td><th width="60%" align="center">Chapter 8. Webcampak sources configuration</th><td width="20%" align="right"> <a accesskey="n" href="ch08s03.html">Next</a></td></tr></table><hr></div><div class="section" title="2. Pictures tab"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1170084893556"></a>2. Pictures tab</h2></div></div></div><p>We detailed in the previous tab configuration settings related
+    pictures acquisition. You should now have a captured picture ready to be
+    manipulated.</p><p>Pictures tab is the place where you detail all manipulations to be
+    applied to a picture.</p><p>Various configuration sections are arranged in a specific order,
+    corresponding to the sequence of pictures manipulations. It is key to
+    understand this aspect. For example a picture is first cropped, then a
+    watermark is applied, and finally text can be added on top of the cropped,
+    watermarked, picture.</p><p>When working with pictures coordinates you need to take this aspect
+    in consideration. If you crop your picture, you need to used coordinates
+    relative to the cropped picture.</p><p>All sizes and locations in this document and Webcampak interface are
+    in pixels. With the exception of text, origin point is always the top left
+    corner of the picture.</p><div class="section" title="2.1. Crop picture"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893586"></a>2.1. Crop picture</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.crop.en.png"></div></div><p>Once captured, you can crop the picture to keep only interesting
+      elements. This option let Webcampak fir various situations:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>"simple" crop: only keep a specific portion of a
+          picture.</p></li><li class="listitem"><p>"wide" crop: change picture format (from 4/3 to 16/9 for
+          example).</p></li><li class="listitem"><p>Zoom: this option can also be used to zoom inside a picture,
+          by using multiple sources you can zoom in multiple areas of the same
+          picture.</p></li></ul></div><p>To crop your picture you need to detail two parameters:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Size of the area: in pixels, included inside the source
+          picture.</p></li><li class="listitem"><p>Location: in pixels, from the top left corner.</p></li></ul></div><p>We recommend to use a picture manipulation tool (The Gimp,
+      Photostop, Pain.Net, ...) to try various situations and identify
+      precisely coordinates.</p><p>Cropping pictures on the fly allow your viewers to focus on a
+      defined area and ease video creation, if you use this option on very
+      high resolution pictures you can extract multiple zones from a single
+      picture.</p></div><div class="section" title="2.2. Add a Watermark"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893669"></a>2.2. Add a Watermark</h3></div></div></div><p>A watermark is an image (a logo for example) inserted on top of a
+      captured picture. This image must be "PNG" and have an "Alpha" channel
+      (transparency).</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.watermark.en.png"></div></div><p>To add a watermark, log into Webcampak global FTP account
+      (wpresources) or source FTP account and copy the image to watermark/
+      directory.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Watermark file: select the file you would like to
+          insert.</p></li><li class="listitem"><p>Transparency: define transparency of the watermark file when
+          inserted on top of the picture.</p></li><li class="listitem"><p>Horizontal coordinate (X): define location of the watermark on
+          X axis starting from left of the picture.</p></li><li class="listitem"><p>Vertical coordinate (X): define location of the watermark on Y
+          axis starting from top of the picture.</p></li></ul></div><p>If you plan to generate a timelapse at the end of your project and
+      don't want to "pollute" your pictures with a watermark you can use
+      cascaded sources. Watermark can also be added during video creation
+      process (this is less efficient as all pictures will be processed
+      together, it will slightly increase video creation time).</p></div><div class="section" title="2.3. Insert Text"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893741"></a>2.3. Insert Text</h3></div></div></div><p>This option will insert text inside the picture (and on top of
+      watermark if any), the following settings are available:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Text: Text to be inserted, a date can be added next to it (if
+          you select a date, think about adding a separation, such as a blank
+          space).</p></li><li class="listitem"><p>Date format: If you want to add a date, select its
+          layout.</p></li></ul></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.text.en.png"></div></div><p>Define text settings, such as font and location:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Font size: size in pixels.</p></li><li class="listitem"><p>Text location: select reference location (coordinates will be
+          calculated from this location).</p></li><li class="listitem"><p>Font: select the font.</p></li><li class="listitem"><p>Shadow color: to make the text easier to read you can add a
+          shadow. Shadow is usually black or white.</p></li><li class="listitem"><p>Shadow coordinates: in pixels from text location. It is
+          advised to move by 1 to 3 pixels compared to text
+          coordinates.</p></li><li class="listitem"><p>Legend color: color of the text</p></li><li class="listitem"><p>Legende coordinates: in pixels from text location.</p></li></ul></div><p>Coordinates are defined in pixels from reference point (text
+      location), for example, if you want your text to be located 20 pixels
+      from left of the picture and 40 pixels from the bottom of the picture
+      you will choose the following settings:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Font coordinates: 24,40</p></li><li class="listitem"><p>Shadow coordinates: 26,40</p></li><li class="listitem"><p>Text location: South West</p></li></ul></div></div><div class="section" title="2.4. Static pictures (hotlink)"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893870"></a>2.4. Static pictures (hotlink)</h3></div></div></div><p>Static pictures (or hotlink) are pictures with a consistent name
+      but content being updated regularly. It allows a webmaster to insert a
+      live picture, generated by Webcampak, on its website.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.hotlink.en.png"></div></div><p>For example, if you want to upload a static image on your website
+      (http://www.myconstructioncompany.com) in /webcam/ directory, you will
+      be able to use, on your website,
+      http://www.myconstructioncompany.com/webcam/webcam-1024x768.jpg to link
+      to the latest captured picture. This file will be updated automatically
+      and regularly by Webcampak.</p><p>Four different sizes are available to match various constraints
+      (mobile, low bandwidth, high quality, ...).</p></div><div class="section" title="2.5. Archives"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893910"></a>2.5. Archives</h3></div></div></div><p>This module define mechanisms to store and purge pictures
+      automatically on Webcampak hard disk.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.archives.en.png"></div></div><p>The following settings are available:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Save pictures in the archives: this option is a requirement to
+          be able to generate videos. If not selected no pictures will be
+          saved.</p></li><li class="listitem"><p>Resize pictures before saving into archives: we would only
+          recommend this option if you are using a very high definition camera
+          on a Webcampak with hard disk limitations. It is usually advised to
+          save pictures in the highest possible definition. Either off or
+          definition in WidthxHeight format (i.e. 1024x768)</p></li><li class="listitem"><p>Minimum single picture size: if a picture size is below this
+          value it will not be processed and the system will consider capture
+          failed. This size must be in bytes.</p></li><li class="listitem"><p>Delete pictures after: mention a number of days during which
+          pictures will be kept in archives. Over this delay, pictures will be
+          deleted automatically. "0" means no limit.</p></li><li class="listitem"><p>Maximum archives size: maximum size of all pictures from the
+          source on hard disk. If over this value, oldest pictures will be
+          deleted (full day deleted at once). "0" means no limit.</p></li></ul></div></div><div class="section" title="2.6. Send pictures via FTP"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084893985"></a>2.6. Send pictures via FTP</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.ftp.en.png"></div></div><p>Once pictures are processed they can be send, via FTP, to a remote
+      server (or another source from the same Webcampak). FTP servers are
+      configured via a dedicated tab.</p><p>At the end of the transfer, Webcampak will check the size of the
+      picture on the remote server, if local size is different than remote
+      size, transfer will be considered failed and the system can try to send
+      the picture again (Number of retry in case of issue).</p></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch08.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch08s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 8. Webcampak sources configuration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3. Videos tab</td></tr></table></div></body></html>

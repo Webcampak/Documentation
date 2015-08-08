@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="firststeps">
+  <title>First steps</title>
+
+  <para>Webcampak 2.x is provided with a unified interface for both
+  configuration and visualization.</para>
+
+  <para>A user management system will let you choose which user can access
+  which part of Webcampak.</para>
+
+  <para>To access Webcampak for the first time, open your web browser and
+  connect to: https://Webcampak-IP-address, replacing "Webcampak-IP-address"
+  by the actual Webcampak IP.</para>
+
+  <screenshot>
+    <screeninfo>Webcampak welcome screen</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.login.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>Webcampak welcome screen offers you two options:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Web: will redirect you to the full Webcampak interface. Using this
+      interface you will be able to configure Webcampak and view its content.
+      We strongly recommend you to use one of the three web browsers mentioned
+      in this page. Webcampak is also compatible with Internet Explorer 9 and
+      higher.</para>
+    </listitem>
+
+    <listitem>
+      <para>Mobile: will redirect you to the mobile version of Webcampak.
+      Created for iPad or similar devices this interface can be used to view,
+      comment or send pictures by email.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>As soon as you click on one of those options a login screen will be
+  displayed, default credentials are: root/webcampak</para>
+
+  <para><important>
+      <para>Please change the password as soon as possible.</para>
+    </important></para>
+
+  <section>
+    <title>Webcampak Interface</title>
+
+    <para>Our objective with Webcampak 2.0 was to create an easy and intuitive
+    interface to view pictures &amp; videos and edit Webcampak configuration,
+    all of this from a unified interface.</para>
+
+    <screenshot>
+      <screeninfo>Webcampak default screen</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.interface.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Webcampak default screen contains the following elements:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>A menu on the top left let you access all Webcampak
+        features</para>
+      </listitem>
+
+      <listitem>
+        <para>Two graphs are displayed by default ( graphiques présentant des
+        statistiques (taille des clichés, nombre de clichés) par
+        source.</para>
+      </listitem>
+
+      <listitem>
+        <para>On the left of the screen, two buttons can be used to view
+        pictures and videos.</para>
+      </listitem>
+
+      <listitem>
+        <para>On the right of the screen, two buttons can be used to configure
+        sources and permissions.</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+</chapter>

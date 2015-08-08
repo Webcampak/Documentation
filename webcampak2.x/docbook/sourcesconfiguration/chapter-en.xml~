@@ -1,0 +1,1765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="sourcesconfiguration">
+  <title>Configuration des sources Webcampak</title>
+
+  <para>Veuillez noter que votre Webcampak vous est fourni pré-configuré, vous
+  n'aurez donc pas à réaliser l'ensemble des actions détaillées ici.</para>
+
+  <para>Pour configurer les sources du Webcampak cliquez sur l'icône "Sources"
+  ou rendez-vous dans le menu "Webcampak - Configuration - Sources".</para>
+
+  <screenshot>
+    <screeninfo>Configuration des sources</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.fr.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>Pour débuter la configuration, sélectionnez une source dans la partie
+  gauche de l'image.</para>
+
+  <para>Veuillez noter que chaque changement de source ou chaque changement
+  d'onglet entraîne un rafraîchissement des paramètres, pensez-donc à
+  enregistrer vos modifications avant tout changement de source ou
+  d'onglet.</para>
+
+  <screenshot>
+    <screeninfo>Onglets disponibles</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.tabs.fr.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>Différents onglets sont disponibles pour vous permettre de configurer
+  la source:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Capture: cet onglet regroupe tous les réglages liés à
+      l'acquisition de l'image.</para>
+    </listitem>
+
+    <listitem>
+      <para>Photos: cet onglet regroupe tous les réglages liés aux
+      modifications à apporter à l'image une fois cette dernière
+      acquise.</para>
+    </listitem>
+
+    <listitem>
+      <para>Vidéos: réglages associés à la création de la vidéo
+      journalière.</para>
+    </listitem>
+
+    <listitem>
+      <para>Vidéos perso.: onglet permettant paramétrer et déclencher la
+      création de vidéos personnalisées.</para>
+    </listitem>
+
+    <listitem>
+      <para>Vidéos Post-Prod.: onglet permettant de paramétrer et déclencher
+      des modifications de masse sur les clichés.</para>
+    </listitem>
+
+    <listitem>
+      <para>Avancé: onglet regroupant les réglages avancés (email, ...)</para>
+    </listitem>
+
+    <listitem>
+      <para>Serveurs FTP: onglet permettant de configurer les serveurs FTP
+      utilisables par la source</para>
+    </listitem>
+  </itemizedlist>
+
+  <section>
+    <title>Onglet Capture</title>
+
+    <para>Cette onglet de l'interface permet de configurer tout le processus
+    d'acquisition de l'image.</para>
+
+    <screenshot>
+      <screeninfo>Sélection de l'onglet "Capture"</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Configuration Source</title>
+
+      <para>Ce bloc est une des parties cruciales du Webcampak, il permet de
+      définir la provenance des images et la fréquence à laquelle ces
+      dernières seront capturées.</para>
+
+      <screenshot>
+        <screeninfo>Configuration source</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.config.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <section>
+        <title>Activer source</title>
+
+        <para>Cette option permet de définir si la source est active ou non,
+        une source non active ne sera pas traitée par le système (aussi bien
+        pour la capture de photos que la génération de vidéos).</para>
+      </section>
+
+      <section>
+        <title>Type de source</title>
+
+        <para>Défini la manière dont seront capturés les clichés, à l'heure
+        actuelle 6 méthodes sont disponibles:</para>
+
+        <para>Cette option a été peu testée.</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Appareil Photo USB (Gphoto2 mode PTP)</para>
+
+            <para>Sélectionnez cette option si un appareil photo USB est
+            actuellement physiquement raccordé au Webcampak</para>
+          </listitem>
+        </itemizedlist>
+
+        <itemizedlist>
+          <listitem>
+            <para>Webcam USB</para>
+
+            <para>Sélectionnez cette option si une Webcam USB est actuellement
+            physiquement raccordée au Webcampak</para>
+          </listitem>
+
+          <listitem>
+            <para>Caméra IP (FTP)</para>
+
+            <para>Sélectionnez cette option si une caméra IP, un autre
+            Webcampak, ou une autre source de ce même Webcampak a été
+            configuré pour envoyer régulièrement des clichés dans le
+            répertoire /tmp/ de la source. Le Webcampak analysera a intervalle
+            régulier ce répertoire pour en extraire les clichés.</para>
+          </listitem>
+
+          <listitem>
+            <para>Image Internet (HTTP ou FTP)</para>
+
+            <para>Sélectionnez cette option si vous souhaitez capturer une
+            image via le protocole HTTP ou FTP. Cette image peut être située
+            sur Internet, sur un autre Webcampak ou sur une autre source de ce
+            même Webcampak. Dans le cas d'utilisation d'un autre Webcampak il
+            faudra pointer vers une image Hotlink. Veillez à sélectionner une
+            image disposant d'une résolution suffisante pour vos
+            besoins.</para>
+          </listitem>
+
+          <listitem>
+            <para>Flux Streaming (RTSP)</para>
+
+            <para>Sélectionnez cette option si vous souhaitez capturer une
+            image depuis un flux streaming.</para>
+          </listitem>
+
+          <listitem>
+            <para>Capteur environnemental (Phidget)</para>
+
+            <para>Cette option, un peu à part, ne capture pas d'image mais des
+            mesures en provenance de capteurs Phidget.</para>
+          </listitem>
+        </itemizedlist>
+
+        <para>Les paramètres de ces différents types de sources se configurent
+        plus bas dans cette même page.</para>
+      </section>
+
+      <section>
+        <title>Capturer toutes les</title>
+
+        <para>Sélectionnez ici la fréquence à laquelle vous souhaitez réaliser
+        une capture.</para>
+
+        <para>Nous vous recommandons de ne pas descendre en dessous de 10s,
+        bien que la fréquence de capture dépende fortement de l'appareil et
+        des performances de la machine.</para>
+
+        <para>Soyez aussi prudent vis à vis du temps de pause, notamment pour
+        les captures nocturnes. Si une capture est déclenchée alors qu'une
+        autre capture n'est pas terminée, il y a un risque d'entraîner une
+        instabilité de l'appareil photo.</para>
+
+        <para>En "production" et sur le long terme, nous conseillons de ne pas
+        descendre en dessous de 30s.</para>
+
+        <para>Notez que si vous souhaitez utiliser une fréquence en dessous de
+        1 minute, veillez à sélectionner un multiple de 60 (par exemple: 10s,
+        15s, 20s, 30s).</para>
+      </section>
+
+      <section>
+        <title>Intervalle minimale</title>
+
+        <para>Cette option fait principalement office de sécurité, pour
+        bloquer toute capture à une fréquence plus rapide que cette
+        intervalle.</para>
+      </section>
+
+      <section>
+        <title>Retard de capture</title>
+
+        <para>Cette option permet de retarder de quelques secondes la capture
+        d'une image.</para>
+
+        <para>Par exemple, à un rythme de capture d'une image par minute, la
+        capture se fera à 18h00, 18h01, 18h02, ... Si vous implémentez un
+        retard de capture de 25s, la capture se fera à 18h00"25, 18h01"25,
+        18h02"25, ...</para>
+      </section>
+
+      <section>
+        <title>Date image</title>
+
+        <para>Ce paramètre s'applique à tous les types de sources sauf "Caméra
+        IP (FTP)", il permet de définir la date qui sera utilisée pour
+        l'enregistrement du cliché.</para>
+
+        <para>Il est possible d'utiliser la date de déclenchement du script ou
+        la date de déclenchement de la capture.</para>
+
+        <para>Cette option est principalement intéressante quand utilisée avec
+        l'option "Retard capture", et en particulier avec une source de type
+        "Image Internet".</para>
+
+        <para>Elle se révèle de plus particulièrement utile si l'on souhaite
+        implémenter un changement de rythme de capture au sein d'une cascade
+        de sources.</para>
+
+        <para>Par exemple: Une de vos source (1) capture à une image par
+        minute en vue de la création d'une vidéo timelapse, vous souhaitez
+        mettre à disposition du public une image rafraîchie toutes les 5mn
+        (source 2) sur votre site Internet.</para>
+
+        <para>Vous devez vous assurer que le traitement de la source 1 est
+        terminé avant de déclencher une capture via la source 2, vous
+        implémenterez pour cela un "retard de capture" (30 secondes par
+        exemple).</para>
+
+        <para>En sélectionnant "Déclenchement Script" comme "Date du cliché"
+        votre photo aura la même date et heure que la source 1.</para>
+
+        <para>A l'opposé certains besoins peuvent nécessiter une très forte
+        précision dans la date des clichés, "Déclenchement Capture" utilisera
+        précisément la date à laquelle l'image est capturée.</para>
+      </section>
+
+      <section>
+        <title>Fuseau horaire</title>
+
+        <para>Sélectionnez ici le fuseau horaire sur lequel est situé la
+        source. Ce réglage permettra d'assigner une heure au cliché, cette
+        option se révèle pertinente quand le Webcampak est situé dans un
+        fuseau horaire différent de la source auprès de laquelle il va
+        capturer.</para>
+      </section>
+
+      <section>
+        <title>Debug</title>
+
+        <para>Uniquement en cas de problème de capture, cette option permet de
+        ne pas purger automatiquement les logs de capture.</para>
+      </section>
+
+      <section>
+        <title>Alertes email</title>
+
+        <para>En activant cette option vous recevrez automatiquement un e-mail
+        en cas d'erreur de capture (i.e. appareil photo en panne).</para>
+
+        <para>Les paramètres e-mail se configurent dans l'onglet "Avancé" de
+        la source.</para>
+      </section>
+
+      <section>
+        <title>Bloquer la capture</title>
+
+        <para>Cette option permet de bloquer la capture automatique tout en
+        conservant la source activée.</para>
+
+        <para>Elle est principalement utile si vous souhaitez réaliser de
+        nombreuses captures instantanées.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Calendrier de capture</title>
+
+      <para>Le calendrier des captures permet de sélectionner les jours et
+      heures de la semaine où réaliser des captures.</para>
+
+      <screenshot>
+        <screeninfo>Calendrier de capture</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.calendar.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>En décochant la case "Activer le calendrier" les captures se
+      feront 24h/24 7j/7</para>
+    </section>
+
+    <section>
+      <title>Appareil Compact ou Reflex (Gphoto2 PTP mode)</title>
+
+      <screenshot>
+        <screeninfo>Configuration d'un appareil reflex</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.gphoto.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Les paramètres présents au sein de ce bloc sont principalement
+      utiles dans une situation multi-appareils.</para>
+
+      <para>Pour utiliser plusieurs appareils simultanément, commencez par
+      activer l'option dans le menu Webcampak &gt; Configuration &gt;
+      Général.</para>
+
+      <para>L'option "Port Appareil" n'est utile que si vous souhaitez forcer
+      la capture sur un port particulier.</para>
+
+      <para>Ce paramètre ne sera plus valide en cas de déconnexion de
+      l'appareil ou redémarrage du Webcampak. Sélectionnez de préférence
+      "Automatique".</para>
+
+      <para>Le système doit être en mesure de différencier les deux appareils
+      photos, deux cas de figure se présentent:</para>
+
+      <section>
+        <title>Utilisation d'appareils photos différents</title>
+
+        <para>Si les appareils photo sont différents, la différentiation se
+        fera sur le modèle de l'appareil. Copiez dans la case "Modèle
+        d'appareil" le modèle tel qu'indiqué dans le bloc "Appareils photo
+        connectés" de la section "Périphériques Connectés" de
+        l'interface.</para>
+
+        <para>Par exemple:</para>
+
+        <screen>Model                          Port            
+----------------------------------------------------------
+Canon EOS 550D                 usb:001,002     </screen>
+
+        <para>Indiquez alors "Canon EOS 550D" dans la case.</para>
+
+        <para>Avant chaque capture le Webcampak réalisera une recherche
+        d'appareil photo.</para>
+      </section>
+
+      <section>
+        <title>Utilisation d'appareils photos identiques</title>
+
+        <para>Si les appareils photo sont identique, le Webcampak doit
+        réaliser la différentiation sur un autre paramètre, et dans notre cas
+        sur un "tag" intégré au sein de chacun des appareils.</para>
+
+        <para>Commencez par sélectionner le port USB sur lequel est connecté
+        l'appareil photo via le champs "Port Appareil".</para>
+
+        <para>Renseignez ensuite le champs "'Owner' de l'appareil", indiquez
+        un identifiant simple sans caractères spéciaux et sans espace (par
+        exemple CAM01) puis enregistrez la page. Cliquez ensuite sur
+        "Assigner", l'identifiant que vous avez indiqué sera enregistré dans
+        l'appareil photo (paramètre "owner").</para>
+
+        <para>Pensez à réaliser la même manipulation pour tous les appareils
+        connectés au Webcampak.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Configuration de "Webcam USB"</title>
+
+      <para>Vous pourrez trouver des précisions sur tous les détails relatifs
+      aux webcam USB connectés dans la section "Périphériques
+      Connectés".</para>
+
+      <figure>
+        <title>Configuration d'une webcam USB</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.webcam.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <section>
+        <title>Résolution native de la webcam</title>
+
+        <para>Indiquez ici la résolution native de la webcam tel que détectée
+        par le système.</para>
+      </section>
+
+      <section>
+        <title>Périphérique</title>
+
+        <para>Renseignez ensuite le périphérique de capture correspondant à la
+        webcam.</para>
+      </section>
+
+      <section>
+        <title>Configuration avancée</title>
+
+        <para>Les paramètres avancés permettent d'ajuster certains réglages et
+        d'augmenter la qualité de l'image capturée.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Configuration de "Caméra IP (FTP) / Webcampak)</title>
+
+      <para>Le bloc "Caméra IP" permet de traiter les clichés en provenance
+      d'une caméra IP ou d'un autre Webcampak.</para>
+
+      <para>Ce bloc permet aussi de cascader les sources, mécanisme permettant
+      d'appliquer plusieurs traitements différents à une même image en la
+      faisant transiter de sources en sources.</para>
+
+      <figure>
+        <title>Configuration d'une caméra IP ou d'un autre Webcampak</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.ipcamera.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>Les caméras IP ou Webcampak devront êtres configurées pour déposer
+      les clichés, en FTP, dans le répertoire /tmp/ de la source.</para>
+
+      <para>Les identifiants FTP se configurent dans la section "Avancé" de
+      chaque source.</para>
+
+      <section>
+        <title>Définir la date de capture depuis</title>
+
+        <para>Cette option permet de définir comment assigner une date à un
+        cliché,l'option "Caméra IP" permet de traiter deux types de
+        sources:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Date d'enregistrement de fichier dans le répertoire
+            /tmp/</para>
+          </listitem>
+
+          <listitem>
+            <para>Nom de fichier (Webcampak), à utiliser si les images
+            proviennent d'un autre Webcampak</para>
+          </listitem>
+
+          <listitem>
+            <para>EXIF Metadata, pour utiliser la date enregistrée dans
+            l'image par la caméra, attention cette dernière doit être à
+            l'heure.</para>
+          </listitem>
+        </itemizedlist>
+      </section>
+
+      <section>
+        <title>Limiter le traitement hotlink à une image par rotation</title>
+
+        <para>Permet de ne générer les fichiers hotlink que pour la dernière
+        image déposée dans le répertoire /tmp/</para>
+
+        <para>Imaginez une caméra IP (ou un Webcampak) capturant des images
+        toutes les 2mn. Si votre source est configurée pour une fréquence de
+        capture de 10mn, elle traitera 5 clichés à chaque rotation.</para>
+
+        <para>Cette option permet de ne générer les fichiers hotlink qu'une
+        seule fois.</para>
+      </section>
+
+      <section>
+        <title>Déclencher des alertes si aucune image n'est présente dans le
+        répertoire tmp/</title>
+
+        <para>Lors d'une capture il se peut qu'aucune images ne soit présente
+        dans le répertoire tmp/ (en cas d'incident réseau par exemple).</para>
+
+        <para>En cochant cette case l'alerte e-mail sera déclenchée et une
+        image "hotlink" d'erreur sera générée.</para>
+
+        <para>A la différence d'un appareil photo, une erreur de capture ne
+        signifie nécessairement pas dans ce cas précis l'absence de prise de
+        photo. La photo a peut être été capturée mais un incident réseau en a
+        empêché son transfert. Dans ce cas précis la photo sera toujours
+        présente en cache et pourra être transférée par la suite.</para>
+
+        <para>Vous pouvez juger inutile de déclencher une erreur dans ce cas
+        de figure.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Configuration de "Image Internet" ou "Streaming Vidéo"</title>
+
+      <para>Cette section permet de capturer une image en provenance
+      d'Internet ou d'un flux streaming. Elle permet aussi la cascade de
+      sources au sein d'un même Webcampak ou de Webcampak différents.</para>
+
+      <screenshot>
+        <screeninfo>Configuration de l'image Internet ou du Streaming
+        vidéo</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.webfile.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Indiquez simplement l'URL de l'image ou du flux RTSP à
+      capturer.</para>
+    </section>
+
+    <section>
+      <title>Configuration de "Capteurs Phidget"</title>
+
+      <para>Ce module est très spécifique et ne sera pas détaillé dans ce
+      document (pour le moment).</para>
+
+      <screenshot>
+        <screeninfo>Configuration de "Capteurs Phidget"</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.capture.phidget.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Photos</title>
+
+    <para>Nous avons abordé dans la section précédente les différentes
+    méthodes permettant l'acquisition d'une image.</para>
+
+    <para>Ce cliché est maintenant prêt à être traité, et ce traitement est
+    défini dans la section "Photos".</para>
+
+    <para>L'ordre des différents blocs à son importance et correspond à
+    l'ordre dans lequel les modifications seront apportées à l'image.</para>
+
+    <para>Toutes les dimensions et emplacements mentionnés dans cette section
+    le sont en pixels. A l'exception de la légende, le point d'origine est
+    toujours le coin supérieur gauche de l'image.</para>
+
+    <section>
+      <title>Découpe image (recadrer)</title>
+
+      <screenshot>
+        <screeninfo>Découpe image</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.crop.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Une fois l'image capturée il est possible de n'en conserver qu'une
+      partie en la recadrant.</para>
+
+      <para>Cette option étend fortement les possibilités du Webcampak et peut
+      s'avérer très utile pour de nombreux usages:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Recadrage "simple": Ne conserver qu'une seule partie de
+          l'image</para>
+        </listitem>
+
+        <listitem>
+          <para>Recadrage "wide": Changer le format de l'image</para>
+        </listitem>
+
+        <listitem>
+          <para>Zoom: Avec des possibilités de zoom multi-zones en utilisant
+          plusieurs "Sources" Webcampak.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Le recadrage fait appel à deux paramètres principaux:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Taille de la zone à découper: En pixels, relatifs à l'image
+          source pleine taille</para>
+        </listitem>
+
+        <listitem>
+          <para>Position de la zone à découper: En pixels depuis le coin
+          supérieur gauche.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Nous vous conseillons de vous aider d'un logiciel de dessin (The
+      Gimp, Photostop, Pain.Net, ...) pour tester les différents paramètres et
+      identifier les zones à découper, cette fonction est habituellement
+      appelée "Crop".</para>
+
+      <para>Recadrer de manière automatisée vos clichés vous permet de
+      concentrer l'intérêt du spectateur sur une zone bien précise et d'en
+      faciliter l'exploitation.</para>
+
+      <para>Couplée à des appareils à très haute résolution cette fonction
+      vous permettra de réaliser un "zoom" sur une image pour en afficher ses
+      moindres détails.</para>
+    </section>
+
+    <section>
+      <title>Insérer un Watermark</title>
+
+      <para>Un Watermark est une image incrusté en transparence au sein de la
+      photo capturée. Cette image doit être au format "png" et disposer d'un
+      canal "Alpha" (parties transparentes dans l'image).</para>
+
+      <screenshot>
+        <screeninfo>Insérer un Watermark</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.watermark.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Pour ajouter un watermark, connectez-vous en FTP au Webcampak via
+      le compte FTP de la source (voir onglet "Avancé") et ajoutez ce fichier
+      dans le répertoire "/resources/watermark/".</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Fichier Watermark: Sélectionnez le nom de fichier
+          correspondant au watermark que vous souhaitez intégrer.</para>
+        </listitem>
+
+        <listitem>
+          <para>Transparence: Indiquez le niveau de transparance souhaité pour
+          le watermark.</para>
+        </listitem>
+
+        <listitem>
+          <para>Emplacement X: Indiquez la position initiale du watermak, sur
+          l'axe horizontal et en pixels, à partir du coin supérieur gauche de
+          l'image.</para>
+        </listitem>
+
+        <listitem>
+          <para>Emplacement Y: Indiquez la position initiale du watermak, sur
+          l'axe vertical et en pixels, à partir du coin supérieur gauche de
+          l'image.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Pour éviter de "polluer" vos photos originales en vue d'un
+      timelapse, le watermark peut être ajouté à la volée lors de la
+      génération de la vidéo. Ajouter le watermark dès la prise de photo est
+      par contre plus efficace en termes de performance car le traitement est
+      réparti tout au long de la capture et non en une seule fois lors de la
+      création des vidéos.</para>
+    </section>
+
+    <section>
+      <title>Insérer un texte</title>
+
+      <para>Cochez la case pour intégrer une légende à votre image. Les
+      paramètres de la légende sont définis ci-dessous:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Légende: Texte de la légende. La date y sera directement
+          accolé, pensez donc à intégrer un séparateur (espace, tiret
+          ...).</para>
+        </listitem>
+
+        <listitem>
+          <para>Format date: Choisissez le format de date que vous souhaitez
+          ajouter à la légende.</para>
+        </listitem>
+      </itemizedlist>
+
+      <screenshot>
+        <screeninfo>Insérer un texte</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.text.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Configurez ensuite les paramètres de police et d'emplacement du
+      texte:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Taille du texte: Renseignez la taille de police en pixels
+          avant redimensionnement (image archivée).</para>
+        </listitem>
+
+        <listitem>
+          <para>Emplacement texte: Choisissez à quel emplacement vous
+          souhaitez insérer la légende.</para>
+        </listitem>
+
+        <listitem>
+          <para>Police de caractères: Sélectionnez la police de la
+          légende.</para>
+        </listitem>
+
+        <listitem>
+          <para>Couleur de l'ombre: Pour faciliter la lecture de la légende
+          nous vous proposons d'insérer une légère ombre à la légende.
+          Habituellement la légende est blanche ou noire.</para>
+        </listitem>
+
+        <listitem>
+          <para>Position de l'ombre: La position de l'ombre est primordiale
+          pour un bon affichage. Nous vous conseillons de décaler l'ombre sur
+          l'axe horizontal d'une distance de 1 à 3 pixels selon la taille de
+          l'image initiale.</para>
+        </listitem>
+
+        <listitem>
+          <para>Couleur du texte: Renseignez la couleur de police (en
+          anglais)</para>
+        </listitem>
+
+        <listitem>
+          <para>Position du texte: Indiquez l'emplacement de votre légende par
+          rapport à la "position du texte".</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>La position de la légende se fait en pixels à partir du bord sur
+      les deux axes: Horizontal (X) et Vertical (Y).</para>
+
+      <para>Par exemple si vous souhaitez vous décaler de 20 pixels du bord
+      sur l'axe horizontal et de 40 pixels sur l'axe vertical, avec une légère
+      ombre, nous utiliserons les valeurs suivantes:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Position du texte: 24,40</para>
+        </listitem>
+
+        <listitem>
+          <para>Position de l'ombre: 26,40</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Images statiques (hotlink)</title>
+
+      <para>Les images statiques sont des images avec un nom constant, mais
+      dont le contenu est mis à jour régulièrement. Ce type d'image est
+      utilisé sur internet pour diffuser des liens.</para>
+
+      <screenshot>
+        <screeninfo>Images statiques (hotlink)</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.hotlink.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Par exemple si vous uploadez votre image statique sur votre site
+      http://www.notrerestaurant.com/ dans le répertoire webcam/ vous pourrez
+      utiliser sur votre site le lien http://
+      www.notrerestaurant.com/webcam/webcam-1024x768.jpg. Le nom ne changera
+      donc pas, mais le contenu sera mis à jour : chaque image affichée sera
+      bien la dernière capturée pour la source en question.</para>
+
+      <para>Webcampak propose de redimensionner vos clichés dans 4 formats
+      différents, permettant de vous adapter à différentes contraintes et
+      utilisations (mobiles, bande passante faible, haute qualité, qualité
+      moyenne, etc...).</para>
+
+      <para>Veillez néanmoins à conserver le même ratio dans vos images pour
+      éviter de les déformer.</para>
+    </section>
+
+    <section>
+      <title>Archives</title>
+
+      <para>L'archivage consiste à stocker les images sur le disque interne du
+      Webcampak.</para>
+
+      <screenshot>
+        <screeninfo>Archives</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.archives.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Notez que l'archivage est indispensable à la création de
+      vidéos.</para>
+
+      <para>Les paramètres suivants sont disponibles:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Archiver les images: option indispensable pour permettre la
+          création de vidéo.</para>
+        </listitem>
+
+        <listitem>
+          <para>Redimensionner la photo avant archivage: Pour économiser de
+          l'espace disque et pour accélérer les envois et création de vidéo il
+          est possible d'archiver les photos dans un format réduit. Cette
+          option est particulièrement intéressante pour les appareils photos
+          reflex de très forte capacité (14,16,20 Mpix) dans le cas où la
+          forte résolution n'a pas de justification technique. Indiquez "off"
+          si vous ne souhaitez pas redimensionner les images.</para>
+        </listitem>
+
+        <listitem>
+          <para>Taille minimale des photos: Indiquez la taille minimale que
+          doit faire chaque photo. En dessous de cette taille la photo ne sera
+          pas conservée et une erreur sera générée. La taille est en bytes (ou
+          octets).</para>
+        </listitem>
+
+        <listitem>
+          <para>Supprimer les photos après: Indiquez (en jours) le nombre de
+          jours pendants lesquels vous souhaitez conserver des archives. Passé
+          ce délai, les images seront supprimées automatiquement. Indiquez "0"
+          pour conserver les images indéfiniment.</para>
+        </listitem>
+
+        <listitem>
+          <para>Taille maximale de l'ensemble des photos: Si l'ensemble des
+          photos de la source dépasse cette taille (en Mo), alors les photos
+          les plus anciennes seront supprimées (par tranche de 1 journée).
+          Indiquez "0" pour conserver les images indéfiniment.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Envoyer les images via FTP</title>
+
+      <screenshot>
+        <screeninfo>Envoyer les images via FTP</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.pictures.ftp.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Une fois le traitement terminé les photos peuvent êtres envoyées
+      en FTP vers un site distant (ou un autre source d'un même ou autre
+      Webcampak).</para>
+
+      <para>Les serveurs FTP se configurent dans un onglet dédié spécifique à
+      chaque source.</para>
+
+      <para>En cas d'erreur d'envoi il est possible d'indiquer au système de
+      réaliser un nouvel essai.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Vidéos</title>
+
+    <para>Chaque jour, à 1h00 du matin le Webcampak déclenchera la création
+    d'une vidéo de la journée précédente.</para>
+
+    <para>Cet onglet permet de configurer la création de cette source.</para>
+
+    <section>
+      <title>Créations de vidéos journalières</title>
+
+      <screenshot>
+        <screeninfo>Création de vidéos journalières</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.config.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Pour chaque format vous avez la possibilité de créer une vidéo web
+      (MP4) en vue de l'intégrer dans une page web ou sur terminaux
+      mobiles.</para>
+
+      <para>Les formats les plus courant sont de la famille H.264. Webcampak
+      permet de compresser les vidéos dans des résolutions standardisées, pour
+      un affichage sur des téléviseurs Haute Définition (HD).</para>
+
+      <tip>
+        <para>Veuillez noter que les téléviseurs affichent habituellement des
+        images dans un format différent du format de capture des appareils
+        photos (proche du 4/3 habituellement). La conversion implique une
+        découpe dans l'image ou l'apparition de bandes noires: par défaut nous
+        avons décidé de traduire cette effet par la suppression de bandes en
+        haut et en bas de l'image. Gardez cet élément à l'esprit pour le
+        positionnement de la légende qui peut se révéler un peu plus
+        délicate.</para>
+      </tip>
+
+      <para>N'hésitez pas à réaliser des essais en créant des vidéos
+      personnalisées courtes de manière à identifier le meilleur paramètre
+      pour votre configuration.</para>
+
+      <para>Les formats vidéos suivant sont proposés:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>H. 264 (1080p): Format HD, affichage de qualité
+          maximale.</para>
+        </listitem>
+
+        <listitem>
+          <para>H. 264 (720p): Format HD, affichage de très bonne
+          qualité.</para>
+        </listitem>
+
+        <listitem>
+          <para>H. 264 (480p): Qualité similaire DVD.</para>
+        </listitem>
+
+        <listitem>
+          <para>H. 264 (Personnalisé): Compression H.264, résolution
+          personnalisable.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>La vitesse de compression est différente pour chaque format : plus
+      la qualité est élevée, plus la génération de vidéo sera longue et la
+      place occupée importante.</para>
+
+      <para>Le choix du nombre de FPS (Images Par Secondes ou Frame Per
+      Seconds) dépend de nombreux éléments dont votre fréquence de capture et
+      du type de rendu souhaité. Plus cette valeur est élevée, plus vous aurez
+      une impression de fluidité, mais plus la vidéo sera courte : à vous de
+      trouver le bon compromis.</para>
+
+      <para>A titre d'information, voici une tableau comparatif entre
+      fréquence de capture, fps, et durée :</para>
+
+      <table>
+        <title>Comparaison des durées de vidéo</title>
+
+        <tgroup cols="5">
+          <thead>
+            <row>
+              <entry align="center">Durée de capture</entry>
+
+              <entry align="center">Fréquence de capture</entry>
+
+              <entry align="center">Nombre total d'images</entry>
+
+              <entry align="center">FPS</entry>
+
+              <entry align="center">Durée de vidéo</entry>
+            </row>
+          </thead>
+
+          <tbody>
+            <row>
+              <entry>24h</entry>
+
+              <entry>5mn</entry>
+
+              <entry>288</entry>
+
+              <entry>10</entry>
+
+              <entry>28s</entry>
+            </row>
+
+            <row>
+              <entry>24h</entry>
+
+              <entry>5mn</entry>
+
+              <entry>288</entry>
+
+              <entry>24</entry>
+
+              <entry>12s</entry>
+            </row>
+
+            <row>
+              <entry>24h</entry>
+
+              <entry>1mn</entry>
+
+              <entry>1440</entry>
+
+              <entry>10</entry>
+
+              <entry>2mn40</entry>
+            </row>
+
+            <row>
+              <entry>24h</entry>
+
+              <entry>1mn</entry>
+
+              <entry>1440</entry>
+
+              <entry>24</entry>
+
+              <entry>1mn</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+
+    <section>
+      <title>Réglages vidéo avancés</title>
+
+      <para>Ce bloc vous permet de configurer les paramètres avancés des
+      différents formats vidéo.</para>
+
+      <screenshot>
+        <screeninfo>Réglages vidéo avancés</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.advconfig.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Certains éléments de configuration sont figés, de manière à se
+      conformer aux contraintes des formats standardisés (pour une affichage
+      sur TV HD par exemple).</para>
+
+      <para>Vous pouvez ensuite modifier le "bitrate" (ou taux de
+      compression), pour certaines vidéos. Plus ce taux est important,
+      meilleure sera la qualité. Plus le bitrate est élevé, plus l'espace
+      disque occupé par la vidéo augmente.</para>
+
+      <para>Si nécessaire modifiez la résolution.</para>
+
+      <para>La partie la plus "complexe" à modifier réside dans les options de
+      découpe (ou "crop").</para>
+
+      <para>Tel qu'expliqué précédemment, nous cherchons lors du passage d'un
+      format de type 4/3 à un format 16/9ème à supprimer certains éléments de
+      la photo pour ne pas la déformer.</para>
+
+      <section>
+        <title>Exemple 1: Découpe pour format 1080p</title>
+
+        <para>Prenons un exemple concret : nous visons le format vidéo 1080p
+        qui offre une résolution de 1920x1080. Notre appareil photo numérique
+        18 Mpix réalise des clichés, qui après un premier "crop" ont une
+        résolution de 3904x2807.</para>
+
+        <para>Le système va tout d'abord réaliser un redimensionnement de
+        l'image sur l'axe X (1920) tout en conservant les proportions. Ce qui
+        donne une image de 1920x1380 (1920 x 2807 / 3904 = 1380).</para>
+
+        <figure>
+          <title>Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:0</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example1.full.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Si par défaut nous utilisons la découpe 1920:1080:0:0, notre
+        vidéo ne contiendra que la partie haute de l'image, mais nous
+        souhaitons nous concentrer sur la partie basse de l'image pour que
+        notre vidéo contienne des bâtiments.</para>
+
+        <para>Nous allons donc indiquer au système de réaliser une découpe,
+        sur l'axe Y, à 300px du point d'origine (haut), la découpe sera donc:
+        1920:1080:0:300</para>
+
+        <figure>
+          <title>Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:300</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example2.full.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Vous souhaitez peut être réaliser un recentrage, en positionnant
+        la zone 1920x1080 au centre de l'image. Dans ce cas la découpe sera :
+        1920:1080:0:150</para>
+
+        <figure>
+          <title>Exemple 1: image source et zone 1080p, découpe
+          1920:1080:0:150</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example3.full.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Exemple 2: Format personnalisé, modification avancée</title>
+
+        <para>L'exemple 1 permet des manipulations simples et s'appliquera
+        d'une manière similaire pour les formats 1080p, 720p, 480p.</para>
+
+        <para>Le format personnalisé permet par contre de réaliser des
+        manipulations avancées, notamment de zoomer sur une zone précise de
+        l'écran.</para>
+
+        <para>Imaginons que nous souhaitions réaliser une zoom sur la grue
+        située au centre droit de l'image, la première action va consister à
+        identifier la zone à conserver. Cette zone doit avoir le même ratio
+        que la résolution cible (pour ne pas déformer l'image).</para>
+
+        <para>Prenons par exemple une zone de 1920x1080 pixels, situés à
+        X:1824 et Y:1280 par rapport au point d'origine (en haut à gauche de
+        l'image)</para>
+
+        <figure>
+          <title>Exemple 2: 3904x2807 1920:1080:1824:1280</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example6.full.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>La vidéo sera créée en utilisant exclusivement la zone au centre
+        de l'image.</para>
+
+        <figure>
+          <title>Exemple 2: résultat</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/admin.source.videos.example7.full.jpg"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Cette solution donne de la souplesse au Webcampak mais le même
+        résultat peut être obtenu en utilisant le menu "Vidéos Post-Prod." ou
+        en modifiant les photos à la volée via le menu "Photos" pour les
+        enregistrer directement dans le format final.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Filtrer les images similaires</title>
+
+      <para>Cette fonctionnalité permet de ne pas prendre en considérations
+      certains images si il n'y a pas eu de mouvement.</para>
+
+      <para>Les changements de luminosité (passage du jour à la nuit par
+      exemple) n'aura pas d'impact sur cette option</para>
+
+      <screenshot>
+        <screeninfo>Filtrer les images similaires</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.filter.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <section>
+        <title>Ajouter un masque (watermark)</title>
+
+        <para>Dans de nombreux cas, l'image capturée contient la scène visée
+        ainsi que des éléments environnants. Il est dans ce cas possible
+        d'ajouter un masque, ce dernier permettra de ne filtrer qu'en cas de
+        changement sur la scène en question.</para>
+
+        <para>Par exemple pour un chantier a proximité d'une route, le
+        mouvement des voitures ne sera pas pris en considération si la route
+        est masquée.</para>
+
+        <para>Pour ajouter un masque, créez une image "png" avec un canal
+        alpha (transparence) de la même taille que votre image capturée.
+        Intégrez un fond de couleur (la couleur importe peu) et ne laissez en
+        transparence que les zones correspondant à votre chantier.</para>
+
+        <para>Le masque est à placer dans le répertoire /resources/watermark/
+        de la source en question.</para>
+      </section>
+
+      <section>
+        <title>Seuil maximal</title>
+
+        <para>Indiquez le seuil, en pourcentage de modification entre deux
+        images (sans le signe %).</para>
+
+        <para>Cette valeur est difficile à définir, nous vous conseillez de
+        réaliser quelques essais pour identifier le seuil correspondant le
+        mieux à votre environnement.</para>
+      </section>
+    </section>
+
+    <section>
+      <title>Insérer un Watermark</title>
+
+      <para>Il est possible d'intégrer un watermark à votre vidéo. Reportez
+      vous à la section "Photos" pour plus de détails sur son
+      utilisation.</para>
+
+      <para>Le watermark sera inséré à l'image brute avant toute autre
+      modification configurée sur cette page.</para>
+
+      <screenshot>
+        <screeninfo>Insérer un Watermark</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.watermark.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+
+    <section>
+      <title>Manipulation pré-traitement (avancé)</title>
+
+      <screenshot>
+        <screeninfo>Manipulations pré-traitement</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.preprocess.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Il est possible, avant de réaliser la vidéo, de modifier à la
+      volée les images archivées et d'y appliquer un certain nombre de
+      modifications:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Ajout d'une légende: pour plus de détails référez vous à la
+          partie de ce document traitant de l'ajout de légendes aux
+          photos.</para>
+        </listitem>
+
+        <listitem>
+          <para>Redimensionnement: Pour les appareils photos reflex il peut
+          être nécessaire de redimensionner les images avant leur traitement
+          car le moteur de création de vidéos de supporte pas les résolutions
+          trop importantes pour les images sources.</para>
+        </listitem>
+
+        <listitem>
+          <para>Ajout d'un effet vidéo (expérimental): Proposée à titre
+          expérimental cette fonction permet d'ajouter un effet aux clichés
+          avant la création de la vidéo.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Ajouter un fichier audio</title>
+
+      <screenshot>
+        <screeninfo>Ajouter un fichier audio</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.audio.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Ce bloc vous permet d'ajouter une piste audio aux vidéos que vous
+      créez. Pour ajouter des fichiers audio sur le Webcampak, connectez-vous
+      en FTP et ajoutez des fichiers MP3 dans le répertoire /resources/audio/
+      de la source.</para>
+
+      <para>Attention, les nom de fichier MP3 ne doivent pas contenir d'espace
+      ni de caractères spéciaux.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Ajouter une piste audio: Cochez cette case pour ajouter une
+          piste audio.</para>
+        </listitem>
+
+        <listitem>
+          <para>Fichier Audio: Sélectionnez le fichier audio que vous
+          souhaitez ajouter.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Webcampak est compatible avec les playlist sous certaines
+      contraintes.</para>
+
+      <para>Créez un fichier "playlist.m3u", dans ce fichier listez les
+      fichiers MP3 en ne laissant qu'un fichier par ligne.</para>
+
+      <para>Exemple de fichier "playlist.m3u".</para>
+
+      <screen>01-Yellow.submarine.mp3
+02-Beat.it.mp3</screen>
+
+      <para>Positionnez ensuite via FTP ce fichier ainsi que les fichiers mp3
+      listés dans le répertoire /resources/audio/</para>
+
+      <para>Durant la création de la vidéo, Webcampak créera un fichier
+      playlist.mp3. Libre à vous d'utiliser ce fichier pour de futures vidéos,
+      ce qui évitera de le créer de nouveau.</para>
+    </section>
+
+    <section>
+      <title>Envoyer la vidéo vers Youtube</title>
+
+      <screenshot>
+        <screeninfo>Envoyer la vidéo vers youtube</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.youtube.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Une fois la vidéo créée il est possible de l'envoyer
+      automatiquement sur Youtube.</para>
+
+      <para>Pour uploader vers Youtube, une clef d'authentification doit être
+      stockée sur le Webcampak avec vos identifiants de connexion. La vidéo
+      sera associée à votre compte Youtube.</para>
+
+      <para>D'autre part, seule la vidéo disposant de la plus forte qualité
+      sera envoyée vers Youtube qui se chargera automatiquement de créer des
+      versions plus petites.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Activer l'upload vers Youtube: Pour activer (ou non) l'upload
+          vers Youtube.</para>
+        </listitem>
+
+        <listitem>
+          <para>Catégorie Vidéo: Sélectionnez la catégorie dans laquelle sera
+          placée la vidéo.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Envoyer les vidéos via FTP</title>
+
+      <para>Ce bloc vous permet de configurer l'envoi de vidéos vers un
+      serveur FTP.</para>
+
+      <screenshot>
+        <screeninfo>Envoyer les vidéos via FTP</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videos.ftp.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Vidéos perso.</title>
+
+    <para>Vous retrouverez au sein de cet onglet</para>
+
+    <para>Vous retrouverez dans cet onglet de nombreuses sections identiques à
+    l'onglet Vidéos. Seul les sections différentes seront détaillées.</para>
+
+    <screenshot>
+      <screeninfo>Onglet Vidéos perso.</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videocustom.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Créer une vidéo perso.</title>
+
+      <screenshot>
+        <screeninfo>Créer une vidéo perso</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.videocustom.create.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Dans ce bloc vous pourrez configurer les paramètres de création de
+      la vidéo. La création d'une vidéo peut prendre plusieurs heures si le
+      nombre de clichés est conséquent et la qualité élevée.</para>
+
+      <para>Soyez prudent vis à vis de l'espace disque. Pour créer une vidéo
+      personnalisée vous devez disposez d'au minimum 2x l'espace disque occupé
+      par les photos sur l'intervalle sélectionné. En effet les images sont
+      modifiées et stockées dans un répertoire temporaire dédié, le temps de
+      créer la vidéo.</para>
+
+      <para>Les paramètres suivants sont disponibles:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Nom du fichier (sans espaces): Indiquez le nom de fichier sans
+          espaces ou caractères spéciaux. Si un fichier avec le même nom
+          existe déjà la création de la vidéo sera annulée.</para>
+        </listitem>
+
+        <listitem>
+          <para>Du: Sélectionnez la date et heure de début.</para>
+        </listitem>
+
+        <listitem>
+          <para>Au: Sélectionnez la date et heure de fin.</para>
+        </listitem>
+
+        <listitem>
+          <para>Conserver les images entre: Cette option vous permet de
+          n'utiliser que certains clichés pour la création des vidéos (par
+          exemple entre 7h00 et 18h00).</para>
+        </listitem>
+
+        <listitem>
+          <para>Intervalle minimum entre deux clichés: Lors de la préparation
+          de la vidéo, Webcampak vérifiera l'intervalle minimum entre deux
+          clichés, si inférieur à cette valeur, le cliché ne sera pas
+          utilisé.</para>
+        </listitem>
+
+        <listitem>
+          <para>Envoyer un email en fin de traitement: Cochez la case pour
+          recevoir une alerte e-mail une fois la vidéo créée.</para>
+        </listitem>
+
+        <listitem>
+          <para>Démarrer la création: La création de la vidéo peut être lancée
+          soit instantanément (avec un délai de deux minutes maximum) soit
+          entre 4h00 et 5h00 du matin. Ceci pour économiser les ressources
+          système.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Vidéos Post-Prod.</title>
+
+    <para>Cette section permet de réaliser une modification de masse des
+    images capturées.</para>
+
+    <screenshot>
+      <screeninfo>Onglet Vidéos Post-Prod</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postprod.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Plusieurs raisons ont motivé la création de cette section:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Réduction de la taille des clichés: cette section vous permet
+        d'appliquer tout un lot de traitement vous permettant de réduire la
+        taille de chaque cliché pour ensuite les transférer dans votre
+        logiciel de traitement vidéo.</para>
+      </listitem>
+
+      <listitem>
+        <para>Sélection poussée des clichés: en copiant les clichés dans une
+        autre sources, vous pouvez réaliser toutes les manipulations
+        souhaitées (notamment suppression de clichés) sans toucher aux clichés
+        originaux.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Le fonctionnement de cette section est assez proche de la section
+    "Vidéos Perso." mais les effets possibles sont beaucoup plus nombreux. Une
+    fois les images copiées dans une source dédiée à la création d'une vidéo
+    vous pourrez utiliser la section "Vidéo Perso." de cette source pour
+    générer la vidéo.</para>
+
+    <para>Les différentes manipulations détaillées ici peuvent êtres utilisées
+    conjointement pour réaliser un effet spécifique.</para>
+
+    <para>Vous retrouverez dans cet onglet de nombreuses sections identiques à
+    l'onglet Vidéos. Seul les sections différentes seront détaillées.</para>
+
+    <section>
+      <title>Sélection de la zone au sein de l'image source (Crop)</title>
+
+      <para>Ce bloc permet de ne conserver qu'une portion de l'image.</para>
+
+      <screenshot>
+        <screeninfo>Sélection de la zone au sein de l'image source
+        (Crop)</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postprod.crop.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Pour éviter toute déformation veillez à conserver un ratio
+      constant tout au long de vos manipulation.</para>
+
+      <para>Cette fonction est particulièrement utile pour réaliser un "zoom"
+      sur une zone précise. Il permet aussi d'activer un zoom "logiciel" par
+      exemple affichant un élément à 200% de sa résolution initiale.</para>
+
+      <para>Par exemple, si vous activer une découpe sur une zone en 1280x720
+      et configurez votre résolution finale (bloc "Résolution de votre vidéo")
+      pour 1920x1080, le logiciel agrandira automatiquement l'image (zoom
+      logiciel).</para>
+    </section>
+
+    <section>
+      <title>Activer une transition (depuis la sélection crop)</title>
+
+      <para>Ce bloc permet de créer un effet de déplacement dans votre
+      vidéo.</para>
+
+      <screenshot>
+        <screeninfo>Activer une transition (depuis la sélection
+        crop)</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postprod.movement.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Ce bloc permet d'atteindre deux objectifs:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Créer un effet de déplacement</para>
+        </listitem>
+
+        <listitem>
+          <para>Créer un effet de zoom progressif</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>Cette effet s'applique sur l'ensemble de l'intervalle sélectionné
+      en bas de page. Le logiciel va calculer le nombre d'images présent dans
+      l'intervalle, et réalisera une decallage progressif pour générer l'effet
+      en question.</para>
+    </section>
+
+    <section>
+      <title>Redimensionner l'image</title>
+
+      <para>Une fois les images modifiées, elles sont redimensionnées dans la
+      résolution finale. Indiquez ici la résolution souhaitée.</para>
+
+      <screenshot>
+        <screeninfo>Redimensionner l'image</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postprod.resize.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+
+    <section>
+      <title>Ajouter une miniature</title>
+
+      <screenshot>
+        <screeninfo>Ajouter une miniature</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postpord.thumbnails.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Ce bloc va vous permettre d'ajouter une vignette au sein d'une
+      image.</para>
+
+      <para>L'idée est de sélectionner une zone au sein de l'image originale
+      (sur le même modèle que la fonction de découpe), puis d'insérer cette
+      image au sein de l'image modifiée en résolution finale.</para>
+
+      <para>La vignette peut donc remplir deux objectifs:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Intégrer un encart permettant d'avoir une vue "grossie" d'un
+          endroit précis d'une image.</para>
+        </listitem>
+
+        <listitem>
+          <para>Dans une séquence "zoomée", afficher sous forme de vignette
+          une vue de l'ensemble de la scène capturée.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>L'option "Ajouter une bordure autour de la vignette" insère une
+      bordure grise tout autour de la vignette pour bien démarquer les deux
+      images dans le cas où certaines couleurs soient proches.</para>
+    </section>
+
+    <section>
+      <title>Préparer les images post-prod</title>
+
+      <screenshot>
+        <screeninfo>Préparer les images post-prod</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.postprod.create.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Cette section est très proche de la création d'une vidéo
+      personnalisée. Néanmoins vous aller devoir sélectionner une source dans
+      laquelle vous déplacerez le fichiers une fois le traitement
+      terminé.</para>
+
+      <para>Nous vous recommandons fortement de créer une source qui aura pour
+      seule vocation d'accueillir ces clichés modifiés.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Avancé</title>
+
+    <para>Cet onglet vous permet de configurer quelques réglages avancés de la
+    source.</para>
+
+    <screenshot>
+      <screeninfo>Onglet Avancé</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.advanced.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Configuration du compte FTP local</title>
+
+      <para>Comme mentionné précédemment, chaque Webcampak dispose de son
+      propre serveur FTP interne, permettant de se connecter à une source pour
+      y télécharger un grand nombre de fichiers ou pour permettre l'échange de
+      clichés entre sources.</para>
+
+      <para>Chaque source dispose d'un compte FTP qui lui est propre, un mot
+      de passe est généré automatiquement lors de l'ajout de la source.</para>
+    </section>
+
+    <section>
+      <title>Emails</title>
+
+      <para>Renseignez ici les adresses email de destination pour les
+      différents envois réalisés par le Webcampak.</para>
+
+      <para>Vous pouvez aussi préciser le nombre d'échecs avant de déclencher
+      un email ainsi que la fréquence de rappel en cas de panne d'une
+      source.</para>
+    </section>
+
+    <section>
+      <title>Platine Phidget</title>
+
+      <para>La platine Phidget offre la possibilité de déclencher un
+      redémarrage électrique de l'appareil photo en cas d'incident de
+      capture.</para>
+
+      <para>Précisez pour cela le nombre d'erreurs avant le redémarrage ainsi
+      que le relais sur lequel est connecté l'appareil photo.</para>
+
+      <para>Il est aussi possible de créer un graphique journalier contenant
+      les valeurs mesurées par la platine et d'envoyer ce fichier sur un site
+      distant.</para>
+
+      <para>Nous ne rentrerons pas dans les détails de la configuration
+      Phidget dans ce document (pour le moment).</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Onglet Serveurs FTP</title>
+
+    <para>Cet onglet permet de configurer les différents serveurs FTP vers
+    lesquels il sera possible d'envoyer des photos, vidéos ou mesures. Ces
+    serveurs FTP sont spécifiques à chaque source.</para>
+
+    <screenshot>
+      <screeninfo>Serveurs FTP</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.sources.ftp.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+</chapter>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="examples">
+    <title>Examples</title>
+
+    <section>
+      <title>Create a mask with The Gimp</title>
+
+      <para>In this small example we are going to show you how to create a
+      mask with Gimp. This mask will be a PNG picture with an Alpha channel
+      (transparency).</para>
+
+      <para>Those manipulations are detailed with The Gimp but can be adapted
+      to most picture manipulation software.</para>
+
+      <para>Before beginning this example, just ensure your Webcampak is
+      installed in its final location (if something moves you might have to
+      re-create the mask).</para>
+
+      <para>In this example we are going to create a mask to hide some
+      portions of the picture to keep only a few building sites. This is
+      especially useful if you want to filter shots during a video
+      creation.</para>
+
+      <section>
+        <title>Download and open a Webcampak picture</title>
+
+        <para>Log into your Webcampak and download a full size picture
+        (i.e.via FTP or using "Downl. Original" in the viewer
+        interface).</para>
+
+        <para>Open this picture with The Gimp.</para>
+
+        <figure>
+          <title>Open source picture</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen1.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <section>
+          <title>Insert a transparent layer</title>
+
+          <figure>
+            <title>Insert a transparent layer</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen2.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <figure>
+            <title>Create a new layer</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen3.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Ensure you select "Transparency" here.</para>
+
+          <figure>
+            <title>Display layers</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen4.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </section>
+
+        <section>
+          <title>Color background</title>
+
+          <para>Add a color background on this new layer, once done ensure you
+          can't see the picture behind the layer.</para>
+
+          <figure>
+            <title>New layer with color</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen5.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Change "Opacity" of the layer to see the background
+          picture.</para>
+
+          <figure>
+            <title>Change opacity of the layer</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen6.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </section>
+
+        <section>
+          <title>Erase areas you want to monitor</title>
+
+          <para>Using delete tool, erase areas of the new layer containing
+          elements you want to monitor</para>
+
+          <para><figure>
+              <title>Erase sections to monitor</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen7.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure></para>
+
+          <para>Configure "Opacity" back to 100, you should now only see areas
+          you want to monitor.</para>
+
+          <para><figure>
+              <title>Opacity at 100 on new layer</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen8.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure></para>
+        </section>
+
+        <section>
+          <title>Delete source layer and save</title>
+
+          <para>Then we will delete the source layer, do a right click on
+          "Background" and select "Delete Layer".</para>
+
+          <para><figure>
+              <title>Delete background layer</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen9.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure></para>
+
+          <para>You mask is ready to be saved, in PNG and keeping Alpha
+          channel.</para>
+
+          <para><figure>
+              <title>Save picture</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen10.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure>Transfer the mask, via FTP, to /watermark/ directory
+          using global FTP account (wpresources).</para>
+
+          <para/>
+        </section>
+      </section>
+    </section>
+  </chapter>

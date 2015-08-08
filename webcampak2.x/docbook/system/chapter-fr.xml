@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="system">
+  <title>Configuration générale</title>
+
+  <para>Cette fenêtre de configuration contient des éléments communs à toutes
+  les sources et ne devant être modifiés que très rarement.</para>
+
+  <section>
+    <title>Configuration générale</title>
+
+    <screenshot>
+      <screeninfo>Configuration générale</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.general.general.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cet onglet regroupe une série de paramètres avancés utilisés par
+    l'ensemble du système.</para>
+
+    <section>
+      <title>Réseau</title>
+
+      <para>Renseignez ici l'interface réseau utilisée par le système, ce
+      paramètre est utilisé pour la génération des statistiques d'utilisation
+      (graphiques notamment).</para>
+    </section>
+
+    <section>
+      <title>Fuseau horaire</title>
+
+      <para>Renseignez le fuseau horaire sur lequel se situe le
+      Webcampak.</para>
+    </section>
+
+    <section>
+      <title>Gphoto</title>
+
+      <para>La configuration multi-appareils représente un cas d'utilisation
+      avancé du Webcampak et n'est compatible qu'avec les appareils photo
+      USB.</para>
+
+      <para>Il est nécessaire d'activer ce module si vous souhaitez raccorder
+      plusieurs appareils photo sur un même boîtier Webcampak. Indiquez
+      ensuite si les appareils sont identiques (même marque et même modèle) ou
+      différents.</para>
+
+      <para>Le Webcampak doit être en mesure de déterminer, suite à un
+      potentiel redémarrage intempestif, quel appareil doit être rattaché à
+      quel source:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Si les appareils sont différents, le Webcampak utilisera le
+          modèle de l'appareil pour déterminer l'appartenance à une
+          source</para>
+        </listitem>
+
+        <listitem>
+          <para>Si les appareils sont identiques, le Webcampak utilisera un
+          "identifiant" précédemment intégré au sein de l'appareil photo (tag
+          "ownername").</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Compte FTP général (resources)</title>
+
+      <para>L'accès aux données du Webcampak est possible en FTP, chaque
+      source se voit attribuer un compte FTP qui lui est propre. Le compte
+      "wpresources" permet d'accéder au répertoire ressources du
+      Webcampak.</para>
+
+      <para>Ce répertoire contient les éléments suivants:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Logs des différentes sources</para>
+        </listitem>
+
+        <listitem>
+          <para>Fichiers MP3 utilisés pour la bande son de vos vidéos</para>
+        </listitem>
+
+        <listitem>
+          <para>Images "watermark" insérées en sur-impression des images
+          capturées ou vidéos générées</para>
+        </listitem>
+
+        <listitem>
+          <para>Un répertoire contenant des fichiers temporaires, répertoire
+          pouvant êtres purgé en cas de problèmes.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Statistiques et rapports</title>
+
+      <para>Active le module de collecte de statistiques. Ce module est
+      utilisé par l'équipe Webcampak pour réaliser des statistiques
+      d'utilisation.</para>
+    </section>
+
+    <section>
+      <title>Phidget</title>
+
+      <para>Cochez cette case si une carte électronique Phidget est raccordée
+      au Webcampak. </para>
+    </section>
+  </section>
+
+  <section>
+    <title>Configuration Email</title>
+
+    <para>Cet onglet permet de configurer les paramètres email utilisés par le
+    Webcampak pour communiquer avec un serveur email sortant (SMTP).</para>
+
+    <screenshot>
+      <screeninfo>Configuration email générale</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.general.email.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+</chapter>

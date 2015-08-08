@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="installation">
+  <title>Installation</title>
+
+  <note>
+    <para>Webcampak est fourni pré-installé et pré-configuré, ce chapitre, à
+    destination de nos testeurs, est fourni à titre d'information et ne vous
+    concernera probablement pas.</para>
+  </note>
+
+  <para>Webcampak est composé d'un coeur développé en Python et d'un ensemble
+  de logiciels tiers permettant de réaliser des manipulations
+  complémentaires.</para>
+
+  <para>Le coeur peut être considéré comme le chef d'orchestre coordonnant
+  l'ensemble des actions réalisées par le Webcampak, néanmoins les logiciels
+  tiers doivent êtres installés et configurés correctement pour permettre la
+  bonne marche de l'ensemble.</para>
+
+  <para>Webcampak est conçut pour fonctionner avec le système d'exploitation
+  Ubuntu Server, et est fourni avec un ensemble de scripts permettant aux
+  logiciels complémentaires de fonctionner correctement avec Webcampak. Il est
+  très probable que Webcampak fonctionne avec un système d'exploitation autre
+  que Ubuntu Server néanmoins soyez prudent vis-à-vis de la configuration des
+  logiciels complémentaires, il reste possible que nos fichiers de
+  configuration ne soient pas compatible avec d'autres versions.</para>
+
+  <para>De plus nous vous conseillons très fortement d'installer Webcampak sur
+  un système d'exploitation fraîchement installé.</para>
+
+  <section>
+    <title>Installation d'Ubuntu Server</title>
+
+    <para>Téléchargez et installez Ubuntu Server, veillez à ne pas ajouter de
+    paquets complémentaires mis à part OpenSSH serveur qui vous permettra de
+    prendre contrôle à distance.</para>
+
+    <para>Nous avons testé la compatibilité avec les versions 12.04</para>
+
+    <para>Pour ce chapitre, nous utiliserons le nom d'utilisateur système
+    "wpak".</para>
+  </section>
+
+  <section>
+    <title>Installation de Webcampak</title>
+
+    <para>Une fois Ubuntu Server installé, téléchargez la dernière version de
+    Webcampak et décompressez le répertoire. </para>
+
+    <para>Exécutez ensuite le script d'installation qui se trouve dans le
+    répertoire webcampak2/init/install/</para>
+
+    <screen>wpak@webcampak:~$ bash webcampak2/init/install/install.Ubuntu12.04.sh</screen>
+
+    <para>Suivez ensuite l'ensemble des instructions qui seront affichées à
+    l'écran.</para>
+  </section>
+</chapter>

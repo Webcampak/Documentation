@@ -1,0 +1,22 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>4. Les sources</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Guide d'utilisation Webcampak"><link rel="up" href="ch01.html" title="Chapter 1. Présentation générale"><link rel="prev" href="ch01s03.html" title="3. Fonctionnalités"><link rel="next" href="ch01s05.html" title="5. Les fichiers"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4. Les sources</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Présentation générale</th><td width="20%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a></td></tr></table><hr></div><div class="section" title="4. Les sources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1169756405760"></a>4. Les sources</h2></div></div></div><p>Le coeur du système Webcampak est articulé autour de "sources", ce
+      sont ces sources qui donnent au Webcampak sa souplesse et son
+      adaptabilité.</p><p>Une source est un élément de configuration incluant un processus
+      de capture et de traitement de clichés. Une source n'est pas
+      nécessairement attachée à un appareil photographique, la capture peut
+      provenir d'un autre Webcampak où d'une autre source d'un même
+      Webcampak.</p><p>Ce mécanisme permet de cascader les sources et par conséquent les
+      traitement appliqués à un cliché.</p><p>Prenons un exemple concret de suivi de chantier photographique. Le
+      maître d'ouvrage souhaite réaliser une vidéo "timelapse" en fin de
+      chantier et souhaite, durant la phase de construction, mettre à
+      disposition du public des photos "temps réel" sur son site
+      internet.</p><p>Ces deux besoins nécessite des images différentes:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>La création d'une vidéo timelapse nécessite des photos vierges
+          de toute indications ou éléments en surimpression. Ces éléments, si
+          nécessaires, seront ajoutés en post-production.</p></li></ul></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Pour la publication d'images sur son site Internet, le maître
+          d'ouvrage souhaite indiquer sur chaque image la date et l'heure de
+          la prise de vue ainsi que le logo de son entreprise.</p></li></ul></div><p>Il est donc nécessaire de réaliser deux traitements différents, et
+      ces manipulations seront réalisées en cascadant des sources.</p><p>Une première source se chargera de capturer le cliché sans
+      modification et de le stocker en vue de la création de la vidéo
+      timelapse. Cette source réalisera un envoi du cliché vers une seconde
+      source, qui se chargera d'insérer la date de capture, un logo en
+      transparence et de publier le résultat sur Internet.</p><p>Les possibilités de manipulation appliquées à une seule image sont
+      potentiellement illimitées.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3. Fonctionnalités </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 5. Les fichiers</td></tr></table></div></body></html>

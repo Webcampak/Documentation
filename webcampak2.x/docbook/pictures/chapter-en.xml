@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="photos">
+  <title>Navigate within pictures</title>
+
+  <para>This window will let you navigate within all pictures stored within
+  Webcampak as far as you have been granted access to the requested
+  source.</para>
+
+  <section>
+    <title>Global view</title>
+
+    <screenshot>
+      <screeninfo>Webcampak Pictures</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>When you first load the page you will be automatically redirected to
+    the latest picture captured by the source with the lower weight.</para>
+  </section>
+
+  <section>
+    <title>Source selection</title>
+
+    <screenshot>
+      <screeninfo>Sélection de la source</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.sources.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>On the top left of the window a drop down list will let you select a
+    different source. This list will only include sources for which you have
+    been granted access.</para>
+
+    <para>If a source is missing please get in touch with your Webcampak
+    administrator and ask him to check your permissions.</para>
+  </section>
+
+  <section>
+    <title>Date and time selection</title>
+
+    <para>On the left of the window you can navigate through a calendar to
+    select a capture date, just below this calendar, a grid will let you
+    select a specific picture to be displayed.</para>
+
+    <screenshot>
+      <screeninfo>Date and time selection</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.calendar.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>You will notice that the calendar only displays dates where pictures
+    are available, all other dates will be grey.</para>
+
+    <para>On the hour grid, each blue box corresponds to a picture, if you
+    move your mouse over one of those box the hour will be displayed, if you
+    click on a box it will be displayed on the right part of the
+    window.</para>
+  </section>
+
+  <section>
+    <title>Picture area</title>
+
+    <para>The picture area is composed by a toolbar located between the name
+    of the source and the displayed picture.</para>
+
+    <screenshot>
+      <screeninfo>Fenêtre principale</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.main.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Picture optimization</title>
+
+      <para>In some situations, you might see an "optimize" button close to
+      the zoom toolbar, in can be used to enable/disable picture optimization
+      module.</para>
+
+      <screenshot>
+        <screeninfo>Optimize</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.optimize.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <itemizedlist>
+        <listitem>
+          <para>When activated: pictures are resized on-the-fly to match the
+          user window, therefore bandwidth is optimized and less data is
+          transmitted over the network (can result in faster loading
+          time).</para>
+        </listitem>
+
+        <listitem>
+          <para>When disabled: full size pictures are transmitted over the
+          network.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>As Webcampak Cloud is hosted on very powerful servers, this button
+      is not necessary in this situation.</para>
+
+      <para>When using Webcampak, the internal embedded server is less
+      powerful, therefore there are two situations:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>If you are connected to Webcampak over a high speed network
+          (for example, during initial configuration), pictures will be
+          displayed faster if you disable optimization.</para>
+        </listitem>
+
+        <listitem>
+          <para>If there is a slow network connection (3G, ADSL, ...) between
+          you and Webcampak, if might be more efficient (and faster) if you
+          enable optimization.</para>
+        </listitem>
+      </itemizedlist>
+
+      <para>This choice can be modified at any time.</para>
+    </section>
+
+    <section>
+      <title>Picture and zoom</title>
+
+      <para>Webcampak is equipped with a bandwidth optimization feature. Any
+      pictures displayed via the web interface is pre-processed to be sent in
+      a definition corresponding to the user's browser. Consequently you will
+      notice that the zoom cursor will move by itself if you resize the
+      picture window.</para>
+
+      <para>For this reason you will not be able to zoom-out in a definition
+      lower than your window size (which is useless anyway) and zoom cursor
+      cannot reach "0%" value or any value lower than the current zoom level
+      calculated upon window size.</para>
+
+      <screenshot>
+        <screeninfo>Zoom inside a picture</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.zoom.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>To zoom inside a picture, simply select a zoom level and move your
+      mouse over the picture. Each time you change the zoom level or resize
+      the window, an updated version of the picture will be loaded.</para>
+
+      <para>To disable zooming, simply move the cursor to the far left of the
+      window (going to 0%).</para>
+
+      <screenshot>
+        <screeninfo>Déplacement au sein de l'image zoomée à 70%</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.zoom2.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+
+    <section>
+      <title>Comment a picture</title>
+
+      <para>By clicking on "Comment" button on the toolbar you will be able to
+      attach a comment to your picture.</para>
+
+      <screenshot>
+        <screeninfo>Insert a comment</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.comment.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>Save your comment by clicking on "Save".</para>
+
+      <screenshot>
+        <screeninfo>View your comment</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.comment.view.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>It will then be displayed below your picture and visible by any
+      user allowed to view content of this source.</para>
+
+      <para>Any image with an attached comment are displayed with a dark-blue
+      box in the hour grid on the left.</para>
+
+      <para>To delete a comment, just click again on "Comment" and click on
+      "Delete Comment".</para>
+    </section>
+
+    <section>
+      <title>Send a picture by email</title>
+
+      <para>Users can also send pictures by email right from the web interface
+      by clicking on "Email".</para>
+
+      <screenshot>
+        <screeninfo>Envoyer une image par email</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.email.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para>You can send this picture to the email of your choice (only one
+      email at a time), or maybe to yourself if you want to take a closer look
+      later.</para>
+
+      <para>Click on "Send Email" to send the picture, a popup will be
+      displayed to let you know once the process is completed.</para>
+    </section>
+
+    <section>
+      <title>Navigate within pictures</title>
+
+      <para>You can also notice three arrow buttons on the toolbar, you can
+      use them to browse with archives (previous, next, last picture).</para>
+
+      <screenshot>
+        <screeninfo>Naviguer au sein des images</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.browse.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+
+    <section>
+      <title>Thumbnails</title>
+
+      <para>Thumbnails are displayed below each picture, they are not directly
+      related to a specific time shift but to a difference in terms of number
+      of captures.</para>
+
+      <para>The following picture shift is currently being used (from left to
+      right): -15, -10, -5, +5, +10, +15</para>
+
+      <screenshot>
+        <screeninfo>Affichage des vignettes</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.pictures.thumbnails.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </section>
+  </section>
+</chapter>

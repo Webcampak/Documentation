@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="installation">
+  <title>Installation</title>
+
+  <para><note>
+      <para>Webcampak is always provided pre-installed and pre-configured,
+      this section of the document is only provided for people testing the
+      software.</para>
+    </note></para>
+
+  <para>Webcampak is composed by a Python core and a set of third party
+  software performing additional modifications.</para>
+
+  <para>The core can be considered as a director, it coordinates all Webcampak
+  action. Third party software must be installed and configured properly to
+  ensure all those components work properly together.</para>
+
+  <para>Webcampak has been built to run on top of Ubuntu Server operating
+  system. It is provided with a set of scripts and configurations files
+  specifically designed for this operating system. Webcampak is likely to run
+  on any GNU/Linux operating system but take extra care with configuration of
+  third party software, some of the configuration files might not be
+  compatible with another OS.</para>
+
+  <para>Furthermore we recommend to install Webcampak on a newly installed
+  operating system.</para>
+
+  <section>
+    <title>Ubuntu Server installation</title>
+
+    <para>Download and install Ubuntu Server, do not install any extra
+    packages except OpenSSH server to allow remote control.</para>
+
+    <para>We tested Webcampak with the following versions: 12.04</para>
+
+    <section>
+      <title>Detailed Ubuntu Server (12.04) installation</title>
+
+      <para>This section of the document might not be up-to-date, it will
+      detail installation of Ubuntu Server 12.04.</para>
+
+      <para>Most screenshots are self-explanatory and no further details will
+      be provided.</para>
+
+      <para>Once ready, boot up Ubuntu Server 12.04 installation disk.</para>
+
+      <screenshot>
+        <screeninfo>Select installation language</screeninfo>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen1.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+
+      <para><screenshot>
+          <screeninfo>Choose "Install Ubuntu Server"</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen2.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Select system language</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen3.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Configure the keyboard</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen4.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Configure the keyboard (2)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen5.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Configure the keyboard (3)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen6.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Loading</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen7.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Configure system's hostname</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen8.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Full name of main user</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen9.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Username of main user</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen10.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Choose a password</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen11.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Do not encrypt home directory</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen12.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot></para>
+
+      <para><screenshot>
+          <screeninfo>Configure the timezone</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen13.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Partition disks</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen14.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Partition disks (2)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen15.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot></para>
+
+      <para><screenshot>
+          <screeninfo>Partition disks (3) - Select "Yes"</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen16.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Partition disks (4)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen17.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Partition disks (5)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen18.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Partition disks (6)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen19.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Installation of the base system</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen20.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Configure HTTP proxy</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen21.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Downlading package lists</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen22.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>No automatic updates</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen23.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Software selection, select "OpenSSH server"
+          only</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen24.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Ubuntu installation</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen25.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Install GRUB on hard disk</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen26.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot><screenshot>
+          <screeninfo>Installation complete</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen27.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot>Installation is now complete, remove your Ubuntu Server
+      12.04 boot media and restart the computer.</para>
+
+      <para><screenshot>
+          <screeninfo>Partition disks (2)</screeninfo>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/ubuntu.install.screen28.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot>You are now ready to install Webcampak.</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Webcampak installation</title>
+
+    <para>Once Ubuntu Server has been installed, copy Webcampak software
+    archive to your user's home directory.</para>
+
+    <para>Untar the file and execute the installation script:</para>
+
+    <screen>wpak@webcampak:~$ bash webcampak2/init/install/install.Ubuntu12.04.sh</screen>
+
+    <para>Then follow all instructions on the screen.</para>
+
+    <section>
+      <title>Webcampak detailed installation (outdated)</title>
+
+      <para>This section is outdated, instructions below are for Webcampak
+      1.x</para>
+
+      <para>This section will detail, step by step how to install Webcampak
+      from scratch. This section of the document might not be up-to-date,
+      always follow instructions inside from the installation script.</para>
+
+      <para>First, open <emphasis role="bold">2</emphasis> SSH sessions (as
+      normal user) to your newly installed Ubuntu Server 12.04</para>
+
+      <screen>$ <emphasis role="bold">ssh webcampak@192.168.1.148</emphasis>
+The authenticity of host '192.168.1.148 (192.168.1.148)' can't be established.
+RSA key fingerprint is 33:64:db:c8:08:9a:ae:c2:ec:bd:75:fa:c4:d0:e2:3c.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.1.148' (RSA) to the list of known hosts.
+webcampak@192.168.1.148's password: 
+Welcome to Ubuntu 12.04 LTS (GNU/Linux 3.2.0-23-generic-pae i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Mon Jun 11 14:35:19 CDT 2012
+
+  System load:  0.0               Processes:           64
+  Usage of /:   12.4% of 6.71GB   Users logged in:     1
+  Memory usage: 3%                IP address for eth0: 192.168.1.148
+  Swap usage:   0%
+
+  Graph this data and manage this system at https://landscape.canonical.com/
+
+44 packages can be updated.
+17 updates are security updates.
+
+Last login: Mon Jun 11 14:34:31 2012
+webcampak@webcampak053:~$</screen>
+
+      <para>First step will consist in downloading the latest version of the
+      installation script from sourceforge. You can find it at the following
+      address: http://sourceforge.net/projects/webcampak/files/</para>
+
+      <screen>webcampak@webcampak053:~$ <emphasis role="bold">wget http://downloads.sourceforge.net/project/webcampak/install.Ubuntu12.04.sh</emphasis>
+--2012-06-11 14:39:04--  http://iweb.dl.sourceforge.net/project/webcampak/install.Ubuntu12.04.sh
+Resolving iweb.dl.sourceforge.net (iweb.dl.sourceforge.net)... 70.38.0.134, 2607:f748:10:12::5f:2
+Connecting to iweb.dl.sourceforge.net (iweb.dl.sourceforge.net)|70.38.0.134|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 30752 (30K) [text/x-sh]
+Saving to: `install.Ubuntu12.04.sh'
+
+100%[===============================================================================================================&gt;] 30,752      --.-K/s   in 0.07s   
+
+2012-06-11 14:39:05 (428 KB/s) - `install.Ubuntu12.04.sh' saved [30752/30752]</screen>
+
+      <para>The installation script is now downloaded and ready to be
+      started.</para>
+
+      <screen>webcampak@webcampak053:~$ bash install.Ubuntu12.04.sh</screen>
+
+      <para>Follow instructions carefully and answer to all questions. The
+      script will require you to perform manual actions.</para>
+
+      <screen>11 June 2012 - 14:40 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+11 June 2012 - 14:40 |              Welcome to Webcampak Installation Script               |
+11 June 2012 - 14:40 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+11 June 2012 - 14:40 /!\             Do not start this script as root                   /!\ 
+11 June 2012 - 14:40 /!\             --------------------------------                   /!\ 
+11 June 2012 - 14:40 /!\     This script has been created to run on a fresh             /!\ 
+11 June 2012 - 14:40 /!\     Ubuntu server installation.                                /!\ 
+11 June 2012 - 14:40 /!\ Some manual actions will be required during execution          /!\ 
+11 June 2012 - 14:40 /!\ Action ==&gt; Action to be done                                   /!\ 
+11 June 2012 - 14:40 /!\  corresponds to a manual action to be done                     /!\ 
+11 June 2012 - 14:40 /!\ Action: #&gt; command                                              /!\ 
+11 June 2012 - 14:40 /!\  corresponds to a command to be manually entered in a terminal /!\ 
+11 June 2012 - 14:40 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+11 June 2012 - 14:40 
+11 June 2012 - 14:40 Config: Do you want to [I]nstall or [U]pgrade ?
+11 June 2012 - 14:40 Config: Note: [U]pgrade only work for code upgrades and is highly experimental
+<emphasis role="bold">I</emphasis></screen>
+
+      <para>Press "I" here to begin the "I"nstallation process.</para>
+
+      <screen>11 June 2012 - 14:41 Config: How many sources are supported ?
+<emphasis role="bold">4</emphasis></screen>
+
+      <para>Indicate how many sources you would like to be supported by the
+      system. A source is more than just a camera, for example if you want to
+      capture at different frequency depending of the hour of the day it will
+      require two or more sources. We recommend suggest to install "4" sources
+      by default for a Webcampak installed in the field. If Webcampak is
+      installed as a server, "20" sources if a good starting point.</para>
+
+      <screen>11 June 2012 - 14:45 Config: What is the system username (i.e. /home/username/) ?
+<emphasis role="bold">webcampak</emphasis></screen>
+
+      <para>Then, indicate the username you configured for the main user
+      (configured during the installation).</para>
+
+      <screen>11 June 2012 - 14:46 Config: Which version would you like to download install
+11 June 2012 - 14:46 Config: (v0.9-rev20110111 for webcampak-v0.9-rev20110111.zip file)
+<emphasis role="bold">v1.7-a02-20120611</emphasis></screen>
+
+      <para>Tell the system which version of Webcampak you would like to
+      install. You can find all versions on Sourceforge.</para>
+
+      <screen>11 June 2012 - 14:48 Systeme: Installation of a command line text editor (jed)
+11 June 2012 - 14:48 Système: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>During the installation process we use "jed" as our config file
+      editor. "jed" is based upon emacs and provide easy-to-use keyboard
+      shortcut.</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>To Save: ESCAPE + F + S</para>
+        </listitem>
+
+        <listitem>
+          <para>To Exit: ESCAPE + F + X</para>
+        </listitem>
+      </itemizedlist>
+
+      <screen>11 June 2012 - 14:50 #&gt; sudo apt-get install jed
+[sudo] password for webcampak: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  jed-common libslang2-modules slsh
+Suggested packages:
+  gpm
+The following NEW packages will be installed:
+  jed jed-common libslang2-modules slsh
+0 upgraded, 4 newly installed, 0 to remove and 43 not upgraded.
+Need to get 812 kB of archives.
+After this operation, 2,980 kB of additional disk space will be used.
+Do you want to continue [Y/n]? <emphasis role="bold">Y</emphasis>
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise/universe libslang2-modules i386 2.2.4-3ubuntu1 [63.1 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise/universe slsh i386 2.2.4-3ubuntu1 [114 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise/universe jed-common all 1:0.99.19-2.1 [483 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise/universe jed i386 1:0.99.19-2.1 [151 kB]
+Fetched 812 kB in 1s (510 kB/s)
+Selecting previously unselected package libslang2-modules.
+(Reading database ... 27087 files and directories currently installed.)
+Unpacking libslang2-modules (from .../libslang2-modules_2.2.4-3ubuntu1_i386.deb) ...
+Selecting previously unselected package slsh.
+Unpacking slsh (from .../slsh_2.2.4-3ubuntu1_i386.deb) ...
+Selecting previously unselected package jed-common.
+Unpacking jed-common (from .../jed-common_1%3a0.99.19-2.1_all.deb) ...
+Selecting previously unselected package jed.
+Unpacking jed (from .../jed_1%3a0.99.19-2.1_i386.deb) ...
+Processing triggers for man-db ...
+Processing triggers for install-info ...
+Setting up libslang2-modules (2.2.4-3ubuntu1) ...
+Setting up slsh (2.2.4-3ubuntu1) ...
+Setting up jed-common (1:0.99.19-2.1) ...
+Running /usr/share/jed/compile/jed-common...done
+Setting up jed (1:0.99.19-2.1) ...
+update-alternatives: using /usr/bin/jed to provide /usr/bin/editor (editor) in auto mode.
+update-alternatives: using /usr/bin/jed to provide /usr/bin/jed-script (jed-script) in auto mode.
+Updating precompiled files...done
+</screen>
+
+      <para>As for all "sudo" actions, you will need to entre your password.
+      The system will also ask you if you want to continue, press "Y" or
+      "Enter".</para>
+
+      <screen>11 June 2012 - 14:50 System: Action ==&gt; Open /etc/apt/sources.list file (as root, or with sudo)
+11 June 2012 - 14:50 System: Action ==&gt; Uncomment backports and partners repositories</screen>
+
+      <para>The next step require a manual action, to be performed in your
+      second SSH session. Do not press "Enter" until actions are
+      completed.</para>
+
+      <screen>webcampak@webcampak053:~$ sudo jed /etc/apt/sources.list
+[sudo] password for webcampak:</screen>
+
+      <para>At the bottom of the file, uncomment repositories (basically
+      uncomment all repositories).</para>
+
+      <screen>## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+deb http://archive.canonical.com/ubuntu precise partner
+deb-src http://archive.canonical.com/ubuntu precise partner
+
+## Uncomment the following two lines to add software from Ubuntu's
+## 'extras' repository.
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://extras.ubuntu.com/ubuntu precise main
+deb-src http://extras.ubuntu.com/ubuntu precise main</screen>
+
+      <para>Save and Exit.</para>
+
+      <para>Go back to your first SSH session and press "Enter".</para>
+
+      <screen>11 June 2012 - 14:50 System: Action ==&gt; Open /etc/apt/sources.list file (as root, or with sudo)
+11 June 2012 - 14:50 System: Action ==&gt; Uncomment backports and partners repositories
+
+11 June 2012 - 14:56 System: Distribution upgrade
+11 June 2012 - 14:56 Systeme: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>Select "o" and press "Enter" to start Distribution upgrade.</para>
+
+      <screen>....
+Hit http://us.archive.ubuntu.com precise-updates/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-updates/universe Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/main Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/multiverse Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/restricted Translation-en
+Hit http://us.archive.ubuntu.com precise-backports/universe Translation-en
+Fetched 13.1 MB in 7s (1,651 kB/s)                                                                                                                      
+Reading package lists... Done
+W: GPG error: http://extras.ubuntu.com precise Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 16126D3A3E5C1192
+11 June 2012 - 14:57 #&gt; sudo apt-get dist-upgrade
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+  linux-image-3.2.0-24-generic-pae
+The following packages will be upgraded:
+  apport bind9-host dmsetup dnsutils hdparm isc-dhcp-client isc-dhcp-common krb5-locales libbind9-80 libdevmapper-event1.02.1 libdevmapper1.02.1
+  libdns81 libgcrypt11 libgssapi-krb5-2 libisc83 libisccc80 libisccfg82 libk5crypto3 libkrb5-3 libkrb5support0 liblwres80 libpolkit-gobject-1-0
+  libsasl2-2 libsasl2-modules libssl1.0.0 libtasn1-3 libxml2 linux-generic-pae linux-image-generic-pae lvm2 openssl python-apport python-gi
+  python-problem-report resolvconf sudo update-manager-core update-notifier-common upstart vim vim-common vim-runtime vim-tiny
+43 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 52.8 MB of archives.
+After this operation, 113 MB of additional disk space will be used.
+Do you want to continue [Y/n]? Y</screen>
+
+      <para>Press "Y" to install packages.</para>
+
+      <screen>...
+Get:1 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libssl1.0.0 i386 1.0.1-4ubuntu5.2 [1,002 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main upstart i386 1.5-0ubuntu7 [313 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main resolvconf all 1.63ubuntu14 [53.3 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu/ precise-updates/main libgcrypt11 i386 1.5.0-3ubuntu0.1 [281 kB]
+...
+Setting up libgssapi-krb5-2 (1.10+dfsg~beta1-2ubuntu0.1) ...
+Setting up libpolkit-gobject-1-0 (0.104-1ubuntu1) ...
+Setting up libsasl2-2 (2.1.25.dfsg1-3ubuntu0.1) ...
+Setting up libsasl2-modules (2.1.25.dfsg1-3ubuntu0.1) 
+...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+Processing triggers for initramfs-tools ...
+update-initramfs: Generating /boot/initrd.img-3.2.0-24-generic-pa</screen>
+
+      <para>The system will then download and install updates.</para>
+
+      <screen>11 June 2012 - 14:59 System: Software and dependencies installation
+11 June 2012 - 14:59 System: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>Press "o" to install webcampak dependencies.</para>
+
+      <screen>11 June 2012 - 15:00 System: You will have to define Mysql root password</screen>
+
+      <para>Be careful, you will have to define the root password of Webcampak
+      MySQL server, you will need to use this password during the installation
+      process.</para>
+
+      <screen>0 upgraded, 389 newly installed, 0 to remove and 0 not upgraded.
+Need to get 197 MB of archives.
+After this operation, 591 MB of additional disk space will be used.
+Do you want to continue [Y/n]? <emphasis role="bold">Y</emphasis></screen>
+
+      <para>Press "Y" to install Webcampak dependencies.</para>
+
+      <screen>                  ┌─────────────────────────────────────────┤ Configuring mysql-server-5.5 ├─────────────────────────────────────────┐
+                  │ While not mandatory, it is highly recommended that you set a password for the MySQL administrative "root" user.  │ 
+                  │                                                                                                                  │ 
+                  │ If this field is left blank, the password will not be changed.                                                   │ 
+                  │                                                                                                                  │ 
+                  │ New password for the MySQL "root" user:                                                                          │ 
+                  │                                                                                                                  │ 
+                  │ ________________________________________________________________________________________________________________ │ 
+                  │                                                                                                                  │ 
+                  │                                                      &lt;Ok&gt;                                                        │ 
+                  │                                                                                                                  │ 
+                  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ 
+ </screen>
+
+      <para>Define root password of MySQL server, do not leave this fiels
+      blank.</para>
+
+      <screen>11 June 2012 - 15:08 System: Would you like to install motion
+11 June 2012 - 15:08 System: [s]-Skip [o]-OK
+<emphasis role="bold">s</emphasis></screen>
+
+      <para>We suggest to install motion only if you really need motion
+      detection, otherwise skip it, you can always install motion at a later
+      stage.</para>
+
+      <screen>11 June 2012 - 15:09 System: Permissions and system modifications
+11 June 2012 - 15:09 System: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>You will have to perform a few actions using your other SSH
+      session.</para>
+
+      <screen>11 June 2012 - 15:10 System: ==&gt; Action: Open a separate terminal and write down below commands:
+11 June 2012 - 15:10 System: ==&gt; Action: #&gt; sudo su
+
+11 June 2012 - 15:12 System: ==&gt; Action: Define 'root' password
+11 June 2012 - 15:12 System: ==&gt; Action: #&gt; passwd
+</screen>
+
+      <para>First we define root password, the reason is that we will edit
+      sudoers. Setting root password will give you the ability to connected as
+      root via SSH in case sudoers file is not edited properly.</para>
+
+      <screen>webcampak@webcampak053:~$ <emphasis role="bold">sudo su</emphasis>
+[sudo] password for webcampak: 
+root@webcampak053:/home/webcampak# <emphasis role="bold">passwd</emphasis>
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully</screen>
+
+      <para>Setting root password will give you the ability to connected as
+      root via SSH in case sudoers file is not edited properly. Press "Enter"
+      on the first SSH session when done.</para>
+
+      <screen>11 June 2012 - 15:13 System: ==&gt; Action: Add webcampak user to www-data group
+11 June 2012 - 15:13 System: ==&gt; Action: #&gt; jed /etc/group
+11 June 2012 - 15:13 System: ==&gt; Action: Edit the following line: www-data:x:33:webcampak
+</screen>
+
+      <para>Go back to your second SSH sessions and edit /etc/group
+      file.</para>
+
+      <screen>root@webcampak053:/home/webcampak# <emphasis role="bold">jed /etc/group</emphasis>
+...
+dip:x:30:webcampak
+www-data:x:33:webcampak
+backup:x:34:
+...</screen>
+
+      <para>This is useful to allow file manipulation from the web
+      interface.</para>
+
+      <screen>11 June 2012 - 15:15 System: ==&gt; Action: Modification of sudoers file
+11 June 2012 - 15:15 System: ==&gt; Action: #&gt; visudo
+11 June 2012 - 15:15 System: ==&gt; Action:    Add the following line at the end of the file: 
+11 June 2012 - 15:15 System: ==&gt; Action:       www-data    ALL=(ALL) NOPASSWD: /usr/bin/php -f /home/webcampak/webcampak/bin/server.php* 
+11 June 2012 - 15:15 System: ==&gt; Action:       webcampak    ALL=(ALL) NOPASSWD: /home/webcampak/webcampak/bin/webcampak.phidget.py 
+11 June 2012 - 15:15 System: ==&gt; Action:    Add a blank line, save and exit
+</screen>
+
+      <para>You need to edit sudoers file using "visudo" command.</para>
+
+      <screen>root@webcampak053:/home/webcampak# <emphasis role="bold">visudo</emphasis>
+...
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
+
+www-data    ALL=(ALL) NOPASSWD: /usr/bin/php -f /home/webcampak/webcampak/bin/server.php*
+webcampak    ALL=(ALL) NOPASSWD: /home/webcampak/webcampak/bin/webcampak.phidget.py
+
+
+</screen>
+
+      <para>The first line, starting with www-data is used to start system
+      commands (such as updating cron) from a specific webcampak
+      script.</para>
+
+      <para>The second line, is used to connect to phidget electronic
+      board.</para>
+
+      <screen>11 June 2012 - 15:19 System: ==&gt; Action: Modification of udev file
+11 June 2012 - 15:19 System: ==&gt; Action: #&gt; jed /lib/udev/rules.d/50-udev-default.rules
+11 June 2012 - 15:19 System: ==&gt; Action:    Replace: 
+11 June 2012 - 15:19 System: ==&gt; Action:       # libusb device nodes 
+11 June 2012 - 15:19 System: ==&gt; Action:       SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0664"
+11 June 2012 - 15:19 System: ==&gt; Action:    With: 
+11 June 2012 - 15:19 System: ==&gt; Action:       # libusb device nodes 
+11 June 2012 - 15:19 System: ==&gt; Action:       SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0664", GROUP="plugdev"
+11 June 2012 - 15:19 System: ==&gt; Action:    Save and exit</screen>
+
+      <para>The next modification is necessary to avoid permission errors when
+      using USB compacts and DSLR (with Gphoto).</para>
+
+      <screen>root@webcampak053:/home/webcampak# <emphasis role="bold">jed /lib/udev/rules.d/50-udev-default.rules</emphasis>
+...
+# 'libusb' device nodes
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", MODE="0664", GROUP="plugdev"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", IMPORT{builtin}="usb_id"
+...
+</screen>
+
+      <para>Save, exit and go back to your first SSH session.</para>
+
+      <screen>[sudo] password for webcampak: 
+Rather than invoking init scripts through /etc/init.d, use the service(8)
+utility, e.g. service udev restart
+
+Since the script you are attempting to invoke has been converted to an
+Upstart job, you may also use the stop(8) and then start(8) utilities,
+e.g. stop udev ; start udev. The restart(8) utility is also available.
+udev stop/waiting
+udev start/running, process 29907</screen>
+
+      <para>The installation script will then ask for your password and
+      restard udev.</para>
+
+      <screen>11 June 2012 - 15:21 System: ==&gt; Action: Modification of grub error timeout
+11 June 2012 - 15:21 System: ==&gt; Action: #&gt; jed /etc/grub.d/00_header
+11 June 2012 - 15:21 System: ==&gt; Action:    Replace: 
+11 June 2012 - 15:21 System: ==&gt; Action:       if [ ${recordfail} = 1 ]; then
+11 June 2012 - 15:21 System: ==&gt; Action:       set timeout=-1
+11 June 2012 - 15:21 System: ==&gt; Action:       else
+11 June 2012 - 15:21 System: ==&gt; Action:       set timeout=${GRUB_TIMEOUT}
+11 June 2012 - 15:21 System: ==&gt; Action:       fi
+11 June 2012 - 15:21 System: ==&gt; Action:    With: 
+11 June 2012 - 15:21 System: ==&gt; Action:       if [ ${recordfail} = 1 ]; then
+11 June 2012 - 15:21 System: ==&gt; Action:       set timeout=5
+11 June 2012 - 15:21 System: ==&gt; Action:       else
+11 June 2012 - 15:21 System: ==&gt; Action:       set timeout=${GRUB_TIMEOUT}
+11 June 2012 - 15:21 System: ==&gt; Action:       fi
+</screen>
+
+      <para>By default, GRUB is configured to wait until a key is pressed if
+      it fails to boot (i.e. power cut during startup process). We don't want
+      this behavior so we replace -1 with 5 (GRUB will wait 5s before
+      booting).</para>
+
+      <screen>root@webcampak053:/home/webcampak# <emphasis role="bold">jed /etc/grub.d/00_header
+<emphasis>if [ "\${recordfail}" = 1 ]; then
+  set timeout=5
+else</emphasis></emphasis></screen>
+
+      <para>Save, exit and go back to your first SSH session.</para>
+
+      <screen>Generating grub.cfg ...
+Found linux image: /boot/vmlinuz-3.2.0-24-generic-pae
+Found initrd image: /boot/initrd.img-3.2.0-24-generic-pae
+Found linux image: /boot/vmlinuz-3.2.0-23-generic-pae
+Found initrd image: /boot/initrd.img-3.2.0-23-generic-pae
+Found memtest86+ image: /memtest86+.bin
+done
+11 June 2012 - 15:25 Webcampak: Download latest software version
+11 June 2012 - 15:25 Webcampak: [x]-Exit [S]-skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>The system will then update grub and ask you to install latest
+      webcampak version.</para>
+
+      <screen>Connecting to iweb.dl.sourceforge.net (iweb.dl.sourceforge.net)|70.38.0.134|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3102088 (3.0M) [application/zip]
+Saving to: `webcampak-v1.7-a02-20120611.zip'
+
+69% [============================================================================&gt;                                   ] 2,160,164    260K/s  eta 5s
+2012-06-11 15:27:52 (210 KB/s) - `webcampak-v1.7-a02-20120611.zip' saved [3102088/3102088]
+
+11 June 2012 - 15:27 Webcampak: download complete, unzip archive
+11 June 2012 - 15:27 #&gt; unzip webcampak-v1.7-a02-20120611.zip
+Archive:  webcampak-v1.7-a02-20120611.zip
+...
+   creating: webcampak/locale/de_DE/admin/
+   creating: webcampak/locale/de_DE/messages/
+   creating: webcampak/locale/de_DE/viewer/
+   creating: webcampak/etc/
+sed: can't read /home/webcampak/webcampak/etc/*: No such file or directory
+sed: couldn't edit /home/webcampak/webcampak/www/viewer/include/smarty: not a regular file</screen>
+
+      <para>Don't worry about the two errors at the bottom of the page.</para>
+
+      <screen>11 June 2012 - 15:27 Webcampak: Software preparation
+11 June 2012 - 15:27 Webcampak: Setting software permissions 
+11 June 2012 - 15:27 #&gt; chmod 777 /home/webcampak/webcampak/www/admin/themes/wordpress/cache/templates_c/ -R
+11 June 2012 - 15:27 #&gt; chmod 777 /home/webcampak/webcampak/www/viewer/themes/default/cache/templates_c/ -R
+11 June 2012 - 15:27 #&gt; chmod +x /home/webcampak/webcampak/bin/server.php
+11 June 2012 - 15:27 #&gt; chmod +x /home/webcampak/webcampak/bin/*.py
+11 June 2012 - 15:27 Webcampak: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>The system will then apply appropriate permissions.</para>
+
+      <screen>11 June 2012 - 15:31 Webcampak: Crontab creation
+11 June 2012 - 15:31 Webcampak: [x]-Exit [s]-Skip [o]-OK
+o
+</screen>
+
+      <para>The system will generate the first crontab file, you will be able
+      to edit it later via the web interface.</para>
+
+      <screen># Taches CRON source: 4
+*/5 * * * * python /home/webcampak/webcampak/bin/webcampak.py -t capture -s 4
+0 4 * * * python /home/webcampak/webcampak/bin/webcampak.py -t video -s 4
+*/2 * * * * flock -xn /home/webcampak/webcampak/resources/cache/createcustom4.lock python /home/webcampak/webcampak/bin/webcampak.py -t videocustom -s 4 &gt; /tmp/custom4.log 
+*/5 * * * * python /home/webcampak/webcampak/bin/webcampak.py -t rrdgraph -s 4
+ 
+11 June 2012 - 15:31 ------------------------------------
+11 June 2012 - 15:31 Install above crontab file: [n]-No [y]-Yes
+<emphasis role="bold">y</emphasis> 
+</screen>
+
+      <para>Press "y" to install crontab.</para>
+
+      <screen>11 June 2012 - 15:33 Apache: Software configuration
+11 June 2012 - 15:33 #&gt; sudo cp /home/webcampak/webcampak/init/config/webcampak.apache /etc/apache2/sites-available/webcampak
+11 June 2012 - 15:33 #&gt; sudo a2ensite webcampak
+11 June 2012 - 15:33 #&gt; sudo a2dissite 000-default
+11 June 2012 - 15:33 #&gt; sudo a2enmod auth_mysql
+11 June 2012 - 15:33 #&gt; sudo /etc/init.d/apache2 reload
+11 June 2012 - 15:33 Apache: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>The script will now configure Apache2 for Webcampak, press
+      "<emphasis>o</emphasis>"</para>
+
+      <screen>Enabling site webcampak.
+To activate the new configuration, you need to run:
+  service apache2 reload
+Site default disabled.
+To activate the new configuration, you need to run:
+  service apache2 reload
+Enabling module auth_mysql.
+To activate the new configuration, you need to run:
+  service apache2 restart
+ * Reloading web server config apache2         
+apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName       [ OK ]</screen>
+
+      <para>Apache2 will then restart.</para>
+
+      <screen>11 June 2012 - 15:34 Apache: Configuration completed
+11 June 2012 - 15:34 Mysql: Database Installation
+11 June 2012 - 15:34 Mysql: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>The script then configure MySQL, you will have to enter your root
+      MySQL password defined earlier.</para>
+
+      <screen>11 June 2012 - 15:36 Database installation
+11 June 2012 - 15:36 Please indicate MYSQL root password
+11 June 2012 - 15:36 #&gt; mysql -u root -p &lt; /home/webcampak/webcampak/init/config/webcampak.drop.sql
+Enter password: 
+ERROR 1008 (HY000) at line 7: Can't drop database 'webcampak'; database doesn't exist
+11 June 2012 - 15:36 #&gt; mysql -u root -p &lt; /home/webcampak/webcampak/init/config/webcampak.drop.user.sql
+Enter password: 
+ERROR 1396 (HY000) at line 7: Operation DROP USER failed for 'mysqlwebcampak'@'localhost'
+11 June 2012 - 15:36 #&gt; mysql -u root -p &lt; /home/webcampak/webcampak/init/config/webcampak.sql
+Enter password: 
+11 June 2012 - 15:36 #&gt; mysql -u root -p &lt; /home/webcampak/webcampak/init/config/webcampak.user.sql
+Enter password: 
+11 June 2012 - 15:37 Installation completed, Default User/Password are: root/webcampak please change those elements via the interface ASAP</screen>
+
+      <para>You will see 2 errors (ERROR 1008 &amp; ERROR 1396), you don't
+      have to worry about those. The script tries to remove any previous
+      webcampak database so this error appears the first time you install
+      Webcampak.</para>
+
+      <para>You must not have any errors on the two last mysql requests (as in
+      the above capture).</para>
+
+      <screen>11 June 2012 - 15:37 Webcampak: Directory creation (sources, resources ...)
+11 June 2012 - 15:37 Webcampak: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>Webcampak will create all directories necessary for its
+      operation.</para>
+
+      <screen>11 June 2012 - 15:40 #&gt; mkdir /home/webcampak/webcampak/sources/ 
+11 June 2012 - 15:40 #&gt; mkdir /home/webcampak/webcampak/sources/source4 
+11 June 2012 - 15:40 #&gt; mkdir /home/webcampak/webcampak/sources/source4/live 
+11 June 2012 - 15:40 #&gt; mkdir /home/webcampak/webcampak/sources/source4/pictures 
+...
+11 June 2012 - 15:40 #&gt; cp /home/webcampak/webcampak/init/etc/admin.config.php /home/webcampak/webcampak/etc/admin.config.php
+11 June 2012 - 15:40 #&gt; sed -i s/tmpnbsources/4/ /home/webcampak/webcampak/etc/admin.config.php
+11 June 2012 - 15:40 #&gt; sudo chown www-data /home/webcampak/webcampak/etc/*.cfg
+11 June 2012 - 15:40 #&gt; sudo chgrp www-data /home/webcampak/webcampak/etc/*.cfg
+</screen>
+
+      <para>Next, the installation script will configure the internal FTP
+      server.</para>
+
+      <screen>11 June 2012 - 15:40 Vsftpd: Configuration de vsftpd
+11 June 2012 - 15:40 Vsftpd: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o </emphasis>
+</screen>
+
+      <para>The system will create appropriate files.</para>
+
+      <screen>11 June 2012 - 15:41 #&gt; sudo mkdir /etc/vsftpd
+11 June 2012 - 15:41 #&gt; sudo mkdir /etc/vsftpd/vsftpd_user_conf
+11 June 2012 - 15:41 #&gt; sudo cp /home/webcampak/webcampak/init/config/vsftpd.conf /etc/vsftpd.conf
+11 June 2012 - 15:41 #&gt; sudo echo local_root=/home/webcampak/webcampak/sources/source1/ &gt; /etc/vsftpd/vsftpd_user_conf/source1 
+11 June 2012 - 15:41 #&gt; sudo cat /home/webcampak/webcampak/init/config/vsftpd-source &gt; /etc/vsftpd/vsftpd_user_conf/source1 
+11 June 2012 - 15:41 #&gt; sudo echo local_root=/home/webcampak/webcampak/sources/source2/ &gt; /etc/vsftpd/vsftpd_user_conf/source2 
+11 June 2012 - 15:41 #&gt; sudo cat /home/webcampak/webcampak/init/config/vsftpd-source &gt; /etc/vsftpd/vsftpd_user_conf/source2 
+11 June 2012 - 15:41 #&gt; sudo echo local_root=/home/webcampak/webcampak/sources/source3/ &gt; /etc/vsftpd/vsftpd_user_conf/source3 
+11 June 2012 - 15:41 #&gt; sudo cat /home/webcampak/webcampak/init/config/vsftpd-source &gt; /etc/vsftpd/vsftpd_user_conf/source3 
+11 June 2012 - 15:41 #&gt; sudo echo local_root=/home/webcampak/webcampak/sources/source4/ &gt; /etc/vsftpd/vsftpd_user_conf/source4 
+11 June 2012 - 15:41 #&gt; sudo cat /home/webcampak/webcampak/init/config/vsftpd-source &gt; /etc/vsftpd/vsftpd_user_conf/source4 
+11 June 2012 - 15:41 #&gt; sudo /etc/init.d/vsftpd restart
+Rather than invoking init scripts through /etc/init.d, use the service(8)
+utility, e.g. service vsftpd restart
+
+Since the script you are attempting to invoke has been converted to an
+Upstart job, you may also use the stop(8) and then start(8) utilities,
+e.g. stop vsftpd ; start vsftpd. The restart(8) utility is also available.
+vsftpd stop/waiting
+vsftpd start/running, process 30832</screen>
+
+      <para>FTP server will be restarted at the end, note that the FTP server
+      must be enabled via the administration panel.</para>
+
+      <para>Next, the installation script will install GoogleCL</para>
+
+      <screen>11 June 2012 - 15:41 Google: Installation of GoogleCL (for Youtube uploads)
+11 June 2012 - 15:41 Google: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para/>
+
+      <screen>--2012-06-11 15:44:15--  http://googlecl.googlecode.com/files/googlecl_0.9.11-1_all.deb
+Resolving googlecl.googlecode.com (googlecl.googlecode.com)... 74.125.142.82, 2001:4860:800a::52
+Connecting to googlecl.googlecode.com (googlecl.googlecode.com)|74.125.142.82|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 71088 (69K) [application/x-archive application/x-debian-package]
+Saving to: `googlecl_0.9.11-1_all.deb'
+
+100%[===============================================================================================================&gt;] 71,088       242K/s   in 0.3s    
+
+2012-06-11 15:44:16 (242 KB/s) - `googlecl_0.9.11-1_all.deb' saved [71088/71088]
+
+11 June 2012 - 15:44 #&gt; sudo dpkg -i googlecl_0.9.11-1_all.deb
+Selecting previously unselected package googlecl.
+(Reading database ... 45646 files and directories currently installed.)
+Unpacking googlecl (from .../googlecl_0.9.11-1_all.deb) ...
+Setting up googlecl (0.9.11-1) ...
+Processing triggers for man-db ...
+Processing triggers for python-support ...
+11 June 2012 - 15:44 Google: Enter your Google/Youtube username and password
+11 June 2012 - 15:44 Google: A URL will be displayed, copy/paste it within your web browser to allow the webcampak to post content using the appropriate Youtube account
+Please specify user: <emphasis role="bold">webcampak</emphasis></screen>
+
+      <para>Enter your google (Youtube) account here.</para>
+
+      <para>You will be automatically redirected to links (a command line web
+      browser). Press "Enter" "q" "Enter" to quit links.</para>
+
+      <screen>Please log in and/or grant access via your browser at 
+https://www.google.com/accounts/OAuthAuthorizeToken?oauth_token=jyrhtrwfewxfewegwdmZewefwfu&amp;hd=default 
+then hit enter.</screen>
+
+      <para>You will see at the bottom of your screen a URL, copy this in your
+      browser, and log in. Your newly installed Webcampak will be allowed to
+      post content to youtube.</para>
+
+      <para>Clic on "Grant Access",</para>
+
+      <para>You should then see a message such as this one:</para>
+
+      <screen>You have successfully granted GoogleCL webcampak@webcampak053 access to your Google Account. You can revoke access at any time under 'My Account'.</screen>
+
+      <para>Go back to your SSH session 1 and press "Enter", if the
+      configuration process of googleCL has been successful you should see
+      your existing Youtube videos.</para>
+
+      <screen>Timelapse -Quatrième jour aux Vieilles Charrues 2011,http://www.youtube.com/watch?v=sFbPoY0yCYI&amp;feature=youtube_gdata
+Timelapse - Troisième jour aux Vieilles Charrues 2011,http://www.youtube.com/watch?v=xEEtj10rvvQ&amp;feature=youtube_gdata
+Timelapse - Second jour aux Vieilles Charrues 2011,http://www.youtube.com/watch?v=n-wrmDJNWIk&amp;feature=youtube_gdata
+Timelapse - Premier jour aux Vieilles Charrues 2011,http://www.youtube.com/watch?v=pXvL34tPYk8&amp;feature=youtube_gdata
+
+11 June 2012 - 15:48 Serial: Configure serial port (for debugging)
+11 June 2012 - 15:48 Serial: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>The system then ask you if you want to configure the serial port,
+      if configured you will be able to connect to your Webcampak via its
+      serial port.</para>
+
+      <screen>11 June 2012 - 15:50 Serial: Create /etc/init/ttyS0.conf
+11 June 2012 - 15:50 Serial: sudo start ttyS0
+ttyS0 start/running, process 31314
+11 June 2012 - 15:50 Serial: ==&gt; Action: Modification of grub config
+11 June 2012 - 15:50 Serial: ==&gt; Action: #&gt; jed /etc/default/grub</screen>
+
+      <para>Go to your second SSH session.</para>
+
+      <screen>root@webcampak053:/home/webcampak# <emphasis role="bold"><emphasis>jed /etc/default/grub
+
+11 June 2012 - 15:52 Serial: ==&gt; Action: Match the following configuration: 
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_DEFAULT=0
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_TIMEOUT=1
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_DISTRIBUTOR='lsb_release -i -s 2&gt; /dev/null || echo Debian'
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_CMDLINE_LINUX="console=tty0 console=ttyS0,115200n8"
+11 June 2012 - 15:52 Serial: ==&gt; Action:  
+11 June 2012 - 15:52 Serial: ==&gt; Action: # Uncomment to disable graphical terminal (grub-pc only)
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_TERMINAL=serial
+11 June 2012 - 15:52 Serial: ==&gt; Action:    GRUB_SERIAL_COMMAND="serial --speed=115200 --unit=0 --word=8 --parity=no --stop=1"
+11 June 2012 - 15:52 Serial: ==&gt; Action:    
+11 June 2012 - 15:52 Serial: ==&gt; Action:    # The resolution used on graphical terminal
+11 June 2012 - 15:52 Serial: ==&gt; Action:    # note that you can use only modes which your graphic card supports via VBE
+11 June 2012 - 15:52 Serial: ==&gt; Action:    # you can see them in real GRUB with the command 'vbeinfo'
+11 June 2012 - 15:52 Serial: ==&gt; Action:    #GRUB_GFXMODE=640x480
+11 June 2012 - 15:52 Serial: ==&gt; Action:  
+11 June 2012 - 15:52 Serial: ==&gt; Action:    # Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+11 June 2012 - 15:52 Serial: ==&gt; Action:    #GRUB_DISABLE_LINUX_UUID=true</emphasis></emphasis></screen>
+
+      <para>Follow the above details, save file, exit and go back to SSH
+      session 1.</para>
+
+      <screen>11 June 2012 - 15:53 Serial: sudo update-grub2
+Generating grub.cfg ...
+Found linux image: /boot/vmlinuz-3.2.0-24-generic-pae
+Found initrd image: /boot/initrd.img-3.2.0-24-generic-pae
+Found linux image: /boot/vmlinuz-3.2.0-23-generic-pae
+Found initrd image: /boot/initrd.img-3.2.0-23-generic-pae
+Found memtest86+ image: /memtest86+.bin
+done
+11 June 2012 - 15:53 Webcampak: Saving version</screen>
+
+      <para>The system will update grup and save Webcampak version.</para>
+
+      <para>If you have a Phidget board, you can install appropriate
+      drivers.</para>
+
+      <screen>11 June 2012 - 15:54 Phidget: Drivers Installation (only if phidget board is installed)
+11 June 2012 - 15:54 Phidget: [x]-Exit [s]-Skip [o]-OK
+<emphasis role="bold">o</emphasis></screen>
+
+      <para>Most of the process is automated and does not require any actions.
+      Some compilation will take place so depending of Webcampak CPU it might
+      take some time.</para>
+
+      <screen>Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following extra packages will be installed:
+  dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl libstdc++6-4.6-dev
+Suggested packages:
+  debian-keyring g++-multilib g++-4.6-multilib gcc-4.6-doc libstdc++6-4.6-dbg libstdc++6-4.6-doc make-doc
+The following NEW packages will be installed:
+  build-essential dpkg-dev fakeroot g++ g++-4.6 libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libdpkg-perl
+  libstdc++6-4.6-dev libusb-dev make
+0 upgraded, 12 newly installed, 0 to remove and 1 not upgraded.
+Need to get 9,358 kB of archives.
+After this operation, 27.7 MB of additional disk space will be used.
+Do you want to continue [Y/n]?<emphasis role="bold">Y</emphasis></screen>
+
+      <para>After a few minutes Webcampak installation script will be
+      completed and you can start using your Webcampak.</para>
+
+      <screen>byte-compiling /usr/local/lib/python2.7/dist-packages/Phidgets/Events/Events.py to Events.pyc
+byte-compiling /usr/local/lib/python2.7/dist-packages/Phidgets/PhidgetException.py to PhidgetException.pyc
+running install_egg_info
+Writing /usr/local/lib/python2.7/dist-packages/PythonModule-2.1.8.egg-info
+webcampak@webcampak053:~$ </screen>
+
+      <para/>
+    </section>
+  </section>
+</chapter>

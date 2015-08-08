@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="viewerpanel">
+    <title>Interface visiteur</title>
+ 
+    <para>L'objectif de cette interface est de faciliter la visualisation des
+    contenus capturés et/ou générés par votre Webcampak.</para>
+
+    <para>Elle dispose d'un module de gestion d'autorisations vous permettant
+    de créer des comptes utilisateurs et gérer les droits d'accès aux
+    différentes ressources ou fonctionnalités. Une source ne sera affichée
+    dans que si le visiteur authentifié dispose des droits de consultation de
+    la source en question.</para>
+
+    <para>Cette interface fonctionne quelque soit le nombre de sources
+    disponibles. Une granularité poussée vous permet de gérer les droits
+    d'accès (visualisation) source par source et utilisateur par
+    utilisateur.</para>
+
+    <para>Actuellement disponible en trois langues; Espagnol, Anglais,
+    Français, n'hésitez pas à revenir vers nous si vous souhaitez qu'une
+    langue supplémentaire soit supportée.</para>
+
+    <para>Il reste important de noter que l'interface visiteur de permet pas
+    de modifier le comportement du Webcampak, toutes les modifications
+    majeures se font par l'interface d'administration.</para>
+
+    <section>
+      <title>Découverte de l'interface</title>
+
+      <para>Lors de la première connexion, il vous sera demandé de vous
+      authentifier.</para>
+
+      <figure>
+        <title>Invite de login du Webcampak</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.bienvenue.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>L'interface est divisé en plusieurs parties.</para>
+
+      <figure>
+        <title>Présentation de l'interface visiteur</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.overview.fr.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <itemizedlist>
+        <listitem>
+          <para>En haut à gauche, les drapeaux vous permettent de choisir la
+          lange dans laquelle l'interface visiteur sera affichée.</para>
+        </listitem>
+
+        <listitem>
+          <para>A gauche, sous les drapeaux, une liste déroulante vous permet
+          de sélectionner la source à afficher.</para>
+        </listitem>
+
+        <listitem>
+          <para>Le nom de la source actuellement sélectionnée s'affiche au
+          centre, entre parenthèse le nom de l'utilisateur connecté.</para>
+        </listitem>
+
+        <listitem>
+          <para>La liste déroulante de droite vous permet de sélectionner la
+          résolution dans laquelle la dernière image capturée sera affichée,
+          par défaut la plus petite s'affiche.</para>
+        </listitem>
+      </itemizedlist>
+
+      <section>
+        <title>Affichage de la dernière image capturée</title>
+
+        <para>Une fois authentifié vous serez redirigé automatiquement vers la
+        page "Maintenant" qui affiche la dernière image "hotlink" généré par
+        la source par défaut.</para>
+
+        <para>En bas de page, un bouton "Afficher en plein écran" permet
+        d'afficher l'image en question en plein écran et rafraîchi la page
+        toutes les 5 minutes. Il est possible d'utiliser cette fonctionnalité
+        pour afficher une image sur un panneau d'affichage.</para>
+
+        <figure>
+          <title>Affichage de la dernière image capturée pour la source en
+          cours</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.autorefresh.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Affichage de l'ensemble des sources</title>
+
+        <para>Le menu "Vignettes" permet d'afficher, sur une même page, les
+        dernières images capturées pour l'ensemble des sources pour lesquelles
+        l'utilisateur connecté dispose des droits d'accès.</para>
+
+        <para>En bas de page, un bouton "Afficher diaporama" affiche ces
+        images l'une après l'autre en plein écran avec une rafraîchissement
+        toutes les 5 minutes.</para>
+
+        <figure>
+          <title>Affichage de l'ensemble des sources sous forme de
+          vignettes</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.thumbnails.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Navigation au sein des photos</title>
+
+        <para>Le menu "Photos" vous permettra de naviguer parmi les photos
+        archivées au sein du Webcampak.</para>
+
+        <figure>
+          <title>Affichage des photos du 8 mai 2012</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Le calendrier sur la gauche de la page vous permettra de
+        naviguer au entre les différents jours pour lesquels des images sont
+        disponibles. Seuls les jours et mois pour lesquels des images ont été
+        capturées pourront être affichés.</para>
+
+        <figure>
+          <title>Zoom au sein d'une photo</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.zoom.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Un zoom est présent sous le calendrier, il vous permettra de
+        consulter l'image plus en détails directement depuis le navigateur en
+        déplaçant votre souris sur le vignette.</para>
+
+        <para>Le choix du niveau de zoom est possible sous la vignette. Au
+        dessus de 100% le temps de chargement peut être long, en particulier
+        si l'image source est conséquente (par exemple 21 ou 18 Mpix).</para>
+
+        <figure>
+          <title>Affichage de l'agenda horaire</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.hours.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Un agenda horaire, localisé sous la vignette, vous permet de
+        sélectionner avec précision l'image à afficher. Chaque trait bleu
+        correspond à une image, le trait blanc correspond à l'image
+        actuellement sélectionnée.</para>
+
+        <para>Dans le cas où le rythme de capture est supérieur à une image
+        par minute, il est possible de se déplacer entre les images en
+        utilisant les boutons "Suivant" et "Précédent" au centre de la
+        page.</para>
+
+        <figure>
+          <title>Affichage des images au centre de la page</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.center.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Au centre de la page, des boutons "Précédent" et "Suivant" vous
+        permettent de vous déplacer au sein des clichés.</para>
+
+        <para>Des miniatures affichent les images capturées avant et après
+        l'image actuellement affichée (15, 10, 5 images avant/après).</para>
+
+        <para>En cliquant sur l'image au centre de la page vous l'afficherez
+        dans votre navigateur dans un nouvel onglet.</para>
+
+        <para>Sur la droite deux boutons vous permettent d'afficher ou de
+        télécharger l'image (clic droit, enregistrer sous) soit dans sa
+        résolution maximale soit dans la résolution actuellement
+        affichée</para>
+      </section>
+
+      <section>
+        <title>Navigation au sein des vidéos</title>
+
+        <para>Le menu "vidéos" vous permet de naviguer au sein des vidéos
+        générées par le Webcampak, par date de création.</para>
+
+        <figure>
+          <title>Affichage des vidéos générées par le Webcampak</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.videos.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Si le format MP4 a été activé dans l'interface d'administration
+        il sera possible de prévisualiser la vidéo directement depuis le
+        navigateur. Vous pourrez dans les deux cas la télécharger via le
+        bouton "Tel. vidéo" (clic droit, enregistrer sous).</para>
+      </section>
+
+      <section>
+        <title>Gestion de l'interface visiteur</title>
+
+        <para>L'interface visiteurs dispose d'un module de gestion d'accès. Ce
+        module permet de gérer l'accès aux sources et de créer des nouveaux
+        comptes utilisateurs.</para>
+
+        <figure>
+          <title>Gestion des groupes et pages</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.groups.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Lors de l'ajout d'un utilisateur vous pourrez sélectionner le
+        groupe auquel il appartient, cette section vous permet d'ajouter des
+        groupes et de sélectionner pour chacun de ces groupes quels sont les
+        pages pouvant êtres consultées.</para>
+
+        <para>Si la page n'est pas cochée elle ne sera ni accessible ni
+        visible aux utilisateurs appartenant à ce groupe.</para>
+
+        <para>Vous pouvez aussi configurer des "Entreprises", l'objectif est
+        uniquement administratif et n'a aucune fonction lié à la sécurisation
+        ou l'authentification des utilisateurs.</para>
+
+        <figure>
+          <title>Gestion des utilisateurs</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.users.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>L'ajout d'un utilisateur se fait de manière intuitive, il est
+        possible de renseigner des informations administratives, telles que
+        son nom, prénom, adresse e-mail. L'utilisateur sera assigné à un
+        groupe, ce qui permettra de définir les menus auxquels il aura
+        accès.</para>
+
+        <figure>
+          <title>Gestion des sources</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.sources.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>La gestion des sources est un des éléments clefs de l'interface.
+        Vous pourrez ici définir les droits d'accès, le nom de la source ainsi
+        que son poids.</para>
+
+        <para>L'ajout d'une source se fait en mentionnant son identifiant
+        (ID), qui est le numéro de la source (par exemple sourceXX) dans
+        l'interface d'administration. Le poids permet de définir dans quel
+        ordre les sources sont affichées dans l'interface visiteur.</para>
+
+        <para>En cliquant sur "Voir / Modifier" vous pourrez définir les
+        utilisateurs autorisés à consulter le contenu d'une source
+        (utilisateur par utilisateur).</para>
+
+        <figure>
+          <title>Gestion de l'accès à l'interface d'administration</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.admin.fr.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Enfin, le menu "Accès Administration" vous permettra de définir
+        les utilisateurs ayant la possibilité de modifier le comportement du
+        Webcampak via l'interface d'administration.</para>
+      </section>
+    </section>
+  </chapter>
+

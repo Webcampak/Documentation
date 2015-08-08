@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="permissions">
+  <title>Gestion des permissions</title>
+
+  <para>Veuillez noter que votre Webcampak vous est fourni pré-configuré, vous
+  n'aurez donc pas à réaliser l'ensemble des actions détaillées ici.</para>
+
+  <section>
+    <title>Gestion des permissions et droits d'accès</title>
+
+    <para>Avant toute chose il est important de bien comprendre le
+    fonctionnement du module de gestion de permissions. Ce module est un
+    élément clef de l'interface Webcampak, il vous permet de définir les
+    autorisation des différents utilisateurs ainsi que les menus qui seront
+    affichés au sein du système.</para>
+
+    <para>Deux éléments sont à prendre en considération lors de la
+    configuration des permissions:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>La gestion des droits d'accès à une source se fait par
+        utilisateur. Il est nécessaire d'ajouter manuellement chaque
+        utilisateur à une source pour que ce dernier puisse avoir accès à ses
+        données ou en réaliser la configuration.</para>
+
+        <para>Lorsqu'une source est ajoutée à un utilisateur il est possible
+        de définir si l'accès est autorisé en lecture seule ou en
+        lecture-écriture. Seul un utilisateur disposant de droits d'accès en
+        lecture-écriture sera en mesure de modifier la configuration d'une
+        source.</para>
+      </listitem>
+
+      <listitem>
+        <para>Chaque utilisateur est présent au sein d'un groupe, l'accès aux
+        différents menus du Webcampak dépend par conséquent des permissions
+        assignées au groupe dont l'utilisateur est membre.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Ce mode permet d'ajouter facilement des nouveaux utilisateurs au
+    Webcampak et de gérer au mieux leurs permissions.</para>
+
+    <para>L'utilisateur root dispose des autorisations maximales, ses
+    permissions ne peuvent êtres modifiées, veillez donc à ne pas égarer ni
+    communiquer ses identifiants.</para>
+  </section>
+
+  <section>
+    <title>Module permissions</title>
+
+    <para>Ce module permet de gérer les utilisateurs, les sources et
+    l'ensemble de permissions associées.</para>
+
+    <screenshot>
+      <screeninfo>Module de gestion de permissions</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.users.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>En cliquant sur le module de gestion de permissions, une fenêtre
+    composée de quatre onglets s'affiche.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Utilisateurs: permet d'ajouter des utilisateurs au sein du
+        Webcampak. </para>
+      </listitem>
+
+      <listitem>
+        <para>Groupe: permet de définir des groupes et les permissions
+        associées.</para>
+      </listitem>
+
+      <listitem>
+        <para>Entreprises: permet de définir des entreprises auxquelles les
+        utilisateurs appartiennent, cette information est purement
+        administrative et n'impacte pas le reste du système.</para>
+      </listitem>
+
+      <listitem>
+        <para>Sources: permet d'ajouter des sources au sein du système.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Lors de la première configuration d'un Webcampak, ne commencez pas
+    par les utilisateurs, il vous sera en effet demandé de sélectionner un
+    groupe et une entreprise, veillez à ce que ces derniers aient étés
+    préalablement configurés.</para>
+  </section>
+
+  <section>
+    <title>Gestion des entreprises</title>
+
+    <para>Commencez tout d'abord par l'onglet "Entreprises", cet onglet vous
+    permettra de vous familiariser avec le fonctionnement de
+    l'interface.</para>
+
+    <para>Tel que mentionné précédemment, l'onglet "Entreprises" a uniquement
+    une vocation administrative et n'impacte en rien le fonctionnement du
+    Webcampak.</para>
+
+    <screenshot>
+      <screeninfo>Onglet de gestion des entreprises</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.companies.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cliquez sur "Ajouter" pour ajouter une entreprise au sein du
+    système.</para>
+
+    <screenshot>
+      <screeninfo>Ajouter une entreprise au sein du système</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.companies.add.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Vous pouvez ensuite modifier le nom de l'entreprise en double
+    cliquant sur son nom.</para>
+
+    <screenshot>
+      <screeninfo>Edition d'un entreprise</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.companies.edit.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Enfin, pour supprimer une entreprise, cliquez une fois sur son nom
+    et cliquez sur "Supprimer".</para>
+  </section>
+
+  <section>
+    <title>Gestion des sources</title>
+
+    <para>La gestion des sources est légèrement plus complexe. Cet onglet va
+    vous permettre d'ajouter des nouvelles sources au sein du Webcampak, ces
+    sources seront ensuite disponibles et prêtes à êtres utilisées par le
+    Webcampak.</para>
+
+    <screenshot>
+      <screeninfo>Gestion des sources</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.sources.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Pour ajouter une source, cliquez sur "Ajouter".</para>
+
+    <screenshot>
+      <screeninfo>Ajout d'un nouvelle source</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.sources.add.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Les trois éléments ici sont importants et seront utilisés dans de
+    très nombreux modules du Webcampak:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>ID Source: représente l'identifiant interne de la source au sein
+        du Webcampak, ce nombre doit être unique. Aucune autre source ne doit
+        posséder le même ID. Notez qu'un ID source est attribué une fois pour
+        toutes.</para>
+      </listitem>
+
+      <listitem>
+        <para>Nom de la source: ce nom vous servira à identifier la source au
+        sein de l'interface Webcampak. Autant que possible le nom de la source
+        plutôt que son ID est utilisé au sein du Webcampak.</para>
+      </listitem>
+
+      <listitem>
+        <para>Poids: représente la priorité de la source par rapport aux
+        autres sources présentes au sein du système. Plus le poids est faible
+        plus la source est affichée en priorité. Si deux sources ont le même
+        poids, le tri se fera par ordre alphabétique.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>Notez que, par défaut, l'utilisateur "root" est ajouté à la liste
+    des membres autorisés pour toute nouvelle source.</para>
+
+    <para>En cliquant sur une source, un menu s'affiche, vous permettant de
+    gérer les droits d'accès à la source.</para>
+
+    <screenshot>
+      <screeninfo>Ajouter/Supprimer un utilisateur à la source</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.sources.users.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Vous pouvez utiliser ce menu pour ajouter un supprimer un
+    utilisateur à la source. Par défaut tout utilisateur ajouté via cet onglet
+    se verra attribuer une permission "Lecture Seule". L'ajout ou la
+    suppression d'utilisateurs se fait par simple glisser/déposer.</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Utilisateurs Webcampak: liste l'ensemble des utilisateurs
+        Webcampak qui ne sont pas membres de la source.</para>
+      </listitem>
+
+      <listitem>
+        <para>Membres de la source: liste l'ensemble des utilisateurs
+        disposant de droits d'accès sur la source.</para>
+      </listitem>
+    </itemizedlist>
+
+    <para>En double cliquant sur une source vous pouvez l'éditer et modifier
+    son poids ou son nom.</para>
+  </section>
+
+  <section>
+    <title>Gestion des groupes</title>
+
+    <para>Webcampak permet d'ajuster de manière très fine les groupes et
+    permissions de ses utilisateurs.</para>
+
+    <screenshot>
+      <screeninfo>Ajout d'un nouveau groupe</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.groups.add.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>En cliquant sur le nom d'un groupe une nouvelle interface vous
+    permet de configurer les membres de groupe ainsi que les permissions
+    associées.</para>
+
+    <screenshot>
+      <screeninfo>Réglages des paramètres du groupe</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.groups.settings.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Ce menu vous permet d'ajouter par glisser déposer des utilisateurs
+    au sein du groupe et de définir quelles sont les pages et fonctionnalités
+    qui seront autorisées pour les membres du groupe.</para>
+
+    <para>Liste des pages disponible au sein du Webcampak:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>auth.base.sources: indispensable, permet à l'utilisateur
+        d'obtenir une liste des sources qu'il a le droit de consulter</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.base.lang: indispensable, permet à l'utilisateur d'obtenir
+        l'interface dans la langue de son choix</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.stats: affiche le menu "stats" permettant de consulter les
+        statistiques</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.stats.system: affiche les statistiques de l'ensemble
+        système</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.stats.sources.disk: affiche les statistiques d'utilisation
+        disque pour la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.stats.pictures.files: affiche le nombre de clichés capturés
+        pour la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.stats.pictures.size: affiche la taille des clichés capturés
+        pour la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.view.pictures: affiche les images associées à la
+        source</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.view.pictures.email: permet d'envoyer un email contenant la
+        photo actuellement visionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.view.pictures.comment: permet d'attacher un commentaire à
+        l'image</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.view.videos: affiche les vidéos associées à la
+        source</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config: affiche le menu permettant d'accédder à la
+        configuration</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.logs: affiche les logs correspondant à la source
+        sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.instantcapture: permet à l'utilisateur de déclencher
+        une capture instantannée sur la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.sources: permet d'accédder au menu de configuration
+        des sources</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.sources.read: permet de consulter les paramètres de
+        configuration de la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.sources.write: permet de modifier les paramètres de
+        la source sélectionnée</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.admin.general: permet d'accédder au menu de
+        configuration système</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.admin.permissions: permet de modifier les
+        permissions du Webcampak</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.admin.reboot: permet de redémarrer le
+        Webcampak</para>
+      </listitem>
+
+      <listitem>
+        <para>auth.config.admin.connecteddevices: permet de consulter la liste
+        des périphériques physiquement raccordés au Webcampak.</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+  <section>
+    <title>Gestion des utilisateurs</title>
+
+    <para>Une fois que vos groupes, entreprises et sources sont définis vous
+    pouvez créer des utilisateurs au sein du Webcampak.</para>
+
+    <screenshot>
+      <screeninfo>Gestion des utilisateurs, ajout d'un
+      utilisateur</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.users.add.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Cliquez sur "Ajouter" pour ajouter un nouvel utilisateur au système.
+    Remplissez les différents champs, renseignez l'entreprise et le groupe de
+    ce nouvel utilisateur.</para>
+
+    <para>L'option "Activer interface" autorise l'utilisateur à se connecter à
+    l'interface Webcampak, si cette option n'est pas cochée, l'utilisateur
+    n'aura pas accès à l'interface.</para>
+
+    <para>Sélectionnez ensuite l'utilisateur nouvellement ajouté pour faire
+    apparaître un nouveau menu.</para>
+
+    <screenshot>
+      <screeninfo>Ajoutez de nouvelles sources à l'utilisateur</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.users.addsource.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>Une fois les sources ajoutées vous pouvez définir les permissions de
+    l'utilisateur pour la source en question (Lecture Seule ou
+    Lecture-Ecriture).</para>
+
+    <screenshot>
+      <screeninfo>Permission de l'utilisateur pour une source</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.permissions.users.source.permission.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para/>
+  </section>
+</chapter>

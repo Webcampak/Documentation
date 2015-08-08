@@ -1,0 +1,121 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>2. System settings</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Webcampak user guide"><link rel="up" href="ch05.html" title="Chapter 5. Administration Panel"><link rel="prev" href="ch05.html" title="Chapter 5. Administration Panel"><link rel="next" href="ch05s03.html" title="3. Sources configuration"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2. System settings</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Administration Panel</th><td width="20%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr></table><hr></div><div class="section" title="2. System settings"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1172206573630"></a>2. System settings</h2></div></div></div><p>This menu will let you access settings having an impact on the whole
+    Webcampak.</p><div class="figure"><a name="id1172206572735"></a><p class="title"><b>Figure 5.2. System menu</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.menu.en.png" alt="System menu"></div></div></div><br class="figure-break"><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>"System" let you configure global settings,</p></li><li class="listitem"><p>"FTP Servers" let you define FTP servers available for all
+        sources,</p></li><li class="listitem"><p>"Connected devices" display cameras and USB webcams physically
+        connected to Webcampak,</p></li><li class="listitem"><p>"Reboot" let you restart Webcampak,</p></li><li class="listitem"><p>"System logs" display logs related to system wide
+        actions,</p></li><li class="listitem"><p>"Reset" let you reset Webcampak to factory defaults.</p></li></ul></div><div class="section" title="2.1. System"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206583682"></a>2.1. System</h3></div></div></div><div class="figure"><a name="id1172206583687"></a><p class="title"><b>Figure 5.3. Activate remote support</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.remote.en.png" alt="Activate remote support"></div></div></div><br class="figure-break"><p>This part is only available with Webcampak provided pre-configured
+      by Eurotechnia, when started this will activate a VPN tunnel allowing us
+      to connect for maintenance purposes.</p><div class="figure"><a name="id1172206583709"></a><p class="title"><b>Figure 5.4. Global FTP account</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.ftp.en.png" alt="Global FTP account"></div></div></div><br class="figure-break"><p>Webcampak is provided with an internal FTP server, each source has
+      its own FTP account and a global account is available to reach content
+      shared between all sources.</p><p>This account gives access to:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Logs of all sources</p></li><li class="listitem"><p>MP3/M3U files to add soundtrack to your videos</p></li><li class="listitem"><p>watermark pictures</p></li><li class="listitem"><p>temporary files, can be deleted in case of issue</p></li></ul></div><p>The account is disabled by default, you have to click on
+      "Create/Edit user" once to activate the FTP server globally.</p><div class="figure"><a name="id1172206583767"></a><p class="title"><b>Figure 5.5. Multi-cameras configuration</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.multi.en.png" alt="Multi-cameras configuration"></div></div></div><br class="figure-break"><p>Webcampak can be compatible with multiple USB cameras
+      simultaneously, to enable this feature you must activate this module and
+      mention if cameras are identical (same make / model) or different</p><p>Webcampak must be able to determine after a reboot or issue which
+      camera must be attached to which source:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>If cameras are different, the system will use the camera
+          model</p></li><li class="listitem"><p>If cameras are identical, the system will insert a specific
+          tag within each camera, and will look for this tag regularly to
+          ensure it is still attached to the correct source.</p></li></ul></div><div class="figure"><a name="id1172206583811"></a><p class="title"><b>Figure 5.6. Activate Phidget board</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.phidget.en.png" alt="Activate Phidget board"></div></div></div><br class="figure-break"><p>Activate this module if a phidget electronic board is connected to
+      your system.</p><div class="figure"><a name="id1172206583831"></a><p class="title"><b>Figure 5.7. Activate stats</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.stats.en.png" alt="Activate stats"></div></div></div><br class="figure-break"><p>By activating this module, your Webcampak will send us stats
+      usage. This does only include general details (software version, CPU,
+      operating system mostly).</p><div class="figure"><a name="id1172206583853"></a><p class="title"><b>Figure 5.8. System information</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.proc.en.png" alt="System information"></div></div></div><br class="figure-break"><p>The three blocs above display system information (Gphoto version,
+      uptime, disk usage, process).</p></div><div class="section" title="2.2. FTP Servers"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206583874"></a>2.2. FTP Servers</h3></div></div></div><p>This section let you define all FTP servers that can be used by
+      sources.</p><div class="figure"><a name="id1172206583883"></a><p class="title"><b>Figure 5.9. FTP servers configuration</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.ftpservers.en.png" alt="FTP servers configuration"></div></div></div><br class="figure-break"><p>You can configure up to 30 different servers, You can notice on
+      this capture that servers 2 and 6 actually send pictures to another
+      source of the same Webcampak (using IP 127.0.0.1).</p></div><div class="section" title="2.3. Connected Devices"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206583906"></a>2.3. Connected Devices</h3></div></div></div><p>This section displays details about devices physically connected
+      to your Webcampak.</p><div class="figure"><a name="id1172206583914"></a><p class="title"><b>Figure 5.10. Connected USB cameras</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.gphoto.en.png" alt="Connected USB cameras"></div></div></div><br class="figure-break"><p>This two first blocs provide more details about connected
+      cameras.</p><p>The first one display connected cameras and their ports, the
+      second one provides more details about cameras' capabilities. For the
+      camera to be compatible with Webcampak, "Capture choices" line must
+      include "Image" (as displayed on the above screenshot).</p><p>As you can see on the above capture, a "Canon EOS 550D" DSLR
+      camera is connected to USB port "usb:001,002".</p><div class="important" title="Important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>USB ports will change each time a camera is restarted or
+        connected/disconnected. Activate the appropriate multi-cameras option
+        in "System" if multi cameras are going to be used
+        simultaneously.</p></div><div class="figure"><a name="id1172206583954"></a><p class="title"><b>Figure 5.11. USB devices</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.usb.en.png" alt="USB devices"></div></div></div><br class="figure-break"><p>The bloc above display devices connected via USB, DSLR cameras and
+      USB webcams will be displayed here. If a specific devices is not
+      detected here it means it will not be possible to use it with
+      Webcampak.</p><p>Below an example with multiple devices connected:</p><pre class="screen">Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 007: ID 04a9:30c1 PowerShot A520 (PTP mode)
+Bus 002 Device 006: ID 06f8:300f Guillemot Corp. 
+Bus 002 Device 004: ID 0ac8:301b Z-Star Microelectronics Corp. ZC0301 Webcam
+Bus 002 Device 003: ID 04f2:0402 Chicony Electronics Co., Ltd 
+Bus 002 Device 002: ID 0451:2046 Texas Instruments, Inc. TUSB2046 Hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</pre><p>You can find above:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>A Guillemot webcam: "Bus 002 Device 006: ID 06f8:300f
+          Guillemot Corp. "</p></li><li class="listitem"><p>A Z-Star webcam: "Bus 002 Device 004: ID 0ac8:301b Z-Star
+          Microelectronics Corp. ZC0301 Webcam"</p></li><li class="listitem"><p>A Canon point-and-shoot camera: "Bus 002 Device 007: ID
+          04a9:30c1 PowerShot A520 (PTP mode)"</p></li></ul></div><div class="figure"><a name="id1172206584018"></a><p class="title"><b>Figure 5.12. Connected USB webcams</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.webcam.en.png" alt="Connected USB webcams"></div></div></div><br class="figure-break"><p>This bloc displays more details about connected USB webcams, below
+      is an example with two USB webcams connected:</p><pre class="screen">/dev/video0
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | Camera  | Camera  | Camera 1
+bright     | int    |      51 |       0 | range is -64 =&gt; 64
+contrast   | int    |      32 |      32 | range is 0 =&gt; 64
+color      | int    |      64 |      64 | range is 0 =&gt; 128
+hue        | int    |       0 |       0 | range is -40 =&gt; 40
+White Bala | bool   | on      | on      |
+Gamma      | int    |     100 |     100 | range is 72 =&gt; 500
+Gain       | int    |       0 |       0 | range is 0 =&gt; 100
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Power Line | choice | 50 Hz   | 50 Hz   | Disabled 50 Hz 60 Hz
+Sharpness  | int    |       3 |       3 | range is 0 =&gt; 10
+Backlight  | int    |       0 |       0 | range is 0 =&gt; 1
+
+/dev/video1
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | zc3xx   | zc3xx   | zc3xx
+bright     | int    |     128 |     128 | range is 0 =&gt; 255
+contrast   | int    |     128 |     128 | range is 0 =&gt; 256
+Whitebalan | bool   | off     | off     |
+Gamma      | int    |       4 |       4 | range is 1 =&gt; 6
+Auto Gain  | bool   | on      | on      |
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Sharpness  | int    |       2 |       2 | range is 0 =&gt; 3
+
+/dev/video2
+/dev/video3
+/dev/video4
+/dev/video5
+/dev/video6
+/dev/video7
+/dev/video8
+/dev/video9
+/dev/video10</pre><p>We can easily identify cameras we saw in "USB devices":</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>"Camera 1" : is the Guillemot webcam</p></li><li class="listitem"><p>zc3xx : is the other USB webcam.</p></li></ul></div><p></p><div class="figure"><a name="id1172206584069"></a><p class="title"><b>Figure 5.13. Connected USB webcams (advanced)</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.webcam-adv.en.png" alt="Connected USB webcams (advanced)"></div></div></div><br class="figure-break"><p>Webcampak is compatible with a large number of USB webcams, but to
+      ensure proper operation it is necessary to detail the native resolution
+      of the webcam.</p><p>This resolution is mentioned in this advanced section. Webcampak
+      uses "bus_info" parameter to attach a USB Webcams to a source, you will
+      need to mention this parameter when configuring a source with a USB
+      Webcam</p><pre class="screen">/dev/video0
+### v4l2 device info [/dev/video0] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "sonixj"
+card                    : "USB camera"
+bus_info                : "usb-0000:00:10.0-2"
+version                 : 3.2.16
+capabilities            : 0x5000001 [VIDEO_CAPTURE,READWRITE,STREAMING]
+
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 640
+fmt.pix.height          : 480
+
+/dev/video1
+### v4l2 device info [/dev/video1] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "uvcvideo"
+card                    : "UVC Camera (046d:0809)"
+bus_info                : "usb-0000:00:10.3-5"
+version                 : 3.2.16
+capabilities            : 0x4000001 [VIDEO_CAPTURE,STREAMING]
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 640
+fmt.pix.height          : 480
+</pre><p>We can find here our two webcams, resolution is displayed as
+      "fmt.pix.width" and "fmt.pix.height".</p><p>As a summary we have the following cameras connected :</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Webcam Dualpix Emotion</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>Port: /dev/video0</p></li><li class="listitem"><p>Resolution: 1280x1024</p></li></ul></div></li><li class="listitem"><p>Webcam zc3xx</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>Port: /dev/video1</p></li><li class="listitem"><p>Resolution: 640x480</p></li></ul></div></li></ul></div></div><div class="section" title="2.4. Reboot"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206584167"></a>2.4. Reboot</h3></div></div></div><p>This section let you reboot Webcampak.</p><p>All settings will be saved and the system will come back online
+      automatically after reboot.</p><div class="figure"><a name="id1172206584180"></a><p class="title"><b>Figure 5.14. Request system reboot</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.reboot.en.png" alt="Request system reboot"></div></div></div><br class="figure-break"></div><div class="section" title="2.5. System Logs"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206584200"></a>2.5. System Logs</h3></div></div></div><p>Webcampak keeps track of all major actions, those details can be
+      useful in case of issue.</p><p>Using this section you can have a look into previous
+      actions.</p><pre class="screen">Mon Jul 19 19:30:27 CEST 2010  - SAMPLE: bash /home/wpak001/webcampak/bin/pictures-capture.sh 1 sample</pre></div><div class="section" title="2.6. Reset"><div class="titlepage"><div><div><h3 class="title"><a name="id1172206584220"></a>2.6. Reset</h3></div></div></div><div class="figure"><a name="id1172206584226"></a><p class="title"><b>Figure 5.15. Reset System</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.reset.en.png" alt="Reset System"></div></div></div><br class="figure-break"><p>This section gives you the ability to reset the whole system to
+      its default settings, you can:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>reset configuration of all sources.</p></li><li class="listitem"><p>delete all pictures and videos.</p></li></ul></div><div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>Take extra care, those actions are definitive.</p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 5. Administration Panel </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3. Sources configuration</td></tr></table></div></body></html>

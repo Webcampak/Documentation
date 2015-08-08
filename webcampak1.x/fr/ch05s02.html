@@ -1,0 +1,154 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>2. Configuration des paramètre systèmes</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Guide d'utilisation Webcampak"><link rel="up" href="ch05.html" title="Chapter 5. Interface d'administration"><link rel="prev" href="ch05.html" title="Chapter 5. Interface d'administration"><link rel="next" href="ch05s03.html" title="3. Configuration des sources"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2. Configuration des paramètre systèmes</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><th width="60%" align="center">Chapter 5. Interface d'administration</th><td width="20%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr></table><hr></div><div class="section" title="2. Configuration des paramètre systèmes"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1169756388202"></a>2. Configuration des paramètre systèmes</h2></div></div></div><p>Les actions et paramètres impactant l'ensemble du Webcampak sont
+    accessibles depuis ce menu.</p><div class="figure"><a name="id1169756410266"></a><p class="title"><b>Figure 5.2. Menu Système</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.menu.fr.png" alt="Menu Système"></div></div></div><br class="figure-break"><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>La section "Système" permet de configurer les paramètres
+        globaux,</p></li><li class="listitem"><p>La section "Serveurs FTP" permet de définir les serveurs FTP de
+        destination qui pourront êtres utilisés par l'ensemble des
+        sources,</p></li><li class="listitem"><p>La section "Appareils Connectés" permet d'afficher les appareils
+        photos et webcams USB raccordés au Webcampak,</p></li><li class="listitem"><p>La section "Reboot" permet de déclencher le redémarrage du
+        Webcampak,</p></li><li class="listitem"><p>La section "Logs Système" affiche les journaux relatifs aux
+        actions globales (principalement les actions sur les logiciels
+        tiers),</p></li><li class="listitem"><p>La section "Reset" permet la remise à zéro du Webcampak et de
+        ses sources.</p></li></ul></div><div class="section" title="2.1. Section Système"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410329"></a>2.1. Section Système</h3></div></div></div><div class="figure"><a name="id1169756410334"></a><p class="title"><b>Figure 5.3. Activation de l'assistance à distance</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.remote.fr.png" alt="Activation de l'assistance à distance"></div></div></div><br class="figure-break"><p>Ce bloc n'est fonctionnel que si vous vous êtes procurés un
+      Webcampak pré-configuré auprès de nos services. Lorsque l'assistance à
+      distance est activée nous pouvons avoir accès à distance au Webcampak
+      par le biais d'un tunnel VPN sécurisé. Nous pouvons utiliser ce tunnel
+      pour vous procurer de l'assistance ou régler des difficultés que vous
+      pourriez rencontrer.</p><div class="figure"><a name="id1169756410358"></a><p class="title"><b>Figure 5.4. Configuration du compte FTP "ressources"</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.ftp.fr.png" alt='Configuration du compte FTP "ressources"'></div></div></div><br class="figure-break"><p>L'accès aux données du Webcampak est possible en FTP, chaque
+      source se voit attribuer un compte FTP qui lui est propre. Le compte
+      "wpresources" permet d'accéder au répertoire ressources du
+      Webcampak.</p><p>Ce répertoire contient les éléments suivants:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Logs des différentes sources</p></li><li class="listitem"><p>Fichiers MP3 utilisés pour la bande son de vos vidéos</p></li><li class="listitem"><p>Images "watermark" insérées en sur-impression des images
+          capturées ou vidéos générées</p></li><li class="listitem"><p>Un répertoire contenant des fichiers temporaires, répertoire
+          pouvant êtres purgé en cas de problèmes</p></li></ul></div><p>Le compte est inactif par défaut, il est nécessaire de cliquer une
+      première fois sur "Créer/Modifier utilisateur" pour activer le serveur
+      FTP.</p><div class="figure"><a name="id1169756410418"></a><p class="title"><b>Figure 5.5. Configuration multi-appareils</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.multi.fr.png" alt="Configuration multi-appareils"></div></div></div><br class="figure-break"><p>La configuration multi-appareils représente un cas d'utilisation
+      avancé du Webcampak et n'est compatible qu'avec les appareils photo
+      USB.</p><p>Il est nécessaire d'activer ce module si vous souhaitez raccorder
+      plusieurs appareils photo sur un même boîtier Webcampak. Indiquez
+      ensuite si les appareils sont identiques (marque et modèle) ou
+      différents.</p><p>Le Webcampak doit être en mesure de déterminer, suite à un
+      potentiel redémarrage intempestif, quel appareil doit être rattaché à
+      quel source:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Si les appareils sont différents, le Webcampak utilisera le
+          modèle de l'appareil pour déterminer l'appartenance à une
+          source</p></li><li class="listitem"><p>Si les appareils sont identiques, le Webcampak utilisera un
+          "identifiant" précédemment intégré au sein de l'appareil photo (tag
+          "ownername").</p></li></ul></div><div class="figure"><a name="id1169756410468"></a><p class="title"><b>Figure 5.6. Activation carte électronique Phidget</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.phidget.fr.png" alt="Activation carte électronique Phidget"></div></div></div><br class="figure-break"><p>Cochez cette case si une carte électronique Phidget est raccordée
+      au Webcampak. Si un écran externe est disponible il est possible d'y
+      afficher l'état de capture d'une unique source.</p><div class="figure"><a name="id1169756410490"></a><p class="title"><b>Figure 5.7. Activation des statistiques</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.stats.fr.png" alt="Activation des statistiques"></div></div></div><br class="figure-break"><p>En cochant cette case votre Webcampak nous enverra des
+      statistiques d'utilisation, ceci pour nous permettre de mieux connaître
+      le parc Webcampak. Ces statistiques ne contiennent pas d'informations
+      confidentielles.</p><div class="figure"><a name="id1169756410512"></a><p class="title"><b>Figure 5.8. Affichage d'informations système</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.proc.fr.png" alt="Affichage d'informations système"></div></div></div><br class="figure-break"><p>Trois blocs affichent ensuite des précisions complémentaires sur
+      le système (version Gphoto, uptime, process).</p></div><div class="section" title="2.2. Section Serveurs FTP"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410534"></a>2.2. Section Serveurs FTP</h3></div></div></div><p>Cette section permet de configurer les différents serveurs FTP à
+      disposition des sources ainsi que le répertoire où seront placés les
+      fichiers.</p><div class="figure"><a name="id1169756410544"></a><p class="title"><b>Figure 5.9. Configuration des serveurs FTP</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.ftpservers.fr.png" alt="Configuration des serveurs FTP"></div></div></div><br class="figure-break"><p>Il est possible de configurer jusque 30 serveurs différents. Vous
+      constaterez que les serveurs 2 et 6 renvoient vers une source du
+      Webcampak (127.0.0.1), ce mécanisme permet la cascade de sources.</p></div><div class="section" title="2.3. Section Appareils Connectés"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410568"></a>2.3. Section Appareils Connectés</h3></div></div></div><p>Cette section permet d'afficher les appareils photos ou webcams
+      USB physiquement raccordés au Webcampak.</p><div class="figure"><a name="id1169756410576"></a><p class="title"><b>Figure 5.10. Appareils photos USB connectés</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.gphoto.fr.png" alt="Appareils photos USB connectés"></div></div></div><br class="figure-break"><p>Ces deux blocs affichent des précisions concernant les appareils
+      photos connectés en USB.</p><p>Le premier bloc affiche le ou les appareils connectés et leur
+      port, le second bloc affiche les capacités du ou des appareils
+      connectés. Pour que l'appareil photo soit utilisable avec Webcampak, la
+      ligne "Capture choices" doit contenir "Image".</p><p>Sur la capture ci-dessus, vous pouvez constater qu'un appareil
+      photo est détecté : le modèle d'appareil est: "Canon EOS 550D". Cet
+      appareil est connecté en USB sur le port usb:001,002</p><div class="important" title="Important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>Les ports USB sont susceptible de changer à chaque fois qu'un
+        appareil est déconnecté/reconnecté ou redémarré. Activez dans ce cas
+        l'option multi-appareils dans les paramètres avancés si plusieurs
+        appareils photos sont utilisés simultanément.</p></div><div class="figure"><a name="id1169756410616"></a><p class="title"><b>Figure 5.11. Périphériques USB</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.usb.fr.png" alt="Périphériques USB"></div></div></div><br class="figure-break"><p>Le bloc ci-dessus affiche les périphériques raccordés en USB, vous
+      y retrouverez vos appareils photos et webcams USB. Si des appareils
+      connectés ne sont pas détectés ici, vous avez soit un problème avec le
+      matériel (en panne, éteint, ...)soit, avec le système d'exploitation
+      hôte. Un périphérique non détecté ici ne pourra en aucun cas être
+      utilisé par le Webcampak.</p><p>Voici un exemple de résultat avec plusieurs équipements
+      raccordés:</p><pre class="screen">Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 007: ID 04a9:30c1 PowerShot A520 (PTP mode)
+Bus 002 Device 006: ID 06f8:300f Guillemot Corp. 
+Bus 002 Device 004: ID 0ac8:301b Z-Star Microelectronics Corp. ZC0301 Webcam
+Bus 002 Device 003: ID 04f2:0402 Chicony Electronics Co., Ltd 
+Bus 002 Device 002: ID 0451:2046 Texas Instruments, Inc. TUSB2046 Hub
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</pre><p>Nous avons ici les équipements suivants de raccordés:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Une webcam de marque Guillemot: "Bus 002 Device 006: ID
+          06f8:300f Guillemot Corp. "</p></li><li class="listitem"><p>Une webcam de marque Z-Star: "Bus 002 Device 004: ID 0ac8:301b
+          Z-Star Microelectronics Corp. ZC0301 Webcam"</p></li><li class="listitem"><p>Un appareil photo numérique: "Bus 002 Device 007: ID 04a9:30c1
+          PowerShot A520 (PTP mode)"</p></li></ul></div><div class="figure"><a name="id1169756410678"></a><p class="title"><b>Figure 5.12. Webcams USB raccordées</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.webcam.fr.png" alt="Webcams USB raccordées"></div></div></div><br class="figure-break"><p>Ce bloc affiche quelques informations sur les webcams USB
+      raccordées, ci-dessous un exemple de résultat avec deux Webcams USB
+      raccordés:</p><pre class="screen">/dev/video0
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | Camera  | Camera  | Camera 1
+bright     | int    |      51 |       0 | range is -64 =&gt; 64
+contrast   | int    |      32 |      32 | range is 0 =&gt; 64
+color      | int    |      64 |      64 | range is 0 =&gt; 128
+hue        | int    |       0 |       0 | range is -40 =&gt; 40
+White Bala | bool   | on      | on      |
+Gamma      | int    |     100 |     100 | range is 72 =&gt; 500
+Gain       | int    |       0 |       0 | range is 0 =&gt; 100
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Power Line | choice | 50 Hz   | 50 Hz   | Disabled 50 Hz 60 Hz
+Sharpness  | int    |       3 |       3 | range is 0 =&gt; 10
+Backlight  | int    |       0 |       0 | range is 0 =&gt; 1
+
+/dev/video1
+attribute  | type   | current | default | comment
+-----------+--------+---------+---------+-------------------------------------
+norm       | choice | (null)  | (null)  |
+input      | choice | zc3xx   | zc3xx   | zc3xx
+bright     | int    |     128 |     128 | range is 0 =&gt; 255
+contrast   | int    |     128 |     128 | range is 0 =&gt; 256
+Whitebalan | bool   | off     | off     |
+Gamma      | int    |       4 |       4 | range is 1 =&gt; 6
+Auto Gain  | bool   | on      | on      |
+Horizontal | bool   | off     | off     |
+Vertical f | bool   | off     | off     |
+Sharpness  | int    |       2 |       2 | range is 0 =&gt; 3
+
+/dev/video2
+/dev/video3
+/dev/video4
+/dev/video5
+/dev/video6
+/dev/video7
+/dev/video8
+/dev/video9
+/dev/video10</pre><p>Nous pouvons aisément identifier les Webcams raccordées:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>"Camera 1" : le périphérique identifié comme Guillemot dans la
+          rubrique "lsusb"</p></li><li class="listitem"><p>zc3xx : la seconde webcam USB.</p></li></ul></div><p></p><div class="figure"><a name="id1169756410727"></a><p class="title"><b>Figure 5.13. Webcams USB raccordés (avancé)</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.connected.webcam-adv.fr.png" alt="Webcams USB raccordés (avancé)"></div></div></div><br class="figure-break"><p>Webcampak est compatible avec de très nombreuses webcams USB.
+      Toutefois, pour un fonctionnement optimal, il est nécessaire de lui
+      indiquer la résolution native utilisée sur la caméra.</p><p>Cette résolution est indiquée dans les paramètres avancés où de
+      très nombreuses informations sont listées. Nous n'allons présenter dans
+      ce manuel que les informations les plus importantes.</p><p>Webcampak utilise le port USB auquel est connecté la caméra pour
+      l'attacher à une source, il est donc nécessaire de garder en mémoire le
+      paramètre "bus_info", qu'il faudra reporter dans lors de la
+      configuration de la source.</p><pre class="screen">/dev/video0
+### v4l2 device info [/dev/video0] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "sonixj"
+card                    : "USB camera"
+bus_info                : "usb-0000:00:10.0-2"
+version                 : 3.2.16
+capabilities            : 0x5000001 [VIDEO_CAPTURE,READWRITE,STREAMING]
+
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 640
+fmt.pix.height          : 480
+
+/dev/video1
+### v4l2 device info [/dev/video1] ###
+general info
+    VIDIOC_QUERYCAP
+driver                  : "uvcvideo"
+card                    : "UVC Camera (046d:0809)"
+bus_info                : "usb-0000:00:10.3-5"
+version                 : 3.2.16
+capabilities            : 0x4000001 [VIDEO_CAPTURE,STREAMING]
+type                    : VIDEO_CAPTURE
+fmt.pix.width           : 640
+fmt.pix.height          : 480
+</pre><p>Nous retrouvons donc ici nos deux périphériques, ainsi que tous
+      les éléments dont nous avons besoin. Notez par exemple les lignes
+      "fmt.pix.width" et "fmt.pix.height" qui indiquent la résolution native
+      de chaque webcam.</p><p>Voici un résumé des informations que nous avons obtenues :</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Webcam Dualpix Emotion</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>Port: /dev/video0</p></li><li class="listitem"><p>Résolution: 1280x1024</p></li></ul></div></li><li class="listitem"><p>Webcam zc3xx</p><div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem"><p>Port: /dev/video1</p></li><li class="listitem"><p>Résolution: 640x480</p></li></ul></div></li></ul></div></div><div class="section" title="2.4. Section Reboot"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410832"></a>2.4. Section Reboot</h3></div></div></div><p>La section reboot vous permet de déclencher un redémarrage du
+      Webcampak.</p><p>Tous les paramètres sauvegardés seront conservés et le système
+      reprendra la capture une fois le redémarrage terminé.</p><div class="figure"><a name="id1169756410845"></a><p class="title"><b>Figure 5.14. Déclencher un redémarrage du système</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.reboot.fr.png" alt="Déclencher un redémarrage du système"></div></div></div><br class="figure-break"></div><div class="section" title="2.5. Section Logs Système"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410866"></a>2.5. Section Logs Système</h3></div></div></div><p>Webcampak conserve une trace des principales actions réalisées sur
+      le système. Ces informations sont utiles en cas d'incident.</p><p>Via ce menu de l'interface d'administration vous pourrez consulter
+      un historique de ces actions.</p><pre class="screen">Mon Jul 19 19:30:27 CEST 2010  - SAMPLE: bash /home/wpak001/webcampak/bin/pictures-capture.sh 1 sample</pre></div><div class="section" title="2.6. Section Reset"><div class="titlepage"><div><div><h3 class="title"><a name="id1169756410886"></a>2.6. Section Reset</h3></div></div></div><div class="figure"><a name="id1169756410892"></a><p class="title"><b>Figure 5.15. Réinitialisation du système</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.system.reset.fr.png" alt="Réinitialisation du système"></div></div></div><br class="figure-break"><p>Cette section vous permet de réinitialiser l'ensemble du
+      système.</p><p>Vous pouvez réinitialiser:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>la configuration de l'ensemble des sources.</p></li><li class="listitem"><p>les photos et vidéos de l'ensemble des sources.</p></li></ul></div><p>Pour appliquer la modification cochez la case et cliquez sur le
+      bouton approprié.</p><div class="warning" title="Warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>Attention toute action est définitive et les éléments seront
+        définitivement perdus.</p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch05.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch05s03.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter 5. Interface d'administration </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 3. Configuration des sources</td></tr></table></div></body></html>

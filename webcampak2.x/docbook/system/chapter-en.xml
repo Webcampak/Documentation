@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="system">
+  <title>System configuration</title>
+
+  <para>This window can be used to configure Webcampak system settings.
+  Usually those settings are confgured once for all and never modified during
+  the product lifetime.</para>
+
+  <section>
+    <title>Webcampak system settings</title>
+
+    <screenshot>
+      <screeninfo>Webcampak system settings</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.general.general.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <section>
+      <title>Network</title>
+
+      <para>Inidicate the name of your main network interface, this is used to
+      generate system stats.</para>
+    </section>
+
+    <section>
+      <title>Timezone</title>
+
+      <para>Timezone where your Webcampak is physically located.</para>
+    </section>
+
+    <section>
+      <title>Gphoto</title>
+
+      <para>Webcampak configuration in a multi-camera setup is a complex
+      implementation and is only compatible with some DSLR cameras.</para>
+
+      <para>Activate this module if you connect multiple DSLR cameras via USB
+      to Webcampak. Then indicate if those cameras are identical (same brand
+      &amp; model) or different.</para>
+
+      <para>Webcampak must be able to understand how to assign a camera to a
+      source and ensure this configuration is maintained whatever happens
+      (camera reboot, webcampak reboot, ...).</para>
+    </section>
+
+    <section>
+      <title>Global FTP account (resources)</title>
+
+      <para>As mentioned previously, each source get assigned a dedicated FTP
+      account. This "wpresources" account is a global account that can be used
+      to access Webcampak system-wide resources (excluding sources
+      content).</para>
+
+      <para>When you log in you will have access to: </para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Logs from various sources</para>
+        </listitem>
+
+        <listitem>
+          <para>audio directory to upload MP3 files, those files will be
+          available to all sources</para>
+        </listitem>
+
+        <listitem>
+          <para>watermark directory, those files will be available to all
+          sources</para>
+        </listitem>
+
+        <listitem>
+          <para>cache directory, containing temporary files. You can delete
+          all files within this directory in case of major issue.</para>
+        </listitem>
+      </itemizedlist>
+    </section>
+
+    <section>
+      <title>Statistics</title>
+
+      <para>This module is used by Webcampak team to estimate how often our
+      product is being used. Thanks for participating.</para>
+    </section>
+
+    <section>
+      <title>Phidget</title>
+
+      <para>Select this box if a Phidget board is connected to
+      Webcampak</para>
+    </section>
+  </section>
+
+  <section>
+    <title>Email configuration</title>
+
+    <para>This tab can be used to configured how Webcampak is going to send
+    email (outgoing SMTP server).</para>
+
+    <screenshot>
+      <screeninfo>Global email configuration</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.general.email.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+</chapter>

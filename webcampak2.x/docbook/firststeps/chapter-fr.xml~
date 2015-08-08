@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="firststeps">
+  <title>Premiers pas</title>
+
+  <para>Webcampak dispose d'une interface unifiée permettant la configuration
+  du système et la visualisation des clichés.</para>
+
+  <para>Un système de permissions permet de définir quels menus et
+  quels sources peuvent êtres visualisés par les différents
+  utilisateurs.</para>
+
+  <para>Pour votre première connexion au Webcampak, ouvrez votre navigateur
+  Internet et connectez vous à l'adresse suivante : https://WEBCAMPAK/ en
+  remplaçant "WEBCAMPAK" par l'adresse IP du Webcampak ou par le nom du serveur Webcampak Cloud.</para>
+
+  <screenshot>
+    <screeninfo>Ecran d'accueil</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.login.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <para>L'écran d'accueil vous propose deux options:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Web: vous permettra de configurer le système et de visualiser
+      l'ensemble des informations. Nous vous conseillons fortement d'utiliser
+      un des trois navigateurs mentionnés sur cet écran. Webcampak aussi est
+      compatible avec Internet Explorer en version 9 et plus.</para>
+    </listitem>
+
+    <listitem>
+      <para>Mobile: vous permettra de consulter les clichés depuis un
+      périphérique mobile tel un iPad. Vous pourrez aussi directement
+      depuis l'interface commenter des images ou en envoyer par email.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>En cliquant sur une des deux options, un login et mot de passe vous
+  seront demandés, les identifiants par défaut sont: root / webcampak</para>
+
+  <section>
+    <title>Interface Webcampak</title>
+
+    <para>Nous avons voulu rendre l'interface Webcampak plus simple à utiliser
+    en regroupant la visualisation des éléments (clichés et vidéos) et la
+    configuration du système au sein de la même application.</para>
+
+    <screenshot>
+      <screeninfo>Ecran d'accueil de l'interface Webcampak</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.interface.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>L'écran par défaut du système contient les éléments suivants:</para>
+
+    <itemizedlist>
+      <listitem>
+        <para>Un menu en haut à gauche vous permettan d'accédder aux
+        différentes sections et menus du Webcampak</para>
+      </listitem>
+
+      <listitem>
+        <para>Deux graphiques présentant des statistiques (taille des clichés,
+        nombre de clichés) par source.</para>
+      </listitem>
+
+      <listitem>
+        <para>Sur la droite de l'écran deux boutons permettant de visualiser
+        les photos et vidéos.</para>
+      </listitem>
+
+      <listitem>
+        <para>Sur la gauche de l'écran deux boutons permettant de configurer
+        les sources et les permissions.</para>
+      </listitem>
+    </itemizedlist>
+
+  </section>
+
+</chapter>

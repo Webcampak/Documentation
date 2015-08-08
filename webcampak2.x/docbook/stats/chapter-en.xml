@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="stats">
+  <title>Webcampak Statistics</title>
+
+  <para>Webcampak is equipped with sensors collecting statistics about
+  internal system at regular interval. Those statistics have been created to
+  let you see, quickly, if Webcampak and its sources are operating as
+  expected. </para>
+
+  <screenshot>
+    <screeninfo>Webcampak menu</screeninfo>
+
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.menu.en.png"/>
+      </imageobject>
+    </mediaobject>
+  </screenshot>
+
+  <section>
+    <title>Number of pictures per source and per day</title>
+
+    <screenshot>
+      <screeninfo>Number of pictures per sources and per day</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.nbpictures.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>You can use this window to check if capture were stable for a
+    particular source. If you move your mouse over a specific day, the number
+    of pictures captured during this day will be displayed.</para>
+  </section>
+
+  <section>
+    <title>Pictures size per source and per day</title>
+
+    <screenshot>
+      <screeninfo>Pictures size per source and per day</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.picsize.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>You can use this window to chek disk usage for each day of capture
+    for a particular source.</para>
+  </section>
+
+  <section>
+    <title>Source disk usage evolution per day</title>
+
+    <screenshot>
+      <screeninfo>Source disk usage evolution</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.sourcesize.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>This window display disk usage evolution of a source over time. You
+    can see both picture usage and video usage on this graph, with pictures in
+    green and videos in blue. Global usage corresponds to the top of the blue
+    line (here around 8GB).</para>
+
+    <para>If you click on the legend you can display only pictures, only
+    videos or both. </para>
+
+    <para>The above capture is very interesting, as you can see automated
+    picture deletion is activated and only 8 days of capture are kept by the
+    system. You can see a disk usage increase during the day, with old
+    pictures being deleted each morning, corresponding to the drop you can see
+    on the graph.</para>
+
+    <para>As you can see, disk usage always remains around 8GB.</para>
+
+    <screenshot>
+      <screeninfo>Disk usage per day (with no automated deletion)</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.sourcesize2.fr.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>The above graph is the most usual scenario, with disk usage
+    constantly increasing as time pass by, on this graph you can see disk
+    usage going from 48GB to 54GB in around 10 days.</para>
+  </section>
+
+  <section>
+    <title>System statitics</title>
+
+    <para>Note: this window is only available to Webcampak and Webcampak Cloud
+    Max users.</para>
+
+    <screenshot>
+      <screeninfo>System Statistics</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.stats.system.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>This window gives general system details, such as bandwidth, memory,
+    hard disk, CPU usages.</para>
+  </section>
+</chapter>

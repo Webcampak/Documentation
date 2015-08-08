@@ -1,0 +1,18 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>4. Sources</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Webcampak user guide"><link rel="up" href="ch01.html" title="Chapter 1. Overview"><link rel="prev" href="ch01s03.html" title="3. Features"><link rel="next" href="ch01s05.html" title="5. Files"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">4. Sources</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><th width="60%" align="center">Chapter 1. Overview</th><td width="20%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a></td></tr></table><hr></div><div class="section" title="4. Sources"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1170084889727"></a>4. Sources</h2></div></div></div><p>Webcampak core is associated to the concept of "sources", giving it
+    adaptability and scalability.</p><p>A Webcampak source is a configuration process aimed to capture and
+    process pictures. A source is not necessarily attached to a capture device
+    (such as a camera), the capture can come from another Webcampak or another
+    source from the same Webcampak.</p><p>It allows sources to be cascaded and to potentially modify one
+    single picture an unlimited number of times.</p><p>Let's take a real world example:</p><p>At a building site, the building manager would like to generate a
+    timelapse video of the whole construction project and at the same time,
+    publish real-time pictures on its website to show building progress to its
+    customers.</p><p>Those two requirements need different pictures:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>For a timelapse video, pictures must be stored in the highest
+        quality with a limited number of manipulations (no legend, no
+        watermark, ...).</p></li></ul></div><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>For real-time picture web-publishing, the construction company
+        would like pictures to include the company's logo and a capture
+        date.</p></li></ul></div><p>Therefore Webcampak has to process pictures differently, this can be
+    done by cascading sources.</p><p>A first source will capture the picture from the camera and store it
+    for the timelapse video. This source will also send pictures to a second
+    source. This second source will process the picture, insert a logo, date,
+    resize it and send it to the company's website.</p><p>All of this is done automatically by Webcampak with no human action
+    past the initial configuration.</p></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch01s03.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch01.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch01s05.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">3. Features </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 5. Files</td></tr></table></div></body></html>

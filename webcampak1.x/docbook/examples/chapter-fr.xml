@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="examples">
+    <title>Exemples</title>
+ 
+    <section>
+      <title>Créer un masque avec The Gimp</title>
+
+      <para>Dans cet exemple nous allons détailler la création d'un masque
+      avec Gimp. Le masque sera une image PNG avec canal alpha qui sera
+      superposé à votre image.</para>
+
+      <para>Ces manipulations sont réalisées avec The Gimp mais peuvent êtres
+      adaptés à tout logiciel de dessin.</para>
+
+      <para>Avant de commencer il est nécessaire que votre Webcampak soit
+      installé de manière définitive, en effet, en cas de mouvement du
+      Webcampak vous pourriez avoir à recréer le fichier.</para>
+
+      <para>Dans cette exemple nous allons créer un masque "cachant"
+      l'ensemble de l'image à l'exception de zones de chantier. Ce type de
+      modification est utile si vous souhaitez ne conserver, pour la création
+      de vidéos, que les images pour lesquels il y a eu un mouvement dans une
+      zone ciblée (fonction "Filtrer images similaires").</para>
+
+      <section>
+        <title>Téléchargez et ouvrez une image capturée</title>
+
+        <para>Une fois votre Webcampak installé dans sa position définitive,
+        téléchargez une image en pleine résolution (via le bouton Tél.
+        Original de l'interface visiteur par exemple). Ouvrez ensuite cette
+        image avec The Gimp.</para>
+
+        <figure>
+          <title>Ouverture de l'image source</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen1.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <section>
+          <title>Insérez un calque "transparent"</title>
+
+          <figure>
+            <title>Ajout d'un calque transparent</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen2.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <figure>
+            <title>Création du calque transparent</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen3.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Veillez à bien sélectionner "Transparent" pour votre nouveau
+          calque.</para>
+
+          <figure>
+            <title>Affichage des calques</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen4.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </section>
+
+        <section>
+          <title>Ajoutez un fond coloré uni sur le calque</title>
+
+          <para>Utilisez ensuite l'outil "pot de peinture", et colorez
+          l'ensemble du calque. La couleur doit être pleine et ne pas laisser
+          apparaître l'image en arrière plan.</para>
+
+          <figure>
+            <title>Ajout d'un fond sur le nouveau calque</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen5.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+
+          <para>Modifiez ensuite l'opacité du calque pour laisser apparaître
+          l'image en fond.</para>
+
+          <figure>
+            <title>Réglage de l'opacité du nouveau calque</title>
+
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen6.png"/>
+              </imageobject>
+            </mediaobject>
+          </figure>
+        </section>
+
+        <section>
+          <title>Mise à nu des zones à conserver</title>
+
+          <para>Avec l'outil gomme, mettez à nu toutes les zones pour
+          lesquelles vous souhaitez suivre les changements.</para>
+
+          <para><figure>
+              <title>Mise à nu des zones à observer</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen7.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure>Rétablissez ensuite l'opacité à 100 pour ne plus voir que
+          les zones que vous avez sélectionné.</para>
+
+          <para><figure>
+              <title>Rétablissement de l'opacité à 100 pour le calque</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen8.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure></para>
+        </section>
+
+        <section>
+          <title>Suppression de l'image source et enregistrement</title>
+
+          <para>Nous pouvons ensuite supprimer l'image source, avec un clic
+          droit sur le calque "Background", supprimez l'image source pour ne
+          conserver que le nouveau calque.</para>
+
+          <para><figure>
+              <title>Suppression de l'image source</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen9.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure></para>
+
+          <para>Votre masque est maintenant prêt à être enregistré,
+          sauvegardez le au format PNG en conserver le canal alpha.</para>
+
+          <para><figure>
+              <title>Enregistrement de la nouvelle image</title>
+
+              <mediaobject>
+                <imageobject>
+                  <imagedata fileref="http://doc.webcampak.com/screenshots/example.mask.screen10.png"/>
+                </imageobject>
+              </mediaobject>
+            </figure>Copiez ensuite, en FTP, le fichier dans le répertoire
+          /watermark/ du compte "wpresources". Le masque est prêt à être
+          utilisé.</para>
+
+          <para/>
+        </section>
+      </section>
+    </section>
+  </chapter>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="videos">
+  <title>Navigate within videos</title>
+
+  <para>This window will let you navigate within all videos stored within
+  Webcampak as far as you have been granted access to the requested
+  source.</para>
+
+  <section>
+    <title>Global view</title>
+
+    <screenshot>
+      <screeninfo>Webcampak videos</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.videos.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+
+    <para>When you first load the page you will be automatically redirected to
+    the latest video created by the source with the lower weight.</para>
+  </section>
+
+  <section>
+    <title>Source selection</title>
+
+    <para>On the top left of the window a drop down list will let you select a
+    different source. This list will only include sources for which you have
+    been granted access.</para>
+
+    <para>If a source is missing please get in touch with your Webcampak
+    administrator and ask him to check your permissions.</para>
+  </section>
+
+  <section>
+    <title>In-browser video preview</title>
+
+    <para>In the list, on the left part of the window, click on a video you
+    would like to watch.</para>
+
+    <para>You will then see a preview picture on the right part of the window,
+    click on this picture to start your video.</para>
+
+    <screenshot>
+      <screeninfo>Video preview</screeninfo>
+
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="http://doc.webcampak.com/screenshots/wpak2.videos.play.en.png"/>
+        </imageobject>
+      </mediaobject>
+    </screenshot>
+  </section>
+
+  <section>
+    <title>Downloading a video</title>
+
+    <para>To download a video, simply right-click on the green arrow in the
+    list and select "Save link as" or any similar option depending of your web
+    browser.</para>
+
+    <para>Please note that only the H.264 (highest quality) video will be
+    offered for download. If you want to download the MP4 video, please
+    connect to your source using a FTP client.</para>
+  </section>
+</chapter>

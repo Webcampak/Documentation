@@ -1,0 +1,83 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>3. Videos tab</title><link rel="stylesheet" type="text/css" href="http://doc.webcampak.com/css/freebsd.css"><meta name="generator" content="DocBook XSL Stylesheets V1.76.1"><link rel="home" href="index.html" title="Webcampak user guide"><link rel="up" href="ch08.html" title="Chapter 8. Webcampak sources configuration"><link rel="prev" href="ch08s02.html" title="2. Pictures tab"><link rel="next" href="ch08s04.html" title="4. Custom Vids. tab"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">3. Videos tab</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch08s02.html">Prev</a> </td><th width="60%" align="center">Chapter 8. Webcampak sources configuration</th><td width="20%" align="right"> <a accesskey="n" href="ch08s04.html">Next</a></td></tr></table><hr></div><div class="section" title="3. Videos tab"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="id1170084894021"></a>3. Videos tab</h2></div></div></div><p>Each day, at 1:00 am, Webcampak will start creating a daily video of
+    the previous day (if this option is activated).</p><div class="section" title="3.1. Daily video creation"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894030"></a>3.1. Daily video creation</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.config.en.png"></div></div><p>For each format you can create a MP4 video file to be inserted
+      into a web page or viewed with mobile devices.</p><p>Webcampak is compatible with H.264 video codecs, with a set of
+      pre-defined HD-compliant settings.</p><div class="tip" title="Tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Tip</h3><p>Take in consideration that HD TV usually display pictures in a
+          definition different than DSLR cameras. At some point it will be
+          necessary to modify pictures to fit those resolutions, we decided to
+          do this by cutting the picture on the top and/or bottom. Take this
+          in consideration if you want to add text in your video.</p></div><p>We usually recommend to test those settings via "Custom Videos"
+      section, over a short interval (a few minutes/hours). Creation of the
+      video will be fast and it will give you an opportunity to preview the
+      result without waiting until 1:00 am.</p><p>The following codecs/formats are available:</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>H. 264 (1080p): HD, highest quality possible on consumer
+          market.</p></li><li class="listitem"><p>H. 264 (720p): HD, high quality.</p></li><li class="listitem"><p>H. 264 (480p): DVD-like quality.</p></li><li class="listitem"><p>H. 264 (Custom): H.264, custom settings.</p></li></ul></div><p>Processing speed will really depends of each format, higher is the
+      quality, longer will be the creation and bigger will be the video
+      file.</p><p>If your camera take very high definition pictures, H. 264 custom
+      will let you generate very high definition videos (such as 4K).</p><p>Choosing FPS (frame per seconds) of your video will have a strong
+      impact on the output. If you use high FPS, your video will look smoother
+      but the video will be shorter. On the other hand, if you use a lower
+      FPS, viewers will have more time to look at details.</p><p>The table below give a few video length sample depending of a few
+      settings :</p><div class="table"><a name="id1170084894129"></a><p class="title"><b>Table 8.1. Video length comparison</b></p><div class="table-contents"><table summary="Video length comparison" border="1"><colgroup><col><col><col><col><col></colgroup><thead><tr><th align="center">Capture length</th><th align="center">Capture frequency</th><th align="center">Number of pictures</th><th align="center">FPS</th><th align="center">Video length</th></tr></thead><tbody><tr><td>24h</td><td>5mn</td><td>288</td><td>10</td><td>28s</td></tr><tr><td>24h</td><td>5mn</td><td>288</td><td>24</td><td>12s</td></tr><tr><td>24h</td><td>1mn</td><td>1440</td><td>10</td><td>2mn40</td></tr><tr><td>24h</td><td>1mn</td><td>1440</td><td>24</td><td>1mn</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" title="3.2. Advanced video settings"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894253"></a>3.2. Advanced video settings</h3></div></div></div><p>TCe bloc vous permet de configurer les paramètres avancés des
+      différents formats vidéo.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.advconfig.en.png"></div></div><p>As you can see, some configuration elements are static to ensure
+      conformity with HD rules but it remains possible to adjust a few
+      settings (crop, FPS).</p><p>"H.264 Custom" let you choose the bitrate, resolution and crop
+      areas. Those settings can be complex to configure and are explained in
+      the following sections of this document.</p><p>As explained previously, during video creation we will convert
+      pictures with a 4/3 like format to a video with a 16/9 like format but
+      we don't want to stretch/alter the picture.</p><div class="section" title="3.2.1. Example 1: Cropping to 1080p"><div class="titlepage"><div><div><h4 class="title"><a name="id1170084894294"></a>3.2.1. Example 1: Cropping to 1080p</h4></div></div></div><p>Let's take a simple example: we want to generate a 1080p video,
+        this gives us a resolution of 1920x1080. Our 18Mpix camera take
+        pictures with a 3904x2807 resolution (after a first crop)</p><p>Webcampak will resize the picture based upon X axis and will
+        keep picture ratio, as a result we end up with a 1920x1380 picture
+        (1920 x 2807 / 3904 = 1380).</p><p></p><div class="figure"><a name="id1170084894311"></a><p class="title"><b>Figure 8.3. Example 1: source picture and 1080p area, cropping
+          1920:1080:0:0</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example1.full.jpg" alt="Example 1: source picture and 1080p area, cropping 1920:1080:0:0"></div></div></div><br class="figure-break"><p>If we use a cropping value of 1920:1080:0:0, our video will only
+        focus on the top of the picture as displayed above.</p><p>If we want to focus on buildings, we can crop on Y axis and use
+        the following value: 1920:1080:0:300</p><div class="figure"><a name="id1170084894340"></a><p class="title"><b>Figure 8.4. Example 1: source picture and 1080p area, cropping
+          1920:1080:0:300</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example2.full.jpg" alt="Example 1: source picture and 1080p area, cropping 1920:1080:0:300"></div></div></div><br class="figure-break"><p>If we want to center the video, we can crop on Y axis and use
+        the following value: 1920:1080:0:150</p><div class="figure"><a name="id1170084894364"></a><p class="title"><b>Figure 8.5. Example 1: source picture and 1080p area, cropping
+          1920:1080:0:150</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example3.full.jpg" alt="Example 1: source picture and 1080p area, cropping 1920:1080:0:150"></div></div></div><br class="figure-break"></div><div class="section" title="3.2.2. Example 2: H.264 Custom, advanced modification"><div class="titlepage"><div><div><h4 class="title"><a name="id1170084894385"></a>3.2.2. Example 2: H.264 Custom, advanced modification</h4></div></div></div><p>Example 1 details very simple manipulations and will be similar
+        to 1080p, 720p and 480p formats.</p><p>By using H.264 Custom you can perform much advanced
+        manipulations, and for example, zoom on a specific area of the
+        picture.</p><p>Just consider you want to zoom on the crane on the right of the
+        picture. Your first action will be to identify the area to focus on,
+        this area must have the same ratio than target video resolution (to
+        ensure you do not stretch the picture).</p><p>Let's take an area of 1920x1080 pixels, located at X:1824 et
+        Y:1280 from origin point (top left corner of the picture</p><div class="figure"><a name="id1170084894408"></a><p class="title"><b>Figure 8.6. Example 2: 3904x2807 1920:1080:1824:1280</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example6.full.jpg" alt="Example 2: 3904x2807 1920:1080:1824:1280"></div></div></div><br class="figure-break"><p>Custom video will be created using only the selected
+        part.</p><div class="figure"><a name="id1170084894432"></a><p class="title"><b>Figure 8.7. Example 2: result</b></p><div class="figure-contents"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/admin.source.videos.example7.full.jpg" alt="Example 2: result"></div></div></div><br class="figure-break"><p>This solution brings adaptability to Webcampak but is also
+        complex. Identical results can be obtained using "Post-Prod. Vids."
+        menu by applying modification on source pictures.</p></div></div><div class="section" title="3.3. Filtrer similar pictures"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894458"></a>3.3. Filtrer similar pictures</h3></div></div></div><p>This feature will remove similar pictures (i.e. if nothing has
+      changed on a building site for example).</p><p>Changes such as luminosity will not be taken in consideration by
+      this option.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.filter.en.png"></div></div><div class="section" title="3.3.1. Watermark file"><div class="titlepage"><div><div><h4 class="title"><a name="id1170084894489"></a>3.3.1. Watermark file</h4></div></div></div><p>In most situations, captured pictures include external elements
+        (such as a road with cars passing by), we added the ability to mask
+        those areas in order to filter only a specific area of the
+        picture.</p><p>To add a mask, create a "PNG" picture with an Alpha channel
+        (transparency) having the same size than your captured picture. Add
+        color on top of all areas you don't want to be taken in consideration
+        by the filter.</p><p>Upload the mask to /watermark/ directory of the Webcampak using
+        global FTP account (wpresources).</p><p>You can find an example of a mask creation at the end of this
+        document.</p></div><div class="section" title="3.3.2. Max distance"><div class="titlepage"><div><div><h4 class="title"><a name="id1170084894514"></a>3.3.2. Max distance</h4></div></div></div><p>Mention modification threshold between pictures. This setting is
+        difficult to define, it is best to make a few tests to identify best
+        value.</p></div></div><div class="section" title="3.4. Insert Watermark"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894526"></a>3.4. Insert Watermark</h3></div></div></div><p>Please refer to description in Pictures tab, configuration
+      settings are identical.</p></div><div class="section" title="3.5. Pre-processing manipulations (advanced)"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894536"></a>3.5. Pre-processing manipulations (advanced)</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.preprocess.en.png"></div></div><p>Please refer to previous portions of this document for more
+      details about how to insert text.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Resize: It might be necessary to resize pictures before
+          processing (especially if using 18 or 21 mpix cameras) as the video
+          core is not natively compatible with very high resolution
+          sources.</p></li><li class="listitem"><p>Visual effect (test only): add an effect to your pictures
+          (such as tilt shift), this is only provided for testing
+          purposes.</p></li></ul></div></div><div class="section" title="3.6. Add an audio file"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894583"></a>3.6. Add an audio file</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.audio.en.png"></div></div><p>Webcampak let you add an audio track to your videos.</p><p>To add an audio track, login into global FTP account (wpresources)
+      and copy MP3 files to /audio/ directory. This directory is shared
+      between all sources.</p><p>MP3 filenames must only contain regular characters without blank
+      space.</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Add an audio track: select this option to add an audio
+          track.</p></li><li class="listitem"><p>Audio file: select the file to be inserted.</p></li></ul></div><p>Webcampak is compliant with playlist upon some conditions. Create
+      a "playlist.m3u" file, this file must contain a list of MP3 files (one
+      file per line)</p><p>Example of a "playlist.m3u" file</p><pre class="screen">01-Yellow.submarine.mp3
+02-Beat.it.mp3</pre><p>Upload all files (M3U and corresponding MP3) via FTP to /audio/
+      directory.</p><p>During creation of the video, Webcampak will create a playlist.mp3
+      file, you can use this file for other videos and even rename it for
+      later use.</p></div><div class="section" title="3.7. Upload to Youtube"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894657"></a>3.7. Upload to Youtube</h3></div></div></div><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.youtube.en.png"></div></div><p>Once video has been created you can send it to Youtube
+      automatically.</p><p>In order for Youtube upload to be operational an authentication
+      key must be stored on Webcampak using your Youtube identification
+      details. This manipulation must be done manually using SSH.</p><p>If multiple formats are created, only the one with the highest
+      quality will be uploaded to Youtube (Youtube will then create smaller
+      versions).</p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Activate Youtube upload: activate (or not) upload to
+          Youtube.</p></li><li class="listitem"><p>Video Category: uploaded videos are assigned to a
+          category.</p></li></ul></div></div><div class="section" title="3.8. Send videos via FTP"><div class="titlepage"><div><div><h3 class="title"><a name="id1170084894712"></a>3.8. Send videos via FTP</h3></div></div></div><p>You can use those option to upload videos to remote FTP
+      servers.</p><div class="screenshot"><div class="mediaobject"><img src="http://doc.webcampak.com/screenshots/wpak2.sources.videos.ftp.en.png"></div></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch08s02.html">Prev</a> </td><td width="20%" align="center"><a accesskey="u" href="ch08.html">Up</a></td><td width="40%" align="right"> <a accesskey="n" href="ch08s04.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">2. Pictures tab </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> 4. Custom Vids. tab</td></tr></table></div></body></html>

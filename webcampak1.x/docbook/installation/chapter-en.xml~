@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="installation">
+    <title>Installation</title>
+
+    <para><note>
+        <para>Webcampak is always provided pre-installed and pre-configured,
+        this section of the document is only provided for people testing the
+        software.</para>
+      </note></para>
+
+    <para>Webcampak is composed by a Python core and a set of third party
+    software performing additional modifications.</para>
+
+    <para>The core can be considered as a director, it coordinates all
+    Webcampak action. Third party software must be installed and configured
+    properly to ensure all those components work properly together.</para>
+
+    <para>Webcampak has been built to run on top of Ubuntu Server operating
+    system. It is provided with a set of scripts and configurations files
+    specifically designed for this operating system. Webcampak is likely to
+    run on any GNU/Linux operating system but take extra care with
+    configuration of third party software, some of the configuration files
+    might not be compatible with another OS.</para>
+
+    <para>Furthermore we recommend to install Webcampak on a newly installed
+    operating system.</para>
+
+    <section>
+      <title>Ubuntu Server installation</title>
+
+      <para>Download and install Ubuntu Server, do not install any extra
+      packages except OpenSSH server to allow remote control.</para>
+
+      <para>We tested Webcampak with the following versions: 10.10, 11.10,
+      12.04</para>
+    </section>
+
+    <section>
+      <title>Webcampak installation</title>
+
+      <para>Once Ubuntu Server has been installed, copy Webcampak installation
+      script to your user's home directory.</para>
+
+      <para>Execute the installation script:</para>
+
+      <screen>wpak@webcampak:~$ bash install.Ubuntu12.04.sh</screen>
+
+      <para>Then follow all instructions on the screen.</para>
+    </section>
+  </chapter>
+

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+	"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">  
+   <chapter id="viewerpanel">
+    <title>Viewer panel</title>
+
+    <para>This interface has been created to browse within all pictures and
+    videos stored on your Webcampak.</para>
+
+    <para>Its user management system will let you define which user can access
+    which source. Access rights are managed by source and by user.</para>
+
+    <para>Currently available in English, French and Spanish, let us know if
+    you would like to see additional languages.</para>
+
+    <para>Take in consideration that this interface will not let you modify
+    Webcampak configuration, this has to be done via Webcampak admin
+    panel.</para>
+
+    <section>
+      <title>Interface overview</title>
+
+      <para>For your first connection the system will request
+      authentication.</para>
+
+      <figure>
+        <title>Webcampak first login screen</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.bienvenue.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <para>As you can see the interface is divided in multiple
+      sections.</para>
+
+      <figure>
+        <title>Viewer panel overview</title>
+
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.overview.en.png"/>
+          </imageobject>
+        </mediaobject>
+      </figure>
+
+      <itemizedlist>
+        <listitem>
+          <para>On the top left corner, flags let you choose the admin panel
+          language.</para>
+        </listitem>
+
+        <listitem>
+          <para>On the left, a scroll list let you choose the source to
+          display.</para>
+        </listitem>
+
+        <listitem>
+          <para>The name of the current source is displayed in the center,
+          followed by the connect username.</para>
+        </listitem>
+
+        <listitem>
+          <para>The scroll list on the right let you choose the picture
+          resolution when displaying the last picture. By default the smallest
+          one is selected.</para>
+        </listitem>
+      </itemizedlist>
+
+      <section>
+        <title>Display last picture</title>
+
+        <para>Once authenticated you will be automatically redirected to "Now"
+        page displaying the last picture available for the selected
+        source.</para>
+
+        <para>At the bottom of the page "Display Fullscreen" will open a
+        dedicated page containing only the picture and refreshed every five
+        minutes.</para>
+
+        <figure>
+          <title>Display the last picture of the current source</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.autorefresh.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Display all sources</title>
+
+        <para>If you click on "Thumbnails" you will view on one page, all
+        sources the authenticated user (demo on this capture) is allowed to
+        see.</para>
+
+        <para>At the bottom of the page, "Start slideshow" will rotate between
+        last captured pictures in a dedicated page, the slideshow is refreshed
+        every 5 minutes.</para>
+
+        <figure>
+          <title>Display all pictures as thumbnails</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.thumbnails.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+      </section>
+
+      <section>
+        <title>Browse within pictures</title>
+
+        <para>"Photos" section will let you browse within archived
+        pictures</para>
+
+        <figure>
+          <title>Display pictures captured on the 8th of May 2012</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>On the top left of the page, a calendar allows you to navigate
+        in various months and days. </para>
+
+        <figure>
+          <title>Zoom inside a picture</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.zoom.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Just below the calendar, the thumbnail is equipped with zoom
+        functionalities. If you move your mouse over, it will displayed a
+        large portion of the picture on the right part of the page.</para>
+
+        <para>A zoom scrollbar will let you choose the level of zoom to be
+        displayed on the right. If you choose over 100%, loading can be long,
+        especially if the picture is very large (18 or 21 mpix).</para>
+
+        <figure>
+          <title>Display capture times</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.hours.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Pictures are displayed by hour and minute, each "blue" bar
+        represent a picture, a white bar show the picture currently being
+        displayed.</para>
+
+        <para>If capture rate is faster than one per minute you will need to
+        use "Previous" and "Next" buttons on the center of the page to move
+        more precisely between pictures.</para>
+
+        <figure>
+          <title>Pictures displayed on the center</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.photos.center.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>"Previous" and "Next" buttons let you move between pictures one
+        by one.</para>
+
+        <para>Thumbnails on the top display pictures before and after the one
+        currently being displayed (15, 10, 5 pictures before/after).</para>
+
+        <para>On the right of the page, two buttons let you download the
+        current picture either in fullsize or in current size (right click,
+        save link as...).</para>
+      </section>
+
+      <section>
+        <title>Browse within videos</title>
+
+        <para>"Videos" let you browse between saved videos, using a
+        calendar.</para>
+
+        <figure>
+          <title>Display videos created by Webcampak</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.videos.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>If "MP4" format has been selected in the administration panel,
+        videos can be displayed directly in your web browser. In all cases, a
+        "Downl. video" button will let you download the selected video (right
+        click, save link as...).</para>
+      </section>
+
+      <section>
+        <title>Manage viewer panel</title>
+
+        <para>The viewer panel has its own user management system to define
+        access permissions.</para>
+
+        <figure>
+          <title>Manage groups and pages</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.groups.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>When you add a user you can attach him to a group. </para>
+
+        <para>"Groups and Pages" let you define groups and select sections to
+        be available for users of this group on the viewer panel. </para>
+
+        <para>If the page is not selected it will not be visible to users of
+        this group.</para>
+
+        <para>The viewer panel also let you configure companies. This is
+        purely administrative and does not have any impact on the viewer
+        panel.</para>
+
+        <figure>
+          <title>Manage users</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.users.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>When adding a user you can mention his firstname, lastname,
+        email address, company and assign him to a group in order to define
+        sections he will see on the viewer panel.</para>
+
+        <figure>
+          <title>Manage sources</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.sources.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>"Sources" is one of the key section of the viewer panel, it let
+        you add sources and define permissions (by clicking on
+        "View/Edit").</para>
+
+        <para>To add a source, mention its ID (defined in the administration
+        panel, for example source10 has ID 10). Weight define in which order
+        should source be displayed. Source with lowest weight becomes the
+        default source.</para>
+
+        <para>By clicking on View/Edit you can define users allowed to access
+        content of a source (source by source and user by user). By default a
+        source do not have any user (not even root), you need to assign users
+        to the source manually.</para>
+
+        <figure>
+          <title>Manage administration panel permissions</title>
+
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="http://doc.webcampak.com/screenshots/viewer.manage.admin.en.png"/>
+            </imageobject>
+          </mediaobject>
+        </figure>
+
+        <para>Finally, "Admin. Panel Access" let you declare users allowed to
+        manage Webcampak via its administration panel.</para>
+      </section>
+    </section>
+  </chapter>
+

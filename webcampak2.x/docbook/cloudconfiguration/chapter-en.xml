@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<chapter id="cloudconfiguration">
+  <title>Webcampak Cloud configuration</title>
+
+  <para>As of now, please refer to Webcampak configuration for more details
+  about how to configure your Webcampak Cloud.</para>
+
+  <para>You will find all necessary informations, the only difference being
+  that some configuration settings are not available to Webcampak Cloud
+  users.</para>
+</chapter>
