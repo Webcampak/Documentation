@@ -2,6 +2,10 @@
 
 Webcampak has an authentication and an authorization module providing feature and source isolation.
 
+## Password
+
+Webcampak do not store clear-text user passwords, but a [slated hash of users passwords](https://en.wikipedia.org/wiki/Cryptographic_hash_function).
+
 ## Groups
 
 Webcampak handles feature authorization on a group level. When configuring a group, users can select which features (view pictures, configure sources, run reports, etc...) are available for users in this group.

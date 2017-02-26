@@ -16,7 +16,7 @@ pages:
   - File Management: 'Learn/en_File_Management.md'
   - Users: 'Learn/en_Users.md'
 - Use:
-  - Overview: 'Learn/en_Overview.md'
+  - Authentication: 'Use/en_Authentication.md'
 - Configure:
   - Sources: 'Configure/en_Sources.md'
   - Access Control: 'Configure/en_Access_Control.md'
