@@ -2,7 +2,7 @@
 # Webcampak Docs - Config
 #
 site_name: Webcampak Docs
-site_url: http://doc.webcampak.com/
+site_url: http://doc.webcampak.com/webcampak3.x/web/en/
 repo_url: https://github.com/Webcampak/Documentation
 copyright: "&copy; 2015-2016"
 theme_dir: theme
