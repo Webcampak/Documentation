@@ -36,3 +36,5 @@ Each source then get its own FTP account giving access to its own directory tree
 * __resources__: direcotry containing various source specific elements necessary for processing and source operation
 * __tmp__: temporary directory used in processing and/or picture acquisition
 * __videos__: directory containing generated videos
+
+

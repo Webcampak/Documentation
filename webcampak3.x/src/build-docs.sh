@@ -32,7 +32,7 @@ for userGuide in "${userGuides[@]}"; do
       mkdir docs/PDF/${userGuide}
    fi
    echo "$(date +'%d %B %Y - %k:%M'): ${userGuide}: Building pandoc document"
-   /usr/local/bin/mkdocs2pandoc -f ${userGuide}_PDF.yml -o docs/PDF/${userGuide}.pd
+   mkdocs2pandoc -f ${userGuide}_PDF.yml -o docs/PDF/${userGuide}.pd
    echo "$(date +'%d %B %Y - %k:%M'): ${userGuide}: Replacing strings in pandoc document "
    /bin/sed -i -e 's/# / /g' docs/PDF/${userGuide}.pd
    /bin/sed -i -e 's/### /## /g' docs/PDF/${userGuide}.pd
@@ -42,8 +42,8 @@ for userGuide in "${userGuides[@]}"; do
    /usr/bin/pandoc --listings -H theme/latex/listings-setup.tex --toc -V documentclass=report -V geometry:"top=2cm, bottom=1.5cm, left=1cm, right=1cm" -f markdown+grid_tables+table_captions docs/PDF/${userGuide}_Title.txt -o docs/PDF/${userGuide}.pdf docs/PDF/${userGuide}.pd
 done
 
-echo "$(date +'%d %B %Y - %k:%M'): ${ENVIRONMENT}: Deploying new version to /var/www/gdc-docs-${ENVIRONMENT}.nci.nih.gov/"
-/usr/local/bin/mkdocs build -v --site-dir ../web/en/
+echo "$(date +'%d %B %Y - %k:%M'): Building site to ../web/en/"
+mkdocs build -v --site-dir ../web/en/
 
 if [ -f /tmp/Doc-buildlog.txt ]; then
    echo "$(date +'%d %B %Y - %k:%M'): ${ENVIRONMENT}: Copying log file"

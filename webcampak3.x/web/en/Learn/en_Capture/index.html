@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Learn/en_Capture/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>Capture - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#capture">Capture</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#interval">Interval</a>
+               
+               </li>
+           
+               <li class=""><a href="#precise-capture-time">Precise Capture Time</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#filename">Filename</a></li>
+                        
+                    </ul>
+               
+               </li>
+           
+               <li class=""><a href="#calendar">Calendar</a>
+               
+               </li>
+           
+               <li class=""><a href="#non-overlapping-sources">Non-overlapping sources</a>
+               
+               </li>
+           
+               <li class=""><a href="#raw-files">RAW Files</a>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Overview/">
+                Overview
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Sources/">
+                Sources
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                Capture
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#interval">Interval</a>
+          
+        </li>
+        
+        <li class=""><a href="#precise-capture-time">Precise Capture Time</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#filename">Filename</a></li>
+            
+          </ul>
+          
+        </li>
+        
+        <li class=""><a href="#calendar">Calendar</a>
+          
+        </li>
+        
+        <li class=""><a href="#non-overlapping-sources">Non-overlapping sources</a>
+          
+        </li>
+        
+        <li class=""><a href="#raw-files">RAW Files</a>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_Logging/">
+                Logging
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_File_Management/">
+                File Management
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Users/">
+                Users
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="capture">Capture</h1>
+<h2 id="interval">Interval</h2>
+<p>Webcampak capture pictures at an interval defined in minutes or second in a source configuration, with captured triggered based on clock time. For example, if a source is configured to capture every:</p>
+<ul>
+<li><strong>20s</strong>: The capture process will be triggered at 5:00"00, 5:00"20, 5:00"40, 6:00"00, etc...</li>
+<li><strong>10mn</strong>: The capture process will be triggered at 5:00"00, 5:10"00, 5:20"00, 5:30"00, etc...</li>
+</ul>
+<p>To get a "clean" and consistent output we recommend using one of the following settings:</p>
+<ul>
+<li><strong>Seconds</strong>: 10, 20, 30</li>
+<li><strong>Minutes</strong>: 1, 5, 10, 15, 20, 30, 60</li>
+</ul>
+<p>Note: a 10s capture frequency will highly depend of your hardware, and might not be feasible in most situations.</p>
+<h2 id="precise-capture-time">Precise Capture Time</h2>
+<p>When capturing from a D-SLR camera, and depending of multiple factors, the actual capture process might be triggered a few miliseconds or seconds after the defined interval. Depending if you care about time accuracy or not, you can specify if the picture should take the time it the capture request was sent (interval time) or the time the picture was actually captured.</p>
+<h3 id="filename">Filename</h3>
+<p>Webcampak uses the capture time in file naming, using the following convention: YYYYMMDDHHmmSS (YearMonthDayHourMinuteSecond). For example 20170224124007.jpg is a picture captured on February (02) 24th, 2017 at 12:40 and 07 seconds.</p>
+<p>To prevent too many files from being stored in the same directory (which creates issue for very long projects) pictures are stored in a directory corresponding to the picture's day, for example, filepath for the above picture will be: pictures/20170224/20170224124007.jpg</p>
+<h2 id="calendar">Calendar</h2>
+<p>A 24h format weekly calendar is available in each source to identify when to capture pictures (day of the week, time of the day).</p>
+<p>If you want to enable variable capture rate (for example capture business hours at a different rate than outside business hours), you would configure two sources with a different non-overlapping capture calendar.</p>
+<h2 id="non-overlapping-sources">Non-overlapping sources</h2>
+<p>When configuring sources to capture from the same physical source (i.e. same D-SLR camera), be cautious not to have overlapping capture requests. Cameras can only handle one capture at a time and which source will get the picture will be "first-come-first-served", with the other source failing and the risk of causing the camera to crash.</p>
+<h2 id="raw-files">RAW Files</h2>
+<p>Raw pictures are stored in a specific sub-directory, for the above picture it will be: pictures/raw/20170224/20170224124007.jpg</p>
+<p>It might be useful to understand that, in webcampak, raw pictures are mostly considered as a supplement to jpg pictures, but picture manipulation happens on jpg pictures only. Raw pictures are stored in a different directory tree and at various stages, the system will check for the presence of a raw pictures (and eventually configuration settings) to determine if such files should be sent.</p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_Logging/" class="btn pull-right indicate-right" title="Click to go to the Next Page: Logging">
+                            <span class="btn-nav-text">Next:</span> Logging <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="../en_Sources/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Sources">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> Sources</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

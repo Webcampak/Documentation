@@ -206,7 +206,7 @@ For example, for 1080p, settings are:
  * __Size__: 1920x-3
  * __Crop__: 1920:1080:0:0
 
-The system will take the initial pidcture definition (for example 5616 × 3744 for a Canon 5D MII) it will resize its width to 1920 while maintaining the aspect ratio (-3 parameter). The resulting picture will have a definition of 1920x1280, it will then crop this picture for the video (Width:Height:X:Y), and since we already have the correct width the only parameter we want to customize is the Y offset. In our example:
+The system will take the initial pidcture definition (for example 5616x3744 for a Canon 5D MII) it will resize its width to 1920 while maintaining the aspect ratio (-3 parameter). The resulting picture will have a definition of 1920x1280, it will then crop this picture for the video (Width:Height:X:Y), and since we already have the correct width the only parameter we want to customize is the Y offset. In our example:
 
  * 1920:1080:0:0 - means we cut the bottom 200 pixels of the picture
  * 1920:1080:0:100 - means we cut 100 pixels at the top and the bottom of the picture

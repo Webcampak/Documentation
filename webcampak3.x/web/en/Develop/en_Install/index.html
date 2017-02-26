@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Develop/en_Install/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>Installation - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li class="active">
+    
+    <a href="./">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#install">Install</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#pre-requisites">Pre-requisites</a>
+               
+               </li>
+           
+               <li class=""><a href="#install-ubuntu-1604-server">Install Ubuntu 16.04 Server</a>
+               
+               </li>
+           
+               <li class=""><a href="#install-webcampak">Install Webcampak</a>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class=" main active">
+              <a href="./">
+                Installation
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#pre-requisites">Pre-requisites</a>
+          
+        </li>
+        
+        <li class=""><a href="#install-ubuntu-1604-server">Install Ubuntu 16.04 Server</a>
+          
+        </li>
+        
+        <li class=""><a href="#install-webcampak">Install Webcampak</a>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_Initial_Setup/">
+                Initial Setup
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="install">Install</h1>
+<p>Webcampak has initially been designed as an appliance, no specific caution was taken to ensure compatibility with pieces of software other than those provided by the installation script.</p>
+<p>We strongly encourage you to setup Webcampak on a fresh Ubuntu installation, and to ensure there is nothing you want to keep on the system (Webcampak might wipe some directories).</p>
+<p>The install script will download and install all necessary packages and configure the system for Webcampak operation, previous configuration will be erased.</p>
+<h2 id="pre-requisites">Pre-requisites</h2>
+<p>We strongly simplified Webcampak installation since previous versions. To being, simply install a fresh Ubuntu 16.04 Server LTS and ensure the username is "webcampak". 
+Your host will need to be connected to the Internet during the installation process.</p>
+<h2 id="install-ubuntu-1604-server">Install Ubuntu 16.04 Server</h2>
+<p>Caution: Webcampak is not compatible with other versions than Ubuntu Server. Using a desktop version will cause issues.</p>
+<h2 id="install-webcampak">Install Webcampak</h2>
+<p>Download the latest version of the install script and run it when connected as "webcampak".</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-0-bash" aria-controls="tab-0-bash" role="tab" data-toggle="tab">Bash</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-0-bash">
+            
+            <pre><code class="bash">webcampak@wpak078:~$ wget https://raw.githubusercontent.com/Webcampak/core/develop/install/install.Ubuntu16.04.sh
+--2017-02-11 09:01:45--  https://raw.githubusercontent.com/Webcampak/core/develop/install/install.Ubuntu16.04.sh
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.124.133
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.124.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12931 (13K) [text/plain]
+Saving to: 'install.Ubuntu16.04.sh'
+
+install.Ubuntu16.04.sh                                             100%[==============================================================================================================================================================&gt;]  12.63K  --.-KB/s    in 0s      
+
+2017-02-11 09:01:45 (85.4 MB/s) - 'install.Ubuntu16.04.sh' saved [12931/12931]
+
+webcampak@wpak078:~$ bash install.Ubuntu16.04.sh
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+The system will ask for password once, and should carry on with the entire installation.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-1-bash" aria-controls="tab-1-bash" role="tab" data-toggle="tab">Bash</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-1-bash">
+            
+            <pre><code class="bash">11 February 2017 -  9:08 You are currently connected as: webcampak
+11 February 2017 -  9:08 System: Distribution updated and upgrade
+[sudo] password for webcampak: 
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+Installation time depends of your Internet connection. At the end of the installation, you will be prompted to connect via your web browser. </p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-3-bash" aria-controls="tab-3-bash" role="tab" data-toggle="tab">Bash</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-3-bash">
+            
+            <pre><code class="bash">11 February 2017 - 11:05 Installation completed, Default User/Password are: root/webcampak you will be asked to change those at first connection
+11 February 2017 - 11:05 Open your web browser and connect to https://WECAMPAK-IP/
+11 February 2017 - 11:05 Exiting .....
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    </p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_Initial_Setup/" class="btn pull-right indicate-right" title="Click to go to the Next Page: Initial Setup">
+                            <span class="btn-nav-text">Next:</span> Initial Setup <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>
