@@ -782,9 +782,8 @@ table {
 
 
 /* Footer */
-
 footer {
-  background-color: #123e57;
+  background-color: #ff8400;
   border-top: 6px solid #8c8686;
   border-bottom: none;
   color: #97abb6;
@@ -1415,7 +1414,7 @@ footer a:visited {
 }
 
 .particle.blue {
-  background-color: #123e57;
+  background-color: #ff8400;
 }
 
 .loadingContainer {
