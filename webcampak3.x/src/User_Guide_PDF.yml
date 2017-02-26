@@ -1,0 +1,22 @@
+#
+# Webcampak Docs - Config
+#
+
+site_name: Webcampak Docs
+site_url: http://www.webcampak.com/
+repo_url: https://github.com/Webcampak/Documentation
+copyright: "&copy; 2009-2017"
+theme_dir: theme
+pages:
+- Learn:
+  - Overview: 'Learn/en_Overview.md'
+  - Sources: 'Learn/en_Sources.md'
+  - Capture: 'Learn/en_Capture.md'
+  - Logging: 'Learn/en_Logging.md'
+  - File Management: 'Learn/en_File_Management.md'
+  - Users: 'Learn/en_Users.md'
+extra:
+  project_root_dir: '/'
+  project_org: 'Webcampak'
+  project_description: 'Webcampak Docs'
+  version: 1.0
