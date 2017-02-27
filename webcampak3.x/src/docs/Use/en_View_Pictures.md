@@ -1,48 +1,93 @@
 # View Pictures
 
-At first connection, users will be prompted to enter their password. After successful authentication, a session will be created for a pre-defined amount of time, prompting users to re-authenticate once the sessions has expired. 
+Captured pictures can be accessed by clicking on "Webcampak > Pictures" in the top-left menu.
 
-Webcampak only supports connection via HTTPS. Depending of the system you are connecting to, you might either be redirected automatically to the HTTPS version or be prompted to do so.
+![Pictures Menu](images/desktop.menu.pictures.en.png)
 
-## Splash Screen
+## Overview
 
-The splash screen allows you to select between a fully featured Desktop application and a Dashboard application.
+This Pictures windows allows users to navigate through sources and their archives.
 
-The Desktop application provide most features and allow both viewing content and performing advanced configuration. The Dashboard application is a simplier view into the Webcampak with a more modern user interface.
+![Pictures](images/desktop.pictures.en.png)
 
-![Webcampak Splash Sreen](images/splash.en.png)
+Sources can be selected using the dropdown on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
-## Connection
+When selecting a source, webcampak will automatically position the system to the latest captured picture.
 
-The splash screen allows you to select between a fully featured Desktop application and a Dashboard application.
+Clicking on the main picture will open directly open this pictures in a new tab.
 
-![Desktop Login Screen](images/desktop.login.en.png)
+## Navigate through archives
 
-Both Desktop and Dashboard login screens are very similar in terms of features.
+### Select a day
 
-![Dashboard Login Screen](images/dashboard.login.en.png)
+Using a calendar, users can navigate through the archives, clicking on days containing pictures. The system automatically detect available days and will gray-out days with no pictures available. Current day is automatically highlighted.
 
-## Lost Password
+![Select a day](images/desktop.pictures.calendar.days.en.png)
 
-In case of lost password, users can request a new one to be sent to their email address by specifying their username and email address. 
+### Select a picture
 
-![Recover Lost Password](images/desktop.login.recover.password.en.png)
+All pictures captured during the day are presented in a small widget, containing one row per hour (from 00 to 23) and one column per minute (from 00 to 59).
 
-![Password reset Confirmation](images/desktop.login.recover.password.confirmation.en.png)
+![Select a picture](images/desktop.pictures.calendar.hours.en.png)
 
-The system will first verify that username and email address to match before sending an email with a temporary password by email.
+Blue cells represent timestamps with available pictures. Mousing over a specific cell will display the picture's time, clicking on the cell will open the selected picture.
 
-![Password reset email](images/desktop.login.recover.password.email.en.png)
+On the example above you can notice that this Webcampak is configured with variable capture rate, with:
 
-At next connection, the user will be prompted to update the password.
+* one picture captured every 20mn between 00:00-08:00 and between 18:00-00:00
+* one picture captured every 10mn between 08:00-18:00
 
-![Change password](images/desktop.login.update.password.en.png)
+### Navigate between pictures
 
-Once logged-in, user can:
+Webcampak provides various means to navigate between pictures, at the top-right of the screen a series of buttons allow users to (from left to right):
 
-* See their username displayed on the bottom right corner
-* Log Out using the menu on the top right corner of the screen
+* Go to the previous picture
+* Go to the next pictures
+* Go to the last picture captured by the source
+* Refresh the list of pictures available for the source.
 
-![Desktop Login Options](images/desktop.login.options.en.png)
+![Navigation buttons](images/desktop.pictures.navigate.buttons.en.png)
+
+Users can also navigate by clicking on thumbnails available towards the bottom of the screen. If sufficient pictures have been captured the system will display 6 thumbnails (from left to right):
+
+* 15th pictures captured before the currently displayed picture
+* 10th pictures captured before the currently displayed picture
+* 5th pictures captured before the currently displayed picture
+* 5th pictures captured after the currently displayed picture
+* 10th pictures captured after the currently displayed picture
+* 15th pictures captured after the currently displayed picture
+
+![Navigation Thumbnails](images/desktop.pictures.navigate.thumbnails.en.png)
+
+### Zoom into a picture
+
+Users can also zoom into a picture by selecting the zoom level they would like to achieve (from 0% to 200%).
+
+![Zoom into a picture](images/desktop.pictures.zoom.default.en.png)
+
+Once the zoom level is selected, moving the mouse in the window will focus on the selected area at the selected zoom level.
+
+![100% Zoom](images/desktop.pictures.zoom.100.en.png)
+
+### Access Sensors
+
+Users can also click on "Sensors" to view Phidgets sensors values captured by the system for that day.
+
+It will open a window displaying up to 4 sensors graphs.
+
+![Webcampak Sensors Graphs](images/desktop.pictures.sensors.en.png)
+
+### Email a picture
+
+Users can send the current picture by email, by clicking on "Email".
+
+![Send an email](images/desktop.pictures.email.send.en.png)
+
+All parameters of the email can be customized, it is then placed into a queue and sent, usually, within a minute.
+
+![Email Received](images/desktop.pictures.email.received.en.png)
+
+Although this email is sent by webcampak, the name of the sender is detailed in the from field to facilitates its identification and try to prevent spam.
+
 
 
