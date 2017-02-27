@@ -17,6 +17,8 @@ pages:
   - Users: 'Learn/en_Users.md'
 - Use:
   - Authentication: 'Use/en_Authentication.md'
+  - Desktop Interface: 'Use/en_Desktop_Interface.md'
+  - View Pictures: 'Use/en_View_Pictures.md'
 - Configure:
   - Sources: 'Configure/en_Sources.md'
   - Access Control: 'Configure/en_Access_Control.md'
