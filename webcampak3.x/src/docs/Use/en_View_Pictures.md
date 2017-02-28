@@ -6,7 +6,7 @@ Captured pictures can be accessed by clicking on "Webcampak > Pictures" in the t
 
 ## Overview
 
-This Pictures windows allows users to navigate through sources and their archives.
+The Pictures windows allows users to navigate through sources and their archives.
 
 ![Pictures](images/desktop.pictures.en.png)
 
