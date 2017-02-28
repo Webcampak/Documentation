@@ -2,7 +2,7 @@
 
 To improve security, access to Webcampak requires authentication, user sessions are created for a pre-defined amount of time, prompting users to re-authenticate at regular interval. 
 
-Access to Webcampak is only possible through HTTPS, depending of the systems users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connectioin.rr
+Access to Webcampak is only possible through HTTPS, depending of the systems users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connectioin.
 
 ## Splash Screen
 
