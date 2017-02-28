@@ -1,8 +1,8 @@
 # Authentication
 
-To improve security, access to Webcampak requires authentication, user sessions are created for a pre-defined amount of time, prompting users to re-authenticate at regular interval. 
+To improve security, access to Webcampak requires authentication, user sessions are created for a predefined amount of time, prompting users to re-authenticate at regular interval. 
 
-Access to Webcampak is only possible through HTTPS, depending of the systems users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connectioin.
+Access to Webcampak is only possible through HTTPS, depending of the systems users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connection.
 
 ## Splash Screen
 
@@ -10,7 +10,7 @@ Webcampak splash screen provides users with a choice between a fully featured De
 
 The Desktop application provide most features and allow both viewing content and performing advanced configuration. The Dashboard application is a simplier view into the Webcampak with a more modern user interface.
 
-![Webcampak Splash Sreen](images/splash.en.png)
+![Webcampak Splash Screen](images/splash.en.png)
 
 ## Connection
 
