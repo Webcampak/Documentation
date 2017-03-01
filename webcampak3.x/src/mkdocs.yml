@@ -23,6 +23,8 @@ pages:
   - Usage Statistics: 'Use/en_Statistics.md'
   - Xfer Reports: 'Use/en_Xfer_Reports.md'
   - Sync Reports: 'Use/en_Sync_Reports.md'
+  - Connected Devices: 'Use/en_Connected_Devices.md'
+  - Logs: 'Use/en_Logs.md'
 - Configure:
   - Sources: 'Configure/en_Sources.md'
   - Access Control: 'Configure/en_Access_Control.md'
