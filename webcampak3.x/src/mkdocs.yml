@@ -21,6 +21,8 @@ pages:
   - View Pictures: 'Use/en_View_Pictures.md'
   - View Videos: 'Use/en_View_Videos.md'
   - Usage Statistics: 'Use/en_Statistics.md'
+  - Xfer Reports: 'Use/en_Xfer_Reports.md'
+  - Sync Reports: 'Use/en_Sync_Reports.md'
 - Configure:
   - Sources: 'Configure/en_Sources.md'
   - Access Control: 'Configure/en_Access_Control.md'

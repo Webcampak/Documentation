@@ -23,6 +23,3 @@ The bottom-right section of the window contains a list of available videos for t
 Clicking on the corresponding row will open the video which can be played with the embedded player. The video can also be downloaded directly from this window.
 
 Automatically (daily) generated video can be differentiated from user-generated videos by looking at the filename. Daily videos' filenames start with the data in YYYYMMDD format.
-
-
-
