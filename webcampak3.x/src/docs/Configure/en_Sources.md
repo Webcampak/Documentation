@@ -1,24 +1,24 @@
 # Sources
 
-Sources are what drives picture acquisition, processing and storage. Before starting to use webcampak, at least one source needs to be created.
+Sources are at the core of Webcampak picture acquisition, processing and storage. Before starting to use webcampak, at least one source needs to be created.
  
 ## Add a source
 
 To add a source, navigate to "Webcampak > Configuration > Access Control".
 
-![Login](images/webcampak-menu-access-control-en.png)
+![Access Control menu](images/webcampak-menu-access-control-en.png)
 
-The access control allows you to manager users, groups, customers and sources. 
+The access control window allows users to manager users, groups, customers and sources. 
 
-![Login](images/webcampak-access-control-sources-en.png)
+![Access Control Window](images/webcampak-access-control-sources-en.png)
 
-To add a source, simply click on "Add".
+Users can add a new source by clicking on "Add".
 
-![Login](images/webcampak-access-control-sources-add-en.png)
+![Add a Source](images/webcampak-access-control-sources-add-en.png)
 
-You will be requested to fill the following details:
+They will be requested to fill the following details:
 
-* __Name__: The name of your source in the system
+* __Name__: The name of the source in the system
 * __Source ID__: A numerical ID used internally to manage the source. This number must be unique but do not have to follow a sequence. For example, the FTP account for the source will be sourceX, with X being this number.
 * __Weight__: Numerical value used for sorting purposes, the lowest number will be first. This number does not have to be unique, if multiple sources have the same weight, they will be sorted by name.
 * __Quota (GB)__: Quota to be allocated for the source. Used for reporting purposes only, quotas are (on purpose) not enforced on webcampak.
@@ -26,33 +26,38 @@ You will be requested to fill the following details:
 * __Remote Username__: Unused, placeholder for a future feature.
 * __Remote Password__: Unused, placeholder for a future feature.
 
-You can then assign users to this source, by dragging them from the left side to the right side of the screen.
+Users can then be assigned to this source, by dragging them from the left side to the right side of the screen.
 
-![Login](images/webcampak-access-control-sources-users-en.png)
+![Assign users to source](images/webcampak-access-control-sources-users-en.png)
 
-"__Alerts__", then turned on, will make this user receive source alerts when triggered by the system.
+"__Alerts__", when turned on, will trigger emails sent by the system when there is an alert on this source and to receive daily statistics by email.
 
 ## Configuration
 
 To configure a source, navigate to "Webcampak > Configuration > Sources".
 
-![Login](images/webcampak-menu-sources-en.png)
+![Webcampak Sources](images/desktop.configuration.sources.capture.en.png)
 
-You will be presented with the list of sources available for your user along with their configuration settings.
+Users are presented with a list of available sources attached to their account. Webcampak does not auto-save configuration changes and will display the status of the configuration (modified, unmodified) in the bottom toolbar.
 
-![Login](images/webcampak-sources-capture-en.png)
+![Unmodified Configuration](images/desktop.configuration.sources.no-change.en.png)
 
-Configuration will remain un-modified until changes are saved. At any time, you will be able to roll-back to previous settings.
+![Modified Configuration](images/desktop.configuration.sources.changes.en.png)
 
-![Login](images/webcampak-sources-capture-modified-en.png)
+To prevent manipulation issues, users are required to either save or cancel changes before moving to another source.
 
-All changes to the configuration settings are logged by webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contains details such as individual actions processing time, picture date, picture size, entire processing time, etc...
+![Modified Configuration Warning](images/desktop.configuration.sources.changes-warning.en.png)
+
+All changes to the configuration settings are [logged](../Use/en_Logs.md) by webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contains details such as individual actions processing time, picture date, picture size, entire processing time, etc...
 
 ### Capture 
 
-This tab allows you to configure all settings directly related to picture acquisition.
+This tab is used to configure all settings directly related to picture acquisition.
+
 
 #### Source Configuration 
+
+![Source configuration](images/desktop.configuration.sources.capture.details.source-configuration.en.png)
 
 The following configuration settings are available in this section:
 
@@ -71,13 +76,16 @@ The following configuration settings are available in this section:
 
 #### Capture Calendar
 
+![Capture Calendar](images/desktop.configuration.sources.capture.details.capture-calendar.en.png)
+
 The following configuration settings are available in this section:
 
 * __Enable Calendar__: If disable, the system will capture 24/7, if enabled it will capture at days selected below.
 * __Monday - Sunday__: Enable capture this particular day, between those hours (24h format)
 
-
 #### Configuration of D-SLR USB Camera (Gphoto2 PTP mode)
+
+![DSLR-Camera](images/desktop.configuration.sources.capture.details.d-slr.en.png)
 
 Those settings are only used when multiple D-SLR cameras are physically connected to the same webcampak.
 
@@ -88,8 +96,9 @@ The following configuration settings are available in this section:
 * __Camera Owner (TAG)__: User-defined TAG to assigned to the camera and used to verify which camera is which in case 2 identical models are connected
 * __Gphoto2 Debug__: Run gphoto2 in debug mode, giving much more verbose output. Do not use this in production
 
-
 #### Configuration of Webcampak Source
+
+![Webcampak Source](images/desktop.configuration.sources.capture.source.en.png)
 
 Those settings are used when pictures are coming from another webcampak source (chained sources).
  
@@ -99,6 +108,8 @@ The following configuration settings are available in this section:
 * __Select source to get from__: Source to get the picture from if "Get" is selected in "Select capture mode".
  
 #### Configuration of IP Camera (FTP) / Webcampak
+
+![IP Camera](images/desktop.configuration.sources.capture.details.ipcamera.en.png)
 
 Those settings are used to process pictures uploaded to the /tmp/ directory, whether those are coming from IP Cameras or remote Webcampak.
  

@@ -156,6 +156,7 @@ Due to the fairly low change frequency those logs are not size-limited, and will
 The following activities are currently configured to be logged by webcampak
 
 __Per Source__:
+
 * Capture process
 * Configuration changes
 * Daily videos creation process
@@ -165,5 +166,13 @@ __Per Source__:
 
 __Per Webcampak__:
 
-
-
+* General configuration changes
+* Email capture alerts
+* Daily reports
+* Statistics collection
+* Statistics consolidation
+* Cron jobs update
+* FTP accounts update
+* Xfer start
+* Xfer dispatch
+* (dev-mode only) All activities between UI and API
