@@ -6,7 +6,7 @@ Sources are at the core of Webcampak picture acquisition, processing and storage
 
 To add a source, navigate to "Webcampak > Configuration > Access Control".
 
-![Access Control menu](images/webcampak-menu-access-control-en.png)
+![Access Control Menu](images/desktop.menu.accesscontrol.en.png)
 
 The access control window allows users to manager users, groups, customers and sources. 
 
