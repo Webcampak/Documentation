@@ -374,6 +374,8 @@ Please refer to the "Insert a legend" section of the "Pictures" tab.
 
 #### Initiate processing
 
+![Initiate Processing](images/desktop.configuration.sources.postprod.create.en.png)
+
 This section let you configure settings directly related to starting batch processing (which could take hours if creation span multiple months).
 
 Be careful with disk usage, Webcampak will copy all pictures to a temporary directory to apply modifications, as a result you will need free disk space corresponding to at least 2x the selected interval.
@@ -389,6 +391,8 @@ Following settings are available:
 * __Start creation__: you can choose to start video creation as soon as possible or between 4h00 and 5h00 in the morning.
 
 ### Phidgets
+
+![Phidgets Configuration](images/desktop.configuration.sources.phidgets.en.png)
 
 This section of the configuration allows users to configure interaction with Phidgets devices. Those are useful in multiple situations, and more specifically:
 
@@ -424,6 +428,8 @@ Up to 4 different sensors can be configured in this section, by defining the fol
 
 ### Advanced
 
+![Advanced Configuration](images/desktop.configuration.sources.advanced.en.png)
+
 This sections allow users to configured more advanced parameters, and for now, dealing with email alerts.
 
 #### Time Based Alerts
@@ -441,6 +447,8 @@ Users can also configure a "grace" period, allowing for picture processing or da
 For example, if the system expect a capture at 5:10 and the grace period is set to 5 mn, the system will only send an alert if the 5:10 picture is still missing at 5:15.
 
 ### FTP
+
+![FTP Configuration](images/desktop.configuration.sources.ftp.en.png)
 
 This section of the configuration lets user configure local FTP credentials as well as list all remote FTP servers they would like to use.
 
