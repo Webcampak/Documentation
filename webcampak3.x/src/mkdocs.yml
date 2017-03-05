@@ -28,6 +28,7 @@ pages:
 - Configure:
   - Sources: 'Configure/en_Sources.md'
   - Access Control: 'Configure/en_Access_Control.md'
+  - System: 'Configure/en_System.md'
 - Develop:
   - Installation: 'Develop/en_Install.md'
   - Initial Setup: 'Develop/en_Initial_Setup.md'
