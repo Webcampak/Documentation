@@ -16,12 +16,12 @@ When Webcampak store its pictures to a remote server, it can use its internal di
 
 ## File structure
 
-In most cases, access to webcampak files is done through FTP, using some of the automatically created account.
+In most cases, access to Webcampak files is done through FTP, using some of the automatically created account.
 
-A gloabl FTP account (wpresources) is available for admins to access shared webcampak elements, such as:
+A gloabl FTP account (wpresources) is available for admins to access shared Webcampak elements, such as:
 
 * cache files (temporary files created by Webcampak)
-* webcampak database (users, permissions, sources details)
+* Webcampak database (users, permissions, sources details)
 * emails (queued, sent, failed)
 * configuration files
 * logs

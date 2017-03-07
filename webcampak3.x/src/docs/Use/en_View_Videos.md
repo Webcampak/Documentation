@@ -12,7 +12,7 @@ The Videos windows allows users to navigate through sources and their videos.
 
 Sources can be selected using the dropdown on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
-When selecting a source, webcampak will automatically position the system to the latest day with videos of the selected source.
+When selecting a source, Webcampak will automatically position the system to the latest day with videos of the selected source.
 
 ## Available videos
 

@@ -1,6 +1,6 @@
 # File Management
 
-Over a project's lifetime, a webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.
+Over a project's lifetime, a Webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.
 
 ## Local storage
 
@@ -8,13 +8,13 @@ Webcampak is usually shipped with a 256 or 512 GB SSD, providing ample space for
 
 In this situation, local storage can be considered as a buffer. The system will be configured to keep X days (X depending of multiple factors, but often a month or two) of pictures locally, automatically clearing older pictures.
 
-Using webcampak local storage as a buffer is the ideal solution to accomodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
+Using Webcampak local storage as a buffer is the ideal solution to accomodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
 
-At the end of the incident, a webcampak feature (Xfer Reports) is available to transfer back missing pictures to remote servers (more below).
+At the end of the incident, a Webcampak feature (Xfer Reports) is available to transfer back missing pictures to remote servers (more below).
 
 ## File Synchronization
 
-Webcampak "Xfer Reports" features provides means to ensure all files on a local webcampak are also available in remote locations, by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.
+Webcampak "Xfer Reports" features provides means to ensure all files on a local Webcampak are also available in remote locations, by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.
 
 This feature cover multiple use cases:
 

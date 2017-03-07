@@ -17,9 +17,9 @@ Webcampak documentation is divided in 4 sections:
  
 ## About
 
-Initially started as a hobbyist project, webcampak progressively became a tool relied on by photographers for their long-term timelapses. As such our focus during development has been on designing and progressively extending it to serve identified use cases.
+Initially started as a hobbyist project, Webcampak progressively became a tool relied on by photographers for their long-term timelapses. As such our focus during development has been on designing and progressively extending it to serve identified use cases.
 
-Today webcampak 2.x and webcampak 3.x are used in production by our clients and partners, but you might encounter difficulties to use it in your environment (maybe caused by different uses cases). Do not hesitate to get in touch and we'll do our best to help.
+Today Webcampak 2.x and Webcampak 3.x are used in production by our clients and partners, but you might encounter difficulties to use it in your environment (maybe caused by different uses cases). Do not hesitate to get in touch and we'll do our best to help.
 
 ## What is not Webcampak
 

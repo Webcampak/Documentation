@@ -38,8 +38,8 @@ Click on the top-left menu, and navigate to "System Conf."
 
 You should then specify the following parameters:
 
-* __Main Network Interface__: The network interface used by webcampak for most of its communications, you can get it using ifconfig
-* __Timezone__: The timezone of the geographical location where this webcampak is installed. This can be different from the timezone used by its sources.
+* __Main Network Interface__: The network interface used by Webcampak for most of its communications, you can get it using ifconfig
+* __Timezone__: The timezone of the geographical location where this Webcampak is installed. This can be different from the timezone used by its sources.
 
 ![System Menu](images/webcampak-system-config.png)
 

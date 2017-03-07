@@ -12,7 +12,7 @@ The Pictures windows allows users to navigate through sources and their archives
 
 Sources can be selected using the dropdown on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
-When selecting a source, webcampak will automatically position the system to the latest captured picture.
+When selecting a source, Webcampak will automatically position the system to the latest captured picture.
 
 Clicking on the main picture will open directly open this pictures in a new tab.
 

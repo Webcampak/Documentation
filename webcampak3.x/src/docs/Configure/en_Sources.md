@@ -1,6 +1,6 @@
 # Sources
 
-Sources are at the core of Webcampak picture acquisition, processing and storage. Before starting to use webcampak, at least one source needs to be created.
+Sources are at the core of Webcampak picture acquisition, processing and storage. Before starting to use Webcampak, at least one source needs to be created.
  
 ## Add a source
 
@@ -21,7 +21,7 @@ They will be requested to fill the following details:
 * __Name__: The name of the source in the system
 * __Source ID__: A numerical ID used internally to manage the source. This number must be unique but do not have to follow a sequence. For example, the FTP account for the source will be sourceX, with X being this number.
 * __Weight__: Numerical value used for sorting purposes, the lowest number will be first. This number does not have to be unique, if multiple sources have the same weight, they will be sorted by name.
-* __Quota (GB)__: Quota to be allocated for the source. Used for reporting purposes only, quotas are (on purpose) not enforced on webcampak.
+* __Quota (GB)__: Quota to be allocated for the source. Used for reporting purposes only, quotas are (on purpose) not enforced on Webcampak.
 * __Remote Host__: Unused, placeholder for a future feature.
 * __Remote Username__: Unused, placeholder for a future feature.
 * __Remote Password__: Unused, placeholder for a future feature.
@@ -48,7 +48,7 @@ To prevent manipulation issues, users are required to either save or cancel chan
 
 ![Modified Configuration Warning](images/desktop.configuration.sources.changes-warning.en.png)
 
-All changes to the configuration settings are [logged](../Use/en_Logs.md) by webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contains details such as individual actions processing time, picture date, picture size, entire processing time, etc...
+All changes to the configuration settings are [logged](../Use/en_Logs.md) by Webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All Webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contains details such as individual actions processing time, picture date, picture size, entire processing time, etc...
 
 ### Capture 
 
@@ -100,11 +100,11 @@ The following configuration settings are available in this section:
 
 ![Webcampak Source](images/desktop.configuration.sources.capture.source.en.png)
 
-Those settings are used when pictures are coming from another webcampak source (chained sources).
+Those settings are used when pictures are coming from another Webcampak source (chained sources).
  
 The following configuration settings are available in this section:
 
-* __Select capture mode__: Two mode are available "Get" or "Receive". If "Get", the source will actually try to capture the latest picture from the other source, this mode can only be used for local sources. If "Receive", the source will process pictures uploaded to its /tmp/ directory, this mode is usually used when remote webcampak are sending their pictures.
+* __Select capture mode__: Two mode are available "Get" or "Receive". If "Get", the source will actually try to capture the latest picture from the other source, this mode can only be used for local sources. If "Receive", the source will process pictures uploaded to its /tmp/ directory, this mode is usually used when remote Webcampak are sending their pictures.
 * __Select source to get from__: Source to get the picture from if "Get" is selected in "Select capture mode".
  
 #### Configuration of IP Camera (FTP) / Webcampak
@@ -139,7 +139,7 @@ Those settings are exectued in sequence in the order available in the configurat
 
 This option can be used to rotate the picture, clockwise, by a specific angle. Note that this feature is compute intensive and will impact duration of the capture process.
 
-It should preferably be used on webcampak cloud or on webcampak devices with low capture rate.
+It should preferably be used on Webcampak cloud or on Webcampak devices with low capture rate.
 
 #### Crop picture
 
@@ -151,7 +151,7 @@ This option can be used to insert a watermark into the picture. A watermark can 
 
 Watermak files are pulled from two locations:
 
- * The global webcampak /resources/watermark/ directory, shared between all sources. This directory is accessible via FTP through the "wpresources" account (see general configuration).
+ * The global Webcampak /resources/watermark/ directory, shared between all sources. This directory is accessible via FTP through the "wpresources" account (see general configuration).
  * The local source's /resources/watermark/ directory. This directory is accessible via FTP through the source's FTP account (see FTP tab).
 
 Transparency (in %) with 0 being fully transparent and 100 being not transparent, can be defined as well as watermark's location from the top-left corner of the picture.
@@ -244,7 +244,7 @@ The custom parameter lets you personalize all settings. May you have sufficient 
 
 This system lets you compare the (difference)[https://www.pureftpd.org/project/libpuzzle] between two pictures using (puzzle-diff)[https://linux.die.net/man/8/puzzle-diff]. This difference is represented as a "distance", you will probably have to run a couple of sample videos to identify the best threshold for your video.
  
-For greater accuracy, a watermark can be defined, this watermak is applied by webcampak on each picture before calculating the difference. For example on a construction site, you might want to add a black watermark covering everything which does not deal with the building you are capturing. This way, the difference will only be calculated if something changed on the building itself (not capturing clouds movements for example).
+For greater accuracy, a watermark can be defined, this watermak is applied by Webcampak on each picture before calculating the difference. For example on a construction site, you might want to add a black watermark covering everything which does not deal with the building you are capturing. This way, the difference will only be calculated if something changed on the building itself (not capturing clouds movements for example).
 
 The difference is a calculated between two consecutive pictures. For example PIC-1 is compared with PIC-2, if PIC-2 in over the threshold, it's not selected and PIC-1 is compared with PIC-3, then PIC-3 is compared with PIC-4, PIC-4 is compared with PIC-5, and so on.
 

@@ -1,6 +1,6 @@
 # Desktop Interface
 
-After authentication, the webcampak desktop interface is being displayed. This interface is broken down in 3 main sections:
+After authentication, the Webcampak desktop interface is being displayed. This interface is broken down in 3 main sections:
 
 * __Webcampak__ menu on the top left corner, giving access to all of Webcampak features
 * __Settings__ menu on the top right corner, for settings of the desktop interface
@@ -8,7 +8,7 @@ After authentication, the webcampak desktop interface is being displayed. This i
 
 ## Webcampak Menu
 
-The webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.
+The Webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.
 
 ![Webcampak Menu](images/desktop.menu.en.png)
 
@@ -24,15 +24,15 @@ Status details are provided on the bottom right corner of the screen.
 
 ### Connection
 
-The first status displayed on the left side if the connection status, it indicates whether the desktop interface is able to communicate with its webcampak. This should be showing up "ONLINE" most of the time except in case of network issues or if the webcampak is being rebooted.
+The first status displayed on the left side if the connection status, it indicates whether the desktop interface is able to communicate with its webcampak. This should be showing up "ONLINE" most of the time except in case of network issues or if the Webcampak is being rebooted.
 
-Mousing over the status, will also display the latency in miliseconds. This latency mesure how much time it takes for the desktop interface to contact the webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).
+Mousing over the status, will also display the latency in miliseconds. This latency mesure how much time it takes for the desktop interface to contact the Webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).
 
 ![Connection Status](images/desktop.latency.en.png)
 
 ### Communication
 
-The small database icon, second from the left, indicates the number of calls made to your webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.
+The small database icon, second from the left, indicates the number of calls made to your Webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.
 
 ![Communication Status](images/desktop.database.en.png)
 
@@ -44,7 +44,7 @@ The third icon from the left is the currently connected user. Clicking on the us
 
 ### Software Version
 
-The fourth icon from the left display the current webcampak version, clicking on the version will redirect to [Webcampak GitHub organization](https://github.com/Webcampak). Mousing-over the version will display exact version of all Webcampak components:
+The fourth icon from the left display the current Webcampak version, clicking on the version will redirect to [Webcampak GitHub organization](https://github.com/Webcampak). Mousing-over the version will display exact version of all Webcampak components:
 
 * __CORE__: Webcampak Core repository, contains mostly translations, installation assets, etc...
 * __UI__: Webcampak User Interface (Desktop, Dashboard)
@@ -65,7 +65,7 @@ If we look a bit closer at the UI commit tag, we can find the current deployed v
 
 ![Webcampak Version](images/desktop.version.github.en.png)
 
-It basically tells us that there has been the following new changes (commits) since this webcampak was last updated:
+It basically tells us that there has been the following new changes (commits) since this Webcampak was last updated:
 
 * Fixed a bug with configuring phidgets sensors
 * Display exception when loading status

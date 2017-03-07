@@ -46,7 +46,7 @@ The system will ask for password once, and should carry on with the entire insta
 Installation time depends of your Internet connection. At the end of the installation, you will be prompted to connect via your web browser. 
 
 ```bash
-11 February 2017 - 11:05 Installation completed, Default User/Password are: root/webcampak you will be asked to change those at first connection
+11 February 2017 - 11:05 Installation completed, Default User/Password are: root/Webcampak you will be asked to change those at first connection
 11 February 2017 - 11:05 Open your web browser and connect to https://WECAMPAK-IP/
 11 February 2017 - 11:05 Exiting .....
 ```

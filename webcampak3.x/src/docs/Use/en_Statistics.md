@@ -21,7 +21,7 @@ This window is broken down in three different sections:
 The system behaves differently depending of the type of metrics to be collected/displayed.
 
 __Pictures__ and __Size__ are collected "on-the-fly" as requested by users, therefore can span the entire duration of a project.
-__Disk Usage__ metrics are collected daily by Webcampak. In the example above, there a limited (almost none) history available since this particluar project completed in November 2017 just as this Webcampak 3 server was installed (webcampak 2 stats are not compatible with webcampak 3).
+__Disk Usage__ metrics are collected daily by Webcampak. In the example above, there a limited (almost none) history available since this particluar project completed in November 2017 just as this Webcampak 3 server was installed (Webcampak 2 stats are not compatible with Webcampak 3).
 
 ### Analyzing the stats
 
@@ -41,11 +41,11 @@ We can also see a couple of sessions with variation in the number of daily pictu
 
 ![Identify capture incident](images/desktop.statistics.source.pictures.incidents.en.png)
 
-If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the webcampak we still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
+If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak we still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
 
 ![A capture incident in details](images/desktop.pictures.calendar.hours.incidents.en.png)
 
-In this particular instance there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accomodate Internet connection issues.
+In this particular instance there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accomodate Internet connection issues.
 
 ## System Statistics
 
