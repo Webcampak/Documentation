@@ -8,7 +8,7 @@ This featured is used to declare when pictures are expected to be captured for s
 
 ![Email Alerts](images/desktop.configuration.emailalerts.en.png)
 
-Each line represents an hour, each column a minute. By default the system only displays one day (selectedon the top-right of the window), but it can be configured to display the full week.
+Each line represents an hour, each column a minute. By default, the system only displays one day (selected on the top-right of the window), but it can be configured to display the full week.
 
 Clicking in the grid will select the corresponding date and time.
 
@@ -18,7 +18,7 @@ Since it would be extremely tedious to select a large number of capture slots, t
 
 ![Add slot to calendar](images/desktop.configuration.emailalerts.edit-calendar.en.png)
 
-In the example above, the system will adding one picture every 5 minutes, on Mondays between 8:00 and 16:00.
+In the example above, the system will add one picture every 5 minutes, on Mondays between 8:00 and 16:00.
 
 ![Resulting calendar](images/desktop.configuration.emailalerts.calendar-add.en.png)
 
@@ -30,5 +30,5 @@ The above example will remove from the calendar, one picture every 5 minutes, on
 
 ![Resulting calendar](images/desktop.configuration.emailalerts.calendar-remove.en.png)
 
-Once users are satisfied with the result, they can save the alert calendar and start using it for their souce.
+Once users are satisfied with the result, they can save the alert calendar and start using it for their source.
 

@@ -10,7 +10,7 @@ The Source Statistics provides of view of a source's usage over time.
 
 ![Source Statistics](images/desktop.statistics.source.en.png)
 
-This window is broken down in three different sections:
+This window is broken down into three different sections:
 
 * __Pictures__: Number of pictures captured by day
 * __Size__: Size of the pictures captured that day
@@ -18,14 +18,14 @@ This window is broken down in three different sections:
 
 ## Collecting metrics
 
-The system behaves differently depending of the type of metrics to be collected/displayed.
+The system behaves differently depending on the type of metrics to be collected/displayed.
 
 __Pictures__ and __Size__ are collected "on-the-fly" as requested by users, therefore can span the entire duration of a project.
-__Disk Usage__ metrics are collected daily by Webcampak. In the example above, there a limited (almost none) history available since this particluar project completed in November 2017 just as this Webcampak 3 server was installed (Webcampak 2 stats are not compatible with Webcampak 3).
+__Disk Usage__ metrics are collected daily by Webcampak. In the example above, there a limited (almost none) history available since this particular project completed in November 2017 just as this Webcampak 3 server was installed (Webcampak 2 stats are not compatible with Webcampak 3).
 
-### Analyzing the stats
+### Analysing the stats
 
-If we look a bit closer at what can be learnt by analyzing the stats
+If we look a bit closer at what can be learnt by analysing the stats
 
 ![Picture Count Statistics](images/desktop.statistics.source.pictures.en.png)
 
@@ -45,11 +45,11 @@ If we look a bit closer at one of those days, April 21st, 2015 (the first red re
 
 ![A capture incident in details](images/desktop.pictures.calendar.hours.incidents.en.png)
 
-In this particular instance there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accomodate Internet connection issues.
+In this particular instance, there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accommodate Internet connection issues.
 
 ## System Statistics
 
-In the background, Webcampak will constantly records metrics about system usages on:
+In the background, Webcampak will constantly record metrics about system usages on:
 
 * Bandwidth
 * Hard disk
@@ -65,17 +65,17 @@ Users can then access those values and select a data range spanning:
 
 ![System Statistics (Hours)](images/desktop.statistics.system.en.png)
 
-On the above stats we can for example see that:
+On the above stats we can, for example, see that:
 
-* There was a bandiwdth spike around February 24th, where total average bandwidth for a particular hour went up to 350KB/s. Note the selected range, which means that this spike is an average over the entire hour.
+* There was a bandwidth spike around February 24th, where total average bandwidth for a particular hour went up to 350KB/s. Note the selected range, which means that this spike is an average over the entire hour.
 * Total disk usage is currently around 1.6 TB for this Webcampak
 * Average memory usage is around 9%
 * Average CPU usage is between 1% and 10%
 
 But then we can go more granular and look at the latest captured metrics and see that:
 
-* Outgoing bandwidth did spike at 600KB/s for shore period of time
-* CPU usage did spike to 100% and 90% over the last 10 hours, but was otherwise reasonable
+* Outgoing bandwidth did spike at 600KB/s for short period of time
+* CPU usage did spike to 100% and 90% over the last 10 hours but was otherwise reasonable
 
 ![System Statistics (Recent)](images/desktop.statistics.system.recent.en.png)
 

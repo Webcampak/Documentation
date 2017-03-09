@@ -4,7 +4,7 @@ Webcampak has initially been designed as an appliance, no specific caution was t
 
 We strongly encourage you to setup Webcampak on a fresh Ubuntu installation, and to ensure there is nothing you want to keep on the system (Webcampak might wipe some directories).
 
-The install script will download and install all necessary packages and configure the system for Webcampak operation, previous configuration will be erased.
+The install script will download and install all necessary packages and configure the system for Webcampak operation, the previous configuration will be erased.
  
 ## Pre-requisites
 
@@ -35,7 +35,7 @@ install.Ubuntu16.04.sh                                             100%[========
 webcampak@wpak078:~$ bash install.Ubuntu16.04.sh
 ```
 
-The system will ask for password once, and should carry on with the entire installation.
+The system will ask for your password once and should carry on with the entire installation.
 
 ```bash
 11 February 2017 -  9:08 You are currently connected as: webcampak
@@ -43,11 +43,10 @@ The system will ask for password once, and should carry on with the entire insta
 [sudo] password for webcampak: 
 ```
 
-Installation time depends of your Internet connection. At the end of the installation, you will be prompted to connect via your web browser. 
+Installation time depends on of your Internet connection. At the end of the installation, you will be prompted to connect via your web browser. 
 
 ```bash
 11 February 2017 - 11:05 Installation completed, Default User/Password are: root/Webcampak you will be asked to change those at first connection
 11 February 2017 - 11:05 Open your web browser and connect to https://WECAMPAK-IP/
 11 February 2017 - 11:05 Exiting .....
 ```
-

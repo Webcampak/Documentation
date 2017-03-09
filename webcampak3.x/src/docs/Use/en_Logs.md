@@ -1,6 +1,6 @@
 # Logs
 
-Webcampak contantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak > Logs"
+Webcampak constantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak > Logs"
 
 ![Connected Devices Menu](images/desktop.menu.logs.en.png)
 
@@ -56,7 +56,7 @@ Before triggering a capture, Webcampak first activity will be to get ready for t
 2017-03-01 16:30:15,481 (INFO) Webcampak : capture(): Initializing the following capture driver: gphoto
 ```
 
-Next, Webcampak will verify if it is allowed to capture (capture calendar, time since last capture). If all is correct, it will initate the actual capture process.
+Next, Webcampak will verify if it is allowed to capture (capture calendar, time since the last capture). If all is correct, it will initiate the actual capture process.
 
 ```Logs
 2017-03-01 16:30:15,482 (INFO) Webcampak : capture.run(): Initiate capture process for source: 1
@@ -69,9 +69,9 @@ Next, Webcampak will verify if it is allowed to capture (capture calendar, time 
 2017-03-01 16:30:15,532 (INFO) Webcampak : captureGphoto.capture(): Initiating capture
 ```
 
-Just before capturing the picture, it will record the time. by comparing current time with beginning of the capture process, we can see that it took Webcampak a bit more than 2 seconds to get there.
+Just before capturing the picture, it will record the time. by comparing the current time with the beginning of the capture process, we can see that it took Webcampak a bit more than 2 seconds to get there.
 
-Then the system actually captures the picture, transfer the file locally and check its filesize.
+Then the system actually captures the picture, transfer the file locally and check its file size.
 
 ```Logs
 2017-03-01 16:30:15,533 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
@@ -87,14 +87,14 @@ Deleting file /capt0000.jpg on the camera
 2017-03-01 16:30:21,582 (INFO) Webcampak : captureGphoto.capture(): Capture successful
 ```
 
-It might be interesting to focus here on the actually time between the camera was requested to capture and the time the pictures was actually stored on local disk.
+It might be interesting to focus here on the actually time between the camera was requested to capture and the time the picture was actually stored on local disk.
 
 ```Logs
 2017-03-01 16:30:15,648 (INFO) Webcampak : captureGphoto.triggerCapture(): Gphoto: Start Capture
 2017-03-01 16:30:21,576 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 1: New file is in location /capt0000.jpg on the camera
 ```
 
-In this particular example, it took just short of 6 seconds. This number will vary a lot depending of exposure time, USB speed and file size.
+In this particular example, it took just short of 6 seconds. This number will vary a lot depending on exposure time, USB speed and file size.
 
 Webcampak will then apply all the configured manipulation to the picture. You can notice that some of the manipulations are being timed, to provide additional insights into which of the manipulations take time.
 
@@ -127,7 +127,7 @@ Webcampak will then apply all the configured manipulation to the picture. You ca
 2017-03-01 16:30:34,061 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170227 is 2 days old
 ```
 
-Finally, it capture the time again, and compare it with the beginning of the script. In this particular case, the entire capture process took a bit over 20 seconds.
+Finally, it captures the time again, and compare it with the beginning of the script. In this particular case, the entire capture process took a bit over 20 seconds.
 
 ```Logs
 2017-03-01 16:30:34,063 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
@@ -147,7 +147,7 @@ We usually recommend our users not to configure Webcampak to capture at a rate h
 
 Webcampak also records configuration changes (who changed what when). 
 
-Due to the fairly low change frequency those logs are not size-limited, and will record indefinitely.
+Due to the fairly low change frequency, those logs are not size-limited and will record indefinitely.
 
 ![Connected Devices](images/desktop.logs.config.en.png)
 

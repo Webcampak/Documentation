@@ -12,19 +12,19 @@ This simple feature runs 3 background commands to identify devices connected to 
 
 ## Gphoto2: Connected camera
 
-This section list cameras detected by gPhoto2, the library used to communicate with the camera. If your camera is not listed there, Webcampak cannot trigger captures.
+This section lists cameras detected by gPhoto2, the library used to communicate with the camera. If your camera is not listed there, Webcampak cannot trigger captures.
 
 The following command is being executed in the background:
 ```
 $ gphoto2 --auto-detect
 Model                          Port                                            
 ----------------------------------------------------------
-Canon EOS 1000D                usb:001,002
+Canon EOS 1000D                USB:001,002
 ```
 
 ## Gphoto2: Cameras Capabilities
 
-This section list cameras features supported by gPhoto2. If a connected camera does not have any "Capture choices", it's likely that it is not supported for capture.
+This section list camera features supported by gPhoto2. If a connected camera does not have any "Capture choices", it's likely that it is not supported for capture.
 
 The following command is being executed in the background:
 ```

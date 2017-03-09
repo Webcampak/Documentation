@@ -1,8 +1,8 @@
 # Logging
 
-Logging has been dramatically extended from Webcampak 2.x. In this section of the document we will details logs and emphasis on why reviewing and understanding logs is be relevant.
+Logging has been dramatically extended from Webcampak 2.x. In this section of the document, we will details logs and emphasis on why reviewing and understanding logs is relevant.
 
-Logs files do not take a vast amount of physical space, so we decided to built it into most of processing done by Webcampak and log almost everything. Some logs are there for auditing purposes, others can be especially useful in configuration stages to understand what is happening under the hood.
+Logs files do not take a vast amount of physical space, so we decided to build it into most of the processing done by Webcampak and log almost everything. Some logs are there for auditing purposes, others can be especially useful in configuration stages to understand what is happening under the hood.
 
 ## Configuration changes
 
@@ -10,7 +10,7 @@ All configuration changes are logged, this lets users understand who changed wha
 
 ## Capture logs
 
-Most actions taken automatically by Webcampak when it captures and manipulates pictures are logged. Those logs provide timed events, not only the date and time but also the time it took to run some actions.
+Most actions are taken automatically by Webcampak when it captures and manipulates pictures are logged. Those logs provide timed events, not only the date and time but also the time it took to run some actions.
 
 The most relevant value in capture logs is the overall capture time (20.7s in the below capture). It gives an idea on the maximum capture rate to be supported by the system.
 

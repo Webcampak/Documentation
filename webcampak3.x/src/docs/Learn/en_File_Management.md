@@ -8,7 +8,7 @@ Webcampak is usually shipped with a 256 or 512 GB SSD, providing ample space for
 
 In this situation, local storage can be considered as a buffer. The system will be configured to keep X days (X depending of multiple factors, but often a month or two) of pictures locally, automatically clearing older pictures.
 
-Using Webcampak local storage as a buffer is the ideal solution to accomodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
+Using Webcampak local storage as a buffer is the ideal solution to accommodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
 
 At the end of the incident, a Webcampak feature (Xfer Reports) is available to transfer back missing pictures to remote servers (more below).
 
@@ -24,15 +24,15 @@ This feature cover multiple use cases:
 
 ## Bandwidth Constrains
 
-Bandwidht constraints sometimes prevents pictures form being transferred after capture, for example if there is a higher capture rate during a specific timeslot. The "Xfer" feature will deserialize picture transmission from the capture process.
+Bandwidth constraints sometimes prevent pictures from being transferred after capture, for example, if there is a higher capture rate during a specific timeslot. The "Xfer" feature will deserialize picture transmission from the capture process.
 
-New pictures are placed in a queue, which is then processed as per configured parameters (in particular number of parallel transfers). This prevents risks of overloading the system with too many parallel jobs.
+New pictures are placed in a queue, which is then processed as per configured parameters (i.e. a number of parallel transfers). This prevents risks of overloading the system with too many parallel jobs.
 
 ## Quota
 
 Webcampak implements a "soft-quota" policy.
 
-Users can define how much space can be used by a source on the system and will report usage over quota. But the system will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result on improperly deleting pictures.
+Users can define how much space can be used by a source on the system and will report usage over quota. But the system will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result in improperly deleting pictures.
 
 If a source goes over quota, the system will report so, but will not take further actions.
 

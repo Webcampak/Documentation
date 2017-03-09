@@ -2,13 +2,13 @@
 
 To improve security, access to Webcampak requires authentication, user sessions are created for a predefined amount of time, prompting users to re-authenticate at regular interval. 
 
-Access to Webcampak is only possible through HTTPS, depending of the systems users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connection.
+Access to Webcampak is only possible through HTTPS, users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connection.
 
 ## Splash Screen
 
 Webcampak splash screen provides users with a choice between a fully featured Desktop application and a lighter Dashboard application.
 
-The Desktop application provide most features and allow both viewing content and performing advanced configuration. The Dashboard application is a simplier view into the Webcampak with a more modern user interface.
+The Desktop application provides most features and allow both viewing contents and performing advanced configuration. The Dashboard application is a simpler view into the Webcampak with a more modern user interface.
 
 ![Webcampak Splash Screen](images/splash.en.png)
 
@@ -24,7 +24,7 @@ Dashboard authentication
 
 ## Lost Password
 
-In case of lost password, users can request a new one to be sent to their email address by specifying their username and email address. 
+In the case of lost password, users can request a new one to be sent to their email address by specifying their username and email address. 
 
 ![Recover Lost Password](images/desktop.login.recover.password.en.png)
 

@@ -6,11 +6,11 @@ Generated videos can be accessed by clicking on "Webcampak > Videos" in the top-
 
 ## Overview
 
-The Videos windows allows users to navigate through sources and their videos.
+The Videos window allows users to navigate through sources and their videos.
 
 ![Videos](images/desktop.videos.en.png)
 
-Sources can be selected using the dropdown on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
+Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
 When selecting a source, Webcampak will automatically position the system to the latest day with videos of the selected source.
 
