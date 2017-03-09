@@ -1,14 +1,14 @@
 # Initial Setup
 
-At the end of the installation script, go to the web interface of your webcampak.
- 
+At the end of the installation script, go to the web interface of your Webcampak.
+
 ## Self-signed certificate
 
-During installation a [self-signed certificate](https://en.wikipedia.org/wiki/Self-signed_certificate) is created by the system. 
+During installation a [self-signed certificate](https://en.wikipedia.org/wiki/Self-signed_certificate) is created by the system.
 
 Although self-signed certificates should definitely be a concern and are not recommended for publicly accessible Webcampak instances, they represent the only option when domain names cannot be used (for example a local webcampak).
 
-After initial setup you will be presented with a security warning from your browser. For now, accept it, but you are strongly encouraged to reconfigure the system to use a signed certificate issued by a public CA such as [letsencrypt](https://letsencrypt.org/).
+Following initial setup you will be presented with a security warning from your browser. For now, accept it, but you are strongly encouraged to reconfigure the system to use a signed certificate issued by a public CA such as [letsencrypt](https://letsencrypt.org/).
 
 ![Self Signed certificate warning](images/webcampak-certificate.png)
 

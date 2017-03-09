@@ -4,19 +4,19 @@ Your Webcampak will probably have to store a (very) large number of pictures. It
 
 ## Redundancy
 
-Always keep in mind that hardware failure or human error (i.e. delete pictures by mistake) can happen and it's always better to take precautions before such events happen.
+Hardware failure or human error (i.e. delete pictures by mistake) do happen, taking preventing actions is always preferrable.
 
-Webcampak is able to send pictures to remote FTP server, you can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).
+Webcampak is able to send pictures to remote FTP server, users can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).
 
 ## Automated deletion
 
 Webcampak is equipped with automated deletion mechanisms to ensure its internal hard disk never runs out of space. Those mechanisms can be configured to fit various requirements.
 
-When Webcampak store its pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending of the capture frequency and picture size, this buffer size can span days, even months.
+Even if Webcampak stores pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending of the capture frequency and picture size, this buffer size can span days, even months.
 
 ## File structure
 
-In most cases, access to Webcampak files is done through FTP, using some of the automatically created account.
+In most cases, access to Webcampak files is done through FTP, using provisioned accounts.
 
 A gloabl FTP account (wpresources) is available for admins to access shared Webcampak elements, such as:
 
@@ -29,7 +29,7 @@ A gloabl FTP account (wpresources) is available for admins to access shared Webc
 * common watermark files (shared between all sources)
 * xfer (queued, completed, failed)
 
-Each source then get its own FTP account giving access to its own directory tree, containing:
+Each source then gets its own FTP account giving access to its own directory tree, containing:
 
 * __live__: directory containing hotlink pictures and videos
 * __pictures__: directory containing pictures archives, with one sub-directory per capture day
