@@ -181,7 +181,71 @@
                         
 <li >
     
-    <a href="../en_Overview/">Overview</a>
+    <a href="../../Use/en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Logs/">Logs</a>
     
 </li>
 
@@ -207,6 +271,22 @@
 <li >
     
     <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
     
 </li>
 
@@ -255,6 +335,10 @@
     
         <li class="main active"><a href="#users">Users</a>
            <ul class="nav">
+           
+               <li class=""><a href="#password">Password</a>
+               
+               </li>
            
                <li class=""><a href="#groups">Groups</a>
                
@@ -332,6 +416,10 @@
                     <ul class="nav bs-sidenav">
   
         
+        <li class=""><a href="#password">Password</a>
+          
+        </li>
+        
         <li class=""><a href="#groups">Groups</a>
           
         </li>
@@ -376,20 +464,23 @@
                    
 
 <h1 id="users">Users</h1>
-<p>Webcampak has an authentication and an authorization module providing feature and source isolation.</p>
+<p>Webcampak has an authentication and an authorization module providing both feature and source isolation.</p>
+<h2 id="password">Password</h2>
+<p>Webcampak does not store clear-text user passwords, but a <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">salted hash of users passwords</a>.</p>
 <h2 id="groups">Groups</h2>
 <p>Webcampak handles feature authorization on a group level. When configuring a group, users can select which features (view pictures, configure sources, run reports, etc...) are available for users in this group.</p>
-<p>By default, Webcampak is shipped with three groups:</p>
+<p>By default, Webcampak is provided with three groups:</p>
 <ul>
 <li><strong>View</strong>: Access pictures and videos, no configuration</li>
 <li><strong>Configure</strong>: Access pictures and videos, only configure sources (no access to system-level configuration)</li>
 <li><strong>Admin</strong>: Access to all Webcampak features</li>
 </ul>
+<p>Additional groups can easily be created.</p>
 <h2 id="sources-access">Sources Access</h2>
-<p>Source access is managed on a per user basis and is independent from feature access (managed through user groups). A user member of a "configuration group" and given permission to access sources A, B and C will be able to configure those three sources.</p>
-<p>Webcampak does not support further granularity, for example it is not possible for user Joe to have config permission on source A &amp; C and view-only permission on source B. This use case has not been identified relevant in our use cases. Nothing prevents an admin from creating multiple usernames to cover this use-case.</p>
+<p>Source access is managed on a per user basis and is independent of feature access (managed through user groups). A user member of a "configuration group" and given permission to access sources A, B and C will be able to configure those three sources.</p>
+<p>Webcampak does not support further granularity, for example, it is not possible for user Joe to have config permission on source A &amp; C and view-only permission on source B. This use case has not been identified relevant in our use cases but nothing prevents an admin from creating multiple usernames to cover this use-case.</p>
 <h2 id="customers">Customers</h2>
-<p>Users can be attached to a "Customer", this configuration has very limited impact on Webcampak and is only used to identify user provenance and customize background color and logo.</p>
+<p>Users can be attached to a "Customer", this configuration has very limited impact on Webcampak and is only used to identify user provenance and customise background colour and logo.</p>
                 </div>
                     
                     <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">

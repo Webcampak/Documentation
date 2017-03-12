@@ -16,7 +16,7 @@ The Desktop application provides most features and allow both viewing contents a
 
 Desktop authentication
 
-![Desktop Login Screen](images/desktop.login.en.png)
+[![Desktop Login Screen](images/desktop.login.en.png "Desktop Login Screen")](images/desktop.login.en.png "Click to see the full image.")
 
 Dashboard authentication
 

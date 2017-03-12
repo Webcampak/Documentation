@@ -4,28 +4,32 @@
 
 ## Webcampak or Webcampak Cloud
 
-You probably have seen on our website mentions of __Webcampak__ and __Webcampak Cloud__, those two names refer to the same software but installed in a different context:
+Our website mentions of __Webcampak__ and __Webcampak Cloud__, those two names refer to the same software but installed in a different context:
 
-* __Webcampak__ is typically installed on low-power embedded computers and are directly attached to D-SLR cameras
-* __Webcampak Cloud__ is typically installed in a datacentre on high performance servers and are used as a central place to store and process pitures coming from different __Webcampak__ systems.
+* __Webcampak__ is typically installed on low-power embedded computers is are directly attached to D-SLR cameras
+* __Webcampak Cloud__ is typically installed in a datacentre on high-performance servers and is used as a central place to store and process pictures coming from different __Webcampak__ systems.
 
-But as mentioned above, we took early on the decision to only have one single software. It greatly facilitates development (one codebase to maintain), but it also means a need for greater education and understanding from users, on the system's capabilties. For example, nothing in the software will prevent users from starting compute intensive manipulations on a __Webcampak__ since it might make sense in some situations.
+Having one since software greatly facilitates development (one codebase to maintain), but it also means a need for greater education and understanding from users, on the system's capabilities.
 
-For example, we don't have mechanisms in place to prevent a user to configure a capture rate of 1 picture every 10s, requesting at 27 degree rotation of the picture on the fly. We know it's likely going to create difficulties in most situations, but maybe in this use case, webcampak is running on an extremely powerful computer with a high-speed data transfer camera.
+For example, the software will not prevent users from initiating compute-intensive manipulations on a __Webcampak__ since it might make sense in some situations.
 
-But webcampak try to be as verbose as possible on the impact of various settings, those are usually timed, logged and available to users to assess performance. One of our recommendation, when discovering the system, is to start small and progressively add more and more complexity into the setup to evaluate the impact of configuration settings.
+We don't have mechanisms in place to prevent a user from configuring a capture rate of 1 picture every 10s, requesting a 27-degree rotation of the picture on the fly. Even if we know this is likely to create difficulties in most situations, there might be some use cases for which this configuration is relevant, thus we don't prevent this configuration.
 
-So education and understanding of the implication of using available settings is key for a good operation of the system.
+Webcampak try to be as verbose as possible, timing most of the lengthy events in log files available to users to assess performance.
+
+One of our recommendation, when discovering the system, is to start small and progressively add more and more complexity into the setup to evaluate the impact of configuration settings.
+
+Education and understanding of the implication of configuration settings are key for a good operation of the system.
 
 ## Capture devices (D-SLR or others)
 
-Webcampak has been built to be as flexible as possible and adding new type of capture devices into the software should be relatively straight-forward for developers (us).
+Webcampak has been built to be as flexible as possible. Adding new types of capture devices into the software is relatively straight-forward for developers (us).
 
-The most common use-case though is the use of D-SLR cameras, Webcampak capture acquisition process relies on [gPhoto2](http://www.gphoto.org/), you can find a list of known supported D-SLR cameras on [this page of their documentation](http://www.gphoto.org/doc/remote/)
+The most common use-case though is the use of D-SLR cameras, Webcampak picture acquisition process relies on [gPhoto2](http://www.gphoto.org/), you can find a list of known supported D-SLR cameras on [this page of their documentation](http://www.gphoto.org/doc/remote/)
 
 ## Open Source
 
-Webcampak is open source, unless specified otherwise, most of its codebase is licensed under [GNU GPL v3](https://github.com/Webcampak/core/blob/develop/LICENSE).
+Webcampak is open source unless specified otherwise, most of its codebase is licensed under [GNU GPL v3](https://github.com/Webcampak/core/blob/develop/LICENSE).
 
 We are strong believers of the benefits of using and developing open source software, and welcome external contributions.
 
@@ -37,24 +41,24 @@ Your Webcampak will probably have to store a (very) large number of pictures. It
 
 ## Redundancy
 
-Always keep in mind that hardware failure or human error (i.e. delete pictures by mistake) can happen and it's always better to take precautions before such events happen.
+Hardware failure or human error (i.e. delete pictures by mistake) do happen, taking preventing actions is always preferable.
 
-Webcampak is able to send pictures to remote FTP server, you can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).
+Webcampak is able to send pictures to a remote FTP server, users can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).
 
 ## Automated deletion
 
 Webcampak is equipped with automated deletion mechanisms to ensure its internal hard disk never runs out of space. Those mechanisms can be configured to fit various requirements.
 
-When Webcampak store its pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending of the capture frequency and picture size, this buffer size can span days, even months.
+Even if Webcampak stores pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending on the capture frequency and picture size, this buffer size can span days, even months.
 
 ## File structure
 
-In most cases, access to webcampak files is done through FTP, using some of the automatically created account.
+In most cases, access to Webcampak files is done through FTP, using provisioned accounts.
 
-A gloabl FTP account (wpresources) is available for admins to access shared webcampak elements, such as:
+A global FTP account (wpresources) is available for admins to access shared Webcampak elements, such as:
 
 * cache files (temporary files created by Webcampak)
-* webcampak database (users, permissions, sources details)
+* Webcampak database (users, permissions, sources details)
 * emails (queued, sent, failed)
 * configuration files
 * logs
@@ -62,14 +66,13 @@ A gloabl FTP account (wpresources) is available for admins to access shared webc
 * common watermark files (shared between all sources)
 * xfer (queued, completed, failed)
 
-Each source then get its own FTP account giving access to its own directory tree, containing:
+Each source then gets its own FTP account giving access to its own directory tree, containing:
 
 * __live__: directory containing hotlink pictures and videos
 * __pictures__: directory containing pictures archives, with one sub-directory per capture day
-* __resources__: direcotry containing various source specific elements necessary for processing and source operation
+* __resources__: directory containing various source-specific elements necessary for processing and source operation
 * __tmp__: temporary directory used in processing and/or picture acquisition
 * __videos__: directory containing generated videos
-
 
 
 # Capture
@@ -78,110 +81,133 @@ Each source then get its own FTP account giving access to its own directory tree
 
 ## Interval
 
-Webcampak capture pictures at an interval defined in minutes or second in a source configuration, with captured triggered based on clock time. For example, if a source is configured to capture every:
+Webcampak captures pictures at an interval defined in minutes or second, with captures triggered based on clock time.
+
+For example, if a source is configured to capture every:
 
 * __20s__: The capture process will be triggered at 5:00"00, 5:00"20, 5:00"40, 6:00"00, etc...
 * __10mn__: The capture process will be triggered at 5:00"00, 5:10"00, 5:20"00, 5:30"00, etc...
 
-To get a "clean" and consistent output we recommend using one of the following settings:
+To get a "clean" and consistent result we recommend using one of the following settings:
 
 * __Seconds__: 10, 20, 30
 * __Minutes__: 1, 5, 10, 15, 20, 30, 60
 
-Note: a 10s capture frequency will highly depend of your hardware, and might not be feasible in most situations.
+Note: a 10s capture frequency will highly depend on of your hardware, and might not be achievable.
 
-## Precise Capture Time
+## Accurate Capture Time
 
-When capturing from a D-SLR camera, and depending of multiple factors, the actual capture process might be triggered a few miliseconds or seconds after the defined interval. Depending if you care about time accuracy or not, you can specify if the picture should take the time it the capture request was sent (interval time) or the time the picture was actually captured.
+When capturing from a D-SLR camera, and depending on multiple factors, the actual capture process might be triggered a few milliseconds or seconds after the defined interval.
+
+The system can be configured so that users can specify if the picture timestamp (and filename) should be the time the capture request was sent (interval time) or the time the picture was actually captured.
 
 ### Filename
 
-Webcampak uses the capture time in file naming, using the following convention: YYYYMMDDHHmmSS (YearMonthDayHourMinuteSecond). For example 20170224124007.jpg is a picture captured on February (02) 24th, 2017 at 12:40 and 07 seconds.
+Webcampak uses the capture time for pictures filenames, using the following convention: YYYYMMDDHHmmSS (YearMonthDayHourMinuteSecond).
 
-To prevent too many files from being stored in the same directory (which creates issue for very long projects) pictures are stored in a directory corresponding to the picture's day, for example, filepath for the above picture will be: pictures/20170224/20170224124007.jpg
+For example, 20170224124007.jpg is a picture captured on February(02) 24th, 2017 at 12:40 and 07 seconds.
 
-## Calendar
+To prevent issues associated with a large number of files in a single directory, pictures are stored in a directory corresponding to the picture's day, for example,  the file path for the above picture will be: pictures/20170224/20170224124007.jpg
 
-A 24h format weekly calendar is available in each source to identify when to capture pictures (day of the week, time of the day).
+## Weekly Calendar
 
-If you want to enable variable capture rate (for example capture business hours at a different rate than outside business hours), you would configure two sources with a different non-overlapping capture calendar.
+A 24h-format weekly calendar is available in each source to define when to capture pictures (day of the week, time of the day).
+
+Users can enable variable capture rate (for example capture business hours at a different rate) by configuring multiple sources with a different non-overlapping capture calendar.
 
 ## Non-overlapping sources
 
-When configuring sources to capture from the same physical source (i.e. same D-SLR camera), be cautious not to have overlapping capture requests. Cameras can only handle one capture at a time and which source will get the picture will be "first-come-first-served", with the other source failing and the risk of causing the camera to crash.
+When configuring sources to capture from the same physical source (i.e. same D-SLR camera), users must be cautious not to have overlapping capture requests.
+
+Cameras can only handle one capture at a time. If there is an overlap, the source to get the pictures will be "first-come-first-served", with the other source failing with the potential risk of crashing the camera.
 
 ## RAW Files
 
 Raw pictures are stored in a specific sub-directory, for the above picture it will be: pictures/raw/20170224/20170224124007.jpg
 
-It might be useful to understand that, in webcampak, raw pictures are mostly considered as a supplement to jpg pictures, but picture manipulation happens on jpg pictures only. Raw pictures are stored in a different directory tree and at various stages, the system will check for the presence of a raw pictures (and eventually configuration settings) to determine if such files should be sent.
+It might be useful to understand that, in webcampak, raw pictures are mostly considered as a supplement to jpg pictures. Picture manipulation happens on jpg pictures only.
+Raw pictures are stored in a different directory tree. At various processing stages, the system will check for the presence of raw pictures (and eventually configuration settings) to determine if such files should be sent.
+
+## Handle capture failure
+
+Webcampak verifies capture success and can take actions (such as email notification) in the case of failure to capture (or delays from expected capture slot).
+
+In some situations, failure might be caused by issues with the D-SLR camera (such as a system failure). Webcampak can control [Phidgets relays](https://www.phidgets.com) and power cycle the camera after a pre-defined number of failures. This mechanism acts on the Camera's power supply, meaning the camera itself must be able to start back up after power loss (it is the case for most D-SLR cameras).
+
+
+
+
 
 # Logging
 
 ## Logging
 
-This is something that has been dramatically extended from webcampak 2.x and is worth its own section in the documentation to emphasis on why reviewing logs can be relevant.
+Logging has been dramatically extended from Webcampak 2.x. In this section of the document, we will details logs and emphasis on why reviewing and understanding logs is relevant.
 
-Logs usually do not take a vast amount of physical space, so we decided to built it into most of the processing done by webcampak and log almost everything. Some logs would likely never be used when some can be especially useful in the configuration stages to understand what is happening under the hood.
+Logs files do not take a vast amount of physical space, so we decided to build it into most of the processing done by Webcampak and log almost everything. Some logs are there for auditing purposes, others can be especially useful in configuration stages to understand what is happening under the hood.
 
 ## Configuration changes
 
-All configuration changes to sources or general configuration are logged, this lets you understand who changed what when. This is especially useful if you want to rollback to a previous configuration setting but do not remember what this was.
+All configuration changes are logged, this lets users understand who changed what, when. This provides users with the ability to rollback to previous configuration settings.
 
 ## Capture logs
 
-Most actions taken automatically by webcampak when it captures and manipulate pictures are logged, and those logs also provide timed events,not only the timestamp but the time it took to run some actions.
+Most actions are taken automatically by Webcampak when it captures and manipulates pictures are logged. Those logs provide timed events, not only the date and time but also the time it took to run some actions.
 
-The most relevant value in capture logs is the overall capture time (20.7s in the below capture), which gives you an idea on the maximum capture rate to be supported by the system.
-
-```Logs
-2017-02-24 14:50:33,864 (INFO) webcampak : capture.run(): Capture: Overall capture time: 20752 ms
-```
-
-Then, digging into the logs, you can identify the time taken by various actions, for example (below), creating a 1920x1080 hotlink file took 5.6 seconds.
+The most relevant value in capture logs is the overall capture time (20.7s in the below capture). It gives an idea on the maximum capture rate to be supported by the system.
 
 ```Logs
-2017-02-24 14:50:21,508 (INFO) webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1920x1280.jpg
-2017-02-24 14:50:27,157 (INFO) webcampak : pictureTransformations.resize(): Resized picture to 1920x1280 in 5646 ms
+2017-02-24 14:50:33,864 (INFO) Webcampak : capture.run(): Capture: Overall capture time: 20752 ms
 ```
 
-It is safe to assume that in this case, disabling this particular action in the configuration would save 5s and bring the capture time closer to 15s, potentially allowing to increase capture rate.
+Looking into the logs, users can identify the time taken by various actions, for example (below), creating a 1920x1080 hotlink file took 5.6 seconds.
+
+```Logs
+2017-02-24 14:50:21,508 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1920x1280.jpg
+2017-02-24 14:50:27,157 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 1920x1280 in 5646 ms
+```
+
+It is safe to assume that in this case, disabling this particular action in the configuration would save 5s and bring the capture time closer to 15s, potentially allowing and increased capture rate.
 
 # File Management
 
 ## File Management
 
-Over a project's lifetime, a webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.
+Over a project's lifetime, a Webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.
 
 ## Local storage
 
-Webcampak is usually shipped with a 256 or 512 GB SSD providing ample space for local storage. In a vast majority of situations, captured pictures are transferred to a NAS or another Webcampak (cloud in particular).
+Webcampak is usually shipped with a 256 or 512 GB SSD, providing ample space for local storage. In a vast majority of situations, captured pictures are transferred to a NAS or another Webcampak (Webcampak Cloud generally).
 
-In this situation, local storage can be considered as a buffer, the system will be configured to keep X days (X depending of multiple factors, but ofter a month or two) of pictures locally, automatically clearing older pictures.
+In this situation, local storage can be considered as a buffer. The system will be configured to keep X days (X depending of multiple factors, but often a month or two) of pictures locally, automatically clearing older pictures.
 
-Using webcampak local storage as a buffer is the ideal solution to accomodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
+Using Webcampak local storage as a buffer is the ideal solution to accommodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.
 
-At the end of the incident, a webcampak feature (Xfer Reports) to transfer back missing pictures to remote servers (more below).
+At the end of the incident, a Webcampak feature (Xfer Reports) is available to transfer back missing pictures to remote servers (more below).
 
 ## File Synchronization
 
-Webcampak "Xfer Reports" features provides means to ensure all files on a local webcampak are also available in remote locations by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.
+Webcampak "Xfer Reports" features provides means to ensure all files on a local Webcampak are also available in remote locations, by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.
 
 This feature cover multiple use cases:
 
 * Re-synchronize files after a network incident
 * Transfer all files at once to a new destination (a new NAS for example)
-* Ensure that no pictures are missing
+* Ensure no pictures are missing
 
 ## Bandwidth Constrains
 
-Bandwidht constraints sometimes prevents pictures form being transferred as they are captured, for example if there is a higher capture rate during a specific timeslot. The "Xfer" feature will de-serialize picture transmission from the capture process.
+Bandwidth constraints sometimes prevent pictures from being transferred after capture, for example, if there is a higher capture rate during a specific timeslot. The "Xfer" feature will deserialize picture transmission from the capture process.
 
-New pictures are placed in a queue, which is then processed as per configured parameters (in particular number of parallel transfers). This prevent risks of overloading the system with too many parallel jobs.
+New pictures are placed in a queue, which is then processed as per configured parameters (i.e. a number of parallel transfers). This prevents risks of overloading the system with too many parallel jobs.
 
 ## Quota
 
-Each Webcampak source can have a filedisk quota, to define how much space can be used by the source on this system. This configuration is a "__Soft Quota__", going over the limit will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result on improperly deleting pictures. If a source goes over quota, the system will report so, but will not take further actions.
+Webcampak implements a "soft-quota" policy.
+
+Users can define how much space can be used by a source on the system and will report usage over quota. But the system will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result in improperly deleting pictures.
+
+If a source goes over quota, the system will report so, but will not take further actions.
 
 
 
@@ -191,30 +217,1380 @@ Each Webcampak source can have a filedisk quota, to define how much space can be
 
 ## Users
 
-Webcampak has an authentication and an authorization module providing feature and source isolation.
+Webcampak has an authentication and an authorization module providing both feature and source isolation.
+
+## Password
+
+Webcampak does not store clear-text user passwords, but a [salted hash of users passwords](https://en.wikipedia.org/wiki/Cryptographic_hash_function).
 
 ## Groups
 
 Webcampak handles feature authorization on a group level. When configuring a group, users can select which features (view pictures, configure sources, run reports, etc...) are available for users in this group.
 
-By default, Webcampak is shipped with three groups:
+By default, Webcampak is provided with three groups:
 
 * __View__: Access pictures and videos, no configuration
 * __Configure__: Access pictures and videos, only configure sources (no access to system-level configuration)
 * __Admin__: Access to all Webcampak features
 
+Additional groups can easily be created.
+
 ## Sources Access
 
-Source access is managed on a per user basis and is independent from feature access (managed through user groups). A user member of a "configuration group" and given permission to access sources A, B and C will be able to configure those three sources.
+Source access is managed on a per user basis and is independent of feature access (managed through user groups). A user member of a "configuration group" and given permission to access sources A, B and C will be able to configure those three sources.
 
-Webcampak does not support further granularity, for example it is not possible for user Joe to have config permission on source A & C and view-only permission on source B. This use case has not been identified relevant in our use cases. Nothing prevents an admin from creating multiple usernames to cover this use-case.
+Webcampak does not support further granularity, for example, it is not possible for user Joe to have config permission on source A & C and view-only permission on source B. This use case has not been identified relevant in our use cases but nothing prevents an admin from creating multiple usernames to cover this use-case.
 
 ## Customers
 
-Users can be attached to a "Customer", this configuration has very limited impact on Webcampak and is only used to identify user provenance and customize background color and logo.
+Users can be attached to a "Customer", this configuration has very limited impact on Webcampak and is only used to identify user provenance and customise background colour and logo.
 
 
 
 
+
+
+# Authentication
+
+## Authentication
+
+To improve security, access to Webcampak requires authentication, user sessions are created for a predefined amount of time, prompting users to re-authenticate at regular interval.
+
+Access to Webcampak is only possible through HTTPS, users are either be prompted to connect manually through HTTPS or are automatically redirected to an HTTPS connection.
+
+## Splash Screen
+
+Webcampak splash screen provides users with a choice between a fully featured Desktop application and a lighter Dashboard application.
+
+The Desktop application provides most features and allow both viewing contents and performing advanced configuration. The Dashboard application is a simpler view into the Webcampak with a more modern user interface.
+
+![Webcampak Splash Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/splash.en.png)
+
+## Connection
+
+Desktop authentication
+
+[![Desktop Login Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.en.png "Desktop Login Screen")](images/desktop.login.en.png "Click to see the full image.")
+
+Dashboard authentication
+
+![Dashboard Login Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/dashboard.login.en.png)
+
+## Lost Password
+
+In the case of lost password, users can request a new one to be sent to their email address by specifying their username and email address.
+
+![Recover Lost Password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.en.png)
+
+![Password reset Confirmation](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.confirmation.en.png)
+
+After successfully entering a matching username/email combo, the system sends an email containing a temporary password.
+
+![Password reset email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.email.en.png)
+
+Users are then prompted to enter a new password at their next connection.
+
+![Change password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.update.password.en.png)
+
+Once logged-in, users can:
+
+* See their username displayed on the bottom right corner
+* Log Out using the menu on the top right corner of the screen
+
+![Desktop Login Options](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.options.en.png)
+
+
+
+# Desktop Interface
+
+## Desktop Interface
+
+After authentication, the Webcampak desktop interface is being displayed. This interface is broken down into 3 main sections:
+
+* __Webcampak__ menu on the top left corner, giving access to all of the Webcampak features
+* __Settings__ menu on the top right corner, for settings of the desktop interface
+* __Interface status__ on the bottom right corner
+
+## Webcampak Menu
+
+The Webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.
+
+![Webcampak Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.en.png)
+
+## Settings
+
+The settings menu provides access to configuration of the desktop interface itself, such as changing the password, language or logging out of the system.
+
+![Settings menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.settings.en.png)
+
+## Interface Status
+
+Status details are provided in the bottom right corner of the screen.
+
+### Connection
+
+The first status displayed on the left side if the connection status, it indicates whether the desktop interface is able to communicate with its webcampak. This should be showing up "ONLINE" most of the time except in the case of network issues or if the Webcampak is being rebooted.
+
+Mousing over the status will also display the latency in milliseconds. This latency measures how much time it takes for the desktop interface to contact the Webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).
+
+![Connection Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.latency.en.png)
+
+### Communication
+
+The small database icon, second from the left, indicates the number of calls made to your Webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.
+
+![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.database.en.png)
+
+### Username
+
+The third icon from the left is the currently connected user. Clicking on the user will log you out of the system.
+
+![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.username.en.png)
+
+### Software Version
+
+The fourth icon from the left display the current Webcampak version, clicking on the version will redirect to [Webcampak GitHub organisation](https://github.com/Webcampak). Mousing-over the version will display exact version of all Webcampak components:
+
+* __CORE__: Webcampak Core repository, contains mostly translations, installation assets, etc...
+* __UI__: Webcampak User Interface (Desktop, Dashboard)
+* __API__: Webcampak API, receives and interprets calls from the UI
+* __CLI__: Webcampak CLI, drives all Webcampak background activities
+
+![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.en.png)
+
+#### Are you running the latest version?
+
+We don't necessarily recommend to be running the very latest dev version, but if you do wonder about what might be missing in the version you are currently running, you can read the version tag this way: v3.1.0-6-gb0a3277
+
+* __v3.1.0__: Webcampak version
+* __6__: Number of changes (commits) deployed on this Webcampak since this version was created
+* __b0a3277__: The commit tag corresponding to the version currently deployed
+
+If we look a bit closer at the UI commit tag, we can find the currently deployed version in the [commit history of the develop branch](https://github.com/Webcampak/ui/commits/develop).
+
+![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.github.en.png)
+
+It basically tells us that there have been the following new changes (commits) since this Webcampak was last updated:
+
+* Fixed a bug with configuring Phidgets sensors
+* Display exception when loading status
+* Update Cfgwatermarkpositionx.js
+* Update Cfgwatermarkpositiony.js
+
+It is then your call to decide whether you want to manually update to the latest version or not.
+
+
+
+# View Pictures
+
+## View Pictures
+
+Captured pictures can be accessed by clicking on "Webcampak > Pictures" in the top-left menu.
+
+![Pictures Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.pictures.en.png)
+
+## Overview
+
+The Pictures window allows users to navigate through sources and their archives.
+
+![Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.en.png)
+
+Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
+
+When selecting a source, Webcampak will automatically position the system to the latest captured picture.
+
+Clicking on the main picture will open directly open this pictures in a new tab.
+
+## Navigate through archives
+
+### Select a day
+
+Using a calendar, users can navigate through the archives, clicking on days containing pictures. The system automatically detects available days and will gray-out days with no pictures available. The current day is automatically highlighted.
+
+![Select a day](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.days.en.png)
+
+### Select a picture
+
+All pictures captured during the day are presented in a small widget, containing one row per hour (from 00 to 23) and one column per minute (from 00 to 59).
+
+![Select a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.en.png)
+
+Blue cells represent timestamps with available pictures. Mousing over a specific cell will display the picture's time, clicking on the cell will open the selected picture.
+
+On the example above you can notice that this Webcampak is configured with variable capture rate, with:
+
+* one picture captured every 20mn between 00:00-08:00 and between 18:00-00:00
+* one picture captured every 10mn between 08:00-18:00
+
+### Navigate between pictures
+
+Webcampak provides various means to navigate between pictures, at the top-right of the screen a series of buttons allow users to (from left to right):
+
+* Go to the previous picture
+* Go to the next pictures
+* Go to the last picture captured by the source
+* Refresh the list of pictures available for the source.
+
+![Navigation buttons](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.buttons.en.png)
+
+Users can also navigate by clicking on thumbnails available towards the bottom of the screen. If sufficient pictures have been captured the system will display 6 thumbnails (from left to right):
+
+* 15th pictures captured before the currently displayed picture
+* 10th pictures captured before the currently displayed picture
+* 5th pictures captured before the currently displayed picture
+* 5th pictures captured after the currently displayed picture
+* 10th pictures captured after the currently displayed picture
+* 15th pictures captured after the currently displayed picture
+
+![Navigation Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.thumbnails.en.png)
+
+### Zoom into a picture
+
+Users can also zoom into a picture by selecting the zoom level they would like to achieve (from 0% to 200%).
+
+![Zoom into a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.default.en.png)
+
+Once the zoom level is selected, moving the mouse in the window will focus on the selected area at the selected zoom level.
+
+![100% Zoom](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.100.en.png)
+
+### Access Sensors
+
+Users can also click on "Sensors" to view Phidgets sensors values captured by the system for that day.
+
+It will open a window displaying up to 4 sensors graphs.
+
+![Webcampak Sensors Graphs](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.sensors.en.png)
+
+### Email a picture
+
+Users can send the current picture by email, by clicking on "Email".
+
+![Send an email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.send.en.png)
+
+All parameters of the email can be customised, it is then placed into a queue and sent, usually, within a minute.
+
+![Email Received](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.received.en.png)
+
+Although this email is sent by webcampak, the name of the sender is detailed in the "FROM" field to facilitates its identification and try to prevent spam.
+
+
+
+
+# View Videos
+
+## View Videos
+
+Generated videos can be accessed by clicking on "Webcampak > Videos" in the top-left menu.
+
+![Videos Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.videos.en.png)
+
+## Overview
+
+The Videos window allows users to navigate through sources and their videos.
+
+![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.en.png)
+
+Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
+
+When selecting a source, Webcampak will automatically position the system to the latest day with videos of the selected source.
+
+## Available videos
+
+The bottom-right section of the window contains a list of available videos for the selected day. This list will contain a mix of automatically and user-generated videos.
+
+![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.list.en.png)
+
+Clicking on the corresponding row will open the video which can be played with the embedded player. The video can also be downloaded directly from this window.
+
+Automatically (daily) generated video can be differentiated from user-generated videos by looking at the filename. Daily videos' filenames start with the data in YYYYMMDD format.
+
+# Usage Statistics
+
+## Usage Statistics
+
+Webcampak constantly collects metrics from the system to inform users about usage and evolution over time.
+
+![Statistics Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.statistics.en.png)
+
+## Source Statistics
+
+The Source Statistics provides of view of a source's usage over time.
+
+![Source Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.en.png)
+
+This window is broken down into three different sections:
+
+* __Pictures__: Number of pictures captured by day
+* __Size__: Size of the pictures captured that day
+* __Disk Usage__: Evolution of total source disk usage over time
+
+## Collecting metrics
+
+The system behaves differently depending on the type of metrics to be collected/displayed.
+
+__Pictures__ and __Size__ are collected "on-the-fly" as requested by users, therefore can span the entire duration of a project.
+__Disk Usage__ metrics are collected daily by Webcampak. In the example above, there a limited (almost none) history available since this particular project completed in November 2017 just as this Webcampak 3 server was installed (Webcampak 2 stats are not compatible with Webcampak 3).
+
+### Analysing the stats
+
+If we look a bit closer at what can be learnt by analysing the stats
+
+![Picture Count Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.en.png)
+
+We can see that (using mouse-over provides more insights):
+
+* Pictures were captured from March 31st, 2015 until November 07th, 2016.
+* From March 31st until May 03rd, 840 pictures were captured per day during business days, 0 during the weekend
+* Then the system progressively reduced pictures per day
+* From May 28th until August 27th, the system was capturing 120 pictures per day
+* From August 31st until November 7th, the system was capturing 60 pictures per day.
+
+We can also see a couple of sessions with variation in the number of daily pictures, which likely indicates capture incidents.
+
+![Identify capture incident](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.incidents.en.png)
+
+If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak we still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
+
+![A capture incident in details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.incidents.en.png)
+
+In this particular instance, there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accommodate Internet connection issues.
+
+## System Statistics
+
+In the background, Webcampak will constantly record metrics about system usages on:
+
+* Bandwidth
+* Hard disk
+* Memory (RAM)
+* CPU
+
+Users can then access those values and select a data range spanning:
+
+* the 50 latest snapshots
+* the last 50 hours with consolidated metrics (average)
+* the last 50 days with consolidated metrics (average)
+* the last 50 months with consolidated metrics (average)
+
+![System Statistics (Hours)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.en.png)
+
+On the above stats we can, for example, see that:
+
+* There was a bandwidth spike around February 24th, where total average bandwidth for a particular hour went up to 350KB/s. Note the selected range, which means that this spike is an average over the entire hour.
+* Total disk usage is currently around 1.6 TB for this Webcampak
+* Average memory usage is around 9%
+* Average CPU usage is between 1% and 10%
+
+But then we can go more granular and look at the latest captured metrics and see that:
+
+* Outgoing bandwidth did spike at 600KB/s for short period of time
+* CPU usage did spike to 100% and 90% over the last 10 hours but was otherwise reasonable
+
+![System Statistics (Recent)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.recent.en.png)
+
+
+
+
+
+
+
+# Xfer Reports
+
+## Xfer Reports
+
+Xfer is the file transfer mechanism available on Webcampak to deserialize picture transmission from picture processing.
+
+![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.xfer-reports.en.png)
+
+## Overview
+
+When Xfer is enabled the system will create transfer job during processing and will place those jobs in transfer queues.
+
+The FTP Xfer Reports window provides details about the number of transfer queues and files in those queues. It focuses on jobs currently being processed on the short term. If a Sync job is being processed, this window will only provide partial details and users are encouraged to use the Sync Reports window.
+
+![Xfer Reports Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.xfer-reports.en.png)
+
+The following columns are displayed:
+
+* __UUID__: Identified of the queue
+* __PID__: Webcampak process ID of the queue
+* __Created__: Date & Time the queue was created
+* __Updated__: Date & Time the queue was last updated
+* __Queue__: Number of transfer jobs in the queue
+* __Last Job__: Details about the last job processed for the queue, including its direction (upload or download, its size and average transfer rate)
+
+The system will regularly clear transfer queues resulting in UUID changing frequently.
+
+
+
+
+
+
+# Sync Reports
+
+## Sync Reports
+
+Webcampak Sync Reports is available by clicking on "Webcampak > Statistics & Reports > Sync Reports"
+
+![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.sync-reports.en.png)
+
+## Overview
+
+With Webcampak Sync Reports features, users can compare the content of a local and a destination source, identify differences and potentially transfer any missing files.
+
+## Pre-requisites
+
+To use this feature, the following pre-requisites need to be met:
+
+* Create a local source to compare against (Webcampak does not support comparing 2 remote sources)
+* Register remote FTP servers in source configuration
+
+## Create a Sync Report
+
+A Sync Report is the comparison of files available in a source with files available in a destination.
+
+![Create Sync Report](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.create.en.png)
+
+In most situations, users compare the content of a remote source, with content stored on the local source. The "Type" field is used to specify whether there is a remote connection or not.
+
+![Sync Report Queued](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.queued.en.png)
+
+The sync report is then queued and executed as soon as a slot becomes available.
+
+![Sync Report in progress](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.en.png)
+
+![Sync Report Completed](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.completed.en.png)
+
+When completed, users can click on the report to view its details.
+
+![Sync Report Details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.details.en.png)
+
+In this particular example, users can learn the following:
+
+* The Source has 19,681 files, for a total of 82.9GB
+* The Destination has 41,980 files, for a total of 201.4GB
+* The 19,681 files in the sources are also available at the destination (no files are missing then !)
+* The Destination has 22,299 files more than the source
+
+With the report created, users could select it and click "Re-run report" to refresh its content when necessary.
+
+## Sync files
+
+Aside from providing a report, this features also allows users to trigger a transfer of missing files.
+
+Since the previous report didn't have missing files in the destination, we are going to reverse it and trigger the transfer of missing files.
+
+CAUTION: Sync actions cannot be cancelled so users must be sure to understand their system's limitations before starting to sync large amount of files
+
+To avoid accidental sync jobs, users are required to run the report first, and from this report, trigger the sync job by clicking on "Re-run and Sync".
+
+![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.warning.en.png)
+
+The system then creates XFer jobs and provides an update on progress, the far right column indicating total progress.
+
+![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.progress.en.png)
+
+Resulting files are added to the XFer process in batches of 200 jobs per queue.
+
+![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.xfer.en.png)
+
+# Connected Devices
+
+## Connected Devices
+
+A screen listing connected USB devices can be accessed by clicking on "Webcampak > Configuration > Connected Devices"
+
+![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.configuration.devices.en.png)
+
+## Overview
+
+This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
+
+![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.devices.en.png)
+
+## Gphoto2: Connected camera
+
+This section lists cameras detected by gPhoto2, the library used to communicate with the camera. If your camera is not listed there, Webcampak cannot trigger captures.
+
+The following command is being executed in the background:
+```
+$ gphoto2 --auto-detect
+Model                          Port
+----------------------------------------------------------
+Canon EOS 1000D                USB:001,002
+```
+
+## Gphoto2: Cameras Capabilities
+
+This section list camera features supported by gPhoto2. If a connected camera does not have any "Capture choices", it's likely that it is not supported for capture.
+
+The following command is being executed in the background:
+```
+$ gphoto2 -abilities
+Abilities for camera             : Canon EOS 1000D
+Serial port support              : no
+USB support                      : yes
+Capture choices                  :
+                                 : Image
+                                 : Preview
+                                 : Trigger Capture
+Configuration support            : yes
+Delete selected files on camera  : yes
+Delete all files on camera       : no
+File preview (thumbnail) support : yes
+File upload support              : yes
+
+```
+
+## USB devices connected
+
+This section list USB devices connected to the Webcampak. If a connected camera is not listed here, it is likely not powered-on.
+
+The following command is being executed in the background:
+```
+$ lsusb
+Bus 001 Device 004: ID 148f:3070 Ralink Technology, Corp. RT2870/RT3070 Wireless Adapter
+Bus 001 Device 002: ID 04a9:317b Canon, Inc.
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 06c2:0045 Phidgets Inc. (formerly GLAB) PhidgetInterface Kit 8-8-8
+Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+```
+
+# Logs
+
+## Logs
+
+Webcampak constantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak > Logs"
+
+![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.logs.en.png)
+
+## Overview
+
+This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
+
+![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.capture.en.png)
+
+### Log Rotation
+
+Webcampak record a very large portion of its background activities.
+
+Working on the assumption that logs are useful to debug an issue but less useful when there is no issue, we enabled log rotation, to prevent the local hard drive from being overloaded by unused logs.
+
+The system will break down log files in 500 KB chunks and will only keep 10 of those files, which should give you about a week worth of logs for source capture.
+
+## Insight into a Capture log
+
+Logs files are the best way to understand activities being performed by the system and potentially understand what is causing issues. We always recommend our users, involved in Webcampak configuration, to understand what logs are and how to access & read them.
+
+A [Sample log file](logs/capture.log) taken from one of our systems is available for reference, we'll progressively go through it.
+
+```Logs
+2017-03-01 16:30:13,290 (INFO) Webcampak : ===START===
+```
+
+We can break down a log line in the following section:
+
+* __2017-03-01 16:30:13,290__: System date and time
+* __(INFO)__: Log level, anything other than "INFO" should trigger further investigations
+* __webcampak__: Our application
+* __===START===__: Log message, here beginning of a capture session
+
+Before triggering a capture, Webcampak first activity will be to get ready for this capture, load config parameters, setup the timezone, prepare the capture file.
+
+```Logs
+2017-03-01 16:30:13,292 (INFO) Webcampak : capture(): Start
+2017-03-01 16:30:13,386 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/config/config-general.cfg
+2017-03-01 16:30:13,532 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/resources/etc/config-source1.cfg
+2017-03-01 16:30:13,534 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/resources/etc/config-source1-ftpservers.cfg
+2017-03-01 16:30:13,564 (INFO) Webcampak : capture.initGetText(): Initialized gettext with Domain: Webcampak - Language: en_US.utf8 - Path: /home/webcampak/webcampak/i18n/
+2017-03-01 16:30:13,594 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:13,626 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:13.597988+01:00
+2017-03-01 16:30:13,627 (INFO) Webcampak : capture.setScriptStartTime(): Script Start Time set to: 2017-03-01T16:30:13.597988+01:00
+2017-03-01 16:30:13,628 (INFO) Webcampak : capture(): Set Capture Time to script start time (default at script startup)
+2017-03-01 16:30:13,629 (INFO) Webcampak : capture.setCaptureTime(): Capture Time set to: 2017-03-01 16:30:13.597988+01:00
+2017-03-01 16:30:13,658 (INFO) Webcampak : capture(): Create Capture Status object and set script start date
+2017-03-01 16:30:14,661 (INFO) Webcampak : captureObj.setCaptureFile(): Capture file set to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:14,783 (INFO) Webcampak : capture(): Load previous Capture Status Object (if available)
+2017-03-01 16:30:15,401 (INFO) Webcampak : captureObj.setCaptureFile(): Capture file set to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:15,402 (INFO) Webcampak : captureObj.loadJsonFile(): Load JSON file into memory: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:15,481 (INFO) Webcampak : capture(): Initializing the following capture driver: gphoto
+```
+
+Next, Webcampak will verify if it is allowed to capture (capture calendar, time since the last capture). If all is correct, it will initiate the actual capture process.
+
+```Logs
+2017-03-01 16:30:15,482 (INFO) Webcampak : capture.run(): Initiate capture process for source: 1
+2017-03-01 16:30:15,495 (INFO) Webcampak : captureUtils.isWithinTimeframe(): Current Day: 3 - Current Time: 1630
+2017-03-01 16:30:15,497 (INFO) Webcampak : captureUtils.isWithinTimeframe(): Capture allowed between: 800 and: 1800
+2017-03-01 16:30:15,512 (INFO) Webcampak : captureObj.getLastCaptureTime(): Last capture time: 2017-03-01 16:20:17.075944+01:00
+2017-03-01 16:30:15,513 (INFO) Webcampak : captureUtils.checkInterval(): Last capture 596522 ms ago
+2017-03-01 16:30:15,530 (INFO) Webcampak : captureUtils.checkInterval(): Minimum capture interval: 3000 ms
+2017-03-01 16:30:15,531 (INFO) Webcampak : captureUtils.checkInterval(): Capture slot available
+2017-03-01 16:30:15,532 (INFO) Webcampak : captureGphoto.capture(): Initiating capture
+```
+
+Just before capturing the picture, it will record the time. by comparing the current time with the beginning of the capture process, we can see that it took Webcampak a bit more than 2 seconds to get there.
+
+Then the system actually captures the picture, transfer the file locally and check its file size.
+
+```Logs
+2017-03-01 16:30:15,533 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:15,549 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:15.549352+01:00
+2017-03-01 16:30:15,648 (INFO) Webcampak : captureGphoto.triggerCapture(): Gphoto: Start Capture
+2017-03-01 16:30:21,576 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 1: New file is in location /capt0000.jpg on the camera
+Saving file as /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+Deleting file /capt0000.jpg on the camera
+
+2017-03-01 16:30:21,578 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 2:
+2017-03-01 16:30:21,580 (INFO) Webcampak : captureUtils.verifyCapturedFile(): File: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg size is 3256854 bytes
+2017-03-01 16:30:21,581 (INFO) Webcampak : captureUtils.verifyCapturedFile(): Check File: Successful
+2017-03-01 16:30:21,582 (INFO) Webcampak : captureGphoto.capture(): Capture successful
+```
+
+It might be interesting to focus here on the actually time between the camera was requested to capture and the time the picture was actually stored on local disk.
+
+```Logs
+2017-03-01 16:30:15,648 (INFO) Webcampak : captureGphoto.triggerCapture(): Gphoto: Start Capture
+2017-03-01 16:30:21,576 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 1: New file is in location /capt0000.jpg on the camera
+```
+
+In this particular example, it took just short of 6 seconds. This number will vary a lot depending on exposure time, USB speed and file size.
+
+Webcampak will then apply all the configured manipulation to the picture. You can notice that some of the manipulations are being timed, to provide additional insights into which of the manipulations take time.
+
+```Logs
+2017-03-01 16:30:21,587 (INFO) Webcampak : capture.run(): Begin processing of picture: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+2017-03-01 16:30:21,588 (INFO) Webcampak : captureUtils.modifyPictures(): Rotating disabled
+2017-03-01 16:30:21,589 (INFO) Webcampak : captureUtils.modifyPictures(): Cropping disabled
+2017-03-01 16:30:21,590 (INFO) Webcampak : captureUtils.modifyPictures(): Watermark disabled
+2017-03-01 16:30:21,591 (INFO) Webcampak : captureUtils.modifyPictures(): Legend disabled
+2017-03-01 16:30:21,593 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 1 disabled
+2017-03-01 16:30:21,594 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 2 disabled
+2017-03-01 16:30:21,607 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 3 disabled
+2017-03-01 16:30:21,608 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 4 disabled
+2017-03-01 16:30:21,609 (INFO) Webcampak : captureUtils.modifyPictures(): Resizing disabled
+2017-03-01 16:30:21,611 (INFO) Webcampak : captureUtils.createLivePicture(): Copying full size JPG picture: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg to: /home/webcampak/webcampak/sources/source1/live/last-capture.jpg
+2017-03-01 16:30:21,733 (INFO) Webcampak : captureUtils.archivePicture(): Saving JPG picture to: /home/webcampak/webcampak/sources/source1/pictures/20170301/20170301163013.jpg
+2017-03-01 16:30:21,828 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1920x1280.jpg
+2017-03-01 16:30:27,359 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 1920x1280 in 5529 ms
+2017-03-01 16:30:27,360 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1280x720.jpg
+2017-03-01 16:30:30,778 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 1280x720 in 3416 ms
+2017-03-01 16:30:30,780 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-640x480.jpg
+2017-03-01 16:30:33,945 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 640x480 in 3164 ms
+2017-03-01 16:30:33,947 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink: 4 disabled
+2017-03-01 16:30:33,983 (INFO) Webcampak : captureUtils.copyPicture(): SourceCopy: JPG Picture copied to /home/webcampak/webcampak/sources/source10/tmp/20170301/20170301163013.jpg
+2017-03-01 16:30:33,984 (INFO) Webcampak : captureUtils.purgePictures(): Removing file: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+2017-03-01 16:30:34,040 (INFO) Webcampak : capture.run(): Capture process completed
+2017-03-01 16:30:34,057 (INFO) Webcampak : captureUtils.deleteOldPictures(): System configured to delete picture from:  /home/webcampak/webcampak/sources/source1/pictures/ after 2 days
+2017-03-01 16:30:34,058 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170228 is 1 days old
+2017-03-01 16:30:34,060 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170301 is 0 days old
+2017-03-01 16:30:34,061 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170227 is 2 days old
+```
+
+Finally, it captures the time again, and compare it with the beginning of the script. In this particular case, the entire capture process took a bit over 20 seconds.
+
+```Logs
+2017-03-01 16:30:34,063 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:34,067 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:34.066954+01:00
+2017-03-01 16:30:34,068 (INFO) Webcampak : capture.run(): Capture: Overall capture time: 20468 ms
+2017-03-01 16:30:34,132 (INFO) Webcampak : captureObj.writeJsonFile(): Writing to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:34,134 (INFO) Webcampak : captureObj.writeCaptureFile(): Successfully saved last capture file to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:34,152 (INFO) Webcampak : captureObj.archiveJsonFile(): Writing to: /home/webcampak/webcampak/sources/source1/resources/capture/20170301.jsonl
+2017-03-01 16:30:34,154 (INFO) Webcampak : captureObj.archiveCaptureFile(): Successfully archived capture file to: /home/webcampak/webcampak/sources/source1/resources/capture/20170301.jsonl
+2017-03-01 16:30:34,155 (INFO) Webcampak : capture.run(): -----------------------------------------------------------------------
+2017-03-01 16:30:34,156 (INFO) Webcampak : ===END===
+```
+
+We usually recommend our users not to configure Webcampak to capture at a rate higher than the longest capture time over a configured time interval.
+
+## Configuration Logs
+
+Webcampak also records configuration changes (who changed what when).
+
+Due to the fairly low change frequency, those logs are not size-limited and will record indefinitely.
+
+![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.config.en.png)
+
+## List of logged activities
+
+The following activities are currently configured to be logged by webcampak
+
+__Per Source__:
+
+* Capture process
+* Configuration changes
+* Daily videos creation process
+* Custom videos creation process
+* Pros-prod creation process
+* RRD graph generation
+
+__Per Webcampak__:
+
+* General configuration changes
+* Email capture alerts
+* Daily reports
+* Statistics collection
+* Statistics consolidation
+* Cron jobs update
+* FTP accounts update
+* Xfer start
+* Xfer dispatch
+* (dev-mode only) All activities between UI and API
+
+# Sources
+
+## Sources
+
+Sources are at the core of Webcampak picture acquisition, processing and storage. Before starting to use Webcampak, at least one source needs to be created.
+
+## Add a source
+
+To add a source, navigate to "Webcampak > Configuration > Access Control".
+
+![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png)
+
+The access control window allows users to manage users, groups, customers and sources.
+
+![Access Control Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-en.png)
+
+Users can add a new source by clicking on "Add".
+
+![Add a Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-add-en.png)
+
+They will be requested to fill the following details:
+
+* __Name__: The name of the source in the system
+* __Source ID__: A numerical ID used internally to manage the source. This number must be unique but do not have to follow a sequence. For example, the FTP account for the source will be sourceX, with X being this number.
+* __Weight__: the numerical value used for sorting purposes, the lowest number will be first. This number does not have to be unique, if multiple sources have the same weight, they will be sorted by name.
+* __Quota (GB)__: Quota to be allocated for the source. Used for reporting purposes only, quotas are (on purpose) not enforced on Webcampak.
+* __Remote Host__: Unused, a placeholder for a future feature.
+* __Remote Username__: Unused, a placeholder for a future feature.
+* __Remote Password__: Unused, a placeholder for a future feature.
+
+Users can then be assigned to this source, by dragging them from the left side to the right side of the screen.
+
+![Assign users to source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-users-en.png)
+
+"__Alerts__", when turned on, will trigger emails sent by the system when there is an alert on this source and to receive daily statistics by email.
+
+## Configuration
+
+To configure a source, navigate to "Webcampak > Configuration > Sources".
+
+![Webcampak Sources](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.en.png)
+
+Users are presented with a list of available sources attached to their account. Webcampak does not auto-save configuration changes and will display the status of the configuration (modified, unmodified) in the bottom toolbar.
+
+![Unmodified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.no-change.en.png)
+
+![Modified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes.en.png)
+
+To prevent manipulation issues, users are required to either save or cancel changes before moving to another source.
+
+![Modified Configuration Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes-warning.en.png)
+
+All changes to the configuration settings are logged by Webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All Webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contain details such as individual actions processing time, picture date, picture size, entire processing time, etc...
+
+### Capture
+
+This tab is used to configure all settings directly related to picture acquisition.
+
+
+#### Source Configuration
+
+![Source configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.source-configuration.en.png)
+
+The following configuration settings are available in this section:
+
+* __Activate Source__: Activate the source or not, if inactive, no action will be taken (no pictures, no videos).
+* __Source Type__: Type of picture acquisition mechanism to be processed by the source.
+* __Capture Every__: Interval at which the source will try to capture a picture.
+* __Minimum Interval__: Minimum interval between two pictures. This acts more as a safeguard to avoid overloading the system by misconfiguration. Ideally, this number should be set to the longer capture time during the source operation window.
+* __Capture Delay__: Delay before initiating capture. This is useful for chained sources to avoid processing delays.
+* __Picture Date__: Select if date attached to the picture should be the script start time or the actual picture acquisition time.
+* __Timezone__: Timezone of the source
+* __Language__: Language to be used by the source
+* __Process RAW__: Enable RAW pictures acquisition & processing
+* __Capture Sensors__: Enable Phidgets sensors acquisition just after picture processing
+* __Email alerts__: Enable email alerts for the source
+* __Block capture__: Block capture, disable the capture process while leaving the source active
+
+#### Capture Calendar
+
+![Capture Calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.capture-calendar.en.png)
+
+The following configuration settings are available in this section:
+
+* __Enable Calendar__: If disable, the system will capture 24/7, if enabled it will capture at days selected below.
+* __Monday - Sunday__: Enable capture this particular day, between those hours (24h format)
+
+#### Configuration of D-SLR USB Camera (Gphoto2 PTP mode)
+
+![DSLR-Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.d-slr.en.png)
+
+Those settings are only used when multiple D-SLR cameras are physically connected to the same Webcampak.
+
+The following configuration settings are available in this section:
+
+* __Camera Model__: Camera Model
+* __Camera Port__: USB port of the camera, the system will auto detect available formats
+* __Camera Owner (TAG)__: User-defined TAG to assigned to the camera and used to verify which camera is which in case 2 identical models are connected
+* __Gphoto2 Debug__: Run gphoto2 in debug mode, giving much more verbose output. Do not use this in production
+
+#### Configuration of Webcampak Source
+
+![Webcampak Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.source.en.png)
+
+Those settings are used when pictures are coming from another Webcampak source (chained sources).
+
+The following configuration settings are available in this section:
+
+* __Select capture mode__: Two modes are available "Get" or "Receive". If "Get", the source will actually try to capture the latest picture from the other source, this mode can only be used for local sources. If "Receive", the source will process pictures uploaded to its /tmp/ directory, this mode is usually used when remote Webcampak are sending their pictures.
+* __Select source to get from__: Source to get the picture from if "Get" is selected in "Select capture mode".
+
+#### Configuration of IP Camera (FTP) / Webcampak
+
+![IP Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.ipcamera.en.png)
+
+Those settings are used to process pictures uploaded to the /tmp/ directory, whether those are coming from IP Cameras or remote Webcampak.
+
+The following configuration settings are available in this section:
+
+* __Define picture date based upon__: Various methods are available to identify the picture's date. Additional parsers can be added to process more source types.
+* __Limit hotlink processing to one picture per rotation__: This setting prevent multiple hotlinks to be created is multiple pictures are processed in batch. In this case, only the hotlinks corresponding to the first picture are generated.
+* __Take actions if no new pictures in /tmp/ directory__: Trigger alerts if no new pictures are available in /tmp/ directory.
+
+#### Configuration of Internet Picture or Video Streaming
+
+![Internet Picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.internet.en.png)
+
+Those settings are used to process pictures by acquiring a remote image of a video stream.
+
+* __URL File/Stream__: URL of the remote resource.
+
+### Pictures
+
+![Configure Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.en.png)
+
+This section of the configuration allows you to define manipulations to be applied to pictures right after their capture.
+
+Those settings are executed in sequence in the order available in the configuration screen (picture is first rotated, then cropped, etc ...).
+
+#### Rotate picture
+
+This option can be used to rotate the picture, clockwise, by a specific angle. Note that this feature is compute-intensive and will impact the duration of the capture process.
+
+It should preferably be used on Webcampak cloud or on Webcampak devices with low capture rate.
+
+#### Crop picture
+
+This option can be used to crop the picture to a specific area, this is especially useful if you want to focus on a specific portion of a picture. The system asks you to detail the size of the area (in pixels) and it's start location (in pixels) from the top-left corner of the source picture.
+
+#### Insert Watermark
+
+This option can be used to insert a watermark into the picture. A watermark can simply be a logo or be a more complex decoration around a picture (such as a specific box for the date, an improved legend, etc...).
+
+Watermark files are pulled from two locations:
+
+ * The global Webcampak /resources/watermark/ directory, shared between all sources. This directory is accessible via FTP through the "wpresources" account (see general configuration).
+ * The local source's /resources/watermark/ directory. This directory is accessible via FTP through the source's FTP account (see FTP tab).
+
+Transparency (in %) with 0 being fully transparent and 100 being not transparent, can be defined as well as watermark's location from the top-left corner of the picture.
+
+#### Insert Text
+
+This option can be used to insert some text (single line) into the picture, usually a legend. If a date format is specified, it will be appended at the end of the legend's text, following the selected format.
+
+The text can be added to various areas of the picture (Text location), the user can then define coordinates as an offset (in pixels) from this location (X, Y).
+For example selecting:
+
+ * __Text location__: "South West"
+ * __Legend Coordinates__: 11,10
+
+Will place the bottom left corner of the text area, to start 11 pixels on the X axis and 10 pixels on the Y axis from the bottom left corner of the picture.
+
+Adding a shadow to the legend often makes the text more readable, the shadow is actually the same text, written behind the main text but with a different colour and a slight pixel offset.
+
+Note: If more complex static code needs to be added, this can be done through the watermark feature.
+
+#### Static pictures
+
+![Hotlinks](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.hotlinks.en.png)
+
+This option can be used to create "hotlinkable" pictures, those constantly keep the same filename and are automatically replaced as new pictures are being captured.
+
+Webcampak can be configured to create 4 of those, which should give enough flexibility to for most use case (thumbnail link, full size, etc...).
+
+Users can also choose to "Generate error hotlink", which, in the case of failed capture, will replace the previous picture with an error message embedded in the picture.
+
+#### Archives
+
+![Archives](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.archives.en.png)
+
+This section of the configuration contains various settings related to image size and clean-up:
+
+ * __Save pictures into archives__: If unselected, the picture will be deleted at the end of processing. This prevents any videos from being created, and might only be useful in very specific situations where this source is only used as a temporary processing step. In most situations, this should be selected.
+ * __Resize pictures before saving__: Resize pictures to a specific format, using XxY format (in pixels), for example: 1024x768
+ * __Minimum single picture size__: Minimum size, in bytes, of the picture. If below the system will consider the capture failed.
+ * __Delete pictures after__: Automatically delete older directories after X days. Note that it delete a full day at once, not considering hours.
+ * __Maximum archive size__: Maximum size of the entire pictures, in MB. If over, will delete a full day of pictures at each rotation, starting with the oldest day.
+
+#### Send pictures via FTP
+
+![FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.ftp.en.png)
+
+This option is used to specify FTP servers to send pictures to. Those servers are defined in the FTP tab.
+
+Unless the option is selected, RAW files are not being sent to remote servers. Users can also specify the number of retries, in the case of transmission failure. On top of sending the FTP command to send the picture. Webcampak also compares exact file size (bytes) at the end of the transfer, if files are different, it will consider that transfer failed.
+
+#### Copy pictures internally
+
+![FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.copy.en.png)
+
+This option is used to copy pictures to another source within the webcampak.
+
+### Videos
+
+![Videos Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.en.png)
+
+This section is used to configure videos generated daily (processing starts by default at 1 am) by the system. 4 video definitions (1080p, 720p, 480p, custom) are supported by default, and 2 video formats (H.264 and MP4).
+
+Similar to the "Pictures" section, picture manipulation settings are applied in sequence, following the configuration screen order.
+
+#### Daily video creation
+
+In this section, users can select video definition and formats, and frames per seconds (FPS).
+
+Please note that the MP4 file is generated by converted the H.264 file, so MP4 files alone cannot be created, the corresponding H.264 option must be selected.
+
+#### Advanced video settings
+
+This section offer default configuration for most settings of 1080p, 720p, 480p definitions. Since in a vast majority of situations, source pictures are converted from 4:3 aspect ratio, only the last parameter (Y axis) of the crop is customizable (this is on purpose).
+
+For example, for 1080p, settings are:
+
+ * __Bitrate__: 10000
+ * __Size__: 1920x-3
+ * __Crop__: 1920:1080:0:0
+
+The system will take the initial picture definition (for example 5616x3744 for a Canon 5D MII) it will resize its width to 1920 while maintaining the aspect ratio (-3 parameter). The resulting picture will have a definition of 1920x1280, it will then crop this picture for the video (Width:Height:X:Y), and since we already have the correct width the only parameter we want to customise is the Y offset. In our example:
+
+ * 1920:1080:0:0 - means we cut the bottom 200 pixels of the picture
+ * 1920:1080:0:100 - means we cut 100 pixels at the top and the bottom of the picture
+ * 1920:1080:0:200 - means we cut the top 200 pixels of the picture
+
+The custom parameter lets you personalise all settings. May you have sufficient compute power and memory resources, the system could generate 4K or 8K videos.
+
+#### Filter similar pictures
+
+This system lets you compare the (difference)[https://www.pureftpd.org/project/libpuzzle] between two pictures using (puzzle-diff)[https://linux.die.net/man/8/puzzle-diff]. This difference is represented as a "distance", you will probably have to run a couple of sample videos to identify the best threshold for your video.
+
+For greater accuracy, a watermark can be defined, this watermark is applied by Webcampak on each picture before calculating the difference. For example on a construction site, you might want to add a black watermark covering everything which does not deal with the building you are capturing. This way, the difference will only be calculated if something changed on the building itself (not capturing clouds movements for example).
+
+The difference is a calculated between two consecutive pictures. For example PIC-1 is compared with PIC-2, if PIC-2 in over the threshold, it's not selected and PIC-1 is compared with PIC-3, then PIC-3 is compared with PIC-4, PIC-4 is compared with PIC-5, and so on.
+
+Please note that this can slightly increase video creation runtime depending on the number of calculations to be executed.
+
+#### Insert Watermark
+
+Please refer to the Watermark section of the pictures tab.
+
+#### Pre-processing manipulations (Advanced)
+
+![Videos Pre-processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.preprocess.en.png)
+
+This section lets you add a legend to your video (please refer to the text section of the picture tab).
+
+It can also be used to resize pictures before video creation (this might have a positive impact on video creation time). Original pictures are not impacted by this setting.
+
+#### Add an audio file
+
+![Add audio](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.audio.en.png)
+
+Webcampak let you add an audio track to your videos.
+
+To add an audio track, login into global FTP account (wpresources) and copy MP3 files to /audio/ directory. This directory is shared between all sources.
+
+MP3 filenames must only contain regular characters without blank space.
+
+Add an audio track: select this option to add an audio track.
+
+Audio file: select the file to be inserted.
+
+Webcampak is compliant with playlist upon some conditions. Create a "playlist.m3u" file, this file must contain a list of MP3 files (one file per line)
+
+Example of a "playlist.m3u" file
+
+01-Yellow.submarine.mp3
+02-Beat.it.mp3
+Upload all files (M3U and corresponding MP3) via FTP to /audio/ directory.
+
+During the creation of the video, Webcampak will create a playlist.mp3 file, you can use this file for other videos and even rename it for later use.
+
+#### Send videos via FTP
+
+![Send videos via FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.ftp.en.png)
+
+Videos can be uploaded to remote FTP servers defined in the FTP tab.
+
+### Custom Vids
+
+![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.en.png)
+
+Most settings in this tab are identical to those available in the "Video" tab, we will only focus on custom settings.
+
+#### Create a custom video
+
+![Create Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.create.en.png)
+
+This section let you configure settings directly related to video creation (which could take hours if creation spans multiple months).
+
+Be careful with disk usage, Webcampak will copy all pictures to a temporary directory to apply modifications, as a result you will need free disk space corresponding to at least 2x the selected interval.
+
+Following settings are available:
+
+* __Filename (no spaces)__: Choose the name for your video file, if an identical name already exists Webcampak will automatically append a random 4 digit number at the end of the filename.
+* __From__: Select start date and hour.
+* __To__: Select end date and hour.
+* __Keep pictures between__: only use pictures between a specific timeframe (i.e. between 8:00am and 7:00pm) to create the video.
+* __Minimum time between two pictures__: when preparing your video, Webcampak will check the time between two captures, if lower than this value, the picture will be discarded.
+* __Send an email once creation completed__: select this option to receive an email once video creation is completed.
+* __Start video creation__: you can choose to start video creation as soon as possible or between 4h00 and 5h00 in the morning.
+
+### Post-prod Vids.
+
+![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.en.png)
+
+This section of the configuration allows users to batch process a large number of pictures.
+
+Similar to the "Pictures" section, picture manipulation settings are applied in sequence, following the configuration screen order.
+
+It was created for two main purposes:
+
+* Reduce picture size: cropping/resizing pictures in batch reduces the overall size of pictures to be inserted into a video manipulation software.
+* Advanced picture selection: copying pictures to a dedicated source allows users to delete sequences by still keeping original pictures.
+
+This section has a lot of similarities with "Videos" and "Custom Videos" sections but with much more functionalities. Once processing is completed you can use "Custom Videos" to generate a video of the target source.
+
+#### Filter similar pictures
+
+Please refer to the "Filter similar pictures" section of the "Custom Vids." tab.
+
+#### Rotate picture
+
+Please refer to the "Rotate Picture" section of the "Pictures" tab.
+
+#### Crop picture
+
+Please refer to the "Crop Picture" section of the "Pictures" tab.
+
+#### Transition
+
+This section allows users to progressive focus to a specific portion of the picture.
+
+It works similarily to "Crop" but instead of applying the effect right away, it will calculate the number of frames between the first picture and last picture, and identify how to progressively modify the pictures to reach the selected coordinates.
+
+#### Resize picture
+
+This section allows users to resize pictures by specifying new dimensions in pixels.
+
+#### Thumbnail
+
+![Configure Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.thumbnails.en.png)
+
+This section allows users to insert a thumbnail into a picture, it takes two main arguments:
+
+* Size and location in a source, unmodified, picture (before any of the configured manipulations have been applied)
+* Size and location in the destination, modified, picture (after configured manipulations have been applied)
+
+By playing with various sizes, this allows users to play with focus area (zoom-in/out).
+
+#### Insert Watermark
+
+Please refer to the "Insert Watermark" section of the "Pictures" tab.
+
+#### Insert a legend
+
+Please refer to the "Insert a legend" section of the "Pictures" tab.
+
+#### Initiate processing
+
+![Initiate Processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.create.en.png)
+
+This section let you configure settings directly related to starting batch processing (which could take hours if creation spans multiple months).
+
+Be careful with disk usage, Webcampak will copy all pictures to a temporary directory to apply modifications, as a result you will need free disk space corresponding to at least 2x the selected interval.
+
+Following settings are available:
+
+* __From__: Select start date and hour.
+* __To__: Select end date and hour.
+* __Keep pictures between__: only use pictures between a specific timeframe (i.e. between 8:00am and 7:00pm) to create the video.
+* __Minimum interval between two pictures__: when preparing your video, Webcampak will check the time between two captures, if lower than this value, the picture will be discarded.
+* __Move pictures to__: select the source you would like your pictures to be moved to.
+* __Send an email once creation completed__: select this option to receive an email once video creation is completed.
+* __Start creation__: you can choose to start video creation as soon as possible or between 4h00 and 5h00 in the morning.
+
+### Phidgets
+
+![Phidgets Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.phidgets.en.png)
+
+This section of the configuration allows users to configure interaction with Phidgets devices. Those are useful in multiple situations, and more specifically:
+
+* Power cycle the camera after X number of failed captures
+* Capture sensor values (temperature, humidity, etc...)
+
+#### Relays
+
+This section allows users to define when to power cycle the camera (cutting power supply during a couple of seconds) in the case of capture issues. The following settings are available:
+
+* __Powercycle the camera in case of failure__: Option to be selected to activate power-cycling.
+* __Number of failure before camera powercycle__: How many failed capture before triggering the event.
+* __Phidget camera port__: Port on the Phidgets board to which the relay is connected.
+
+Note that power-cycling will only be triggered when the condition is first met ( the camera will only be power cycled once).
+
+#### Graphs
+
+Webcampak can generate RRDGraphs out of captured sensor values, enabling this option will make Webcampak refresh its sensor graphs every 5mn.
+
+Phidgets graph gets a static name, but changing sensors settings will trigger a new name to be created.
+
+Graphs can also be sent to a remote FTP server defined in the "FTP" tab.
+
+#### Sensors Configuration
+
+Up to 4 different sensors can be configured in this section, by defining the following:
+
+* __Type__: Type of sensor connected to the board (temperature, pressure, humidity, etc...)
+* __Port__: Port on the Phidgets board to which the sensor is connected
+* __Legend__: Legend to be displayed on the RRDGraph may such graph be generated
+* __Color__: Colour of the RRDGraph may such graph be generated
+
+### Advanced
+
+![Advanced Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.advanced.en.png)
+
+These sections allow users to configured more advanced parameters, and for now, dealing with email alerts.
+
+#### Time Based Alerts
+
+Time-based alerts are triggered based on total elapsed time since last successful capture. This type of alert do not take into consideration any pre-configured schedule, it simply compares current time with last capture time.
+
+At a pre-configured interval, the system will send a reminder about the failed status.
+
+#### Schedule Based Alerts (missed captures)
+
+Schedule based alerts are triggered based on calculating the number of missed captured since last successful capture. To use this part of the system, users will define in advance the expected weekly capture schedule.
+
+Users can also configure a "grace" period, allowing for picture processing or data transfer time. During this grace period, calculated from last expected capture slot, the system will not take in consideration any possible failed capture.
+
+For example, if the system expects a capture at 5:10 and the grace period is set to 5 mn, the system will only send an alert if the 5:10 picture is still missing at 5:15.
+
+### FTP
+
+![FTP Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.ftp.en.png)
+
+This section of the configuration lets the user configure local FTP credentials as well as list all remote FTP servers they would like to use.
+
+#### Local FTP Account
+
+Each Webcampak has its own internal FTP server, you can use those credentials to connect directly to the source, to download or delete content, or to configure another source to send pictures to this particular source.
+
+A password is generated automatically at source creation, you can change it at any time.
+
+#### Remote FTP Servers
+
+Source-specific (not shared with other sources) remote FTP Servers can be configured in this screen, adding a remote FTP server takes the following parameters:
+
+* __Name__: Local name used to reference the FTP server
+* __Host__: Remote DNS name or IP Address
+* __Username__: Username on the remote FTP server
+* __Password__: Password on the remote FTP server
+* __Directory__: Directory where the content should be sent to
+* __Active__: Enable [FTP Active mode](http://slacksite.com/other/ftp.html)
+* __Xfer Enable__: Enable Xfer mode (transfer job queueing)
+* __Xfer Threads__: Number of parallel transfer jobs supported by this server
+
+# Access Control
+
+## Access Control
+
+The access control sections deal with who can access what, along with the definition of what the "what" is and who the "who" are. This screen can be accessed by clicking on "Webcampak > Configuration > Access Control".
+
+![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png)
+
+It will let you define users, groups customers and sources as well as their inter-relationships.
+
+![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png)
+
+## Customers
+
+A customer is a simple mean of grouping users and providing such users with a customised Webcampak background colour and logo. Users are not required to be attached to a customer, but if they do, they can only be attached to one.
+
+![Configure Customers](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.customers.en.png)
+
+This screen takes the following parameters:
+
+* __Name__: Customer Name, this field is only available for administrative purposes and is not visible to the end user.
+* __BG Color__: Hexadecimal colour for Webcampak Desktop background. If left empty, the default Webcampak background colour will be displayed.
+* __BG Logo__: A customer-specific logo (usually a PNG file) can be uploaded into the watermark directory of the wpresources account. If left empty the system will display Webcampak logo
+
+## Groups
+
+![Configure Groups](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.en.png)
+
+By default, Webcampak is pre-configured with three different groups:
+
+* __Admin__: Can access all configuration screens on the system
+* __Configure__: Can access configuration screens for authorised sources. General configuration settings are not available
+* __View__: Can only view pictures and videos
+
+Note that "root" user has access to every screens and configuration parameters.
+
+By selecting a group and clicking on "Permissions", users can refine permissions enabled for this group. By default, the "Application" view is selected.
+
+* __Available Applications__: List all applications that can be granted access to users members of this group
+* __Selected Applications__: List all applications, users member of this group, have access to.
+
+![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.applications.en.png)
+
+The above screenshot captures the default configuration of the "Configure" group.
+
+Clicking on the "Permissions" tab provides a mean to further refine access control, in particular in situations when a different level of permissions is necessary within one feature.
+
+This is currently limited to sources configuration. It lets the user define which configuration settings can be accessed/modified by which type of users.
+
+![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.permissions.en.png)
+
+For reference purposes, those settings are listed in the configuration model on GitHub:
+
+* [config-general.json](https://github.com/Webcampak/core/blob/develop/config/config-general.json)
+* [config-source-ftpservers.json](https://github.com/Webcampak/core/blob/develop/config/config-source-ftpservers.json)
+* [config-source-video.json](https://github.com/Webcampak/core/blob/develop/config/config-source-video.json)
+* [config-source-videocustom.json](https://github.com/Webcampak/core/blob/develop/config/config-source-videocustom.json)
+* [config-source-videopost.json](https://github.com/Webcampak/core/blob/develop/config/config-source-videopost.json)
+
+The example (below), list 3 parameters, each with different permission level.
+```json
+{"name": "cfgsourceactive", "default": "no", "type": "yesno", "permission": "SOURCES_CONFIGURATION_SIMPLE", "description": "Activation of the source, possible values: yes or no"}
+, {"name": "cfgsourcetype",  "default": "testpicture", "type": "alphanum", "permission": "SOURCES_CONFIGURATION_ADVANCED", "description": "Type of the source, possible values: gphoto, webcam, ipcam, rtsp, webfile, wpak"}
+, {"name": "cfgsourcedebug", "default": "no", "type": "yesno", "permission": "SOURCES_CONFIGURATION_EXPERT", "description": "Turn on detailed debugging for gphoto2, possible values: yes or no"}
+```
+
+## Sources
+
+Please refer to the Sources section of this user guide for details on how to add and configure sources.
+
+## Users
+
+The "Users" section is used add and configure Webcampak users.
+
+![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png)
+
+### Add User
+
+Clicking on "Add" open the window used to add users.
+
+![Add User](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.users.add.en.png)
+
+The system will then prompt to enter the following details:
+
+* __Username__: Unique username on the system
+* __Password__: User password on the system, note that only a hash of the password is stored, it is, therefore, impossible to "know" the password after it has been changed by the user.
+* __Active__: Is the user authorised to connect Webcampak user interface.
+* __Change Password next Logon__: Prompt the user to update his/her password at next login.
+* __Customer__: Customer attached to this user
+* __Group__: Permission group of the user, defines the permission level
+* __Fristname, Lastname__: Firstname and Lastname of the user
+* __E-mail__: User's email, it is key to use a real email since the system will be sending emails (lost password, reports, etc...) depending on user privileges.
+
+### Sources
+
+Source access is managed on a per user basis, clicking on "Sources" allows specifying which sources can be accessed by the user.
+
+# System
+
+## System
+
+The system configuration screen can be accessed by clicking on "Webcampak > Configuration > System Conf.".
+
+![System Configuration Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.system.en.png)
+
+It is used for general and non-source-specific settings.
+
+![System Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.system.en.png)
+
+## General
+
+### Network
+
+* __Main network interface__: A webcam can operate with multiple active network interface, this setting is used to specify which one should be used to collect statistics. This is typically the Internet-connected interface.
+* __Number of Xfer transfer threads__: Define the number of transfer queues. This number depends on of the number of CPU cores and RAM available on the Webcampak. A higher number means more files can be transferred to various remote locations, but this also implies a greater amount resources being used.
+* __Maximum number of files in each Xfer thread__: Each queue will be provisioned regularly with a specific number of jobs. This number should be set depending on bandwidth availability and Webcampak hardware performance.
+
+### Timezone
+
+The local timezone of the Webcampak server.
+
+### Gphoto
+
+Those 2 settings are only used when Webcampak is physically connected to multiple USB D-SLR cameras in order to understand how to differentiate those multiple cameras and identify their USB port.
+
+### Global FTP Account (resources)
+
+Webcampak is equipped with an FTP account giving access to Webcampak resources directory containing items such Webcampak database, logs, configuration files, queues, shared watermark, etc...
+
+This directory does not provide access to sources.
+
+### Phidgets
+
+Enable or not Phidgets board globally.
+
+### Statistics
+
+Enable or not statistics collection
+
+## Reboot
+
+This screen can also be used to trigger a Webcampak reboot.
+
+# Email Alerts
+
+## Email Alerts
+
+The email alerts configuration screen can be accessed by clicking on "Webcampak > Configuration > Email Alerts".
+
+![Email Alerts Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.alerts.en.png)
+
+This featured is used to declare when pictures are expected to be captured for some of the sources. Webcampak can then trigger alerts based on deviation from this schedule.
+
+![Email Alerts](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.en.png)
+
+Each line represents an hour, each column a minute. By default, the system only displays one day (selected on the top-right of the window), but it can be configured to display the full week.
+
+Clicking in the grid will select the corresponding date and time.
+
+## Edit Calendar
+
+Since it would be extremely tedious to select a large number of capture slots, the "Edit Calendar" section can be used to manage addition and deletion from this calendar.
+
+![Add slot to calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar.en.png)
+
+In the example above, the system will add one picture every 5 minutes, on Mondays between 8:00 and 16:00.
+
+![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-add.en.png)
+
+Users can also "clear" some of the capture slots.
+
+![Delete from calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar-deletion.en.png)
+
+The above example will remove from the calendar, one picture every 5 minutes, on Mondays between 12:00 and 14:00.
+
+![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-remove.en.png)
+
+Once users are satisfied with the result, they can save the alert calendar and start using it for their source.
 
 

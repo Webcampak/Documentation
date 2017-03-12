@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Use/en_Logs/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>Logs - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/webcampak3.x/web/en/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/webcampak3.x/web/en/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">Logs</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#logs">Logs</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#overview">Overview</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#log-rotation">Log Rotation</a></li>
+                        
+                    </ul>
+               
+               </li>
+           
+               <li class=""><a href="#insight-into-a-capture-log">Insight into a Capture log</a>
+               
+               </li>
+           
+               <li class=""><a href="#configuration-logs">Configuration Logs</a>
+               
+               </li>
+           
+               <li class=""><a href="#list-of-logged-activities">List of logged activities</a>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Authentication/">
+                Authentication
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Desktop_Interface/">
+                Desktop Interface
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Pictures/">
+                View Pictures
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Videos/">
+                View Videos
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Statistics/">
+                Usage Statistics
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Xfer_Reports/">
+                Xfer Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Sync_Reports/">
+                Sync Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Connected_Devices/">
+                Connected Devices
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                Logs
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#overview">Overview</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#log-rotation">Log Rotation</a></li>
+            
+          </ul>
+          
+        </li>
+        
+        <li class=""><a href="#insight-into-a-capture-log">Insight into a Capture log</a>
+          
+        </li>
+        
+        <li class=""><a href="#configuration-logs">Configuration Logs</a>
+          
+        </li>
+        
+        <li class=""><a href="#list-of-logged-activities">List of logged activities</a>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="logs">Logs</h1>
+<p>Webcampak constantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak &gt; Logs"</p>
+<p><img alt="Connected Devices Menu" src="../images/desktop.menu.logs.en.png" /></p>
+<h2 id="overview">Overview</h2>
+<p>This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).</p>
+<p><img alt="Connected Devices" src="../images/desktop.logs.capture.en.png" /></p>
+<h3 id="log-rotation">Log Rotation</h3>
+<p>Webcampak record a very large portion of its background activities. </p>
+<p>Working on the assumption that logs are useful to debug an issue but less useful when there is no issue, we enabled log rotation, to prevent the local hard drive from being overloaded by unused logs.</p>
+<p>The system will break down log files in 500 KB chunks and will only keep 10 of those files, which should give you about a week worth of logs for source capture.</p>
+<h2 id="insight-into-a-capture-log">Insight into a Capture log</h2>
+<p>Logs files are the best way to understand activities being performed by the system and potentially understand what is causing issues. We always recommend our users, involved in Webcampak configuration, to understand what logs are and how to access &amp; read them.</p>
+<p>A <a href="../logs/capture.log">Sample log file</a> taken from one of our systems is available for reference, we'll progressively go through it.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-0-logs" aria-controls="tab-0-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-0-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:13,290 (INFO) Webcampak : ===START===
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+We can break down a log line in the following section:</p>
+<ul>
+<li><strong>2017-03-01 16:30:13,290</strong>: System date and time</li>
+<li><strong>(INFO)</strong>: Log level, anything other than "INFO" should trigger further investigations</li>
+<li><strong>webcampak</strong>: Our application</li>
+<li><strong>===START===</strong>: Log message, here beginning of a capture session</li>
+</ul>
+<p>Before triggering a capture, Webcampak first activity will be to get ready for this capture, load config parameters, setup the timezone, prepare the capture file. </p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-1-logs" aria-controls="tab-1-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-1-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:13,292 (INFO) Webcampak : capture(): Start
+2017-03-01 16:30:13,386 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/config/config-general.cfg
+2017-03-01 16:30:13,532 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/resources/etc/config-source1.cfg
+2017-03-01 16:30:13,534 (INFO) Webcampak : Config.init(): Loaded INI config file: /home/webcampak/webcampak/resources/etc/config-source1-ftpservers.cfg
+2017-03-01 16:30:13,564 (INFO) Webcampak : capture.initGetText(): Initialized gettext with Domain: Webcampak - Language: en_US.utf8 - Path: /home/webcampak/webcampak/i18n/
+2017-03-01 16:30:13,594 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:13,626 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:13.597988+01:00
+2017-03-01 16:30:13,627 (INFO) Webcampak : capture.setScriptStartTime(): Script Start Time set to: 2017-03-01T16:30:13.597988+01:00
+2017-03-01 16:30:13,628 (INFO) Webcampak : capture(): Set Capture Time to script start time (default at script startup)
+2017-03-01 16:30:13,629 (INFO) Webcampak : capture.setCaptureTime(): Capture Time set to: 2017-03-01 16:30:13.597988+01:00
+2017-03-01 16:30:13,658 (INFO) Webcampak : capture(): Create Capture Status object and set script start date
+2017-03-01 16:30:14,661 (INFO) Webcampak : captureObj.setCaptureFile(): Capture file set to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:14,783 (INFO) Webcampak : capture(): Load previous Capture Status Object (if available)
+2017-03-01 16:30:15,401 (INFO) Webcampak : captureObj.setCaptureFile(): Capture file set to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:15,402 (INFO) Webcampak : captureObj.loadJsonFile(): Load JSON file into memory: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:15,481 (INFO) Webcampak : capture(): Initializing the following capture driver: gphoto
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+Next, Webcampak will verify if it is allowed to capture (capture calendar, time since the last capture). If all is correct, it will initiate the actual capture process.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-2-logs" aria-controls="tab-2-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-2-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:15,482 (INFO) Webcampak : capture.run(): Initiate capture process for source: 1
+2017-03-01 16:30:15,495 (INFO) Webcampak : captureUtils.isWithinTimeframe(): Current Day: 3 - Current Time: 1630
+2017-03-01 16:30:15,497 (INFO) Webcampak : captureUtils.isWithinTimeframe(): Capture allowed between: 800 and: 1800
+2017-03-01 16:30:15,512 (INFO) Webcampak : captureObj.getLastCaptureTime(): Last capture time: 2017-03-01 16:20:17.075944+01:00
+2017-03-01 16:30:15,513 (INFO) Webcampak : captureUtils.checkInterval(): Last capture 596522 ms ago
+2017-03-01 16:30:15,530 (INFO) Webcampak : captureUtils.checkInterval(): Minimum capture interval: 3000 ms
+2017-03-01 16:30:15,531 (INFO) Webcampak : captureUtils.checkInterval(): Capture slot available
+2017-03-01 16:30:15,532 (INFO) Webcampak : captureGphoto.capture(): Initiating capture
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+Just before capturing the picture, it will record the time. by comparing the current time with the beginning of the capture process, we can see that it took Webcampak a bit more than 2 seconds to get there.</p>
+<p>Then the system actually captures the picture, transfer the file locally and check its file size.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-3-logs" aria-controls="tab-3-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-3-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:15,533 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:15,549 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:15.549352+01:00
+2017-03-01 16:30:15,648 (INFO) Webcampak : captureGphoto.triggerCapture(): Gphoto: Start Capture
+2017-03-01 16:30:21,576 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 1: New file is in location /capt0000.jpg on the camera
+Saving file as /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+Deleting file /capt0000.jpg on the camera
+
+2017-03-01 16:30:21,578 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 2:
+2017-03-01 16:30:21,580 (INFO) Webcampak : captureUtils.verifyCapturedFile(): File: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg size is 3256854 bytes
+2017-03-01 16:30:21,581 (INFO) Webcampak : captureUtils.verifyCapturedFile(): Check File: Successful
+2017-03-01 16:30:21,582 (INFO) Webcampak : captureGphoto.capture(): Capture successful
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+It might be interesting to focus here on the actually time between the camera was requested to capture and the time the picture was actually stored on local disk.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-4-logs" aria-controls="tab-4-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-4-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:15,648 (INFO) Webcampak : captureGphoto.triggerCapture(): Gphoto: Start Capture
+2017-03-01 16:30:21,576 (INFO) Webcampak : captureGphoto.triggerCapture() - OUTPUT 1: New file is in location /capt0000.jpg on the camera
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+In this particular example, it took just short of 6 seconds. This number will vary a lot depending on exposure time, USB speed and file size.</p>
+<p>Webcampak will then apply all the configured manipulation to the picture. You can notice that some of the manipulations are being timed, to provide additional insights into which of the manipulations take time.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-5-logs" aria-controls="tab-5-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-5-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:21,587 (INFO) Webcampak : capture.run(): Begin processing of picture: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+2017-03-01 16:30:21,588 (INFO) Webcampak : captureUtils.modifyPictures(): Rotating disabled
+2017-03-01 16:30:21,589 (INFO) Webcampak : captureUtils.modifyPictures(): Cropping disabled
+2017-03-01 16:30:21,590 (INFO) Webcampak : captureUtils.modifyPictures(): Watermark disabled
+2017-03-01 16:30:21,591 (INFO) Webcampak : captureUtils.modifyPictures(): Legend disabled
+2017-03-01 16:30:21,593 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 1 disabled
+2017-03-01 16:30:21,594 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 2 disabled
+2017-03-01 16:30:21,607 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 3 disabled
+2017-03-01 16:30:21,608 (INFO) Webcampak : captureUtils.modifyPictures(): Sensor 4 disabled
+2017-03-01 16:30:21,609 (INFO) Webcampak : captureUtils.modifyPictures(): Resizing disabled
+2017-03-01 16:30:21,611 (INFO) Webcampak : captureUtils.createLivePicture(): Copying full size JPG picture: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg to: /home/webcampak/webcampak/sources/source1/live/last-capture.jpg
+2017-03-01 16:30:21,733 (INFO) Webcampak : captureUtils.archivePicture(): Saving JPG picture to: /home/webcampak/webcampak/sources/source1/pictures/20170301/20170301163013.jpg
+2017-03-01 16:30:21,828 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1920x1280.jpg
+2017-03-01 16:30:27,359 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 1920x1280 in 5529 ms
+2017-03-01 16:30:27,360 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-1280x720.jpg
+2017-03-01 16:30:30,778 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 1280x720 in 3416 ms
+2017-03-01 16:30:30,780 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink File: /home/webcampak/webcampak/sources/source1/live/webcam-640x480.jpg
+2017-03-01 16:30:33,945 (INFO) Webcampak : pictureTransformations.resize(): Resized picture to 640x480 in 3164 ms
+2017-03-01 16:30:33,947 (INFO) Webcampak : captureUtils.generateHotlinks(): Hotlink: 4 disabled
+2017-03-01 16:30:33,983 (INFO) Webcampak : captureUtils.copyPicture(): SourceCopy: JPG Picture copied to /home/webcampak/webcampak/sources/source10/tmp/20170301/20170301163013.jpg
+2017-03-01 16:30:33,984 (INFO) Webcampak : captureUtils.purgePictures(): Removing file: /home/webcampak/webcampak/sources/source1/tmp/20170301163013.jpg
+2017-03-01 16:30:34,040 (INFO) Webcampak : capture.run(): Capture process completed
+2017-03-01 16:30:34,057 (INFO) Webcampak : captureUtils.deleteOldPictures(): System configured to delete picture from:  /home/webcampak/webcampak/sources/source1/pictures/ after 2 days
+2017-03-01 16:30:34,058 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170228 is 1 days old
+2017-03-01 16:30:34,060 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170301 is 0 days old
+2017-03-01 16:30:34,061 (INFO) Webcampak : captureUtils.deleteOldPictures(): Directory 20170227 is 2 days old
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+Finally, it captures the time again, and compare it with the beginning of the script. In this particular case, the entire capture process took a bit over 20 seconds.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-6-logs" aria-controls="tab-6-logs" role="tab" data-toggle="tab">Logs</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-6-logs">
+            
+            <pre><code class="logs">2017-03-01 16:30:34,063 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Source Timezone is: Europe/Paris
+2017-03-01 16:30:34,067 (INFO) Webcampak : timeUtils.getCurrentSourceTime(): Current source time: 2017-03-01T16:30:34.066954+01:00
+2017-03-01 16:30:34,068 (INFO) Webcampak : capture.run(): Capture: Overall capture time: 20468 ms
+2017-03-01 16:30:34,132 (INFO) Webcampak : captureObj.writeJsonFile(): Writing to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:34,134 (INFO) Webcampak : captureObj.writeCaptureFile(): Successfully saved last capture file to: /home/webcampak/webcampak/sources/source1/live/last-capture.json
+2017-03-01 16:30:34,152 (INFO) Webcampak : captureObj.archiveJsonFile(): Writing to: /home/webcampak/webcampak/sources/source1/resources/capture/20170301.jsonl
+2017-03-01 16:30:34,154 (INFO) Webcampak : captureObj.archiveCaptureFile(): Successfully archived capture file to: /home/webcampak/webcampak/sources/source1/resources/capture/20170301.jsonl
+2017-03-01 16:30:34,155 (INFO) Webcampak : capture.run(): -----------------------------------------------------------------------
+2017-03-01 16:30:34,156 (INFO) Webcampak : ===END===
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    
+We usually recommend our users not to configure Webcampak to capture at a rate higher than the longest capture time over a configured time interval.</p>
+<h2 id="configuration-logs">Configuration Logs</h2>
+<p>Webcampak also records configuration changes (who changed what when). </p>
+<p>Due to the fairly low change frequency, those logs are not size-limited and will record indefinitely.</p>
+<p><img alt="Connected Devices" src="../images/desktop.logs.config.en.png" /></p>
+<h2 id="list-of-logged-activities">List of logged activities</h2>
+<p>The following activities are currently configured to be logged by webcampak</p>
+<p><strong>Per Source</strong>:</p>
+<ul>
+<li>Capture process</li>
+<li>Configuration changes</li>
+<li>Daily videos creation process</li>
+<li>Custom videos creation process</li>
+<li>Pros-prod creation process</li>
+<li>RRD graph generation</li>
+</ul>
+<p><strong>Per Webcampak</strong>:</p>
+<ul>
+<li>General configuration changes</li>
+<li>Email capture alerts</li>
+<li>Daily reports</li>
+<li>Statistics collection</li>
+<li>Statistics consolidation</li>
+<li>Cron jobs update</li>
+<li>FTP accounts update</li>
+<li>Xfer start</li>
+<li>Xfer dispatch</li>
+<li>(dev-mode only) All activities between UI and API</li>
+</ul>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        
+                        <a href="../en_Connected_Devices/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Connected Devices">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> Connected Devices</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

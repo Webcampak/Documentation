@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Configure/en_System/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>System - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/webcampak3.x/web/en/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/webcampak3.x/web/en/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Logs/">Logs</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Email_Alerts/">Email Alerts</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#system">System</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#general">General</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#network">Network</a></li>
+                        
+                        <li class=""><a href="#timezone">Timezone</a></li>
+                        
+                        <li class=""><a href="#gphoto">Gphoto</a></li>
+                        
+                        <li class=""><a href="#global-ftp-account-resources">Global FTP Account (resources)</a></li>
+                        
+                        <li class=""><a href="#phidgets">Phidgets</a></li>
+                        
+                        <li class=""><a href="#statistics">Statistics</a></li>
+                        
+                    </ul>
+               
+               </li>
+           
+               <li class=""><a href="#reboot">Reboot</a>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Sources/">
+                Sources
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Access_Control/">
+                Access Control
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                System
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#general">General</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#network">Network</a></li>
+            
+            <li class=""><a href="#timezone">Timezone</a></li>
+            
+            <li class=""><a href="#gphoto">Gphoto</a></li>
+            
+            <li class=""><a href="#global-ftp-account-resources">Global FTP Account (resources)</a></li>
+            
+            <li class=""><a href="#phidgets">Phidgets</a></li>
+            
+            <li class=""><a href="#statistics">Statistics</a></li>
+            
+          </ul>
+          
+        </li>
+        
+        <li class=""><a href="#reboot">Reboot</a>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_Email_Alerts/">
+                Email Alerts
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="system">System</h1>
+<p>The system configuration screen can be accessed by clicking on "Webcampak &gt; Configuration &gt; System Conf.".</p>
+<p><img alt="System Configuration Menu" src="../images/desktop.menu.configuration.system.en.png" /></p>
+<p>It is used for general and non-source-specific settings. </p>
+<p><img alt="System Configuration" src="../images/desktop.system.en.png" /></p>
+<h2 id="general">General</h2>
+<h3 id="network">Network</h3>
+<ul>
+<li><strong>Main network interface</strong>: A webcam can operate with multiple active network interface, this setting is used to specify which one should be used to collect statistics. This is typically the Internet-connected interface.</li>
+<li><strong>Number of Xfer transfer threads</strong>: Define the number of <a href="../../Use/en_Xfer_Reports/">transfer queues</a>. This number depends on of the number of CPU cores and RAM available on the Webcampak. A higher number means more files can be transferred to various remote locations, but this also implies a greater amount resources being used.</li>
+<li><strong>Maximum number of files in each Xfer thread</strong>: Each queue will be provisioned regularly with a specific number of jobs. This number should be set depending on bandwidth availability and Webcampak hardware performance. </li>
+</ul>
+<h3 id="timezone">Timezone</h3>
+<p>The local timezone of the Webcampak server.</p>
+<h3 id="gphoto">Gphoto</h3>
+<p>Those 2 settings are only used when Webcampak is physically connected to multiple USB D-SLR cameras in order to understand how to differentiate those multiple cameras and identify their USB port.</p>
+<h3 id="global-ftp-account-resources">Global FTP Account (resources)</h3>
+<p>Webcampak is equipped with an FTP account giving access to Webcampak resources directory containing items such Webcampak database, logs, configuration files, queues, shared watermark, etc...</p>
+<p>This directory does not provide access to sources.</p>
+<h3 id="phidgets">Phidgets</h3>
+<p>Enable or not Phidgets board globally.</p>
+<h3 id="statistics">Statistics</h3>
+<p>Enable or not statistics collection</p>
+<h2 id="reboot">Reboot</h2>
+<p>This screen can also be used to trigger a Webcampak reboot.</p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_Email_Alerts/" class="btn pull-right indicate-right" title="Click to go to the Next Page: Email Alerts">
+                            <span class="btn-nav-text">Next:</span> Email Alerts <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="../en_Access_Control/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Access Control">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> Access Control</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

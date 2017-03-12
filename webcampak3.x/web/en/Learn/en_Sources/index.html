@@ -181,7 +181,71 @@
                         
 <li >
     
-    <a href="../en_Overview/">Overview</a>
+    <a href="../../Use/en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Logs/">Logs</a>
     
 </li>
 
@@ -207,6 +271,22 @@
 <li >
     
     <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
     
 </li>
 
@@ -378,17 +458,17 @@
 <h1 id="files">Files</h1>
 <p>Your Webcampak will probably have to store a (very) large number of pictures. It has been designed for this task and multiple features are available to manage and secure those files.</p>
 <h2 id="redundancy">Redundancy</h2>
-<p>Always keep in mind that hardware failure or human error (i.e. delete pictures by mistake) can happen and it's always better to take precautions before such events happen.</p>
-<p>Webcampak is able to send pictures to remote FTP server, you can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).</p>
+<p>Hardware failure or human error (i.e. delete pictures by mistake) do happen, taking preventing actions is always preferable.</p>
+<p>Webcampak is able to send pictures to a remote FTP server, users can also store pictures automatically on another source of the same Webcampak to prevent human errors (just keep in mind it will require twice the amount of disk space).</p>
 <h2 id="automated-deletion">Automated deletion</h2>
 <p>Webcampak is equipped with automated deletion mechanisms to ensure its internal hard disk never runs out of space. Those mechanisms can be configured to fit various requirements.</p>
-<p>When Webcampak store its pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending of the capture frequency and picture size, this buffer size can span days, even months.</p>
+<p>Even if Webcampak stores pictures to a remote server, it can use its internal disk space as a buffer to ensure no pictures are lost in case of network issue. Depending on the capture frequency and picture size, this buffer size can span days, even months.</p>
 <h2 id="file-structure">File structure</h2>
-<p>In most cases, access to webcampak files is done through FTP, using some of the automatically created account.</p>
-<p>A gloabl FTP account (wpresources) is available for admins to access shared webcampak elements, such as:</p>
+<p>In most cases, access to Webcampak files is done through FTP, using provisioned accounts.</p>
+<p>A global FTP account (wpresources) is available for admins to access shared Webcampak elements, such as:</p>
 <ul>
 <li>cache files (temporary files created by Webcampak)</li>
-<li>webcampak database (users, permissions, sources details)</li>
+<li>Webcampak database (users, permissions, sources details)</li>
 <li>emails (queued, sent, failed)</li>
 <li>configuration files</li>
 <li>logs</li>
@@ -396,11 +476,11 @@
 <li>common watermark files (shared between all sources)</li>
 <li>xfer (queued, completed, failed)</li>
 </ul>
-<p>Each source then get its own FTP account giving access to its own directory tree, containing:</p>
+<p>Each source then gets its own FTP account giving access to its own directory tree, containing:</p>
 <ul>
 <li><strong>live</strong>: directory containing hotlink pictures and videos</li>
 <li><strong>pictures</strong>: directory containing pictures archives, with one sub-directory per capture day</li>
-<li><strong>resources</strong>: direcotry containing various source specific elements necessary for processing and source operation</li>
+<li><strong>resources</strong>: directory containing various source-specific elements necessary for processing and source operation</li>
 <li><strong>tmp</strong>: temporary directory used in processing and/or picture acquisition</li>
 <li><strong>videos</strong>: directory containing generated videos</li>
 </ul>

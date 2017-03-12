@@ -181,7 +181,71 @@
                         
 <li >
     
-    <a href="../../Learn/en_Overview/">Overview</a>
+    <a href="../../Use/en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Logs/">Logs</a>
     
 </li>
 
@@ -207,6 +271,22 @@
 <li class="active">
     
     <a href="./">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Email_Alerts/">Email Alerts</a>
     
 </li>
 
@@ -260,7 +340,23 @@
                
                </li>
            
-               <li class=""><a href="#configuration">Configuration</a>
+               <li class=""><a href="#groups">Groups</a>
+               
+               </li>
+           
+               <li class=""><a href="#sources">Sources</a>
+               
+               </li>
+           
+               <li class=""><a href="#users">Users</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#add-user">Add User</a></li>
+                        
+                        <li class=""><a href="#sources_1">Sources</a></li>
+                        
+                    </ul>
                
                </li>
            
@@ -312,12 +408,42 @@
           
         </li>
         
-        <li class=""><a href="#configuration">Configuration</a>
+        <li class=""><a href="#groups">Groups</a>
+          
+        </li>
+        
+        <li class=""><a href="#sources">Sources</a>
+          
+        </li>
+        
+        <li class=""><a href="#users">Users</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#add-user">Add User</a></li>
+            
+            <li class=""><a href="#sources_1">Sources</a></li>
+            
+          </ul>
           
         </li>
         
   
 </ul>
+                
+
+              
+            <li class="">
+              <a href="../en_System/">
+                System
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Email_Alerts/">
+                Email Alerts
+              </a>
                 
 
               
@@ -340,25 +466,101 @@
                    
 
 <h1 id="access-control">Access Control</h1>
-<p>The access control sections deals with who can access what, along with the definition of what the "what" is and who the "who" are.</p>
-<p>This screen will let you define users, groups customers and sources as well as their inter-relationships.</p>
+<p>The access control sections deal with who can access what, along with the definition of what the "what" is and who the "who" are. This screen can be accessed by clicking on "Webcampak &gt; Configuration &gt; Access Control".</p>
+<p><img alt="Access Control Menu" src="../images/desktop.menu.accesscontrol.en.png" /></p>
+<p>It will let you define users, groups customers and sources as well as their inter-relationships.</p>
+<p><img alt="Access Control" src="../images/desktop.accesscontrol.en.png" /></p>
 <h2 id="customers">Customers</h2>
-<p>A customer is a simple mean of grouping users and providing such users with a customized webcampak background color and logo. Users are not required to be attached to a customer, but if they do, they can only be attached to one.</p>
-<p>This screen take the following parameters:</p>
+<p>A customer is a simple mean of grouping users and providing such users with a customised Webcampak background colour and logo. Users are not required to be attached to a customer, but if they do, they can only be attached to one.</p>
+<p><img alt="Configure Customers" src="../images/desktop.accesscontrol.customers.en.png" /></p>
+<p>This screen takes the following parameters:</p>
 <ul>
 <li><strong>Name</strong>: Customer Name, this field is only available for administrative purposes and is not visible to the end user.</li>
-<li><strong>BG Color</strong>: Hexadecimal color for Webcampak Desktop background. If left empty, the default webcampak background color will be displayed.</li>
+<li><strong>BG Color</strong>: Hexadecimal colour for Webcampak Desktop background. If left empty, the default Webcampak background colour will be displayed.</li>
 <li><strong>BG Logo</strong>: A customer-specific logo (usually a PNG file) can be uploaded into the watermark directory of the wpresources account. If left empty the system will display Webcampak logo</li>
 </ul>
-<h2 id="configuration">Configuration</h2>
-<p>By default, webcampak is pre-configured with three different groups:</p>
+<h2 id="groups">Groups</h2>
+<p><img alt="Configure Groups" src="../images/desktop.accesscontrol.groups.en.png" /></p>
+<p>By default, Webcampak is pre-configured with three different groups:</p>
 <ul>
 <li><strong>Admin</strong>: Can access all configuration screens on the system</li>
-<li><strong>Configure</strong>: Can access configuration screens for authorized sources. General configuration settings are not available</li>
+<li><strong>Configure</strong>: Can access configuration screens for authorised sources. General configuration settings are not available</li>
+<li><strong>View</strong>: Can only view pictures and videos</li>
 </ul>
+<p>Note that "root" user has access to every screens and configuration parameters.</p>
+<p>By selecting a group and clicking on "Permissions", users can refine permissions enabled for this group. By default, the "Application" view is selected.</p>
+<ul>
+<li><strong>Available Applications</strong>: List all applications that can be granted access to users members of this group</li>
+<li><strong>Selected Applications</strong>: List all applications, users member of this group, have access to.</li>
+</ul>
+<p><img alt="Applications Permissions" src="../images/desktop.accesscontrol.groups.permissions.applications.en.png" /></p>
+<p>The above screenshot captures the default configuration of the "Configure" group.</p>
+<p>Clicking on the "Permissions" tab provides a mean to further refine access control, in particular in situations when a different level of permissions is necessary within one feature.</p>
+<p>This is currently limited to sources configuration. It lets the user define which configuration settings can be accessed/modified by which type of users. </p>
+<p><img alt="Applications Permissions" src="../images/desktop.accesscontrol.groups.permissions.permissions.en.png" /></p>
+<p>For reference purposes, those settings are listed in the configuration model on GitHub: </p>
+<ul>
+<li><a href="https://github.com/Webcampak/core/blob/develop/config/config-general.json">config-general.json</a></li>
+<li><a href="https://github.com/Webcampak/core/blob/develop/config/config-source-ftpservers.json">config-source-ftpservers.json</a></li>
+<li><a href="https://github.com/Webcampak/core/blob/develop/config/config-source-video.json">config-source-video.json</a></li>
+<li><a href="https://github.com/Webcampak/core/blob/develop/config/config-source-videocustom.json">config-source-videocustom.json</a></li>
+<li><a href="https://github.com/Webcampak/core/blob/develop/config/config-source-videopost.json">config-source-videopost.json</a></li>
+</ul>
+<p>The example (below), list 3 parameters, each with different permission level.</p>
+<p>
+                <div class="tab-set-container">
+                    
+        <ul class="nav nav-tabs" role="tablist">
+            
+        <li role="presentation" class="active">
+            <a href="#tab-0-json" aria-controls="tab-0-json" role="tab" data-toggle="tab">Json</a>
+        </li>
+    
+        </ul>
+    
+        <div class="tab-content">
+            
+        <div role="tabpanel" class="tab-pane active " id="tab-0-json">
+            
+            <pre><code class="json">{&quot;name&quot;: &quot;cfgsourceactive&quot;, &quot;default&quot;: &quot;no&quot;, &quot;type&quot;: &quot;yesno&quot;, &quot;permission&quot;: &quot;SOURCES_CONFIGURATION_SIMPLE&quot;, &quot;description&quot;: &quot;Activation of the source, possible values: yes or no&quot;}
+, {&quot;name&quot;: &quot;cfgsourcetype&quot;,  &quot;default&quot;: &quot;testpicture&quot;, &quot;type&quot;: &quot;alphanum&quot;, &quot;permission&quot;: &quot;SOURCES_CONFIGURATION_ADVANCED&quot;, &quot;description&quot;: &quot;Type of the source, possible values: gphoto, webcam, ipcam, rtsp, webfile, wpak&quot;}
+, {&quot;name&quot;: &quot;cfgsourcedebug&quot;, &quot;default&quot;: &quot;no&quot;, &quot;type&quot;: &quot;yesno&quot;, &quot;permission&quot;: &quot;SOURCES_CONFIGURATION_EXPERT&quot;, &quot;description&quot;: &quot;Turn on detailed debugging for gphoto2, possible values: yes or no&quot;}
+</code></pre>
+    
+        </div>
+    
+        </div>
+    
+                </div>
+                    </p>
+<h2 id="sources">Sources</h2>
+<p>Please refer to the <a href="../en_Sources/">Sources section</a> of this user guide for details on how to add and configure sources.</p>
+<h2 id="users">Users</h2>
+<p>The "Users" section is used add and configure Webcampak users.</p>
+<p><img alt="Access Control" src="../images/desktop.accesscontrol.en.png" /></p>
+<h3 id="add-user">Add User</h3>
+<p>Clicking on "Add" open the window used to add users.</p>
+<p><img alt="Add User" src="../images/desktop.accesscontrol.users.add.en.png" /></p>
+<p>The system will then prompt to enter the following details:</p>
+<ul>
+<li><strong>Username</strong>: Unique username on the system</li>
+<li><strong>Password</strong>: User password on the system, note that only a hash of the password is stored, it is, therefore, impossible to "know" the password after it has been changed by the user. </li>
+<li><strong>Active</strong>: Is the user authorised to connect Webcampak user interface. </li>
+<li><strong>Change Password next Logon</strong>: Prompt the user to update his/her password at next login.</li>
+<li><strong>Customer</strong>: Customer attached to this user</li>
+<li><strong>Group</strong>: Permission group of the user, defines the permission level</li>
+<li><strong>Fristname, Lastname</strong>: Firstname and Lastname of the user</li>
+<li><strong>E-mail</strong>: User's email, it is key to use a real email since the system will be sending emails (lost password, reports, etc...) depending on user privileges. </li>
+</ul>
+<h3 id="sources_1">Sources</h3>
+<p>Source access is managed on a per user basis, clicking on "Sources" allows specifying which sources can be accessed by the user.</p>
                 </div>
                     
                     <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_System/" class="btn pull-right indicate-right" title="Click to go to the Next Page: System">
+                            <span class="btn-nav-text">Next:</span> System <span class="fa fa-chevron-right"></span>
+                        </a>
                         
                         
                         <a href="../en_Sources/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Sources">

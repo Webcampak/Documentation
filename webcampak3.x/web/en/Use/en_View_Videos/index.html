@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Use/en_View_Videos/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>View Videos - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/webcampak3.x/web/en/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/webcampak3.x/web/en/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Logs/">Logs</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#view-videos">View Videos</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#overview">Overview</a>
+               
+               </li>
+           
+               <li class=""><a href="#available-videos">Available videos</a>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Authentication/">
+                Authentication
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Desktop_Interface/">
+                Desktop Interface
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Pictures/">
+                View Pictures
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                View Videos
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#overview">Overview</a>
+          
+        </li>
+        
+        <li class=""><a href="#available-videos">Available videos</a>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_Statistics/">
+                Usage Statistics
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Xfer_Reports/">
+                Xfer Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Sync_Reports/">
+                Sync Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Connected_Devices/">
+                Connected Devices
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Logs/">
+                Logs
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="view-videos">View Videos</h1>
+<p>Generated videos can be accessed by clicking on "Webcampak &gt; Videos" in the top-left menu.</p>
+<p><img alt="Videos Menu" src="../images/desktop.menu.videos.en.png" /></p>
+<h2 id="overview">Overview</h2>
+<p>The Videos window allows users to navigate through sources and their videos.</p>
+<p><img alt="Videos" src="../images/desktop.videos.en.png" /></p>
+<p>Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.</p>
+<p>When selecting a source, Webcampak will automatically position the system to the latest day with videos of the selected source.</p>
+<h2 id="available-videos">Available videos</h2>
+<p>The bottom-right section of the window contains a list of available videos for the selected day. This list will contain a mix of automatically and user-generated videos.</p>
+<p><img alt="Videos" src="../images/desktop.videos.list.en.png" /></p>
+<p>Clicking on the corresponding row will open the video which can be played with the embedded player. The video can also be downloaded directly from this window.</p>
+<p>Automatically (daily) generated video can be differentiated from user-generated videos by looking at the filename. Daily videos' filenames start with the data in YYYYMMDD format.</p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_Statistics/" class="btn pull-right indicate-right" title="Click to go to the Next Page: Usage Statistics">
+                            <span class="btn-nav-text">Next:</span> Usage Statistics <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="../en_View_Pictures/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: View Pictures">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> View Pictures</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

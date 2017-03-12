@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Use/en_View_Pictures/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>View Pictures - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/webcampak3.x/web/en/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/webcampak3.x/web/en/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Logs/">Logs</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#view-pictures">View Pictures</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#overview">Overview</a>
+               
+               </li>
+           
+               <li class=""><a href="#navigate-through-archives">Navigate through archives</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#select-a-day">Select a day</a></li>
+                        
+                        <li class=""><a href="#select-a-picture">Select a picture</a></li>
+                        
+                        <li class=""><a href="#navigate-between-pictures">Navigate between pictures</a></li>
+                        
+                        <li class=""><a href="#zoom-into-a-picture">Zoom into a picture</a></li>
+                        
+                        <li class=""><a href="#access-sensors">Access Sensors</a></li>
+                        
+                        <li class=""><a href="#email-a-picture">Email a picture</a></li>
+                        
+                    </ul>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Authentication/">
+                Authentication
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Desktop_Interface/">
+                Desktop Interface
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                View Pictures
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#overview">Overview</a>
+          
+        </li>
+        
+        <li class=""><a href="#navigate-through-archives">Navigate through archives</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#select-a-day">Select a day</a></li>
+            
+            <li class=""><a href="#select-a-picture">Select a picture</a></li>
+            
+            <li class=""><a href="#navigate-between-pictures">Navigate between pictures</a></li>
+            
+            <li class=""><a href="#zoom-into-a-picture">Zoom into a picture</a></li>
+            
+            <li class=""><a href="#access-sensors">Access Sensors</a></li>
+            
+            <li class=""><a href="#email-a-picture">Email a picture</a></li>
+            
+          </ul>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Videos/">
+                View Videos
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Statistics/">
+                Usage Statistics
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Xfer_Reports/">
+                Xfer Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Sync_Reports/">
+                Sync Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Connected_Devices/">
+                Connected Devices
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Logs/">
+                Logs
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="view-pictures">View Pictures</h1>
+<p>Captured pictures can be accessed by clicking on "Webcampak &gt; Pictures" in the top-left menu.</p>
+<p><img alt="Pictures Menu" src="../images/desktop.menu.pictures.en.png" /></p>
+<h2 id="overview">Overview</h2>
+<p>The Pictures window allows users to navigate through sources and their archives.</p>
+<p><img alt="Pictures" src="../images/desktop.pictures.en.png" /></p>
+<p>Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.</p>
+<p>When selecting a source, Webcampak will automatically position the system to the latest captured picture.</p>
+<p>Clicking on the main picture will open directly open this pictures in a new tab.</p>
+<h2 id="navigate-through-archives">Navigate through archives</h2>
+<h3 id="select-a-day">Select a day</h3>
+<p>Using a calendar, users can navigate through the archives, clicking on days containing pictures. The system automatically detects available days and will gray-out days with no pictures available. The current day is automatically highlighted.</p>
+<p><img alt="Select a day" src="../images/desktop.pictures.calendar.days.en.png" /></p>
+<h3 id="select-a-picture">Select a picture</h3>
+<p>All pictures captured during the day are presented in a small widget, containing one row per hour (from 00 to 23) and one column per minute (from 00 to 59).</p>
+<p><img alt="Select a picture" src="../images/desktop.pictures.calendar.hours.en.png" /></p>
+<p>Blue cells represent timestamps with available pictures. Mousing over a specific cell will display the picture's time, clicking on the cell will open the selected picture.</p>
+<p>On the example above you can notice that this Webcampak is configured with variable capture rate, with:</p>
+<ul>
+<li>one picture captured every 20mn between 00:00-08:00 and between 18:00-00:00</li>
+<li>one picture captured every 10mn between 08:00-18:00</li>
+</ul>
+<h3 id="navigate-between-pictures">Navigate between pictures</h3>
+<p>Webcampak provides various means to navigate between pictures, at the top-right of the screen a series of buttons allow users to (from left to right):</p>
+<ul>
+<li>Go to the previous picture</li>
+<li>Go to the next pictures</li>
+<li>Go to the last picture captured by the source</li>
+<li>Refresh the list of pictures available for the source.</li>
+</ul>
+<p><img alt="Navigation buttons" src="../images/desktop.pictures.navigate.buttons.en.png" /></p>
+<p>Users can also navigate by clicking on thumbnails available towards the bottom of the screen. If sufficient pictures have been captured the system will display 6 thumbnails (from left to right):</p>
+<ul>
+<li>15th pictures captured before the currently displayed picture</li>
+<li>10th pictures captured before the currently displayed picture</li>
+<li>5th pictures captured before the currently displayed picture</li>
+<li>5th pictures captured after the currently displayed picture</li>
+<li>10th pictures captured after the currently displayed picture</li>
+<li>15th pictures captured after the currently displayed picture</li>
+</ul>
+<p><img alt="Navigation Thumbnails" src="../images/desktop.pictures.navigate.thumbnails.en.png" /></p>
+<h3 id="zoom-into-a-picture">Zoom into a picture</h3>
+<p>Users can also zoom into a picture by selecting the zoom level they would like to achieve (from 0% to 200%).</p>
+<p><img alt="Zoom into a picture" src="../images/desktop.pictures.zoom.default.en.png" /></p>
+<p>Once the zoom level is selected, moving the mouse in the window will focus on the selected area at the selected zoom level.</p>
+<p><img alt="100% Zoom" src="../images/desktop.pictures.zoom.100.en.png" /></p>
+<h3 id="access-sensors">Access Sensors</h3>
+<p>Users can also click on "Sensors" to view Phidgets sensors values captured by the system for that day.</p>
+<p>It will open a window displaying up to 4 sensors graphs.</p>
+<p><img alt="Webcampak Sensors Graphs" src="../images/desktop.pictures.sensors.en.png" /></p>
+<h3 id="email-a-picture">Email a picture</h3>
+<p>Users can send the current picture by email, by clicking on "Email".</p>
+<p><img alt="Send an email" src="../images/desktop.pictures.email.send.en.png" /></p>
+<p>All parameters of the email can be customised, it is then placed into a queue and sent, usually, within a minute.</p>
+<p><img alt="Email Received" src="../images/desktop.pictures.email.received.en.png" /></p>
+<p>Although this email is sent by webcampak, the name of the sender is detailed in the "FROM" field to facilitates its identification and try to prevent spam.</p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_View_Videos/" class="btn pull-right indicate-right" title="Click to go to the Next Page: View Videos">
+                            <span class="btn-nav-text">Next:</span> View Videos <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="../en_Desktop_Interface/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Desktop Interface">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> Desktop Interface</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

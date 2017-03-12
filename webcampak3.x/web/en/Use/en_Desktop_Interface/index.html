@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        
+        <link rel="canonical" href="http://doc.webcampak.com/Use/en_Desktop_Interface/">
+        <link rel="shortcut icon" href="/img/favicon.ico">
+
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+   <title>Desktop Interface - Webcampak Docs</title>
+
+        <link href="/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/highlight.css">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
+
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+
+    </head>
+
+    <body>
+
+        <a class="skip-main" href="#main">Skip to main content</a>
+
+        <div id="search-modal" class="modal fade bs-search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal-label">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="search-modal-label">Webcampak Document Keyword Search Modal</h4>
+            </div>
+            <div class="modal-body">
+                <label for="gdc-search-query" class="inline">
+                    <span class="searchbox-icon searchbox-submit">
+                        <span aria-hidden="true" class="fa fa-search search-bttn"></span>
+                    </span>
+                    <span class="search-label">Search</span>
+                </label>
+                <input id="gdc-search-query" type="search" role="search" placeholder="e.g. Pictures" autocomplete="off" name="search" class="searchbox-input">
+                <span class="searchbox-icon searchbox-cancel">
+                    <i class="fa fa-close search-cancel-bttn"></i>
+                </span>
+                <div class="row search-results-container">
+                    <div class="col-md-12 results">
+                        <div class="search-body search-result-caption"></div>
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- div id="sliding-drawer-container" class="sliding-drawer-container">
+        </div -->
+        <div class="parent-container">
+          
+            <div class="spinParticle">
+                <div class="particle red"></div>
+                <div class="particle grey other-particle"></div>
+                <div class="particle blue other-other-particle"></div>
+            </div>
+          
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation" aria-label="Site Navigation">
+    <div class="container">
+        <!-- Collapsed navigation -->
+        <div>
+            <!-- Main title -->
+            <a class="navbar-brand" href="/webcampak3.x/web/en/../..">
+                <img src="/img/webcampak-logo.png"
+                  alt="Webcampak Logo" />
+                <span class="hidden">Webcampak Documentation</span>
+            </a>
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="pull-right">
+                <ul class="nav navbar-nav nav-full">
+                    <li>
+                        <a aria-label="Search" id="gdc-search-button" title="Click Search the Documentation" href="javascript:$gdcApp.searchModal.show()">
+                            <span class="fa fa-search" aria-hidden="true"></span>&nbsp;
+                            <span class="hidden">Quick Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- -->
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav nav-full">
+            
+            
+                <li >
+                    <a href="/webcampak3.x/web/en/../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Learn" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Overview/">Overview</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Capture/">Capture</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Logging/">Logging</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_File_Management/">File Management</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Learn/en_Users/">Users</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" title="Use" class="dropdown-toggle" data-toggle="dropdown">Use <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li class="active">
+    
+    <a href="./">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../en_Logs/">Logs</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Configure" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Sources/">Sources</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" title="Develop" class="dropdown-toggle" data-toggle="dropdown">Develop <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Install/">Installation</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Develop/en_Initial_Setup/">Initial Setup</a>
+    
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            
+        </div>
+    </div>
+</div>
+
+            <div id="docs-container" class="container">
+                <div id="body">
+                <!-- 
+                <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation"><div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#desktop-interface">Desktop Interface</a>
+           <ul class="nav">
+           
+               <li class=""><a href="#webcampak-menu">Webcampak Menu</a>
+               
+               </li>
+           
+               <li class=""><a href="#settings">Settings</a>
+               
+               </li>
+           
+               <li class=""><a href="#interface-status">Interface Status</a>
+               
+                    <ul class="nav">
+                        
+                        <li class=""><a href="#connection">Connection</a></li>
+                        
+                        <li class=""><a href="#communication">Communication</a></li>
+                        
+                        <li class=""><a href="#username">Username</a></li>
+                        
+                        <li class=""><a href="#software-version">Software Version</a></li>
+                        
+                    </ul>
+               
+               </li>
+           
+           </ul>
+       </li>
+        </li>
+    
+    </ul>
+</div></div>
+                 -->
+
+                
+                  <div class="col-md-3 toc-container" role="navigation" aria-label="In-Page Navigation">
+  <div class="bs-sidebar hidden-print affix well animated fadeIn">
+    <ul class="nav bs-sidenav">
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+
+          
+            <li class="">
+              <a href="../en_Authentication/">
+                Authentication
+              </a>
+                
+
+              
+            <li class=" main active">
+              <a href="./">
+                Desktop Interface
+              </a>
+                
+                    <ul class="nav bs-sidenav">
+  
+        
+        <li class=""><a href="#webcampak-menu">Webcampak Menu</a>
+          
+        </li>
+        
+        <li class=""><a href="#settings">Settings</a>
+          
+        </li>
+        
+        <li class=""><a href="#interface-status">Interface Status</a>
+          
+          <ul class="nav">
+            
+            <li class=""><a href="#connection">Connection</a></li>
+            
+            <li class=""><a href="#communication">Communication</a></li>
+            
+            <li class=""><a href="#username">Username</a></li>
+            
+            <li class=""><a href="#software-version">Software Version</a></li>
+            
+          </ul>
+          
+        </li>
+        
+  
+</ul>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Pictures/">
+                View Pictures
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_View_Videos/">
+                View Videos
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Statistics/">
+                Usage Statistics
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Xfer_Reports/">
+                Xfer Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Sync_Reports/">
+                Sync Reports
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Connected_Devices/">
+                Connected Devices
+              </a>
+                
+
+              
+            <li class="">
+              <a href="../en_Logs/">
+                Logs
+              </a>
+                
+
+              
+
+              
+            </li>
+      
+
+        
+            </li>
+      
+
+        
+            </li>
+      
+    </ul>
+  </div>
+</div>
+                
+
+                
+                <div class="col-md-9 main-container fadeInBlurIntroOld loading-content-old" role="main" id="main" tabindex="-1">
+                
+                   
+
+<h1 id="desktop-interface">Desktop Interface</h1>
+<p>After authentication, the Webcampak desktop interface is being displayed. This interface is broken down into 3 main sections:</p>
+<ul>
+<li><strong>Webcampak</strong> menu on the top left corner, giving access to all of the Webcampak features</li>
+<li><strong>Settings</strong> menu on the top right corner, for settings of the desktop interface</li>
+<li><strong>Interface status</strong> on the bottom right corner</li>
+</ul>
+<h2 id="webcampak-menu">Webcampak Menu</h2>
+<p>The Webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.</p>
+<p><img alt="Webcampak Menu" src="../images/desktop.menu.en.png" /></p>
+<h2 id="settings">Settings</h2>
+<p>The settings menu provides access to configuration of the desktop interface itself, such as changing the password, language or logging out of the system.</p>
+<p><img alt="Settings menu" src="../images/desktop.settings.en.png" /></p>
+<h2 id="interface-status">Interface Status</h2>
+<p>Status details are provided in the bottom right corner of the screen.</p>
+<h3 id="connection">Connection</h3>
+<p>The first status displayed on the left side if the connection status, it indicates whether the desktop interface is able to communicate with its webcampak. This should be showing up "ONLINE" most of the time except in the case of network issues or if the Webcampak is being rebooted.</p>
+<p>Mousing over the status will also display the latency in milliseconds. This latency measures how much time it takes for the desktop interface to contact the Webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).</p>
+<p><img alt="Connection Status" src="../images/desktop.latency.en.png" /></p>
+<h3 id="communication">Communication</h3>
+<p>The small database icon, second from the left, indicates the number of calls made to your Webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.</p>
+<p><img alt="Communication Status" src="../images/desktop.database.en.png" /></p>
+<h3 id="username">Username</h3>
+<p>The third icon from the left is the currently connected user. Clicking on the user will log you out of the system.</p>
+<p><img alt="Communication Status" src="../images/desktop.username.en.png" /></p>
+<h3 id="software-version">Software Version</h3>
+<p>The fourth icon from the left display the current Webcampak version, clicking on the version will redirect to <a href="https://github.com/Webcampak">Webcampak GitHub organisation</a>. Mousing-over the version will display exact version of all Webcampak components:</p>
+<ul>
+<li><strong>CORE</strong>: Webcampak Core repository, contains mostly translations, installation assets, etc...</li>
+<li><strong>UI</strong>: Webcampak User Interface (Desktop, Dashboard)</li>
+<li><strong>API</strong>: Webcampak API, receives and interprets calls from the UI</li>
+<li><strong>CLI</strong>: Webcampak CLI, drives all Webcampak background activities</li>
+</ul>
+<p><img alt="Webcampak Version" src="../images/desktop.version.en.png" /></p>
+<h4 id="are-you-running-the-latest-version">Are you running the latest version?</h4>
+<p>We don't necessarily recommend to be running the very latest dev version, but if you do wonder about what might be missing in the version you are currently running, you can read the version tag this way: v3.1.0-6-gb0a3277</p>
+<ul>
+<li><strong>v3.1.0</strong>: Webcampak version</li>
+<li><strong>6</strong>: Number of changes (commits) deployed on this Webcampak since this version was created</li>
+<li><strong>b0a3277</strong>: The commit tag corresponding to the version currently deployed</li>
+</ul>
+<p>If we look a bit closer at the UI commit tag, we can find the currently deployed version in the <a href="https://github.com/Webcampak/ui/commits/develop">commit history of the develop branch</a>.</p>
+<p><img alt="Webcampak Version" src="../images/desktop.version.github.en.png" /></p>
+<p>It basically tells us that there have been the following new changes (commits) since this Webcampak was last updated:</p>
+<ul>
+<li>Fixed a bug with configuring Phidgets sensors</li>
+<li>Display exception when loading status</li>
+<li>Update Cfgwatermarkpositionx.js</li>
+<li>Update Cfgwatermarkpositiony.js</li>
+</ul>
+<p>It is then your call to decide whether you want to manually update to the latest version or not.</p>
+                </div>
+                    
+                    <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
+                        
+                        <a href="../en_View_Pictures/" class="btn pull-right indicate-right" title="Click to go to the Next Page: View Pictures">
+                            <span class="btn-nav-text">Next:</span> View Pictures <span class="fa fa-chevron-right"></span>
+                        </a>
+                        
+                        
+                        <a href="../en_Authentication/" class="btn pull-left indicate-left" title="Click to go to the Previous Page: Authentication">
+                            <span class="fa fa-chevron-left"></span> <span class="btn-nav-text">Previous:</span> Authentication</a>
+                        
+                    </div>
+                    
+               </div>
+            </div>
+
+            <footer id="docs-footer">
+            </footer>
+
+            <script src="/js/jquery-1.12.0.min.js"></script>
+            <script src="/js/jQuery-FontSpy.js"></script>
+            <script src="/js/bootstrap-3.3.6.min.js"></script>
+            <script src="/js/highlight.pack.js"></script>
+            <script src="/js/lunr-0.5.7.min.js"></script>
+            <script src="/js/jquery.highlight-4.closure.js"></script>
+            <script src="/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+            <script src="/js/jquery.scrollUp.min.js"></script>
+            <script src="/js/doc-common.js"></script>
+            <script>var base_url = '../..';</script>
+        </div>
+    </body>
+</html>

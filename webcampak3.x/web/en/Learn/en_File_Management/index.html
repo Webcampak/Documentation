@@ -181,7 +181,71 @@
                         
 <li >
     
-    <a href="../en_Overview/">Overview</a>
+    <a href="../../Use/en_Authentication/">Authentication</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Desktop_Interface/">Desktop Interface</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Pictures/">View Pictures</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_View_Videos/">View Videos</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Statistics/">Usage Statistics</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Xfer_Reports/">Xfer Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Sync_Reports/">Sync Reports</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Connected_Devices/">Connected Devices</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Use/en_Logs/">Logs</a>
     
 </li>
 
@@ -207,6 +271,22 @@
 <li >
     
     <a href="../../Configure/en_Access_Control/">Access Control</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_System/">System</a>
+    
+</li>
+
+                    
+                        
+<li >
+    
+    <a href="../../Configure/en_Email_Alerts/">Email Alerts</a>
     
 </li>
 
@@ -384,25 +464,27 @@
                    
 
 <h1 id="file-management">File Management</h1>
-<p>Over a project's lifetime, a webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.</p>
+<p>Over a project's lifetime, a Webcampak system will capture, manipulate, transfer and store a very large number of files. Different mechanisms have been implemented to ensure storage and transmission is performed in an efficient and secured manner.</p>
 <h2 id="local-storage">Local storage</h2>
-<p>Webcampak is usually shipped with a 256 or 512 GB SSD providing ample space for local storage. In a vast majority of situations, captured pictures are transferred to a NAS or another Webcampak (cloud in particular). </p>
-<p>In this situation, local storage can be considered as a buffer, the system will be configured to keep X days (X depending of multiple factors, but ofter a month or two) of pictures locally, automatically clearing older pictures.</p>
-<p>Using webcampak local storage as a buffer is the ideal solution to accomodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.</p>
-<p>At the end of the incident, a webcampak feature (Xfer Reports) to transfer back missing pictures to remote servers (more below).</p>
+<p>Webcampak is usually shipped with a 256 or 512 GB SSD, providing ample space for local storage. In a vast majority of situations, captured pictures are transferred to a NAS or another Webcampak (Webcampak Cloud generally).</p>
+<p>In this situation, local storage can be considered as a buffer. The system will be configured to keep X days (X depending of multiple factors, but often a month or two) of pictures locally, automatically clearing older pictures.</p>
+<p>Using Webcampak local storage as a buffer is the ideal solution to accommodate network connectivity issues, when such an event happen, you will have X days to identify and address the issue before starting to loose pictures.</p>
+<p>At the end of the incident, a Webcampak feature (Xfer Reports) is available to transfer back missing pictures to remote servers (more below).</p>
 <h2 id="file-synchronization">File Synchronization</h2>
-<p>Webcampak "Xfer Reports" features provides means to ensure all files on a local webcampak are also available in remote locations by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.</p>
+<p>Webcampak "Xfer Reports" features provides means to ensure all files on a local Webcampak are also available in remote locations, by comparing file names and file sizes. By looking at a report, users can decide to initiate transfer of any missing files.</p>
 <p>This feature cover multiple use cases:</p>
 <ul>
 <li>Re-synchronize files after a network incident</li>
 <li>Transfer all files at once to a new destination (a new NAS for example)</li>
-<li>Ensure that no pictures are missing</li>
+<li>Ensure no pictures are missing</li>
 </ul>
 <h2 id="bandwidth-constrains">Bandwidth Constrains</h2>
-<p>Bandwidht constraints sometimes prevents pictures form being transferred as they are captured, for example if there is a higher capture rate during a specific timeslot. The "Xfer" feature will de-serialize picture transmission from the capture process.</p>
-<p>New pictures are placed in a queue, which is then processed as per configured parameters (in particular number of parallel transfers). This prevent risks of overloading the system with too many parallel jobs.</p>
+<p>Bandwidth constraints sometimes prevent pictures from being transferred after capture, for example, if there is a higher capture rate during a specific timeslot. The "Xfer" feature will deserialize picture transmission from the capture process.</p>
+<p>New pictures are placed in a queue, which is then processed as per configured parameters (i.e. a number of parallel transfers). This prevents risks of overloading the system with too many parallel jobs.</p>
 <h2 id="quota">Quota</h2>
-<p>Each Webcampak source can have a filedisk quota, to define how much space can be used by the source on this system. This configuration is a "<strong>Soft Quota</strong>", going over the limit will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result on improperly deleting pictures. If a source goes over quota, the system will report so, but will not take further actions.</p>
+<p>Webcampak implements a "soft-quota" policy.</p>
+<p>Users can define how much space can be used by a source on the system and will report usage over quota. But the system will not trigger actions others than reporting over-usage. Pictures are critical to our system, and we didn't want to take any action that might result in improperly deleting pictures.</p>
+<p>If a source goes over quota, the system will report so, but will not take further actions.</p>
                 </div>
                     
                     <div class="history-nav-control-container clearfix" role="navigation" aria-label="footer navigation">
