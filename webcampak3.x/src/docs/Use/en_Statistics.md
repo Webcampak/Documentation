@@ -2,13 +2,13 @@
 
 Webcampak constantly collects metrics from the system to inform users about usage and evolution over time.
 
-![Statistics Menu](images/desktop.menu.statistics.en.png)
+[![Statistics Menu](images/desktop.menu.statistics.en.png "Statistics Menu")](images/desktop.menu.statistics.en.png "Click to see the full image.")
 
 ## Source Statistics
 
 The Source Statistics provides of view of a source's usage over time.
 
-![Source Statistics](images/desktop.statistics.source.en.png)
+[![Source Statistics](images/desktop.statistics.source.en.png "Source Statistics")](images/desktop.statistics.source.en.png "Click to see the full image.")
 
 This window is broken down into three different sections:
 
@@ -27,7 +27,7 @@ __Disk Usage__ metrics are collected daily by Webcampak. In the example above, t
 
 If we look a bit closer at what can be learnt by analysing the stats
 
-![Picture Count Statistics](images/desktop.statistics.source.pictures.en.png)
+[![Picture Count Statistics](images/desktop.statistics.source.pictures.en.png "Picture Count Statistics")](images/desktop.statistics.source.pictures.en.png "Click to see the full image.")
 
 We can see that (using mouse-over provides more insights):
 
@@ -39,11 +39,11 @@ We can see that (using mouse-over provides more insights):
 
 We can also see a couple of sessions with variation in the number of daily pictures, which likely indicates capture incidents. 
 
-![Identify capture incident](images/desktop.statistics.source.pictures.incidents.en.png)
+[![Identify capture incident](images/desktop.statistics.source.pictures.incidents.en.png "Identify capture incident")](images/desktop.statistics.source.pictures.incidents.en.png "Click to see the full image.")
 
-If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak we still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
+If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak was still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
 
-![A capture incident in details](images/desktop.pictures.calendar.hours.incidents.en.png)
+[![A capture incident in details](images/desktop.pictures.calendar.hours.incidents.en.png "A capture incident in details")](images/desktop.pictures.calendar.hours.incidents.en.png "Click to see the full image.")
 
 In this particular instance, there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accommodate Internet connection issues.
 
@@ -63,7 +63,7 @@ Users can then access those values and select a data range spanning:
 * the last 50 days with consolidated metrics (average)
 * the last 50 months with consolidated metrics (average)
 
-![System Statistics (Hours)](images/desktop.statistics.system.en.png)
+[![System Statistics (Hours)](images/desktop.statistics.system.en.png "System Statistics (Hours)")](images/desktop.statistics.system.en.png "Click to see the full image.")
 
 On the above stats we can, for example, see that:
 
@@ -77,7 +77,7 @@ But then we can go more granular and look at the latest captured metrics and see
 * Outgoing bandwidth did spike at 600KB/s for short period of time
 * CPU usage did spike to 100% and 90% over the last 10 hours but was otherwise reasonable
 
-![System Statistics (Recent)](images/desktop.statistics.system.recent.en.png)
+[![System Statistics (Recent)](images/desktop.statistics.system.recent.en.png "System Statistics (Recent)")](images/desktop.statistics.system.recent.en.png "Click to see the full image.")
 
 
 
