@@ -2,7 +2,7 @@
 
 Webcampak Sync Reports is available by clicking on "Webcampak > Statistics & Reports > Sync Reports"
 
-![Xfer Reports Menu](images/desktop.menu.sync-reports.en.png)
+[![Xfer Reports Menu](images/desktop.menu.sync-reports.en.png "Xfer Reports Menu")](images/desktop.menu.sync-reports.en.png "Click to see the full image.")
 
 ## Overview
 
@@ -19,21 +19,21 @@ To use this feature, the following pre-requisites need to be met:
 
 A Sync Report is the comparison of files available in a source with files available in a destination.
 
-![Create Sync Report](images/desktop.sync-reports.create.en.png)
+[![Create Sync Report](images/desktop.sync-reports.create.en.png "Create Sync Report")](images/desktop.sync-reports.create.en.png "Click to see the full image.")
 
 In most situations, users compare the content of a remote source, with content stored on the local source. The "Type" field is used to specify whether there is a remote connection or not.
 
-![Sync Report Queued](images/desktop.sync-reports.queued.en.png)
+[![Sync Report Queued](images/desktop.sync-reports.queued.en.png "Sync Report Queued")](images/desktop.sync-reports.queued.en.png "Click to see the full image.")
 
 The sync report is then queued and executed as soon as a slot becomes available.
 
-![Sync Report in progress](images/desktop.sync-reports.process.en.png)
+[![Sync Report in progress](images/desktop.sync-reports.process.en.png "Sync Report in progress")](images/desktop.sync-reports.process.en.png "Click to see the full image.")
 
-![Sync Report Completed](images/desktop.sync-reports.completed.en.png)
+[![Sync Report Completed](images/desktop.sync-reports.completed.en.png "Sync Report Completed")](images/desktop.sync-reports.completed.en.png "Click to see the full image.")
 
 When completed, users can click on the report to view its details.
 
-![Sync Report Details](images/desktop.sync-reports.details.en.png)
+[![Sync Report Details](images/desktop.sync-reports.details.en.png "Sync Report Details")](images/desktop.sync-reports.details.en.png "Click to see the full image.")
 
 In this particular example, users can learn the following:
 
@@ -54,12 +54,12 @@ CAUTION: Sync actions cannot be cancelled so users must be sure to understand th
 
 To avoid accidental sync jobs, users are required to run the report first, and from this report, trigger the sync job by clicking on "Re-run and Sync".
 
-![Sync Warning](images/desktop.sync-reports.warning.en.png)
+[![Sync Warning](images/desktop.sync-reports.warning.en.png "Sync Warning")](images/desktop.sync-reports.warning.en.png "Click to see the full image.")
 
 The system then creates XFer jobs and provides an update on progress, the far right column indicating total progress.
 
-![Sync Warning](images/desktop.sync-reports.progress.en.png)
+[![Sync Warning](images/desktop.sync-reports.progress.en.png "Sync Warning")](images/desktop.sync-reports.progress.en.png "Click to see the full image.")
 
 Resulting files are added to the XFer process in batches of 200 jobs per queue.
 
-![Sync Warning](images/desktop.sync-reports.process.xfer.en.png)
+[![Sync Warning](images/desktop.sync-reports.process.xfer.en.png "Sync Warning")](images/desktop.sync-reports.process.xfer.en.png "Click to see the full image.")
