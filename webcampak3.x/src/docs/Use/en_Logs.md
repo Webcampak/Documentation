@@ -2,13 +2,13 @@
 
 Webcampak constantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak > Logs"
 
-![Connected Devices Menu](images/desktop.menu.logs.en.png)
+[![Connected Devices Menu](images/desktop.menu.logs.en.png "Connected Devices Menu")](images/desktop.menu.logs.en.png "Click to see the full image.")
 
 ## Overview
 
 This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
 
-![Connected Devices](images/desktop.logs.capture.en.png)
+[![Connected Devices](images/desktop.logs.capture.en.png "Connected Devices")](images/desktop.logs.capture.en.png "Click to see the full image.")
 
 ### Log Rotation
 
@@ -149,7 +149,7 @@ Webcampak also records configuration changes (who changed what when).
 
 Due to the fairly low change frequency, those logs are not size-limited and will record indefinitely.
 
-![Connected Devices](images/desktop.logs.config.en.png)
+[![Connected Devices](images/desktop.logs.config.en.png "Connected Devices")](images/desktop.logs.config.en.png "Click to see the full image.")
 
 ## List of logged activities
 
