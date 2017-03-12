@@ -2,11 +2,11 @@
 
 The system configuration screen can be accessed by clicking on "Webcampak > Configuration > System Conf.".
 
-![System Configuration Menu](images/desktop.menu.configuration.system.en.png)
+[![System Configuration Menu](images/desktop.menu.configuration.system.en.png "System Configuration Menu")](images/desktop.menu.configuration.system.en.png "Click to see the full image.")
 
 It is used for general and non-source-specific settings. 
 
-![System Configuration](images/desktop.system.en.png)
+[![System Configuration](images/desktop.system.en.png "System Configuration")](images/desktop.system.en.png "Click to see the full image.")
 
 ## General
 
