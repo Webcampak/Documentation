@@ -16,16 +16,14 @@
 
         <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
-        <link href="css/bootstrap-custom.css" rel="stylesheet">
-        <link href="css/font-awesome-4.5.css" rel="stylesheet">
+        <link href="{{ project_root_dir }}/css/bootstrap-custom.css" rel="stylesheet">
+        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
         <link rel="stylesheet" href="/css/highlight.css">
-        <link href="css/base.css" rel="stylesheet">
-        <link href="css/doc-common.css" rel="stylesheet">
+        <link href="/css/base.css" rel="stylesheet">
+        <link href="/css/doc-common.css" rel="stylesheet">
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
         {%- endfor %}
-
-
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
