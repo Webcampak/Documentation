@@ -2,13 +2,13 @@
 
 A screen listing connected USB devices can be accessed by clicking on "Webcampak > Configuration > Connected Devices"
 
-![Connected Devices Menu](images/desktop.menu.configuration.devices.en.png)
+[![Connected Devices Menu](images/desktop.menu.configuration.devices.en.png "Connected Devices Menu")](images/desktop.menu.configuration.devices.en.png "Click to see the full image.")
 
 ## Overview
 
 This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
 
-![Connected Devices](images/desktop.devices.en.png)
+[![Connected Devices](images/desktop.devices.en.png "Connected Devices")](images/desktop.devices.en.png "Click to see the full image.")
 
 ## Gphoto2: Connected camera
 
