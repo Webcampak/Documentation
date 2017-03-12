@@ -10,17 +10,17 @@
         {% if site_author %}<meta name="author" content="{{ site_author }}">{% endif %}
         {% if canonical_url %}<link rel="canonical" href="{{ canonical_url }}">{% endif %}
         {% if favicon %}<link rel="shortcut icon" href="{{ favicon }}">
-        {% else %}<link rel="shortcut icon" href="/img/favicon.ico">{% endif %}
+        {% else %}<link rel="shortcut icon" href="{{ config.extra.project_root_dir }}/img/favicon.ico">{% endif %}
 
-        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" href="{{ config.extra.project_root_dir }}/img/apple-touch-icon.png">
 
         <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
         <link href="{{ config.extra.project_root_dir }}/css/bootstrap-custom.css" rel="stylesheet">
-        <link href="/css/font-awesome-4.5.css" rel="stylesheet">
-        <link rel="stylesheet" href="/css/highlight.css">
-        <link href="/css/base.css" rel="stylesheet">
-        <link href="/css/doc-common.css" rel="stylesheet">
+        <link href="{{ config.extra.project_root_dir }}/css/font-awesome-4.5.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ config.extra.project_root_dir }}/css/highlight.css">
+        <link href="{{ config.extra.project_root_dir }}/css/base.css" rel="stylesheet">
+        <link href="{{ config.extra.project_root_dir }}/css/doc-common.css" rel="stylesheet">
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
         {%- endfor %}
