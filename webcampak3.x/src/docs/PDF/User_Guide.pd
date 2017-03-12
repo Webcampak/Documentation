@@ -949,15 +949,15 @@ Sources are at the core of Webcampak picture acquisition, processing and storage
 
 To add a source, navigate to "Webcampak > Configuration > Access Control".
 
-![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png)
+[![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png "Access Control Menu")](images/desktop.menu.accesscontrol.en.png "Click to see the full image.")
 
 The access control window allows users to manage users, groups, customers and sources.
 
-![Access Control Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-en.png)
+[![Access Control Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-en.png "Access Control Window")](images/webcampak-access-control-sources-en.png "Click to see the full image.")
 
 Users can add a new source by clicking on "Add".
 
-![Add a Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-add-en.png)
+[![Add a Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-add-en.png "Add a Source")](images/webcampak-access-control-sources-add-en.png "Click to see the full image.")
 
 They will be requested to fill the following details:
 
@@ -971,7 +971,7 @@ They will be requested to fill the following details:
 
 Users can then be assigned to this source, by dragging them from the left side to the right side of the screen.
 
-![Assign users to source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-users-en.png)
+[![Assign users to source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/webcampak-access-control-sources-users-en.png "Assign users to source")](images/webcampak-access-control-sources-users-en.png "Click to see the full image.")
 
 "__Alerts__", when turned on, will trigger emails sent by the system when there is an alert on this source and to receive daily statistics by email.
 
@@ -979,17 +979,17 @@ Users can then be assigned to this source, by dragging them from the left side t
 
 To configure a source, navigate to "Webcampak > Configuration > Sources".
 
-![Webcampak Sources](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.en.png)
+[![Webcampak Sources](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.en.png "Webcampak Sources")](images/desktop.configuration.sources.capture.en.png "Click to see the full image.")
 
 Users are presented with a list of available sources attached to their account. Webcampak does not auto-save configuration changes and will display the status of the configuration (modified, unmodified) in the bottom toolbar.
 
-![Unmodified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.no-change.en.png)
+[![Unmodified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.no-change.en.png "Unmodified Configuration")](images/desktop.configuration.sources.no-change.en.png "Click to see the full image.")
 
-![Modified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes.en.png)
+[![Modified Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes.en.png "Modified Configuration")](images/desktop.configuration.sources.changes.en.png "Click to see the full image.")
 
 To prevent manipulation issues, users are required to either save or cancel changes before moving to another source.
 
-![Modified Configuration Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes-warning.en.png)
+[![Modified Configuration Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.changes-warning.en.png "Modified Configuration Warning")](images/desktop.configuration.sources.changes-warning.en.png "Click to see the full image.")
 
 All changes to the configuration settings are logged by Webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All Webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contain details such as individual actions processing time, picture date, picture size, entire processing time, etc...
 
@@ -1000,7 +1000,7 @@ This tab is used to configure all settings directly related to picture acquisiti
 
 #### Source Configuration
 
-![Source configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.source-configuration.en.png)
+[![Source configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.source-configuration.en.png "Source configuration")](images/desktop.configuration.sources.capture.details.source-configuration.en.png "Click to see the full image.")
 
 The following configuration settings are available in this section:
 
@@ -1019,7 +1019,7 @@ The following configuration settings are available in this section:
 
 #### Capture Calendar
 
-![Capture Calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.capture-calendar.en.png)
+[![Capture Calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.capture-calendar.en.png "Capture Calendar")](images/desktop.configuration.sources.capture.details.capture-calendar.en.png "Click to see the full image.")
 
 The following configuration settings are available in this section:
 
@@ -1028,7 +1028,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of D-SLR USB Camera (Gphoto2 PTP mode)
 
-![DSLR-Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.d-slr.en.png)
+[![DSLR-Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.d-slr.en.png "DSLR-Camera")](images/desktop.configuration.sources.capture.details.d-slr.en.png "Click to see the full image.")
 
 Those settings are only used when multiple D-SLR cameras are physically connected to the same Webcampak.
 
@@ -1041,7 +1041,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of Webcampak Source
 
-![Webcampak Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.source.en.png)
+[![Webcampak Source](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.source.en.png "Webcampak Source")](images/desktop.configuration.sources.capture.source.en.png "Click to see the full image.")
 
 Those settings are used when pictures are coming from another Webcampak source (chained sources).
 
@@ -1052,7 +1052,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of IP Camera (FTP) / Webcampak
 
-![IP Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.ipcamera.en.png)
+[![IP Camera](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.ipcamera.en.png "IP Camera")](images/desktop.configuration.sources.capture.details.ipcamera.en.png "Click to see the full image.")
 
 Those settings are used to process pictures uploaded to the /tmp/ directory, whether those are coming from IP Cameras or remote Webcampak.
 
@@ -1064,7 +1064,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of Internet Picture or Video Streaming
 
-![Internet Picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.internet.en.png)
+[![Internet Picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.capture.details.internet.en.png "Internet Picture")](images/desktop.configuration.sources.capture.details.internet.en.png "Click to see the full image.")
 
 Those settings are used to process pictures by acquiring a remote image of a video stream.
 
@@ -1072,7 +1072,7 @@ Those settings are used to process pictures by acquiring a remote image of a vid
 
 ### Pictures
 
-![Configure Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.en.png)
+[![Configure Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.en.png "Configure Pictures")](images/desktop.configuration.sources.pictures.en.png "Click to see the full image.")
 
 This section of the configuration allows you to define manipulations to be applied to pictures right after their capture.
 
@@ -1117,7 +1117,7 @@ Note: If more complex static code needs to be added, this can be done through th
 
 #### Static pictures
 
-![Hotlinks](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.hotlinks.en.png)
+[![Hotlinks](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.hotlinks.en.png "Hotlinks")](images/desktop.configuration.sources.pictures.hotlinks.en.png "Click to see the full image.")
 
 This option can be used to create "hotlinkable" pictures, those constantly keep the same filename and are automatically replaced as new pictures are being captured.
 
@@ -1127,7 +1127,7 @@ Users can also choose to "Generate error hotlink", which, in the case of failed 
 
 #### Archives
 
-![Archives](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.archives.en.png)
+[![Archives](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.archives.en.png "Archives")](images/desktop.configuration.sources.pictures.archives.en.png "Click to see the full image.")
 
 This section of the configuration contains various settings related to image size and clean-up:
 
@@ -1139,7 +1139,7 @@ This section of the configuration contains various settings related to image siz
 
 #### Send pictures via FTP
 
-![FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.ftp.en.png)
+[![FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.ftp.en.png "FTP")](images/desktop.configuration.sources.pictures.ftp.en.png "Click to see the full image.")
 
 This option is used to specify FTP servers to send pictures to. Those servers are defined in the FTP tab.
 
@@ -1147,13 +1147,13 @@ Unless the option is selected, RAW files are not being sent to remote servers. U
 
 #### Copy pictures internally
 
-![FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.copy.en.png)
+[![Internal Copy](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.pictures.copy.en.png "Internal Copy")](images/desktop.configuration.sources.pictures.copy.en.png "Click to see the full image.")
 
 This option is used to copy pictures to another source within the webcampak.
 
 ### Videos
 
-![Videos Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.en.png)
+[![Videos Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.en.png "Videos Configuration")](images/desktop.configuration.sources.videos.en.png "Click to see the full image.")
 
 This section is used to configure videos generated daily (processing starts by default at 1 am) by the system. 4 video definitions (1080p, 720p, 480p, custom) are supported by default, and 2 video formats (H.264 and MP4).
 
@@ -1199,7 +1199,7 @@ Please refer to the Watermark section of the pictures tab.
 
 #### Pre-processing manipulations (Advanced)
 
-![Videos Pre-processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.preprocess.en.png)
+[![Videos Pre-processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.preprocess.en.png "Videos Pre-processing")](images/desktop.configuration.sources.videos.preprocess.en.png "Click to see the full image.")
 
 This section lets you add a legend to your video (please refer to the text section of the picture tab).
 
@@ -1207,7 +1207,7 @@ It can also be used to resize pictures before video creation (this might have a 
 
 #### Add an audio file
 
-![Add audio](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.audio.en.png)
+[![Add audio](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.audio.en.png "Add audio")](images/desktop.configuration.sources.videos.audio.en.png "Click to see the full image.")
 
 Webcampak let you add an audio track to your videos.
 
@@ -1231,19 +1231,19 @@ During the creation of the video, Webcampak will create a playlist.mp3 file, you
 
 #### Send videos via FTP
 
-![Send videos via FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.ftp.en.png)
+[![Send videos via FTP](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.videos.ftp.en.png "Send videos via FTP")](images/desktop.configuration.sources.videos.ftp.en.png "Click to see the full image.")
 
 Videos can be uploaded to remote FTP servers defined in the FTP tab.
 
 ### Custom Vids
 
-![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.en.png)
+[![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.en.png "Custom Videos")](images/desktop.configuration.sources.customvideos.en.png "Click to see the full image.")
 
 Most settings in this tab are identical to those available in the "Video" tab, we will only focus on custom settings.
 
 #### Create a custom video
 
-![Create Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.create.en.png)
+[![Create Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.customvideos.create.en.png "Create Custom Videos")](images/desktop.configuration.sources.customvideos.create.en.png "Click to see the full image.")
 
 This section let you configure settings directly related to video creation (which could take hours if creation spans multiple months).
 
@@ -1261,7 +1261,7 @@ Following settings are available:
 
 ### Post-prod Vids.
 
-![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.en.png)
+[![Custom Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.en.png "Custom Videos")](images/desktop.configuration.sources.postprod.en.png "Click to see the full image.")
 
 This section of the configuration allows users to batch process a large number of pictures.
 
@@ -1298,7 +1298,7 @@ This section allows users to resize pictures by specifying new dimensions in pix
 
 #### Thumbnail
 
-![Configure Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.thumbnails.en.png)
+[![Configure Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.thumbnails.en.png "Configure Thumbnails")](images/desktop.configuration.sources.postprod.thumbnails.en.png "Click to see the full image.")
 
 This section allows users to insert a thumbnail into a picture, it takes two main arguments:
 
@@ -1317,7 +1317,7 @@ Please refer to the "Insert a legend" section of the "Pictures" tab.
 
 #### Initiate processing
 
-![Initiate Processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.create.en.png)
+[![Initiate Processing](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.postprod.create.en.png "Initiate Processing")](images/desktop.configuration.sources.postprod.create.en.png "Click to see the full image.")
 
 This section let you configure settings directly related to starting batch processing (which could take hours if creation spans multiple months).
 
@@ -1335,7 +1335,7 @@ Following settings are available:
 
 ### Phidgets
 
-![Phidgets Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.phidgets.en.png)
+[![Phidgets Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.phidgets.en.png "Phidgets Configuration")](images/desktop.configuration.sources.phidgets.en.png "Click to see the full image.")
 
 This section of the configuration allows users to configure interaction with Phidgets devices. Those are useful in multiple situations, and more specifically:
 
@@ -1371,7 +1371,7 @@ Up to 4 different sensors can be configured in this section, by defining the fol
 
 ### Advanced
 
-![Advanced Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.advanced.en.png)
+[![Advanced Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.advanced.en.png "Advanced Configuration")](images/desktop.configuration.sources.advanced.en.png "Click to see the full image.")
 
 These sections allow users to configured more advanced parameters, and for now, dealing with email alerts.
 
@@ -1391,7 +1391,7 @@ For example, if the system expects a capture at 5:10 and the grace period is set
 
 ### FTP
 
-![FTP Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.ftp.en.png)
+[![FTP Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.sources.ftp.en.png "FTP Configuration")](images/desktop.configuration.sources.ftp.en.png "Click to see the full image.")
 
 This section of the configuration lets the user configure local FTP credentials as well as list all remote FTP servers they would like to use.
 
@@ -1420,17 +1420,17 @@ Source-specific (not shared with other sources) remote FTP Servers can be config
 
 The access control sections deal with who can access what, along with the definition of what the "what" is and who the "who" are. This screen can be accessed by clicking on "Webcampak > Configuration > Access Control".
 
-![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png)
+[![Access Control Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.accesscontrol.en.png "Access Control Menu")](images/desktop.menu.accesscontrol.en.png "Click to see the full image.")
 
 It will let you define users, groups customers and sources as well as their inter-relationships.
 
-![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png)
+[![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png "Access Control")](images/desktop.accesscontrol.en.png "Click to see the full image.")
 
 ## Customers
 
 A customer is a simple mean of grouping users and providing such users with a customised Webcampak background colour and logo. Users are not required to be attached to a customer, but if they do, they can only be attached to one.
 
-![Configure Customers](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.customers.en.png)
+[![Configure Customers](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.customers.en.png "Configure Customers")](images/desktop.accesscontrol.customers.en.png "Click to see the full image.")
 
 This screen takes the following parameters:
 
@@ -1440,7 +1440,7 @@ This screen takes the following parameters:
 
 ## Groups
 
-![Configure Groups](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.en.png)
+[![Configure Groups](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.en.png "Configure Groups")](images/desktop.accesscontrol.groups.en.png "Click to see the full image.")
 
 By default, Webcampak is pre-configured with three different groups:
 
@@ -1455,7 +1455,7 @@ By selecting a group and clicking on "Permissions", users can refine permissions
 * __Available Applications__: List all applications that can be granted access to users members of this group
 * __Selected Applications__: List all applications, users member of this group, have access to.
 
-![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.applications.en.png)
+[![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.applications.en.png "Applications Permissions")](images/desktop.accesscontrol.groups.permissions.applications.en.png "Click to see the full image.")
 
 The above screenshot captures the default configuration of the "Configure" group.
 
@@ -1463,7 +1463,7 @@ Clicking on the "Permissions" tab provides a mean to further refine access contr
 
 This is currently limited to sources configuration. It lets the user define which configuration settings can be accessed/modified by which type of users.
 
-![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.permissions.en.png)
+[![Applications Permissions](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.groups.permissions.permissions.en.png "Applications Permissions")](images/desktop.accesscontrol.groups.permissions.permissions.en.png "Click to see the full image.")
 
 For reference purposes, those settings are listed in the configuration model on GitHub:
 
@@ -1488,13 +1488,13 @@ Please refer to the Sources section of this user guide for details on how to add
 
 The "Users" section is used add and configure Webcampak users.
 
-![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png)
+[![Access Control](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.en.png "Access Control")](images/desktop.accesscontrol.en.png "Click to see the full image.")
 
 ### Add User
 
 Clicking on "Add" open the window used to add users.
 
-![Add User](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.users.add.en.png)
+[![Add User](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.accesscontrol.users.add.en.png "Add User")](images/desktop.accesscontrol.users.add.en.png "Click to see the full image.")
 
 The system will then prompt to enter the following details:
 
@@ -1563,11 +1563,11 @@ This screen can also be used to trigger a Webcampak reboot.
 
 The email alerts configuration screen can be accessed by clicking on "Webcampak > Configuration > Email Alerts".
 
-![Email Alerts Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.alerts.en.png)
+[![Email Alerts Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.alerts.en.png "Email Alerts Menu")](images/desktop.menu.configuration.alerts.en.png "Click to see the full image.")
 
 This featured is used to declare when pictures are expected to be captured for some of the sources. Webcampak can then trigger alerts based on deviation from this schedule.
 
-![Email Alerts](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.en.png)
+[![Email Alerts](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.en.png "Email Alerts")](images/desktop.configuration.emailalerts.en.png "Click to see the full image.")
 
 Each line represents an hour, each column a minute. By default, the system only displays one day (selected on the top-right of the window), but it can be configured to display the full week.
 
@@ -1577,19 +1577,19 @@ Clicking in the grid will select the corresponding date and time.
 
 Since it would be extremely tedious to select a large number of capture slots, the "Edit Calendar" section can be used to manage addition and deletion from this calendar.
 
-![Add slot to calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar.en.png)
+[![Add slot to calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar.en.png "Add slot to calendar")](images/desktop.configuration.emailalerts.edit-calendar.en.png "Click to see the full image.")
 
 In the example above, the system will add one picture every 5 minutes, on Mondays between 8:00 and 16:00.
 
-![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-add.en.png)
+[![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-add.en.png "Resulting calendar")](images/desktop.configuration.emailalerts.calendar-add.en.png "Click to see the full image.")
 
 Users can also "clear" some of the capture slots.
 
-![Delete from calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar-deletion.en.png)
+[![Delete from calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.edit-calendar-deletion.en.png "Delete from calendar")](images/desktop.configuration.emailalerts.edit-calendar-deletion.en.png "Click to see the full image.")
 
 The above example will remove from the calendar, one picture every 5 minutes, on Mondays between 12:00 and 14:00.
 
-![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-remove.en.png)
+[![Resulting calendar](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.configuration.emailalerts.calendar-remove.en.png "Resulting calendar")](images/desktop.configuration.emailalerts.calendar-remove.en.png "Click to see the full image.")
 
 Once users are satisfied with the result, they can save the alert calendar and start using it for their source.
 

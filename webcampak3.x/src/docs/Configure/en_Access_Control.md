@@ -2,17 +2,17 @@
 
 The access control sections deal with who can access what, along with the definition of what the "what" is and who the "who" are. This screen can be accessed by clicking on "Webcampak > Configuration > Access Control".
 
-![Access Control Menu](images/desktop.menu.accesscontrol.en.png)
+[![Access Control Menu](images/desktop.menu.accesscontrol.en.png "Access Control Menu")](images/desktop.menu.accesscontrol.en.png "Click to see the full image.")
 
 It will let you define users, groups customers and sources as well as their inter-relationships.
 
-![Access Control](images/desktop.accesscontrol.en.png)
+[![Access Control](images/desktop.accesscontrol.en.png "Access Control")](images/desktop.accesscontrol.en.png "Click to see the full image.")
 
 ## Customers
 
 A customer is a simple mean of grouping users and providing such users with a customised Webcampak background colour and logo. Users are not required to be attached to a customer, but if they do, they can only be attached to one.
 
-![Configure Customers](images/desktop.accesscontrol.customers.en.png)
+[![Configure Customers](images/desktop.accesscontrol.customers.en.png "Configure Customers")](images/desktop.accesscontrol.customers.en.png "Click to see the full image.")
 
 This screen takes the following parameters:
 
@@ -22,7 +22,7 @@ This screen takes the following parameters:
 
 ## Groups
 
-![Configure Groups](images/desktop.accesscontrol.groups.en.png)
+[![Configure Groups](images/desktop.accesscontrol.groups.en.png "Configure Groups")](images/desktop.accesscontrol.groups.en.png "Click to see the full image.")
 
 By default, Webcampak is pre-configured with three different groups:
 
@@ -37,7 +37,7 @@ By selecting a group and clicking on "Permissions", users can refine permissions
 * __Available Applications__: List all applications that can be granted access to users members of this group
 * __Selected Applications__: List all applications, users member of this group, have access to.
 
-![Applications Permissions](images/desktop.accesscontrol.groups.permissions.applications.en.png)
+[![Applications Permissions](images/desktop.accesscontrol.groups.permissions.applications.en.png "Applications Permissions")](images/desktop.accesscontrol.groups.permissions.applications.en.png "Click to see the full image.")
 
 The above screenshot captures the default configuration of the "Configure" group.
 
@@ -45,7 +45,7 @@ Clicking on the "Permissions" tab provides a mean to further refine access contr
 
 This is currently limited to sources configuration. It lets the user define which configuration settings can be accessed/modified by which type of users. 
 
-![Applications Permissions](images/desktop.accesscontrol.groups.permissions.permissions.en.png)
+[![Applications Permissions](images/desktop.accesscontrol.groups.permissions.permissions.en.png "Applications Permissions")](images/desktop.accesscontrol.groups.permissions.permissions.en.png "Click to see the full image.")
 
 For reference purposes, those settings are listed in the configuration model on GitHub: 
 
@@ -70,13 +70,13 @@ Please refer to the [Sources section](en_Sources.md) of this user guide for deta
 
 The "Users" section is used add and configure Webcampak users.
 
-![Access Control](images/desktop.accesscontrol.en.png)
+[![Access Control](images/desktop.accesscontrol.en.png "Access Control")](images/desktop.accesscontrol.en.png "Click to see the full image.")
 
 ### Add User
 
 Clicking on "Add" open the window used to add users.
 
-![Add User](images/desktop.accesscontrol.users.add.en.png)
+[![Add User](images/desktop.accesscontrol.users.add.en.png "Add User")](images/desktop.accesscontrol.users.add.en.png "Click to see the full image.")
 
 The system will then prompt to enter the following details:
 

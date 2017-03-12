@@ -6,15 +6,15 @@ Sources are at the core of Webcampak picture acquisition, processing and storage
 
 To add a source, navigate to "Webcampak > Configuration > Access Control".
 
-![Access Control Menu](images/desktop.menu.accesscontrol.en.png)
+[![Access Control Menu](images/desktop.menu.accesscontrol.en.png "Access Control Menu")](images/desktop.menu.accesscontrol.en.png "Click to see the full image.")
 
 The access control window allows users to manage users, groups, customers and sources. 
 
-![Access Control Window](images/webcampak-access-control-sources-en.png)
+[![Access Control Window](images/webcampak-access-control-sources-en.png "Access Control Window")](images/webcampak-access-control-sources-en.png "Click to see the full image.")
 
 Users can add a new source by clicking on "Add".
 
-![Add a Source](images/webcampak-access-control-sources-add-en.png)
+[![Add a Source](images/webcampak-access-control-sources-add-en.png "Add a Source")](images/webcampak-access-control-sources-add-en.png "Click to see the full image.")
 
 They will be requested to fill the following details:
 
@@ -28,7 +28,7 @@ They will be requested to fill the following details:
 
 Users can then be assigned to this source, by dragging them from the left side to the right side of the screen.
 
-![Assign users to source](images/webcampak-access-control-sources-users-en.png)
+[![Assign users to source](images/webcampak-access-control-sources-users-en.png "Assign users to source")](images/webcampak-access-control-sources-users-en.png "Click to see the full image.")
 
 "__Alerts__", when turned on, will trigger emails sent by the system when there is an alert on this source and to receive daily statistics by email.
 
@@ -36,17 +36,17 @@ Users can then be assigned to this source, by dragging them from the left side t
 
 To configure a source, navigate to "Webcampak > Configuration > Sources".
 
-![Webcampak Sources](images/desktop.configuration.sources.capture.en.png)
+[![Webcampak Sources](images/desktop.configuration.sources.capture.en.png "Webcampak Sources")](images/desktop.configuration.sources.capture.en.png "Click to see the full image.")
 
 Users are presented with a list of available sources attached to their account. Webcampak does not auto-save configuration changes and will display the status of the configuration (modified, unmodified) in the bottom toolbar.
 
-![Unmodified Configuration](images/desktop.configuration.sources.no-change.en.png)
+[![Unmodified Configuration](images/desktop.configuration.sources.no-change.en.png "Unmodified Configuration")](images/desktop.configuration.sources.no-change.en.png "Click to see the full image.")
 
-![Modified Configuration](images/desktop.configuration.sources.changes.en.png)
+[![Modified Configuration](images/desktop.configuration.sources.changes.en.png "Modified Configuration")](images/desktop.configuration.sources.changes.en.png "Click to see the full image.")
 
 To prevent manipulation issues, users are required to either save or cancel changes before moving to another source.
 
-![Modified Configuration Warning](images/desktop.configuration.sources.changes-warning.en.png)
+[![Modified Configuration Warning](images/desktop.configuration.sources.changes-warning.en.png "Modified Configuration Warning")](images/desktop.configuration.sources.changes-warning.en.png "Click to see the full image.")
 
 All changes to the configuration settings are [logged](../Use/en_Logs.md) by Webcampak (who modified what, when), those logs are available in a dedicated section of the interface. All Webcampak actions are logged, we strongly encourage users to consult those logs while the system is configured to learn more about all specificities of the capture process. Various metrics are also captured and those logs will contain details such as individual actions processing time, picture date, picture size, entire processing time, etc...
 
@@ -57,7 +57,7 @@ This tab is used to configure all settings directly related to picture acquisiti
 
 #### Source Configuration 
 
-![Source configuration](images/desktop.configuration.sources.capture.details.source-configuration.en.png)
+[![Source configuration](images/desktop.configuration.sources.capture.details.source-configuration.en.png "Source configuration")](images/desktop.configuration.sources.capture.details.source-configuration.en.png "Click to see the full image.")
 
 The following configuration settings are available in this section:
 
@@ -76,7 +76,7 @@ The following configuration settings are available in this section:
 
 #### Capture Calendar
 
-![Capture Calendar](images/desktop.configuration.sources.capture.details.capture-calendar.en.png)
+[![Capture Calendar](images/desktop.configuration.sources.capture.details.capture-calendar.en.png "Capture Calendar")](images/desktop.configuration.sources.capture.details.capture-calendar.en.png "Click to see the full image.")
 
 The following configuration settings are available in this section:
 
@@ -85,7 +85,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of D-SLR USB Camera (Gphoto2 PTP mode)
 
-![DSLR-Camera](images/desktop.configuration.sources.capture.details.d-slr.en.png)
+[![DSLR-Camera](images/desktop.configuration.sources.capture.details.d-slr.en.png "DSLR-Camera")](images/desktop.configuration.sources.capture.details.d-slr.en.png "Click to see the full image.")
 
 Those settings are only used when multiple D-SLR cameras are physically connected to the same Webcampak.
 
@@ -98,7 +98,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of Webcampak Source
 
-![Webcampak Source](images/desktop.configuration.sources.capture.source.en.png)
+[![Webcampak Source](images/desktop.configuration.sources.capture.source.en.png "Webcampak Source")](images/desktop.configuration.sources.capture.source.en.png "Click to see the full image.")
 
 Those settings are used when pictures are coming from another Webcampak source (chained sources).
  
@@ -109,7 +109,7 @@ The following configuration settings are available in this section:
  
 #### Configuration of IP Camera (FTP) / Webcampak
 
-![IP Camera](images/desktop.configuration.sources.capture.details.ipcamera.en.png)
+[![IP Camera](images/desktop.configuration.sources.capture.details.ipcamera.en.png "IP Camera")](images/desktop.configuration.sources.capture.details.ipcamera.en.png "Click to see the full image.")
 
 Those settings are used to process pictures uploaded to the /tmp/ directory, whether those are coming from IP Cameras or remote Webcampak.
  
@@ -121,7 +121,7 @@ The following configuration settings are available in this section:
 
 #### Configuration of Internet Picture or Video Streaming
 
-![Internet Picture](images/desktop.configuration.sources.capture.details.internet.en.png)
+[![Internet Picture](images/desktop.configuration.sources.capture.details.internet.en.png "Internet Picture")](images/desktop.configuration.sources.capture.details.internet.en.png "Click to see the full image.")
 
 Those settings are used to process pictures by acquiring a remote image of a video stream. 
 
@@ -129,7 +129,7 @@ Those settings are used to process pictures by acquiring a remote image of a vid
 
 ### Pictures
 
-![Configure Pictures](images/desktop.configuration.sources.pictures.en.png)
+[![Configure Pictures](images/desktop.configuration.sources.pictures.en.png "Configure Pictures")](images/desktop.configuration.sources.pictures.en.png "Click to see the full image.")
 
 This section of the configuration allows you to define manipulations to be applied to pictures right after their capture.
 
@@ -174,7 +174,7 @@ Note: If more complex static code needs to be added, this can be done through th
 
 #### Static pictures 
 
-![Hotlinks](images/desktop.configuration.sources.pictures.hotlinks.en.png)
+[![Hotlinks](images/desktop.configuration.sources.pictures.hotlinks.en.png "Hotlinks")](images/desktop.configuration.sources.pictures.hotlinks.en.png "Click to see the full image.")
 
 This option can be used to create "hotlinkable" pictures, those constantly keep the same filename and are automatically replaced as new pictures are being captured.
 
@@ -184,7 +184,7 @@ Users can also choose to "Generate error hotlink", which, in the case of failed 
 
 #### Archives
 
-![Archives](images/desktop.configuration.sources.pictures.archives.en.png)
+[![Archives](images/desktop.configuration.sources.pictures.archives.en.png "Archives")](images/desktop.configuration.sources.pictures.archives.en.png "Click to see the full image.")
 
 This section of the configuration contains various settings related to image size and clean-up:
 
@@ -196,7 +196,7 @@ This section of the configuration contains various settings related to image siz
 
 #### Send pictures via FTP
 
-![FTP](images/desktop.configuration.sources.pictures.ftp.en.png)
+[![FTP](images/desktop.configuration.sources.pictures.ftp.en.png "FTP")](images/desktop.configuration.sources.pictures.ftp.en.png "Click to see the full image.")
 
 This option is used to specify FTP servers to send pictures to. Those servers are defined in the FTP tab.
 
@@ -204,13 +204,13 @@ Unless the option is selected, RAW files are not being sent to remote servers. U
 
 #### Copy pictures internally
 
-![FTP](images/desktop.configuration.sources.pictures.copy.en.png)
+[![Internal Copy](images/desktop.configuration.sources.pictures.copy.en.png "Internal Copy")](images/desktop.configuration.sources.pictures.copy.en.png "Click to see the full image.")
 
 This option is used to copy pictures to another source within the webcampak. 
 
 ### Videos
 
-![Videos Configuration](images/desktop.configuration.sources.videos.en.png)
+[![Videos Configuration](images/desktop.configuration.sources.videos.en.png "Videos Configuration")](images/desktop.configuration.sources.videos.en.png "Click to see the full image.")
 
 This section is used to configure videos generated daily (processing starts by default at 1 am) by the system. 4 video definitions (1080p, 720p, 480p, custom) are supported by default, and 2 video formats (H.264 and MP4).
 
@@ -256,7 +256,7 @@ Please refer to the Watermark section of the pictures tab.
 
 #### Pre-processing manipulations (Advanced)
 
-![Videos Pre-processing](images/desktop.configuration.sources.videos.preprocess.en.png)
+[![Videos Pre-processing](images/desktop.configuration.sources.videos.preprocess.en.png "Videos Pre-processing")](images/desktop.configuration.sources.videos.preprocess.en.png "Click to see the full image.")
 
 This section lets you add a legend to your video (please refer to the text section of the picture tab).
  
@@ -264,7 +264,7 @@ It can also be used to resize pictures before video creation (this might have a 
 
 #### Add an audio file
 
-![Add audio](images/desktop.configuration.sources.videos.audio.en.png)
+[![Add audio](images/desktop.configuration.sources.videos.audio.en.png "Add audio")](images/desktop.configuration.sources.videos.audio.en.png "Click to see the full image.")
 
 Webcampak let you add an audio track to your videos.
 
@@ -288,19 +288,19 @@ During the creation of the video, Webcampak will create a playlist.mp3 file, you
 
 #### Send videos via FTP
 
-![Send videos via FTP](images/desktop.configuration.sources.videos.ftp.en.png)
+[![Send videos via FTP](images/desktop.configuration.sources.videos.ftp.en.png "Send videos via FTP")](images/desktop.configuration.sources.videos.ftp.en.png "Click to see the full image.")
 
 Videos can be uploaded to remote FTP servers defined in the FTP tab.
 
 ### Custom Vids
 
-![Custom Videos](images/desktop.configuration.sources.customvideos.en.png)
+[![Custom Videos](images/desktop.configuration.sources.customvideos.en.png "Custom Videos")](images/desktop.configuration.sources.customvideos.en.png "Click to see the full image.")
 
 Most settings in this tab are identical to those available in the "Video" tab, we will only focus on custom settings.
 
 #### Create a custom video
 
-![Create Custom Videos](images/desktop.configuration.sources.customvideos.create.en.png)
+[![Create Custom Videos](images/desktop.configuration.sources.customvideos.create.en.png "Create Custom Videos")](images/desktop.configuration.sources.customvideos.create.en.png "Click to see the full image.")
 
 This section let you configure settings directly related to video creation (which could take hours if creation spans multiple months).
 
@@ -318,7 +318,7 @@ Following settings are available:
 
 ### Post-prod Vids.
 
-![Custom Videos](images/desktop.configuration.sources.postprod.en.png)
+[![Custom Videos](images/desktop.configuration.sources.postprod.en.png "Custom Videos")](images/desktop.configuration.sources.postprod.en.png "Click to see the full image.")
 
 This section of the configuration allows users to batch process a large number of pictures.
 
@@ -355,7 +355,7 @@ This section allows users to resize pictures by specifying new dimensions in pix
 
 #### Thumbnail
 
-![Configure Thumbnails](images/desktop.configuration.sources.postprod.thumbnails.en.png)
+[![Configure Thumbnails](images/desktop.configuration.sources.postprod.thumbnails.en.png "Configure Thumbnails")](images/desktop.configuration.sources.postprod.thumbnails.en.png "Click to see the full image.")
 
 This section allows users to insert a thumbnail into a picture, it takes two main arguments:
 
@@ -374,7 +374,7 @@ Please refer to the "Insert a legend" section of the "Pictures" tab.
 
 #### Initiate processing
 
-![Initiate Processing](images/desktop.configuration.sources.postprod.create.en.png)
+[![Initiate Processing](images/desktop.configuration.sources.postprod.create.en.png "Initiate Processing")](images/desktop.configuration.sources.postprod.create.en.png "Click to see the full image.")
 
 This section let you configure settings directly related to starting batch processing (which could take hours if creation spans multiple months).
 
@@ -392,7 +392,7 @@ Following settings are available:
 
 ### Phidgets
 
-![Phidgets Configuration](images/desktop.configuration.sources.phidgets.en.png)
+[![Phidgets Configuration](images/desktop.configuration.sources.phidgets.en.png "Phidgets Configuration")](images/desktop.configuration.sources.phidgets.en.png "Click to see the full image.")
 
 This section of the configuration allows users to configure interaction with Phidgets devices. Those are useful in multiple situations, and more specifically:
 
@@ -428,7 +428,7 @@ Up to 4 different sensors can be configured in this section, by defining the fol
 
 ### Advanced
 
-![Advanced Configuration](images/desktop.configuration.sources.advanced.en.png)
+[![Advanced Configuration](images/desktop.configuration.sources.advanced.en.png "Advanced Configuration")](images/desktop.configuration.sources.advanced.en.png "Click to see the full image.")
 
 These sections allow users to configured more advanced parameters, and for now, dealing with email alerts.
 
@@ -448,7 +448,7 @@ For example, if the system expects a capture at 5:10 and the grace period is set
 
 ### FTP
 
-![FTP Configuration](images/desktop.configuration.sources.ftp.en.png)
+[![FTP Configuration](images/desktop.configuration.sources.ftp.en.png "FTP Configuration")](images/desktop.configuration.sources.ftp.en.png "Click to see the full image.")
 
 This section of the configuration lets the user configure local FTP credentials as well as list all remote FTP servers they would like to use.
 
