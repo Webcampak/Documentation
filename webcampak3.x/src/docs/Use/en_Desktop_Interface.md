@@ -10,13 +10,13 @@ After authentication, the Webcampak desktop interface is being displayed. This i
 
 The Webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.
 
-![Webcampak Menu](images/desktop.menu.en.png)
+[![Webcampak Menu](images/desktop.menu.en.png "Webcampak Menu")](images/desktop.menu.en.png "Click to see the full image.")
 
 ## Settings
 
 The settings menu provides access to configuration of the desktop interface itself, such as changing the password, language or logging out of the system.
 
-![Settings menu](images/desktop.settings.en.png)
+[![Settings menu](images/desktop.settings.en.png "Settings menu")](images/desktop.settings.en.png "Click to see the full image.")
 
 ## Interface Status
 
@@ -28,19 +28,19 @@ The first status displayed on the left side if the connection status, it indicat
 
 Mousing over the status will also display the latency in milliseconds. This latency measures how much time it takes for the desktop interface to contact the Webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).
 
-![Connection Status](images/desktop.latency.en.png)
+[![Connection Status](images/desktop.latency.en.png "Connection Status")](images/desktop.latency.en.png "Click to see the full image.")
 
 ### Communication
 
 The small database icon, second from the left, indicates the number of calls made to your Webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.
 
-![Communication Status](images/desktop.database.en.png)
+[![Communication Status](images/desktop.database.en.png "Communication Status")](images/desktop.database.en.png "Click to see the full image.")
 
 ### Username
 
 The third icon from the left is the currently connected user. Clicking on the user will log you out of the system.
 
-![Communication Status](images/desktop.username.en.png)
+[![Communication Status](images/desktop.username.en.png "Communication Status")](images/desktop.username.en.png "Click to see the full image.")
 
 ### Software Version
 
@@ -51,7 +51,7 @@ The fourth icon from the left display the current Webcampak version, clicking on
 * __API__: Webcampak API, receives and interprets calls from the UI
 * __CLI__: Webcampak CLI, drives all Webcampak background activities
 
-![Webcampak Version](images/desktop.version.en.png)
+[![Webcampak Version](images/desktop.version.en.png "Webcampak Version")](images/desktop.version.en.png "Click to see the full image.")
 
 #### Are you running the latest version?
 
@@ -63,7 +63,7 @@ We don't necessarily recommend to be running the very latest dev version, but if
 
 If we look a bit closer at the UI commit tag, we can find the currently deployed version in the [commit history of the develop branch](https://github.com/Webcampak/ui/commits/develop).
 
-![Webcampak Version](images/desktop.version.github.en.png)
+[![Webcampak Version](images/desktop.version.github.en.png "Webcampak Version")](images/desktop.version.github.en.png "Click to see the full image.")
 
 It basically tells us that there have been the following new changes (commits) since this Webcampak was last updated:
 
