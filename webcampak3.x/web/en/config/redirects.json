@@ -1,6 +1,6 @@
 {
-  "defaultBaseFromURL": "http://gdc-docs.nci.nih.gov",
-  "defaultBaseToURL": "http://gdc-docs.nci.nih.gov",
+  "defaultBaseFromURL": "http://doc.webcampak.com/webcampak3.x/web/en/",
+  "defaultBaseToURL": "http://doc.webcampak.com/webcampak3.x/web/en/",
 
   "redirects": [
     {
