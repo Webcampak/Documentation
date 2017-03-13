@@ -3,7 +3,6 @@
 Welcome on Webcampak documentation site.
 
 This documentation is also available as a [PDF](http://doc.webcampak.com/webcampak3.x/web/en/PDF/User_Guide.pdf). 
-_The website and PDF were last updated on: BUILDDATE_
 
 ## Overview
 
@@ -56,3 +55,5 @@ But Webcampak Cloud can interconnect with solar-powered setups, and if you are l
 ## More?
 
 Want to learn more or participate? get in touch at contat_at_webcampak.com
+
+_The website and PDF were last updated on: BUILDDATE_
