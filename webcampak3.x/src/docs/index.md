@@ -2,7 +2,8 @@
 
 Welcome on Webcampak documentation site.
 
-This documentation is also available as a [PDF](http://doc.webcampak.com/webcampak3.x/web/en/PDF/User_Guide.pdf). The website and PDF were last updated on: UPDATEDATE
+This documentation is also available as a [PDF](http://doc.webcampak.com/webcampak3.x/web/en/PDF/User_Guide.pdf). 
+_The website and PDF were last updated on: March, 12 2017_
 
 ## Overview
 
