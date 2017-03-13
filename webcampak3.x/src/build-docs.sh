@@ -25,6 +25,8 @@ for i in $( ls *_PDF.yml ); do
 done
 echo "$(date +'%d %B %Y - %k:%M'): Number of User Guides found: ${#userGuides[@]}"
 
+BUILDDATE=$(date +'%B, %d %Y')
+
 for userGuide in "${userGuides[@]}"; do
    echo "$(date +'%d %B %Y - %k:%M'): ${userGuide}: Starting creation"
    if [ ! -d "docs/PDF/${userGuide}/" ]; then
@@ -39,11 +41,13 @@ for userGuide in "${userGuides[@]}"; do
    /bin/sed -i -e 's/\/site\//\/docs\//g' docs/PDF/${userGuide}.pd
    /bin/sed -i -e "s/(images/(http:\/\/doc.webcampak.com\/"$userGuide"\/Users_Guide\/images/g" docs/PDF/${userGuide}.pd #To make images clickable in the PDF
    cp docs/PDF/${userGuide}_Title_src.txt docs/PDF/${userGuide}_Title.txt
-   CREATEDATE=$(date +'%B, %d %Y')
-   /bin/sed -i -e "s/CREATEDATE/$CREATEDATE/g" docs/PDF/${userGuide}_Title.txt
+   /bin/sed -i -e "s/CREATEDATE/$BUILDDATE/g" docs/PDF/${userGuide}_Title.txt
    echo "$(date +'%d %B %Y - %k:%M'): ${userGuide}: Building PDF from pandoc document "
    /usr/bin/pandoc --listings -H theme/latex/listings-setup.tex --toc -V documentclass=report -V geometry:"top=2cm, bottom=1.5cm, left=1cm, right=1cm" -f markdown+grid_tables+table_captions docs/PDF/${userGuide}_Title.txt -o docs/PDF/${userGuide}.pdf docs/PDF/${userGuide}.pd
 done
+
+cp docs/index_src.md docs/index.md
+/bin/sed -i -e "s/BUILDDATE/$BUILDDATE/g" docs/index.md
 
 echo "$(date +'%d %B %Y - %k:%M'): Building site to ../web/en/"
 mkdocs build -v --site-dir ../web/en/
