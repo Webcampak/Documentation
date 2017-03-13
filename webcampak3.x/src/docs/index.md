@@ -2,6 +2,8 @@
 
 Welcome on Webcampak documentation site.
 
+This documentation is also available in a [PDF Format](http://doc.webcampak.com/webcampak3.x/web/en/PDF/User_Guide.pdf).
+
 ## Overview
 
 Webcampak is a time-lapse photography appliance aiming at assisting photographers in their long-term projects. Its main role is to capture, manipulate, store and transfer pictures over long periods of time while providing mechanisms to prevent picture loss.
