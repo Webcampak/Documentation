@@ -1,2 +1,3 @@
-% Webcampak User Guide
+% Webcampak 3.x User Guide
 % Eurotechnia Ltd.
+% Created on March, 12 2017

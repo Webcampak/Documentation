@@ -264,7 +264,7 @@ Webcampak splash screen provides users with a choice between a fully featured De
 
 The Desktop application provides most features and allow both viewing contents and performing advanced configuration. The Dashboard application is a simpler view into the Webcampak with a more modern user interface.
 
-![Webcampak Splash Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/splash.en.png)
+[![ebcampak Splash Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/splash.en.png "ebcampak Splash Screen")](images/splash.en.png "Click to see the full image.")
 
 ## Connection
 
@@ -274,30 +274,30 @@ Desktop authentication
 
 Dashboard authentication
 
-![Dashboard Login Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/dashboard.login.en.png)
+[![Dashboard Login Screen](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/dashboard.login.en.png "Dashboard Login Screen")](images/dashboard.login.en.png "Click to see the full image.")
 
 ## Lost Password
 
 In the case of lost password, users can request a new one to be sent to their email address by specifying their username and email address.
 
-![Recover Lost Password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.en.png)
+[![Recover Lost Password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.en.png "Recover Lost Password")](images/desktop.login.recover.password.en.png "Click to see the full image.")
 
-![Password reset Confirmation](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.confirmation.en.png)
+[![Password reset Confirmation](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.confirmation.en.png "Password reset Confirmation")](images/desktop.login.recover.password.confirmation.en.png "Click to see the full image.")
 
 After successfully entering a matching username/email combo, the system sends an email containing a temporary password.
 
-![Password reset email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.email.en.png)
+[![Password reset email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.recover.password.email.en.png "Password reset email")](images/desktop.login.recover.password.email.en.png "Click to see the full image.")
 
 Users are then prompted to enter a new password at their next connection.
 
-![Change password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.update.password.en.png)
+[![Change password](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.update.password.en.png "Change password")](images/desktop.login.update.password.en.png "Click to see the full image.")
 
 Once logged-in, users can:
 
 * See their username displayed on the bottom right corner
 * Log Out using the menu on the top right corner of the screen
 
-![Desktop Login Options](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.options.en.png)
+[![Desktop Login Options](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.login.options.en.png "Desktop Login Options")](images/desktop.login.options.en.png "Click to see the full image.")
 
 
 
@@ -315,13 +315,13 @@ After authentication, the Webcampak desktop interface is being displayed. This i
 
 The Webcampak menu gives access to all Webcampak features and configuration screens. Those screens are detailed later in the documentation.
 
-![Webcampak Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.en.png)
+[![Webcampak Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.en.png "Webcampak Menu")](images/desktop.menu.en.png "Click to see the full image.")
 
 ## Settings
 
 The settings menu provides access to configuration of the desktop interface itself, such as changing the password, language or logging out of the system.
 
-![Settings menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.settings.en.png)
+[![Settings menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.settings.en.png "Settings menu")](images/desktop.settings.en.png "Click to see the full image.")
 
 ## Interface Status
 
@@ -333,19 +333,19 @@ The first status displayed on the left side if the connection status, it indicat
 
 Mousing over the status will also display the latency in milliseconds. This latency measures how much time it takes for the desktop interface to contact the Webcampak to obtain its connection status. The lower the better, but this number might be slightly high if you or your Webcampak are connected over high latency links (in particular satellite).
 
-![Connection Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.latency.en.png)
+[![Connection Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.latency.en.png "Connection Status")](images/desktop.latency.en.png "Click to see the full image.")
 
 ### Communication
 
 The small database icon, second from the left, indicates the number of calls made to your Webcampak to retrieve or submit data. When communication happens, a number is displayed in parenthesis next to the database icon. This should only show up when an action is triggered and should clear pretty quickly.
 
-![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.database.en.png)
+[![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.database.en.png "Communication Status")](images/desktop.database.en.png "Click to see the full image.")
 
 ### Username
 
 The third icon from the left is the currently connected user. Clicking on the user will log you out of the system.
 
-![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.username.en.png)
+[![Communication Status](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.username.en.png "Communication Status")](images/desktop.username.en.png "Click to see the full image.")
 
 ### Software Version
 
@@ -356,7 +356,7 @@ The fourth icon from the left display the current Webcampak version, clicking on
 * __API__: Webcampak API, receives and interprets calls from the UI
 * __CLI__: Webcampak CLI, drives all Webcampak background activities
 
-![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.en.png)
+[![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.en.png "Webcampak Version")](images/desktop.version.en.png "Click to see the full image.")
 
 #### Are you running the latest version?
 
@@ -368,7 +368,7 @@ We don't necessarily recommend to be running the very latest dev version, but if
 
 If we look a bit closer at the UI commit tag, we can find the currently deployed version in the [commit history of the develop branch](https://github.com/Webcampak/ui/commits/develop).
 
-![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.github.en.png)
+[![Webcampak Version](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.version.github.en.png "Webcampak Version")](images/desktop.version.github.en.png "Click to see the full image.")
 
 It basically tells us that there have been the following new changes (commits) since this Webcampak was last updated:
 
@@ -387,13 +387,13 @@ It is then your call to decide whether you want to manually update to the latest
 
 Captured pictures can be accessed by clicking on "Webcampak > Pictures" in the top-left menu.
 
-![Pictures Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.pictures.en.png)
+[![Pictures Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.pictures.en.png "Pictures Menu")](images/desktop.menu.pictures.en.png "Click to see the full image.")
 
 ## Overview
 
 The Pictures window allows users to navigate through sources and their archives.
 
-![Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.en.png)
+[![Pictures](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.en.png "Pictures")](images/desktop.pictures.en.png "Click to see the full image.")
 
 Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
@@ -407,13 +407,13 @@ Clicking on the main picture will open directly open this pictures in a new tab.
 
 Using a calendar, users can navigate through the archives, clicking on days containing pictures. The system automatically detects available days and will gray-out days with no pictures available. The current day is automatically highlighted.
 
-![Select a day](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.days.en.png)
+[![Select a day](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.days.en.png "Select a day")](images/desktop.pictures.calendar.days.en.png "Click to see the full image.")
 
 ### Select a picture
 
 All pictures captured during the day are presented in a small widget, containing one row per hour (from 00 to 23) and one column per minute (from 00 to 59).
 
-![Select a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.en.png)
+[![Select a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.en.png "Select a picture")](images/desktop.pictures.calendar.hours.en.png "Click to see the full image.")
 
 Blue cells represent timestamps with available pictures. Mousing over a specific cell will display the picture's time, clicking on the cell will open the selected picture.
 
@@ -431,7 +431,7 @@ Webcampak provides various means to navigate between pictures, at the top-right 
 * Go to the last picture captured by the source
 * Refresh the list of pictures available for the source.
 
-![Navigation buttons](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.buttons.en.png)
+[![Navigation buttons](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.buttons.en.png "Navigation buttons")](images/desktop.pictures.navigate.buttons.en.png "Click to see the full image.")
 
 Users can also navigate by clicking on thumbnails available towards the bottom of the screen. If sufficient pictures have been captured the system will display 6 thumbnails (from left to right):
 
@@ -442,17 +442,17 @@ Users can also navigate by clicking on thumbnails available towards the bottom o
 * 10th pictures captured after the currently displayed picture
 * 15th pictures captured after the currently displayed picture
 
-![Navigation Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.thumbnails.en.png)
+[![Navigation Thumbnails](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.navigate.thumbnails.en.png "Navigation Thumbnails")](images/desktop.pictures.navigate.thumbnails.en.png "Click to see the full image.")
 
 ### Zoom into a picture
 
 Users can also zoom into a picture by selecting the zoom level they would like to achieve (from 0% to 200%).
 
-![Zoom into a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.default.en.png)
+[![Zoom into a picture](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.default.en.png "Zoom into a picture")](images/desktop.pictures.zoom.default.en.png "Click to see the full image.")
 
 Once the zoom level is selected, moving the mouse in the window will focus on the selected area at the selected zoom level.
 
-![100% Zoom](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.100.en.png)
+[![100% Zoom](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.zoom.100.en.png "100% Zoom")](images/desktop.pictures.zoom.100.en.png "Click to see the full image.")
 
 ### Access Sensors
 
@@ -460,17 +460,17 @@ Users can also click on "Sensors" to view Phidgets sensors values captured by th
 
 It will open a window displaying up to 4 sensors graphs.
 
-![Webcampak Sensors Graphs](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.sensors.en.png)
+[![Webcampak Sensors Graphs](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.sensors.en.png "Webcampak Sensors Graphs")](images/desktop.pictures.sensors.en.png "Click to see the full image.")
 
 ### Email a picture
 
 Users can send the current picture by email, by clicking on "Email".
 
-![Send an email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.send.en.png)
+[![Send an email](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.send.en.png "Send an email")](images/desktop.pictures.email.send.en.png "Click to see the full image.")
 
 All parameters of the email can be customised, it is then placed into a queue and sent, usually, within a minute.
 
-![Email Received](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.received.en.png)
+[![Email Received](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.email.received.en.png "Email Received")](images/desktop.pictures.email.received.en.png "Click to see the full image.")
 
 Although this email is sent by webcampak, the name of the sender is detailed in the "FROM" field to facilitates its identification and try to prevent spam.
 
@@ -483,13 +483,13 @@ Although this email is sent by webcampak, the name of the sender is detailed in 
 
 Generated videos can be accessed by clicking on "Webcampak > Videos" in the top-left menu.
 
-![Videos Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.videos.en.png)
+[![Videos Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.videos.en.png "Videos Menu")](images/desktop.menu.videos.en.png "Click to see the full image.")
 
 ## Overview
 
 The Videos window allows users to navigate through sources and their videos.
 
-![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.en.png)
+[![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.en.png "Videos")](images/desktop.videos.en.png "Click to see the full image.")
 
 Sources can be selected using the drop-down on the top-left corner of the window, once selected, the source's title is displayed on top of the source's control panel.
 
@@ -499,7 +499,7 @@ When selecting a source, Webcampak will automatically position the system to the
 
 The bottom-right section of the window contains a list of available videos for the selected day. This list will contain a mix of automatically and user-generated videos.
 
-![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.list.en.png)
+[![Videos](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.videos.list.en.png "Videos")](images/desktop.videos.list.en.png "Click to see the full image.")
 
 Clicking on the corresponding row will open the video which can be played with the embedded player. The video can also be downloaded directly from this window.
 
@@ -511,13 +511,13 @@ Automatically (daily) generated video can be differentiated from user-generated 
 
 Webcampak constantly collects metrics from the system to inform users about usage and evolution over time.
 
-![Statistics Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.statistics.en.png)
+[![Statistics Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.statistics.en.png "Statistics Menu")](images/desktop.menu.statistics.en.png "Click to see the full image.")
 
 ## Source Statistics
 
 The Source Statistics provides of view of a source's usage over time.
 
-![Source Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.en.png)
+[![Source Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.en.png "Source Statistics")](images/desktop.statistics.source.en.png "Click to see the full image.")
 
 This window is broken down into three different sections:
 
@@ -536,7 +536,7 @@ __Disk Usage__ metrics are collected daily by Webcampak. In the example above, t
 
 If we look a bit closer at what can be learnt by analysing the stats
 
-![Picture Count Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.en.png)
+[![Picture Count Statistics](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.en.png "Picture Count Statistics")](images/desktop.statistics.source.pictures.en.png "Click to see the full image.")
 
 We can see that (using mouse-over provides more insights):
 
@@ -548,11 +548,11 @@ We can see that (using mouse-over provides more insights):
 
 We can also see a couple of sessions with variation in the number of daily pictures, which likely indicates capture incidents.
 
-![Identify capture incident](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.incidents.en.png)
+[![Identify capture incident](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.source.pictures.incidents.en.png "Identify capture incident")](images/desktop.statistics.source.pictures.incidents.en.png "Click to see the full image.")
 
-If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak we still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
+If we look a bit closer at one of those days, April 21st, 2015 (the first red rectangle), we can see that although the Webcampak was still capturing pictures, it was apparently struggling to send them between 06:00 and 14:00.
 
-![A capture incident in details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.incidents.en.png)
+[![A capture incident in details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.pictures.calendar.hours.incidents.en.png "A capture incident in details")](images/desktop.pictures.calendar.hours.incidents.en.png "Click to see the full image.")
 
 In this particular instance, there were some internet connectivity issues and it was decided that it was not worth transferring the missing pictures from Webcampak local storage. On a side note, this type of issues if one of the reasons why we implemented the XFer mechanism, which will accommodate Internet connection issues.
 
@@ -572,7 +572,7 @@ Users can then access those values and select a data range spanning:
 * the last 50 days with consolidated metrics (average)
 * the last 50 months with consolidated metrics (average)
 
-![System Statistics (Hours)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.en.png)
+[![System Statistics (Hours)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.en.png "System Statistics (Hours)")](images/desktop.statistics.system.en.png "Click to see the full image.")
 
 On the above stats we can, for example, see that:
 
@@ -586,7 +586,7 @@ But then we can go more granular and look at the latest captured metrics and see
 * Outgoing bandwidth did spike at 600KB/s for short period of time
 * CPU usage did spike to 100% and 90% over the last 10 hours but was otherwise reasonable
 
-![System Statistics (Recent)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.recent.en.png)
+[![System Statistics (Recent)](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.statistics.system.recent.en.png "System Statistics (Recent)")](images/desktop.statistics.system.recent.en.png "Click to see the full image.")
 
 
 
@@ -600,7 +600,7 @@ But then we can go more granular and look at the latest captured metrics and see
 
 Xfer is the file transfer mechanism available on Webcampak to deserialize picture transmission from picture processing.
 
-![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.xfer-reports.en.png)
+[![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.xfer-reports.en.png "Xfer Reports Menu")](images/desktop.menu.xfer-reports.en.png "Click to see the full image.")
 
 ## Overview
 
@@ -608,7 +608,7 @@ When Xfer is enabled the system will create transfer job during processing and w
 
 The FTP Xfer Reports window provides details about the number of transfer queues and files in those queues. It focuses on jobs currently being processed on the short term. If a Sync job is being processed, this window will only provide partial details and users are encouraged to use the Sync Reports window.
 
-![Xfer Reports Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.xfer-reports.en.png)
+[![Xfer Reports Window](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.xfer-reports.en.png "Xfer Reports Window")](images/desktop.xfer-reports.en.png "Click to see the full image.")
 
 The following columns are displayed:
 
@@ -632,7 +632,7 @@ The system will regularly clear transfer queues resulting in UUID changing frequ
 
 Webcampak Sync Reports is available by clicking on "Webcampak > Statistics & Reports > Sync Reports"
 
-![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.sync-reports.en.png)
+[![Xfer Reports Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.sync-reports.en.png "Xfer Reports Menu")](images/desktop.menu.sync-reports.en.png "Click to see the full image.")
 
 ## Overview
 
@@ -649,21 +649,21 @@ To use this feature, the following pre-requisites need to be met:
 
 A Sync Report is the comparison of files available in a source with files available in a destination.
 
-![Create Sync Report](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.create.en.png)
+[![Create Sync Report](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.create.en.png "Create Sync Report")](images/desktop.sync-reports.create.en.png "Click to see the full image.")
 
 In most situations, users compare the content of a remote source, with content stored on the local source. The "Type" field is used to specify whether there is a remote connection or not.
 
-![Sync Report Queued](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.queued.en.png)
+[![Sync Report Queued](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.queued.en.png "Sync Report Queued")](images/desktop.sync-reports.queued.en.png "Click to see the full image.")
 
 The sync report is then queued and executed as soon as a slot becomes available.
 
-![Sync Report in progress](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.en.png)
+[![Sync Report in progress](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.en.png "Sync Report in progress")](images/desktop.sync-reports.process.en.png "Click to see the full image.")
 
-![Sync Report Completed](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.completed.en.png)
+[![Sync Report Completed](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.completed.en.png "Sync Report Completed")](images/desktop.sync-reports.completed.en.png "Click to see the full image.")
 
 When completed, users can click on the report to view its details.
 
-![Sync Report Details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.details.en.png)
+[![Sync Report Details](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.details.en.png "Sync Report Details")](images/desktop.sync-reports.details.en.png "Click to see the full image.")
 
 In this particular example, users can learn the following:
 
@@ -684,15 +684,15 @@ CAUTION: Sync actions cannot be cancelled so users must be sure to understand th
 
 To avoid accidental sync jobs, users are required to run the report first, and from this report, trigger the sync job by clicking on "Re-run and Sync".
 
-![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.warning.en.png)
+[![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.warning.en.png "Sync Warning")](images/desktop.sync-reports.warning.en.png "Click to see the full image.")
 
 The system then creates XFer jobs and provides an update on progress, the far right column indicating total progress.
 
-![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.progress.en.png)
+[![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.progress.en.png "Sync Warning")](images/desktop.sync-reports.progress.en.png "Click to see the full image.")
 
 Resulting files are added to the XFer process in batches of 200 jobs per queue.
 
-![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.xfer.en.png)
+[![Sync Warning](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.sync-reports.process.xfer.en.png "Sync Warning")](images/desktop.sync-reports.process.xfer.en.png "Click to see the full image.")
 
 # Connected Devices
 
@@ -700,13 +700,13 @@ Resulting files are added to the XFer process in batches of 200 jobs per queue.
 
 A screen listing connected USB devices can be accessed by clicking on "Webcampak > Configuration > Connected Devices"
 
-![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.configuration.devices.en.png)
+[![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.configuration.devices.en.png "Connected Devices Menu")](images/desktop.menu.configuration.devices.en.png "Click to see the full image.")
 
 ## Overview
 
 This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
 
-![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.devices.en.png)
+[![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.devices.en.png "Connected Devices")](images/desktop.devices.en.png "Click to see the full image.")
 
 ## Gphoto2: Connected camera
 
@@ -764,13 +764,13 @@ Bus 002 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
 
 Webcampak constantly records its background activities and store those in files available from the desktop interface. Those can be accessed by clicking on "Webcampak > Logs"
 
-![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.logs.en.png)
+[![Connected Devices Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.menu.logs.en.png "Connected Devices Menu")](images/desktop.menu.logs.en.png "Click to see the full image.")
 
 ## Overview
 
 This simple feature runs 3 background commands to identify devices connected to Webcampak, a refresh button on the top-right corner let users manually trigger a refresh (for example after plugging a device).
 
-![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.capture.en.png)
+[![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.capture.en.png "Connected Devices")](images/desktop.logs.capture.en.png "Click to see the full image.")
 
 ### Log Rotation
 
@@ -911,7 +911,7 @@ Webcampak also records configuration changes (who changed what when).
 
 Due to the fairly low change frequency, those logs are not size-limited and will record indefinitely.
 
-![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.config.en.png)
+[![Connected Devices](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Use/images/desktop.logs.config.en.png "Connected Devices")](images/desktop.logs.config.en.png "Click to see the full image.")
 
 ## List of logged activities
 
@@ -1517,11 +1517,11 @@ Source access is managed on a per user basis, clicking on "Sources" allows speci
 
 The system configuration screen can be accessed by clicking on "Webcampak > Configuration > System Conf.".
 
-![System Configuration Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.system.en.png)
+[![System Configuration Menu](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.menu.configuration.system.en.png "System Configuration Menu")](images/desktop.menu.configuration.system.en.png "Click to see the full image.")
 
 It is used for general and non-source-specific settings.
 
-![System Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.system.en.png)
+[![System Configuration](/home/webcampak/git/Documentation/webcampak3.x/src/docs/Configure/images/desktop.system.en.png "System Configuration")](images/desktop.system.en.png "Click to see the full image.")
 
 ## General
 
