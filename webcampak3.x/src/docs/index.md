@@ -43,7 +43,7 @@ Webcampak is currently not fully autonomous and does not cover solar-powered use
 
 When implementing solutions such as Webcampak, two design choices can be taken in terms of hardware specifications, by using:
 
-* __Power-optimised electronic circuits (arm CPU in particular)__: Those systems have very low power requirements and can therefore be powered by solar panels. They usually rely on heavily customized versions of Linux and implement optimized sleep mechanisms to save on power usage. Running a very low power CPU, processing available on the device itself limits its manipulations capabilities.
+* __Power-optimised electronic circuits (ARM CPUs in particular)__: Those systems have very low power requirements and can therefore be powered by solar panels. They usually rely on heavily customized versions of Linux and implement optimized sleep mechanisms to save on power usage. Running a very low power CPU, processing available on the device itself limits its manipulations capabilities.
 * __Embedded x86 servers (using regular "low power" CPUs__: Those systems are basically scaled down and low-power version of regular CPUs. They give access to a very wide set of tools and cover many possible use cases. It also makes relatively easy to extend features. But they do consume more power than their ARM counterpart, making it a sub-obtimal choice for solar-powered setups.
 
 For Webcampak, we selected the second option, and therefore deploying Webcampak in a fully autonomous solar-powered solution would likely be complex.
