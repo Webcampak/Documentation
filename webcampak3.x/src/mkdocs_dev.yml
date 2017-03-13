@@ -2,7 +2,7 @@
 # Webcampak Docs - Config
 #
 site_name: Webcampak Docs
-site_url: http://doc.webcampak.com
+site_url: http://127.0.0.1:8000
 repo_url: https://github.com/Webcampak/Documentation
 copyright: "&copy; 2015-2016"
 theme_dir: theme
@@ -34,7 +34,7 @@ pages:
   - Installation: 'Develop/en_Install.md'
   - Initial Setup: 'Develop/en_Initial_Setup.md'
 extra:
-  project_root_dir: '/webcampak3.x/web/en/'
+  project_root_dir: ''
   project_org: 'Webcampak'
   project_description: 'Webcampak Docs'
   version: 1.0
