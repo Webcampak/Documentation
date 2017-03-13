@@ -2,7 +2,7 @@
 
 Xfer is the file transfer mechanism available on Webcampak to deserialize picture transmission from picture processing.
 
-![Xfer Reports Menu](images/desktop.menu.xfer-reports.en.png)
+[![Xfer Reports Menu](images/desktop.menu.xfer-reports.en.png "Xfer Reports Menu")](images/desktop.menu.xfer-reports.en.png "Click to see the full image.")
 
 ## Overview
 
@@ -10,7 +10,7 @@ When Xfer is enabled the system will create transfer job during processing and w
 
 The FTP Xfer Reports window provides details about the number of transfer queues and files in those queues. It focuses on jobs currently being processed on the short term. If a Sync job is being processed, this window will only provide partial details and users are encouraged to use the Sync Reports window.
 
-![Xfer Reports Window](images/desktop.xfer-reports.en.png)
+[![Xfer Reports Window](images/desktop.xfer-reports.en.png "Xfer Reports Window")](images/desktop.xfer-reports.en.png "Click to see the full image.")
 
 The following columns are displayed:
 
