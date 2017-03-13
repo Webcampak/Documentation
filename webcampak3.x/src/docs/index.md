@@ -48,7 +48,7 @@ When implementing solutions such as Webcampak, two design choices can be taken i
 
 For Webcampak, we selected the second option, and therefore deploying Webcampak in a fully autonomous solar-powered solution would likely be complex.
 
-But Webcampak Cloud can interconnect with solar-powered setups, and if you are looking for Solar-powered systems we recommend you take a look at the [Cyclapce](http://cyclapse.com/). product developed by our friends at [Harbortronics](https://www.harbortronics.com/).
+But Webcampak Cloud can interconnect with solar-powered setups, and if you are looking for Solar-powered systems we recommend you take a look at the [Cyclapse](http://cyclapse.com/) product developed by our friends at [Harbortronics](https://www.harbortronics.com/).
 
 ## More?
 
