@@ -45,7 +45,7 @@
                 </li>
             {% else %}
                 <li {% if nav_item.active %}class="active"{% endif %}>
-                    <a href="{{ config.extra.project_root_dir }}{{ nav_item.url }}">{{ nav_item.title }}</a>
+                    <a href="{{ config.site_url }}{{ config.extra.project_root_dir }}">{{ nav_item.title }}</a>
                 </li>
             {% endif %}
             {% endfor %}
