@@ -37,7 +37,7 @@ for userGuide in "${userGuides[@]}"; do
    /bin/sed -i -e 's/# / /g' docs/PDF/${userGuide}.pd
    /bin/sed -i -e 's/### /## /g' docs/PDF/${userGuide}.pd
    /bin/sed -i -e 's/\/site\//\/docs\//g' docs/PDF/${userGuide}.pd
-   #/bin/sed -i -e "s/(images/(http:\/\/doc.webcampak.com\/"$userGuide"\/Users_Guide\/images/g" docs/PDF/${userGuide}.pd #To make images clickable in the PDF
+   /bin/sed -i -e "s/(images/(http:\/\/doc.webcampak.com\/"$userGuide"\/Users_Guide\/images/g" docs/PDF/${userGuide}.pd #To make images clickable in the PDF
    cp docs/PDF/${userGuide}_Title_src.txt docs/PDF/${userGuide}_Title.txt
    CREATEDATE=$(date +'%B, %d %Y')
    /bin/sed -i -e "s/CREATEDATE/$CREATEDATE/g" docs/PDF/${userGuide}_Title.txt

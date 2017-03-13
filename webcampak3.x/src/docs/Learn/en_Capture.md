@@ -24,7 +24,7 @@ The system can be configured so that users can specify if the picture timestamp 
 
 ### Filename
 
-Webcampak uses the capture time for pictures filenames, using the following convention: YYYYMMDDHHmmSS (YearMonthDayHourMinuteSecond).
+Webcampak uses the capture time for pictures filenames, using an 24-hours format and the following convention: YYYYMMDDHHmmSS (YearMonthDayHourMinuteSecond).
 
 For example, 20170224124007.jpg is a picture captured on February(02) 24th, 2017 at 12:40 and 07 seconds.
 
