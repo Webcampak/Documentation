@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>http://doc.webcampak.com/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -12,95 +12,37 @@
     
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_Overview/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_Overview/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_Sources/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_Sources/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_Capture/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_Capture/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_Logging/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_Logging/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_File_Management/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_File_Management/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Learn/en_Users/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Authentication/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Desktop_Interface/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_View_Pictures/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_View_Videos/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Statistics/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Xfer_Reports/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Sync_Reports/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Connected_Devices/</loc>
-     <lastmod>2017-03-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://doc.webcampak.com/Use/en_Logs/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Learn/en_Users/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -110,25 +52,55 @@
     
         
     <url>
-     <loc>http://doc.webcampak.com/Configure/en_Sources/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Authentication/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Configure/en_Access_Control/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Desktop_Interface/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Configure/en_System/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_View_Pictures/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Configure/en_Email_Alerts/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_View_Videos/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Statistics/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Xfer_Reports/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Sync_Reports/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Connected_Devices/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Use/en_Logs/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -138,13 +110,41 @@
     
         
     <url>
-     <loc>http://doc.webcampak.com/Develop/en_Install/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Configure/en_Sources/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://doc.webcampak.com/Develop/en_Initial_Setup/</loc>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Configure/en_Access_Control/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Configure/en_System/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Configure/en_Email_Alerts/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Develop/en_Install/</loc>
+     <lastmod>2017-03-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://doc.webcampak.com/webcampak3.x/web/en//Develop/en_Initial_Setup/</loc>
      <lastmod>2017-03-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
