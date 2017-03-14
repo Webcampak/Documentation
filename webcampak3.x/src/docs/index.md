@@ -56,4 +56,4 @@ But Webcampak Cloud can interconnect with solar-powered setups, and if you are l
 
 Want to learn more or participate? get in touch at contat_at_webcampak.com
 
-_The website and PDF were last updated on: March, 12 2017_
+_The website and PDF were last updated on: March, 13 2017_
