@@ -44,3 +44,13 @@ You should then specify the following parameters:
 [![System Menu](images/webcampak-system-config.png "System Menu")](images/webcampak-system-config.png "Click to see the full image.")
 
 Webcampak initial setup is complete, you can now start adding sources.
+
+## Emails
+
+In its current version (this will be modified in the future), Webcampak is using its Symfony API through its [Swift mailer](http://swiftmailer.org/) library to send emails.
+
+Webcampak ships by default with our internal SMTP server. This server is (obviously) not reachable from the outside and users will need to manually change those settings to their own SMTP server (or even gmail).
+ 
+This is a required step for Webcampak to be able to send emails.
+ 
+More details can be found on [Symfony's website](http://symfony.com/doc/current/email.html)
