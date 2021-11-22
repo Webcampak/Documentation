@@ -455,7 +455,7 @@
 <h2 id="self-signed-certificate">Self-signed certificate</h2>
 <p>During installation, a <a href="https://en.wikipedia.org/wiki/Self-signed_certificate">self-signed certificate</a> is created by the system.</p>
 <p>Although self-signed certificates should definitely be a concern and are not recommended for publicly accessible Webcampak instances, they represent the only option when domain names cannot be used (for example a local webcampak).</p>
-<p>Following initial setup, you will be presented with a security warning from your browser. For now, accept it, but you are strongly encouraged to reconfigure the system to use a signed certificate issued by a public CA such as <a href="https://letsencrypt.org/">letsencrypt</a>.</p>
+<p>Following initial setup, you will be presented with a security warning from your browser. For now, accept it, but you are strongly encouraged to reconfigure the system to use a signed certificate issued by a public CA such as <a href="https://letsencrypt.org/">letsencrypt</a>.<br />Note that recent browser versions are going to prevent you from accessing remote URLs using privately signed certificates. If this is the case and if you still want to proceed, on Google Chrome, type-in "thisisunsafe" directly in the window,. the page will then load.</p>
 <p><a href="../images/webcampak-certificate.png" title="Click to see the full image."><img alt="Self Signed certificate warning" src="../images/webcampak-certificate.png" title="Self Signed certificate warning" /></a></p>
 <p>You will then be presented with the default splash screen, select "Desktop" to begin the installation.</p>
 <h2 id="authentication">Authentication</h2>
