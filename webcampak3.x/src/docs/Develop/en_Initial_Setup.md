@@ -10,6 +10,8 @@ Although self-signed certificates should definitely be a concern and are not rec
 
 Following initial setup, you will be presented with a security warning from your browser. For now, accept it, but you are strongly encouraged to reconfigure the system to use a signed certificate issued by a public CA such as [letsencrypt](https://letsencrypt.org/).
 
+Note that recent browser versions are going to prevent you from accessing remote URLs using privately signed certificates. If this is the case and if you still want to proceed, on Google Chrome, type-in "thisisunsafe" directly in the window,. the page will then load.
+
 [![Self Signed certificate warning](images/webcampak-certificate.png "Self Signed certificate warning")](images/webcampak-certificate.png "Click to see the full image.")
 
 You will then be presented with the default splash screen, select "Desktop" to begin the installation.
