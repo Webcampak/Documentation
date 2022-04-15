@@ -34,6 +34,7 @@ pages:
 - Develop:
   - Installation: 'Develop/en_Install.md'
   - Initial Setup: 'Develop/en_Initial_Setup.md'
+  - Branding: 'Develop/en_Branding.md'
 extra:
   project_root_dir: '/webcampak3.x/web/en/'
   project_org: 'Webcampak'
